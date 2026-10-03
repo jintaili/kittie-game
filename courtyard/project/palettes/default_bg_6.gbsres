@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "default-bg-6",
+  "name": "Wedding gold",
+  "colors": [
+    "F5EDD8",
+    "ECC569",
+    "B38449",
+    "594234"
+  ],
+  "defaultName": "Default BG 6",
+  "defaultColors": [
+    "F8D8B0",
+    "78C078",
+    "688840",
+    "583820"
+  ]
+}

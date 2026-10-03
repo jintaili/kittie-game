@@ -1,0 +1,48 @@
+{
+  "level": "banquet",
+  "unit": "whole level",
+  "status": "complete and ready for human review",
+  "models": {
+    "designer": {
+      "model": "gpt-6-astra",
+      "reasoning": "xhigh"
+    },
+    "builder": {
+      "model": "gpt-6.1-sol",
+      "reasoning": "high"
+    },
+    "gameplay_critic": {
+      "model": "gpt-6-astra",
+      "reasoning": "xhigh"
+    },
+    "art_text_editor": {
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    }
+  },
+  "runtimeOwner": null,
+  "baselineRom": "courtyard/build/kittie-before-banquet-review.gbc",
+  "brief": "design/banquet-revision-brief.html",
+  "workflow": "design/agent-workflow.html",
+  "humanReview": "after complete-level revision and independent review",
+  "review": "design/banquet-review.html",
+  "browserPreview": "http://127.0.0.1:63746/eabba3072f373876d23c999007acbbbb4e82b812067162e20ed006208620bc26/",
+  "previousBrowserState": "276ab0c305cf103f48f15ecd75360b58d286e6720525d987a01f1099c029743c",
+  "candidateRom": "courtyard/build/kittie-banquet-review-2.gbc",
+  "sourceBackup": "courtyard/source-art/banquet-before-review-1.zip",
+  "candidateSha256": "3cd311f27caf0d212bd57c855a4aa996528c4f8d95073961af960bc85b9a74a0",
+  "artReview": "design/banquet-art-review.html",
+  "runtimeHandoff": "Independent critic completed round, closed emulator and confirmed no active session.",
+  "practiceRom": "courtyard/build/kittie-banquet-practice-review-2.gbc",
+  "practiceSha256": "db6548137045f2c009e5bdfd66b9dd1a3f535e16ebeca9a55dd6140321129112",
+  "reviewLimit": "User requested this to be the final critic round due to remaining usage. Persist recommendations; incorporate clear findings without another critic cycle.",
+  "handoffStatus": "courtyard/artifacts/banquet-handoff-status.json",
+  "gameplayReview": "courtyard/artifacts/reviews/banquet-gameplay/review.html",
+  "browserPreviewNote": "Reviewed banquet direct-entry export; normal controls verified. Annotation exit bug persists in plugin.",
+  "recommendations": [
+    "Retain current difficulty and jump spacing",
+    "Preserve later enemy and water setup; pre-jump throw solves the observed failure",
+    "No blocking gameplay changes required"
+  ],
+  "integrationEvidence": "courtyard/artifacts/banquet-final-integration.json"
+}

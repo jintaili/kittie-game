@@ -1,0 +1,29 @@
+{
+  "_resourceType": "scene",
+  "id": "32b0d550-4338-5ca4-adaa-0a3fcbfd6661",
+  "_index": 1,
+  "type": "grove",
+  "name": "The olive grove",
+  "symbol": "scene_olive_grove",
+  "x": 1400,
+  "y": 0,
+  "width": 220,
+  "height": 18,
+  "backgroundId": "a923e30a-57b3-5f79-94ca-0f5f8ad5ec6c",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "default-sprite",
+    "kittie-wool-rose",
+    "kittie-goon-plum",
+    "kittie-ribbon-gold"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "",
+  "playerSpriteSheetId": "3799ecda-8f2b-59f2-a604-5678c2439fe8"
+}

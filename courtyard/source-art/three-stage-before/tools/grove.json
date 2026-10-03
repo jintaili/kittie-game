@@ -1,0 +1,239 @@
+{
+  "name": "The olive grove",
+  "width": 1760,
+  "solids": [
+    [
+      96,
+      112,
+      128,
+      128
+    ],
+    [
+      168,
+      104,
+      192,
+      128
+    ],
+    [
+      304,
+      48,
+      312,
+      128
+    ],
+    [
+      528,
+      112,
+      552,
+      128
+    ],
+    [
+      600,
+      104,
+      624,
+      128
+    ],
+    [
+      672,
+      112,
+      696,
+      128
+    ],
+    [
+      720,
+      96,
+      752,
+      104
+    ],
+    [
+      784,
+      80,
+      840,
+      88
+    ],
+    [
+      872,
+      96,
+      920,
+      104
+    ],
+    [
+      960,
+      112,
+      984,
+      128
+    ],
+    [
+      1096,
+      112,
+      1120,
+      128
+    ],
+    [
+      1160,
+      104,
+      1184,
+      128
+    ],
+    [
+      1264,
+      112,
+      1296,
+      128
+    ],
+    [
+      1480,
+      0,
+      1488,
+      128
+    ],
+    [
+      1504,
+      112,
+      1528,
+      128
+    ],
+    [
+      1576,
+      96,
+      1640,
+      114
+    ],
+    [
+      1656,
+      48,
+      1664,
+      128
+    ]
+  ],
+  "gate_indices": [
+    2,
+    16
+  ],
+  "door_index": 13,
+  "courts": [
+    {
+      "entry": 200,
+      "bell_x": 272,
+      "bell_y": 80,
+      "gate": 304
+    },
+    {
+      "entry": 1516,
+      "bell_x": 1620,
+      "bell_y": 120,
+      "gate": 1656
+    }
+  ],
+  "camera_entries": [
+    200,
+    1516
+  ],
+  "camera_centers": [
+    248,
+    1584
+  ],
+  "gaps": [
+    [
+      432,
+      464,
+      192
+    ],
+    [
+      568,
+      592,
+      192
+    ],
+    [
+      800,
+      832,
+      192
+    ],
+    [
+      1000,
+      1040,
+      192
+    ],
+    [
+      1216,
+      1256,
+      192
+    ],
+    [
+      1416,
+      1448,
+      192
+    ]
+  ],
+  "goons": [
+    [
+      352,
+      392
+    ],
+    [
+      752,
+      784
+    ],
+    [
+      1336,
+      1376
+    ]
+  ],
+  "balls": [
+    [
+      48,
+      124
+    ],
+    [
+      216,
+      124
+    ],
+    [
+      512,
+      124
+    ],
+    [
+      896,
+      92
+    ],
+    [
+      1280,
+      108
+    ],
+    [
+      1544,
+      124
+    ]
+  ],
+  "sections": [
+    {
+      "screens": "1\u20132",
+      "name": "Arrival and the high bell",
+      "action": "Carry wool over two low walls, collect a spare, lob at the high bell. There is no water before this required shot."
+    },
+    {
+      "screens": "3\u20134",
+      "name": "Goon, channel, stone steps",
+      "action": "Face one goon on flat ground, then cross a 32px channel. A fresh ball and a smaller gap introduce the terrace approach."
+    },
+    {
+      "screens": "5\u20136",
+      "name": "The visible fork",
+      "action": "Climb for optional wool and bypass the middle goon, or take the lower combat route and a short channel. Both paths rejoin on safe ground."
+    },
+    {
+      "screens": "7\u20138",
+      "name": "Broken terraces",
+      "action": "Cross two wider channels with generous landing ground between them. Steps vary takeoff height; wool rests on the final landing."
+    },
+    {
+      "screens": "9\u201310",
+      "name": "Last goon and safe bell court",
+      "action": "Handle the last goon, cross one final channel, enter the closing court and recover its local wool for the low bell shot."
+    },
+    {
+      "screens": "11",
+      "name": "Garden exit",
+      "action": "Cross the table and pass the opened gate. This ends the grove prototype; the banquet level follows in the next milestone."
+    }
+  ]
+}

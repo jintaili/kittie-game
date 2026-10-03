@@ -1,0 +1,26 @@
+{
+  "method": "Built-in Image Generation",
+  "current": "kittie-has-other-plans-cover-v10.png",
+  "source": "../../courtyard/source-art/approved-cover/cover-v10.png",
+  "sourceSha256": "1cfeb5e1f11aab654a9d069164cc88c8b4ff40b4d5333f67ed460049065cde74",
+  "nativeBackground": "../../courtyard/assets/backgrounds/title.png",
+  "nativePreview": "../../courtyard/artifacts/cover-v10-title.png",
+  "promptFile": "v10-prompt.txt",
+  "finalPrompt": "Use case: precise-object-edit and identity preservation.\nImage 1 is the APPROVED styling/composition base to revise. Images 2, 3, and 4 are original photographs of Kittie the male plush, especially authoritative for his uneven thread whiskers and the rounded three-dimensional underside of his head. Keep the illustration facing front; do not turn it into a profile.\n\nThe user needs TWO corrections. The previous attempt merely shifted the head upward and was NOT sufficient.\nA. SHOW A CLEARLY FULLER ROUNDED CHIN. The lower half of the illustrated face is too squashed and its contour too flat. Keep his head broad and horizontally oval, but reconstruct the lower half as a smoothly rounded oblate volume, with a visible convex underside, like the real plush in images 3 and 4. The cheeks should sweep DOWN and IN toward the lowest central chin in one continuous elliptical arc. Do not flatten this arc against the paws or ledge. Allow only tiny local indentations by the paws, not a squeezed pancake.\nMove the eyes/nose/stitched grin slightly UP within the same head to leave appreciably MORE FUR BELOW THE SMILE. At the final 160x144 grid, aim for the smile's lowest point around y=76 and the rounded chin's lowest point around y=99: roughly 20-23 native pixels of visibly modeled chin, not a narrow stripe. Keep the top-of-head arc low and smooth, no peak. The lower chin is WARM TAN midtone with curved caramel/cocoa shadow bands wrapping its hemispherical form, and some warm reflected light from the ledge. Do NOT make the whole underside a flat dark-brown band which visually disappears into the cast shadow. Its bottom must be distinct from the narrow darker cast shadow under it. Keep the head slightly clear of the ledge, supported naturally behind the paws. No floating head, visible neck, torso flanks, or extra appendages.\nB. WHISKERS MUST BE ASYMMETRICAL, like the ORIGINAL photographs. Do not mirror them. The real plush has fine uneven stitched/thread whiskers with slightly different lengths, angles, bends and attachment heights on his left and right cheeks. Two per cheek, irregular but tasteful, dark espresso. Study the real photos for this; do not treat geometrically symmetrical cartoon whiskers as desirable. Do not mirror facial embroidery.\n\nKeep both compact forepaws planted on the flat stone ledge, which stays where it is. Same closed embroidered eyes, tiny pale nose, broad stitched grin, dark crown with downward central mark, warm taupe/caramel plush, small dark ears. Keep the title and backdrop: KITTIE large, HAS OTHER PLANS below, no subtitle; cream letters with dark warm edging on terracotta ledge. Teal sky, sun, Tuscan cypresses/villa. Bottom 8 native pixel rows quiet dark cocoa for the button hint.\n\nKeep approved stylized volumetric pixel art with LARGE coherent curved light/shadow shapes, sparse purposeful cluster texture. Actual delivery is 160x144 Game Boy Color: design whole chunky native pixels on that grid, about 16 shared colors, four colors per local tile area; output 1280x1152 nearest-neighbor enlarged. No photographic speckles, noisy dithering, continuous gradients, or cyan/blue on the fur. Do not change pose, text, perspective, art style, lighting direction, or scenery beyond what these two corrections require.\nOutput only the revised cover.\n",
+  "referenceAuthority": "Original Kittie photographs; attached colorful image is rendering-style reference only",
+  "characterReferences": [
+    "reference-front.png",
+    "reference-current-front.png",
+    "reference-current-side.png"
+  ],
+  "nativeConstraints": {
+    "width": 160,
+    "height": 144,
+    "backgroundPalettes": 7,
+    "colorsPerTile": 4,
+    "rgb555": true,
+    "uniqueTilesWithFlips": 301,
+    "reservedUiSlot": 7
+  },
+  "cleanup": "Superseded cover artwork and scratch captures were removed at the user request on 2026-10-02."
+}

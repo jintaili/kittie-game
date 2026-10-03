@@ -1,0 +1,29 @@
+{
+  "_resourceType": "scene",
+  "id": "12f07015-0a42-504a-8d39-3f689e13ad3a",
+  "_index": 0,
+  "type": "kittie",
+  "name": "Kittie's Tuscan wedding",
+  "symbol": "scene_start",
+  "x": 0,
+  "y": 0,
+  "width": 160,
+  "height": 18,
+  "backgroundId": "6dcfd134-8222-56d0-a4cf-1a5d813bbe24",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "default-sprite",
+    "kittie-wool-rose",
+    "kittie-goon-plum",
+    "kittie-ribbon-gold"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "",
+  "playerSpriteSheetId": "3799ecda-8f2b-59f2-a604-5678c2439fe8"
+}

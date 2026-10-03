@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kittie Has Other Plans | Courtyard revision brief</title>
+  <style>
+    :root{color-scheme:light;--paper:#f5eddc;--ink:#3e3735;--line:#cdbd9f;--pink:#c56787;--olive:#647154}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 system-ui,sans-serif}
+    main{max-width:1100px;margin:auto;padding:38px 24px 64px}h1{font-size:clamp(32px,5vw,48px);line-height:1.08;letter-spacing:-.035em;margin:12px 0 22px}h2{font-size:23px;line-height:1.25;margin:32px 0 14px}p{max-width:850px}.lead{font-size:21px;line-height:1.5}.small{font-size:13px;color:#756651}.decision{padding:18px 22px;background:#fffbf1;border-left:4px solid var(--pink)}.map{overflow-x:auto;border:1px solid var(--line);background:#fffaf0;margin-top:24px}svg{display:block;min-width:1280px}table{border-collapse:collapse;width:100%;font-size:15px}th,td{padding:12px 10px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}th{font-weight:650}td:first-child{width:130px}code{font:13px/1.6 ui-monospace,monospace}a{color:#794f60}ul{padding-left:23px}li{margin:7px 0}@media(max-width:600px){main{padding:25px 17px 42px}td,th{padding:10px 6px}td:first-child{width:88px}}
+  </style>
+</head>
+<body><main>
+  <p class="small">Kittie Has Other Plans · Courtyard design brief · 2 October 2026</p>
+  <h1>Carry something worth keeping.</h1>
+  <p class="lead">The courtyard is a walled approach to the wedding grounds. Kittie learns to use one ball, crosses the service gardens, and arrives at the last bell with wool he has kept safe. The existing jumps and patrols already ask enough of the player. Give those actions consequences and give the place a stronger shape.</p>
+
+  <div class="decision"><p><strong>Three physical balls for the whole courtyard.</strong> Put one on the opening path and two on optional upper ledges. Remove the guaranteed supply at both bells and before the patrols. Wool still survives hits and must be retrieved. Reaching the last bell without any means retrying the stage with Start.</p></div>
+
+  <h2>The route</h2>
+  <table>
+    <thead><tr><th>Screen / world x</th><th>What the player does</th><th>What gives the place its shape</th></tr></thead>
+    <tbody>
+      <tr><td>1 · 0 to 159</td><td>Collect the ball at x64 and clear the first planter. The opening remains safe enough to try throwing and pick the ball back up.</td><td>A low garden wall, one broad olive canopy and an entrance pier. Clear cream space behind Kittie's head and the first ball.</td></tr>
+      <tr><td>2 · 160 to 319</td><td>Cross the tall planter. A second jump reaches a new upper shelf and earns a spare. Continuing along the ground remains possible.</td><td>A single recessed stucco arch frames the shelf. Its stone top is solid; the recess stays pale. One wall continues toward the bell court.</td></tr>
+      <tr><td>3 · 320 to 479</td><td>Lob at the high bell, then retrieve the wool before leaving. There is no replacement ball in this court.</td><td>An open service arch and a visible bell cord. Leave the throw arc and gate silhouette clear. The existing bell swing and raised gate finish the exchange.</td></tr>
+      <tr><td>4 · 480 to 639</td><td>Face the first patrol with the wool already held. A miss toward the channel can cost a ball; a hit sends it back for recovery.</td><td>A long, quiet wall and one shuttered opening. The first water break interrupts the paving visibly. Avoid shrubs over its banks.</td></tr>
+      <tr><td>5 · 640 to 799</td><td>Choose the stepped upper route or time the lower patrol and water crossing. Preserve the current step heights and clearances.</td><td>A raised garden terrace gives the three existing platforms a common purpose. Use shadow beneath each edge, without painting false solid supports into the lower route.</td></tr>
+      <tr><td>6 · 800 to 959</td><td>Take the upper ball at x800 if the climb was earned. Descend into the last patrol, then prepare for the final channel. There is no ground pickup at x864.</td><td>The terrace ends beside one olive tree. A longer plain wall holds the patrol silhouette. Keep the final takeoff and water lip unambiguous.</td></tr>
+      <tr><td>7 · 960 to 1119</td><td>Land, step up to the service court, and see the low bell before the shutter closes. Carry at least one ball into this commitment.</td><td>One broad arch frames the moved shutter. The table, shaded passage and bell appear together when the court camera settles.</td></tr>
+      <tr><td>8 · 1120 to 1279</td><td>Throw beneath the table, cross it, and leave through the opened gate. The successful shot uses wool brought through the level.</td><td>A spare service table leads to the orchard opening. One short strand of wedding bunting marks the destination. Let the open sky beyond the wall finish the approach.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Exact changes</h2>
+  <p>Keep the stage at 1280 by 144 pixels, with ground at y128. Keep both bells, both gates, all three patrol ranges, all three 32-pixel water gaps, and the existing jump and damage rules. Add just one climbing choice and move the final commitment.</p>
+  <table>
+    <thead><tr><th>Item</th><th>Revision</th></tr></thead>
+    <tbody>
+      <tr><td>Active wool</td><td><code>[64,124], [240,76], [800,76]</code>. The first is the working ball; the two upper balls are insurance. No ball at x360, x504, x864 or x1080.</td></tr>
+      <tr><td>New shelf</td><td><code>[224,80,256,88]</code>. Reach it from the existing planter <code>[184,104,216,128]</code>. The rise is 24 pixels and the horizontal gap is 8. The wool at x240 requires a separate jump from that planter.</td></tr>
+      <tr><td>Final shutter</td><td>Move <code>[1016,0,1024,128]</code> to <code>[1064,0,1072,128]</code>. Keep the approach step <code>[1040,112,1064,128]</code> and table <code>[1104,96,1168,114]</code>.</td></tr>
+      <tr><td>Final camera</td><td>Keep entry x1052 and center x1112. With the moved shutter, the court becomes visible before closure at player x1082. Confirm the pan completes early enough to read the low target before crossing.</td></tr>
+      <tr><td>Sorted solids</td><td>After inserting the shelf and moving the shutter, gate indices are <code>[5,12]</code> and the shutter index is <code>10</code>. Keep left and right edges sorted for the collision scan.</td></tr>
+    </tbody>
+  </table>
+  <p>The first two screens contain no water, so learning the first bell normally risks time rather than wool. The middle stretch has no free replacement. An upper-route ball matters because it can rescue a missed throw into a channel. The final court has dry ground and walls for retrieval, but it cannot rescue an empty inventory.</p>
+
+  <h2>Less writing, better stonework</h2>
+  <p>Keep <code>A JUMP  B THROW</code> once near the start and <code>UP+B</code> near the first bell. Remove the other world captions, including the table explanation and exit label. Do not replace them with a row of arrows. A continuous wall, visible gaps, the bell cords and the 14-pixel table passage should explain the space.</p>
+  <p>Replace the house repeated every 64 pixels with broad warm stucco walls, a few recessed arches and shared stone trims. Use terracotta on roof fragments, olive on foliage, and cooler darks in recesses. Keep the darkest outline for solid ledges, water lips and working objects. Reuse window, coping and leaf modules; leave large areas of plaster plain. Reserve pink for wool so each ball is immediately recognizable.</p>
+
+  <h2>What would make this fail</h2>
+  <p>The new shelf must reward an intentional second jump while allowing the lower path. A clean run must finish with the opening ball alone. Missing a throw near water should make recovery or the upper reserve matter. Entering the last court empty must remain an honest failed attempt, with the bell visible before commitment. The table shot must remain recoverable after a miss.</p>
+  <p>Apply the reduced active supply to the courtyard only. The grove and banquet retain their current six balls and rules. Preserve stage unlocks, cover v10, Kittie's approved sprite, back carry and idle cuddle. This brief does not change his face or body.</p>
+  <p class="small">Source review: <a href="../courtyard/tools/level.json">courtyard geometry</a>, <a href="../courtyard/tools/make_level.py">courtyard art generator</a>, <a href="../courtyard/plugins/kittie/engine/src/states/kittie.c">shared movement and wool rules</a>. This is a design proposal based on source inspection and existing stills, not a new playtest result.</p>
+</main></body></html>

@@ -1,0 +1,76 @@
+{
+  "_resourceType": "trigger",
+  "id": "f98d23fa-d1d9-5338-af8c-4dd00f9c4a99",
+  "_index": 0,
+  "symbol": "trigger_photo_finish",
+  "prefabId": "",
+  "name": "Photo finish",
+  "x": 154,
+  "y": 12,
+  "width": 6,
+  "height": 5,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "ef370a00-1001-4000-8000-000000000031",
+      "command": "EVENT_IF_VALUE",
+      "args": {
+        "variable": "100",
+        "operator": "<",
+        "comparator": 1
+      },
+      "children": {
+        "true": [
+          {
+            "id": "ef370a00-1001-4000-8000-000000000029",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "100",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            }
+          },
+          {
+            "id": "ef370a00-1001-4000-8000-000000000030",
+            "command": "EVENT_SAVE_DATA",
+            "args": {
+              "saveSlot": 0
+            },
+            "children": {
+              "true": [],
+              "load": []
+            }
+          }
+        ],
+        "false": []
+      }
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": "COURTYARD CLEAR\nA CONTINUE"
+      },
+      "id": "b5f8bc03-d0c3-53f7-a430-48e2874726bc"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "32b0d550-4338-5ca4-adaa-0a3fcbfd6661",
+        "x": {
+          "type": "number",
+          "value": 4
+        },
+        "y": {
+          "type": "number",
+          "value": 15
+        },
+        "direction": "right",
+        "fadeSpeed": "1"
+      },
+      "id": "9fb08fe0-c7ad-5f12-a9bb-6d6286555499"
+    }
+  ],
+  "leaveScript": []
+}

@@ -1,0 +1,51 @@
+{
+  "level": "olive grove",
+  "unit": "whole level",
+  "status": "complete and ready for human review",
+  "models": {
+    "designer": {
+      "model": "gpt-6-astra",
+      "reasoning": "xhigh"
+    },
+    "builder": {
+      "model": "gpt-6.1-sol",
+      "reasoning": "high"
+    },
+    "gameplay_critic": {
+      "model": "gpt-6-astra",
+      "reasoning": "xhigh"
+    },
+    "art_text_editor": {
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    }
+  },
+  "runtimeOwner": null,
+  "brief": "design/grove-revision-brief.html",
+  "artReview": "design/grove-art-review.html",
+  "workflow": "design/agent-workflow.html",
+  "difficulty": "Slightly higher than current grove; preserve constant patrol speed and established physics.",
+  "sourceBackup": "courtyard/source-art/grove-before-review-1.zip",
+  "browserPreview": "http://127.0.0.1:51237/4c3bd0c91070f46c31f07a32da88f8ac2a1524a6f1d97701c364f4005cbb3e30/",
+  "browserPreviewNote": "Reviewed grove direct-entry browser export; ordinary controls verified. Canonical main project reselected.",
+  "selectionBlocker": null,
+  "initialArtReview": "complete",
+  "pendingAction": "Human whole-level playtest",
+  "preservation": "Authored files backed up and baseline hashes saved before changes.",
+  "generatorWarning": "make_world_art.py contains stale banquet generation. Generate revised grove only; preserve actual approved banquet outputs.",
+  "implementationStarted": true,
+  "recommendations": [
+    "Retain reviewed difficulty",
+    "No required gameplay changes",
+    "Physical Chromatic testing by user"
+  ],
+  "candidateRom": "courtyard/build/kittie-grove-review-2.gbc",
+  "candidateSha256": "08d2d326f59b1c0f2f86c9c1e9c60b79329e8d19dbf77190699826d1c7f05e7d",
+  "practiceRom": "courtyard/build/kittie-grove-practice-review-2.gbc",
+  "practiceSha256": "1d31b280f5b1de9601c65598b6884cf42da8e2db7b1bd1cb60f08aed0a2f7d00",
+  "builderEvidence": "courtyard/artifacts/grove-review-2-verification.json",
+  "review": "design/grove-review.html",
+  "artVerdict": "Ready for human review; native full-route art sign-off.",
+  "gameplayReview": "courtyard/artifacts/reviews/grove-gameplay/review.html",
+  "integrationEvidence": "courtyard/artifacts/grove-final-integration.json"
+}

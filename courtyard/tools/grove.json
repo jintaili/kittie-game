@@ -1,0 +1,210 @@
+{
+  "width": 1760,
+  "initial_gate": 1,
+  "solids": [
+    [
+      96,
+      112,
+      136,
+      128
+    ],
+    [
+      168,
+      96,
+      304,
+      128
+    ],
+    [
+      320,
+      48,
+      328,
+      128
+    ],
+    [
+      344,
+      112,
+      376,
+      128
+    ],
+    [
+      432,
+      96,
+      520,
+      128
+    ],
+    [
+      568,
+      80,
+      648,
+      128
+    ],
+    [
+      688,
+      64,
+      744,
+      72
+    ],
+    [
+      784,
+      48,
+      832,
+      56
+    ],
+    [
+      872,
+      64,
+      920,
+      72
+    ],
+    [
+      968,
+      112,
+      1040,
+      128
+    ],
+    [
+      1064,
+      112,
+      1128,
+      128
+    ],
+    [
+      1192,
+      104,
+      1272,
+      128
+    ],
+    [
+      1304,
+      112,
+      1336,
+      128
+    ],
+    [
+      1480,
+      104,
+      1544,
+      128
+    ],
+    [
+      1640,
+      48,
+      1648,
+      128
+    ]
+  ],
+  "gate_indices": [
+    2,
+    14
+  ],
+  "door_index": 255,
+  "courts": [
+    {
+      "entry": 0,
+      "bell_x": 0,
+      "bell_y": 80,
+      "gate": 320
+    },
+    {
+      "entry": 1488,
+      "bell_x": 1584,
+      "bell_y": 56,
+      "gate": 1640
+    }
+  ],
+  "camera_entries": [
+    0,
+    1508
+  ],
+  "camera_centers": [
+    80,
+    1576
+  ],
+  "gaps": [
+    [
+      376,
+      432,
+      192
+    ],
+    [
+      520,
+      568,
+      192
+    ],
+    [
+      648,
+      688,
+      192
+    ],
+    [
+      928,
+      968,
+      192
+    ],
+    [
+      1128,
+      1192,
+      192
+    ]
+  ],
+  "goons": [
+    [
+      200,
+      288
+    ],
+    [
+      744,
+      856
+    ],
+    [
+      1352,
+      1440
+    ]
+  ],
+  "goon_heights": [
+    96,
+    128,
+    128
+  ],
+  "balls": [
+    [
+      56,
+      124
+    ],
+    [
+      808,
+      44
+    ],
+    [
+      1504,
+      100
+    ]
+  ],
+  "sections": [
+    {
+      "screens": "1, 2",
+      "name": "Orchard climb",
+      "action": "Climb the terraces and pass a patrol; recover thrown wool on safe ground."
+    },
+    {
+      "screens": "3, 4",
+      "name": "Irrigation ascent",
+      "action": "Cross two rising channels, then choose the branches or orchard floor."
+    },
+    {
+      "screens": "5, 6",
+      "name": "Olive branches",
+      "action": "Take three high ledges for spare wool, or pass the patrol below."
+    },
+    {
+      "screens": "7, 8",
+      "name": "Broken watercourse",
+      "action": "Rejoin on stone and clear a 64-pixel channel onto a raised landing."
+    },
+    {
+      "screens": "9, 10, 11",
+      "name": "Bell garden",
+      "action": "Pass the last patrol, recover the perch's wool and ring the high bell."
+    }
+  ]
+}

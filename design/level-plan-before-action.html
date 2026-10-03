@@ -1,0 +1,33 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kittie's eight-screen courtyard</title><style>
+:root{color-scheme:light dark}body{font:16px/1.6 system-ui;max-width:900px;margin:40px auto;padding:0 24px}h1,h2{line-height:1.2}h2{font-size:1.25rem;margin-top:2rem}a{color:light-dark(#365c86,#b0d4ff)}table{width:100%;border-collapse:collapse}td,th{text-align:left;vertical-align:top;padding:10px;border-bottom:1px solid light-dark(#ddd,#444)}img{image-rendering:pixelated;max-width:100%}small{opacity:.8}
+</style></head><body>
+<p><small>Implemented level · Eight screens · Game Boy Color</small></p>
+<h1>The courtyard photo</h1>
+<p>Kittie starts in the wedding garden, crosses the raised terraces, and reaches the banquet table before joining the photo. The complete course is 1,280 × 144 pixels, 2.7 times the original three-screen proposal.</p>
+<p><a href="../courtyard/README.html">Controls and playable ROM</a> · <a href="../courtyard/tools/level.json">Exact collision geometry</a> · <a href="level-plan-v1.html">Original short draft</a></p>
+<h2>The complete route</h2>
+<table><tr><th>Area</th><th>What happens</th><th>Why it is there</th></tr>
+<tr><td>Screen 1<br>x0–159</td><td>Arrival, movement prompt, a broad 16px planter at x104.</td><td>Room to learn jumping without a pit or penalty.</td></tr>
+<tr><td>Screen 2<br>x160–319</td><td>A 24px garden step at 184, lower planter at 264, court lip at 312.</td><td>Vary jump height, then show the entrance to the first bell court.</td></tr>
+<tr><td>Screen 3<br>x320–479</td><td>Ball 364; bell 430,y80; gate 462. Up+B lobs to the bell. A low shot returns from the gate.</td><td>Teach the ball's only purpose with its target and gate visible together.</td></tr>
+<tr><td>Screen 4<br>x480–639</td><td>Short landing, then terrace steps 528/y112 and 592/y96.</td><td>Release the aiming pause into steady movement.</td></tr>
+<tr><td>Screen 5<br>x640–799</td><td>Steps 648/y80 and 712/y64, then a lower landing at 776/y88.</td><td>A climbing rhythm and a small high point. Each required rise is only 16px.</td></tr>
+<tr><td>Screen 6<br>x800–959</td><td>Descend through olive trees; low platform 840/y112 and planter 928/y104.</td><td>A calmer descent before the second shot.</td></tr>
+<tr><td>Screen 7<br>x960–1119</td><td>Approach the table. Step 1040/y112; ball 1080. B bats through the passage beneath the tabletop.</td><td>Use the familiar ball at a different height. A lob hits the table, visibly showing why a low shot helps.</td></tr>
+<tr><td>Screen 8<br>x1120–1279</td><td>Low dinner bell 1148/y120 opens gate 1184. Kittie jumps onto table 1104–1168/y96 and walks to the photo at1240+.</td><td>Combine the learned jump and shot, then give an immediate ending.</td></tr></table>
+<h2>One ball purpose, two encounters</h2>
+<p>The wool ball rings bells that open gates. Batting, lobbing, and rebounds are ways to aim it. There is no higher jump from the ball, no combat, and no extra ball-powered machinery.</p>
+<p>The ball appears locally at each encounter. Kittie does not have to escort it across the terraces. Select restores the current court's ball to its fixed starting position, with no velocity. Open gates stay open. All ground is safe; there are no lives or timer.</p>
+<h2>Camera and sightlines</h2>
+<p>The first court frames x312–472 once Kittie enters. The final court frames x1032–1192 once he reaches x1052, keeping him inside the view. Both frames show the starting ball, bell, and gate. After a gate opens, the camera follows Kittie again. Retreating out of the final aiming area also returns to normal following.</p>
+<h2>Character</h2>
+<img src="../courtyard/source-art/kittie-motion-4x.gif" width="160" height="128" alt="Kittie's authored idle, walking, swatting and airborne sprite poses">
+<p>Kittie is male, with a long low plush body, short legs, a dark cap and ears, a broad fixed stitched smile, closed eyes, and two tail bands plus a dark tip. His native sprite is 40×32 pixels. Ten frames cover rest, two idle wiggles, four walking poses, two swat poses, and an airborne tuck. The face stays fixed while his paws, belly, and tail move.</p>
+<h2>Classic design reference</h2>
+<p>Nintendo describes how the first pipe in Super Mario Bros. World 1-1 sends the mushroom back toward the player. We use the same design principle in the first court: a low shot returns safely instead of becoming a retrieval chore. <a href="https://iwataasks.nintendo.com/interviews/wii/nsmb/0/3/">Nintendo interview</a>.</p>
+<p>The second encounter repeats the same purpose with a different spatial constraint. A low passage accommodates the wool ball while Kittie takes the route above it. The climb between courts lets the ball puzzle rest instead of repeating the same shot in adjacent rooms.</p>
+<h2>Verification and limits</h2>
+<p>Built as a native Game Boy Color ROM. Two complete emulator playthroughs passed, including a second finish after restart. Also checked a failed short jump, a low shot at the first gate, a wrong lob at the table, local resets, persistent gate progress, and the complete terrace/table route. Sampled sprite scanlines stayed within the hardware limit.</p>
+<p>The source movement gives a held jump about 33px of rise. Required upward steps are 16–24px. The final table has 14px below it for the 10px ball; Kittie's collision height is 16px. Nearby-obstacle checks keep the expanded course from scanning every rectangle for every collision.</p>
+<p>Playability has been checked in the emulator, not on a physical Chromatic. The scenery remains simple and there is no music or save system. The bell has a short hardware sound cue; audio quality has not been assessed on the device. A first-time human playtest is still the next useful measure of pacing and clarity.</p>
+</body></html>

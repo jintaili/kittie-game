@@ -1,0 +1,25 @@
+{
+  "character": "Kittie",
+  "pronouns": "he/him",
+  "referenceUse": "Read the original assets for every sprite revision. Do not install the external skill.",
+  "assets": [
+    {
+      "source": "/Users/jintaili/Downloads/Kittie Codex Skill/assets/reference-approved-seated-pale-pink-nose.png",
+      "projectCopy": "courtyard/source-art/character-reference/reference-approved-seated-pale-pink-nose.png",
+      "sha256": "ecbd4e4f13cc12c71aef6ef7701a690f839ca58b78cc3fbc1471ff14025930ba",
+      "use": "nose color only"
+    },
+    {
+      "source": "/Users/jintaili/Downloads/Kittie Codex Skill/assets/reference-current-front.png",
+      "projectCopy": "courtyard/source-art/character-reference/reference-current-front.png",
+      "sha256": "ca77ec3fbc6217d068eaf040a406cd698c2d3e45a21b32cd89b1d6bdff53b5af",
+      "use": "original owner photograph; face and body identity"
+    },
+    {
+      "source": "/Users/jintaili/Downloads/Kittie Codex Skill/assets/reference-current-side.png",
+      "projectCopy": "courtyard/source-art/character-reference/reference-current-side.png",
+      "sha256": "23e500ca69b0332115d86d05185dd8cf01be3c15eca56d4dbb6ad2d3c0091e06",
+      "use": "original owner photograph; face and body identity"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "_resourceType": "scene",
+  "id": "32b0d550-4338-5ca4-adaa-0a3fcbfd6661",
+  "_index": 1,
+  "type": "grove",
+  "name": "The olive grove",
+  "symbol": "scene_olive_grove",
+  "x": 1400,
+  "y": 0,
+  "width": 220,
+  "height": 18,
+  "backgroundId": "a923e30a-57b3-5f79-94ca-0f5f8ad5ec6c",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "default-sprite",
+    "kittie-wool-rose",
+    "kittie-goon-plum",
+    "kittie-ribbon-gold",
+    "kittie-hud-contrast",
+    "kittie-bell-lit"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "id": "ef370a00-1001-4000-8000-000000000021",
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "select"
+        ],
+        "override": true
+      },
+      "children": {
+        "true": [
+          {
+            "id": "ef370a00-1001-4000-8000-000000000020",
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "7504f14c-4246-5f1b-b09b-9dcf8c2c902a",
+              "x": {
+                "type": "number",
+                "value": 4
+              },
+              "y": {
+                "type": "number",
+                "value": 15
+              },
+              "direction": "right",
+              "fadeSpeed": "1"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "",
+  "playerSpriteSheetId": "3799ecda-8f2b-59f2-a604-5678c2439fe8"
+}

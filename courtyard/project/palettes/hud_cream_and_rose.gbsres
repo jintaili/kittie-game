@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "kittie-hud-contrast",
+  "name": "HUD cream and rose",
+  "colors": [
+    "F5EDD8",
+    "EF7DA7",
+    "FFF1CE",
+    "32263B"
+  ],
+  "defaultName": "HUD cream and rose",
+  "defaultColors": [
+    "F5EDD8",
+    "EF7DA7",
+    "FFF1CE",
+    "32263B"
+  ]
+}

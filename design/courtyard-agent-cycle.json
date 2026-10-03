@@ -1,0 +1,37 @@
+{
+  "level": "courtyard",
+  "unit": "whole level",
+  "status": "complete; ready for whole-level human review",
+  "models": {
+    "designer": {
+      "model": "gpt-6-astra",
+      "reasoning": "xhigh"
+    },
+    "builder": {
+      "model": "gpt-6.1-sol",
+      "reasoning": "high"
+    },
+    "gameplay_critic": {
+      "model": "gpt-6-astra",
+      "reasoning": "xhigh"
+    },
+    "art_text_editor": {
+      "model": "gpt-6-astra",
+      "reasoning": "high"
+    }
+  },
+  "runtimeOwner": null,
+  "baselineRom": "courtyard/build/kittie-before-courtyard-review.gbc",
+  "brief": "design/courtyard-revision-brief.html",
+  "workflow": "design/agent-workflow.html",
+  "humanReview": "after complete-level revision and independent review",
+  "candidateRom": "courtyard/build/kittie-courtyard-review-2.gbc",
+  "candidateSha256": "9f769dac2f965267a9077b35043d3f5d2cc8f450955c499816b7f7bc8718d32c",
+  "finding": "Final entry shutter overlaps heart HUD during camera scroll; critic released runtime and emulator_status confirmed no session.",
+  "runtimeHandoff": "Builder closed emulator; verification receipt courtyard/artifacts/courtyard-review-2-verification.json confirms no session.",
+  "gameplayReview": "passed; shutter finding fixed and rechecked",
+  "integration": "opening-ball-only clear, empty court/manual retry, both exact ROMs full-game completion and soft-reset unlock persistence passed",
+  "review": "design/courtyard-review.html",
+  "browserPreview": "http://127.0.0.1:60866/8b0d87746db577e182927e4342b38c1cbca103996013adfb283b6164046786d0/",
+  "previousBrowserState": "276ab0c305cf103f48f15ecd75360b58d286e6720525d987a01f1099c029743c"
+}

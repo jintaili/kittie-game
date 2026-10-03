@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kittie, come back!</title><style>
+:root{color-scheme:light dark}body{font:16px/1.6 system-ui;max-width:800px;margin:40px auto;padding:0 24px}h1,h2{line-height:1.2}h2{font-size:1.2rem;margin-top:2rem}img{image-rendering:pixelated;max-width:100%}a{color:light-dark(#365c86,#b0d4ff)}td,th{text-align:left;padding:8px 16px 8px 0;border-bottom:1px solid light-dark(#ddd,#444)}
+</style></head><body>
+<h1>Kittie, come back!</h1>
+<p>An eight-screen Game Boy Color level for ModRetro Chromatic. Help Kittie cross a Tuscan garden, bat wool balls at goons, and make it to the wedding photo. The middle section now has branching routes, irrigation channels, and checkpoints.</p>
+<p><a href="build/kittie-courtyard.gbc">Download the playable ROM</a> · <a href="project.gbsproj">Editable GB Studio project</a> · <a href="../design/level-plan.html">Full level design</a></p>
+<h2>Play</h2>
+<table><tr><th>Action</th><th>Browser</th><th>Chromatic</th></tr>
+<tr><td>Move</td><td>Arrow keys</td><td>D-pad</td></tr>
+<tr><td>Jump, hold for height</td><td>Z</td><td>A</td></tr>
+<tr><td>Bat the ball</td><td>X</td><td>B</td></tr>
+<tr><td>Lob the ball</td><td>Up + X</td><td>Up + B</td></tr>
+<tr><td>Reset the local ball</td><td>P</td><td>Select</td></tr>
+<tr><td>Restart</td><td>Enter</td><td>Start</td></tr></table>
+<p>Dismiss the finish message with Z or A before restarting. There are no lives or timer. The first channel has a shallow bottom. Deep water returns Kittie to a nearby flag, keeping opened gates, collected ribbons and defeated goons. In the garden, a lost or abandoned ball returns automatically; Select also recalls it.</p>
+<p>The ball has two jobs: ring bells and knock away goons. A low bat handles enemies and the banquet-table bell; a lob reaches the first high bell. Goons pause before charging. Contact bumps Kittie away and briefly protects him. Hold jump for height. The optional upper terrace holds a golden wedding ribbon; the lower route has another goon.</p>
+<h2>Kittie</h2>
+<img src="source-art/kittie-motion-4x.gif" width="160" height="128" alt="Kittie's detailed plush sprite with small tail, belly, paw and swatting movements">
+<p>40 × 32 pixel character, ten native frames. His closed embroidered eyes and smile stay fixed while his paws, tail, and plush body move. The preview above shows the authored animation sequence; the game selects poses as you play.</p>
+<h2>Gameplay excerpt</h2>
+<img src="artifacts/action-playthrough.gif" width="480" height="480" alt="Recorded emulator gameplay showing jumping, the bell shots, terraces and wedding photo finish">
+<p>Montage of actual frames from the final ROM. The level remains 1,280 pixels wide, with the middle rebuilt for combat and route choices. Length was held steady while the new interactions were tested.</p>
+<h2>What was checked</h2>
+<p>Two complete runs passed on the final ROM: the lower route with all three goons defeated, and the upper route with the ribbon collected and the lower goon bypassed. Both reached the photo finish. Checks also covered shallow-channel recovery, a deliberate deep-water fall, automatic ball return, checkpoint recovery, and both bell gates. Earlier test builds exercised enemy contact and exposed two terrain-clearance bugs, which were fixed and retested. Sampled sprite scanlines peaked at seven objects, below the ten-object limit. The background uses 151 of 384 available tiles.</p>
+<p>The native ROM builds successfully and the official browser export is available. Physical Chromatic hardware has not been tested. There are short swat, hit and bell sound cues, but no music or save system. Audio was not assessed by listening. Enemy behavior and scenery remain prototype-level.</p>
+</body></html>

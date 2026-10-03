@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "7688defe-cb08-577a-a097-812344f91a82",
+  "name": "Wedding photo",
+  "symbol": "bg_wedding_photo",
+  "tileColors": "0064+02d+006+02e+006+02e+006+028+00c+028+006+02e+006+02e+006+027+037+006+036b+",
+  "filename": "ending.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

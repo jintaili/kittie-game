@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "kittie-bell-lit",
+  "name": "Rung bell green",
+  "colors": [
+    "F5EDD8",
+    "D8F0A0",
+    "75B85A",
+    "294C3A"
+  ],
+  "defaultName": "Rung bell green",
+  "defaultColors": [
+    "F5EDD8",
+    "D8F0A0",
+    "75B85A",
+    "294C3A"
+  ]
+}

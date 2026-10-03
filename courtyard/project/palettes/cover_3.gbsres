@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "kittie-cover-2",
+  "name": "Cover 3",
+  "colors": [
+    "00B5BD",
+    "C58C52",
+    "734229",
+    "312119"
+  ],
+  "defaultName": "Cover 3",
+  "defaultColors": [
+    "00B5BD",
+    "C58C52",
+    "734229",
+    "312119"
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "width": 1440,
+  "initial_gate": 0,
+  "solids": [
+    [
+      96,
+      112,
+      128,
+      128
+    ],
+    [
+      160,
+      96,
+      248,
+      114
+    ],
+    [
+      280,
+      48,
+      288,
+      128
+    ],
+    [
+      352,
+      112,
+      376,
+      128
+    ],
+    [
+      400,
+      96,
+      496,
+      112
+    ],
+    [
+      536,
+      80,
+      624,
+      96
+    ],
+    [
+      664,
+      96,
+      784,
+      112
+    ],
+    [
+      832,
+      112,
+      856,
+      128
+    ],
+    [
+      888,
+      96,
+      920,
+      128
+    ],
+    [
+      952,
+      80,
+      1008,
+      96
+    ],
+    [
+      1152,
+      112,
+      1176,
+      128
+    ],
+    [
+      1208,
+      96,
+      1280,
+      114
+    ],
+    [
+      1312,
+      48,
+      1320,
+      128
+    ]
+  ],
+  "gate_indices": [
+    2,
+    12
+  ],
+  "door_index": 255,
+  "courts": [
+    {
+      "entry": 128,
+      "bell_x": 224,
+      "bell_y": 120,
+      "gate": 280
+    },
+    {
+      "entry": 1136,
+      "bell_x": 1256,
+      "bell_y": 56,
+      "gate": 1312
+    }
+  ],
+  "camera_entries": [
+    136,
+    1178
+  ],
+  "camera_centers": [
+    216,
+    1240
+  ],
+  "gaps": [
+    [
+      504,
+      536,
+      192
+    ],
+    [
+      624,
+      664,
+      192
+    ],
+    [
+      1024,
+      1064,
+      192
+    ]
+  ],
+  "goons": [
+    [
+      424,
+      472
+    ],
+    [
+      704,
+      760
+    ],
+    [
+      1068,
+      1104
+    ]
+  ],
+  "goon_heights": [
+    128,
+    96,
+    128
+  ],
+  "balls": [
+    [
+      56,
+      124
+    ],
+    [
+      576,
+      76
+    ],
+    [
+      984,
+      76
+    ]
+  ],
+  "sections": [
+    {
+      "screens": "1\u20132",
+      "name": "The table bell",
+      "action": "Roll wool under the first table to open the dining hall."
+    },
+    {
+      "screens": "3\u20135",
+      "name": "Across the feast",
+      "action": "Jump between long tabletops, staying above the patrolling goons. Optional wool waits on the highest table."
+    },
+    {
+      "screens": "6\u20137",
+      "name": "Chairs and cake stands",
+      "action": "Use a chair and sideboard to climb again, then jump down across the last channel."
+    },
+    {
+      "screens": "8\u20139",
+      "name": "The wedding photo",
+      "action": "Carry wool into the open cake court, climb the table and lob up to the last bell."
+    }
+  ]
+}

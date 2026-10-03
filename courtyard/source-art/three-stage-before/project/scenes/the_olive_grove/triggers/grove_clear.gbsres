@@ -1,0 +1,23 @@
+{
+  "_resourceType": "trigger",
+  "id": "e3c551a5-8663-5361-93c4-31f6eb5036bc",
+  "_index": 0,
+  "symbol": "trigger_grove_clear",
+  "prefabId": "",
+  "name": "Grove clear",
+  "x": 214,
+  "y": 12,
+  "width": 6,
+  "height": 5,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "abb762f0-3ec4-49d6-946f-5aab3a9b294b",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": "GROVE CLEAR!\nWEDDING AHEAD\nSTART: RETRY"
+      }
+    }
+  ],
+  "leaveScript": []
+}

@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "07a74316-6a01-52cf-b7c2-dcd53766c24a",
+  "_index": 0,
+  "symbol": "trigger_wedding_photo_finish",
+  "prefabId": "",
+  "name": "Wedding photo finish",
+  "x": 174,
+  "y": 12,
+  "width": 6,
+  "height": 5,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "ef370a00-1001-4000-8000-000000000036",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "663d17cc-23c5-53cc-ac18-5347847d9068",
+        "x": {
+          "type": "number",
+          "value": 4
+        },
+        "y": {
+          "type": "number",
+          "value": 15
+        },
+        "direction": "right",
+        "fadeSpeed": "1"
+      }
+    }
+  ],
+  "leaveScript": []
+}

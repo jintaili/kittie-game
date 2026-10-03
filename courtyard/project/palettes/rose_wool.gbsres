@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "kittie-wool-rose",
+  "name": "Rose wool",
+  "colors": [
+    "F5EDD8",
+    "FFD0D8",
+    "D87098",
+    "733B65"
+  ],
+  "defaultName": "Rose wool",
+  "defaultColors": [
+    "F5EDD8",
+    "FFD0D8",
+    "D87098",
+    "733B65"
+  ]
+}

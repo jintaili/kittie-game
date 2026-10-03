@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "default-bg-4",
+  "name": "Limestone terraces",
+  "colors": [
+    "F5EDD8",
+    "D8C29D",
+    "A18969",
+    "4C4941"
+  ],
+  "defaultName": "Default BG 4",
+  "defaultColors": [
+    "B8D0D0",
+    "D880D8",
+    "8000A0",
+    "380000"
+  ]
+}

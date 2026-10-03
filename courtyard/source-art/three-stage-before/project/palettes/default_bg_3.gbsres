@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "default-bg-3",
+  "name": "Olive garden",
+  "colors": [
+    "F5EDD8",
+    "AAC47C",
+    "66834F",
+    "344C3F"
+  ],
+  "defaultName": "Default BG 3",
+  "defaultColors": [
+    "F8D8A8",
+    "E0A878",
+    "785888",
+    "002030"
+  ]
+}

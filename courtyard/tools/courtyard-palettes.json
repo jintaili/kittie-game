@@ -1,0 +1,198 @@
+[
+  {
+    "x": 0,
+    "y": 0,
+    "width": 160,
+    "height": 18,
+    "slot": 0
+  },
+  {
+    "x": 0,
+    "y": 3,
+    "width": 11,
+    "height": 3,
+    "slot": 1
+  },
+  {
+    "x": 31,
+    "y": 7,
+    "width": 2,
+    "height": 4,
+    "slot": 2
+  },
+  {
+    "x": 60,
+    "y": 5,
+    "width": 8,
+    "height": 11,
+    "slot": 2
+  },
+  {
+    "x": 107,
+    "y": 5,
+    "width": 8,
+    "height": 11,
+    "slot": 2
+  },
+  {
+    "x": 0,
+    "y": 16,
+    "width": 160,
+    "height": 2,
+    "slot": 3
+  },
+  {
+    "x": 13,
+    "y": 14,
+    "width": 3,
+    "height": 2,
+    "slot": 3
+  },
+  {
+    "x": 13,
+    "y": 13,
+    "width": 3,
+    "height": 1,
+    "slot": 2
+  },
+  {
+    "x": 23,
+    "y": 13,
+    "width": 4,
+    "height": 3,
+    "slot": 3
+  },
+  {
+    "x": 23,
+    "y": 12,
+    "width": 4,
+    "height": 1,
+    "slot": 2
+  },
+  {
+    "x": 28,
+    "y": 10,
+    "width": 4,
+    "height": 1,
+    "slot": 3
+  },
+  {
+    "x": 28,
+    "y": 9,
+    "width": 4,
+    "height": 1,
+    "slot": 2
+  },
+  {
+    "x": 33,
+    "y": 14,
+    "width": 3,
+    "height": 2,
+    "slot": 3
+  },
+  {
+    "x": 39,
+    "y": 14,
+    "width": 1,
+    "height": 2,
+    "slot": 3
+  },
+  {
+    "x": 83,
+    "y": 14,
+    "width": 2,
+    "height": 2,
+    "slot": 3
+  },
+  {
+    "x": 88,
+    "y": 12,
+    "width": 3,
+    "height": 1,
+    "slot": 3
+  },
+  {
+    "x": 96,
+    "y": 10,
+    "width": 7,
+    "height": 1,
+    "slot": 3
+  },
+  {
+    "x": 130,
+    "y": 14,
+    "width": 3,
+    "height": 2,
+    "slot": 3
+  },
+  {
+    "x": 138,
+    "y": 11,
+    "width": 8,
+    "height": 5,
+    "slot": 0
+  },
+  {
+    "x": 56,
+    "y": 4,
+    "width": 4,
+    "height": 12,
+    "slot": 3
+  },
+  {
+    "x": 52,
+    "y": 9,
+    "width": 3,
+    "height": 2,
+    "slot": 5
+  },
+  {
+    "x": 147,
+    "y": 4,
+    "width": 3,
+    "height": 12,
+    "slot": 3
+  },
+  {
+    "x": 142,
+    "y": 14,
+    "width": 3,
+    "height": 2,
+    "slot": 5
+  },
+  {
+    "x": 77,
+    "y": 16,
+    "width": 4,
+    "height": 2,
+    "slot": 4
+  },
+  {
+    "x": 93,
+    "y": 16,
+    "width": 4,
+    "height": 2,
+    "slot": 4
+  },
+  {
+    "x": 118,
+    "y": 16,
+    "width": 4,
+    "height": 2,
+    "slot": 4
+  },
+  {
+    "x": 150,
+    "y": 6,
+    "width": 10,
+    "height": 2,
+    "slot": 5
+  },
+  {
+    "x": 152,
+    "y": 5,
+    "width": 8,
+    "height": 11,
+    "slot": 2
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "default-bg-5",
+  "name": "Irrigation water",
+  "colors": [
+    "F5EDD8",
+    "83C7DC",
+    "4889AF",
+    "294C73"
+  ],
+  "defaultName": "Default BG 5",
+  "defaultColors": [
+    "F8F8B8",
+    "90C8C8",
+    "486878",
+    "082048"
+  ]
+}

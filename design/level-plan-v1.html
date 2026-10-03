@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kittie: courtyard level design</title>
+<style>
+:root{color-scheme:light dark}body{font:16px/1.6 system-ui,sans-serif;max-width:880px;margin:40px auto;padding:0 24px;color:light-dark(#292620,#e9e3d9);background:light-dark(#faf8f3,#20201e)}h1,h2{line-height:1.2}h1{font-size:2rem}h2{font-size:1.25rem;margin-top:2rem}a{color:light-dark(#425b85,#adcbf5)}table{width:100%;border-collapse:collapse}th,td{text-align:left;vertical-align:top;padding:10px;border-bottom:1px solid light-dark(#ccc7bd,#54514a)}small{opacity:.8}.map{width:100%;height:auto}svg text{font:14px system-ui;fill:currentColor}svg .block{fill:light-dark(#d5cebf,#575044);stroke:currentColor}svg .route{stroke:light-dark(#416959,#9dceb4);fill:none;stroke-width:3;stroke-dasharray:6 4}svg .ball{fill:light-dark(#986526,#e2b470)}.table-wrap{overflow-x:auto}@media print{body{margin:0;color:#222;background:white}h2{break-after:avoid}tr{break-inside:avoid}}
+</style></head><body>
+<p><small>Design draft 1 · September 30, 2026 · Proposed next level, not implemented</small></p>
+<h1>Kittie, the photo is this way</h1>
+<p>Kittie hops through the furniture in a Tuscan wedding courtyard. A gate separates him from the photo spot. His wool ball can reach the bell beside it. One good lob, the gate opens, and he joins the picture.</p>
+<p><strong>One ball purpose:</strong> ring the bell to open the gate. B bats; Up+B lobs. Rebounds are a consequence of aiming. The ball does not boost Kittie's jump or power other objects.</p>
+<svg class="map" viewBox="0 0 720 240" role="img" aria-labelledby="map-title map-desc"><title id="map-title">Three-screen courtyard plan</title><desc id="map-desc">Start at x32, planter112, bench184, lip248, wool ball300, bell366, gate398, photo450. Safe floor under every obstacle.</desc>
+<path d="M10 205H710" stroke="currentColor" fill="none"/>
+<path d="M244 38V221M477 38V221" stroke="currentColor" opacity=".25" fill="none"/>
+<text x="10" y="24">Screen 1</text><text x="254" y="24">Screen 2</text><text x="487" y="24">Screen 3</text>
+<rect x="173" y="182" width="35" height="23" class="block"/><text x="190" y="171" text-anchor="middle">Planter</text>
+<rect x="278" y="170" width="59" height="35" class="block"/><text x="307" y="158" text-anchor="middle">Bench</text>
+<rect x="372" y="182" width="12" height="23" class="block"/><text x="378" y="170" text-anchor="middle">Lip</text>
+<circle cx="448" cy="198" r="7" class="ball"/><text x="448" y="222" text-anchor="middle">Wool</text>
+<rect x="535" y="130" width="20" height="14" class="block"/><text x="545" y="117" text-anchor="middle">Bell</text>
+<rect x="590" y="88" width="12" height="117" class="block"/><text x="596" y="77" text-anchor="middle">Gate</text>
+<rect x="644" y="181" width="42" height="24" fill="none" stroke="currentColor" stroke-dasharray="3 3"/><text x="665" y="170" text-anchor="middle">Photo</text>
+<text x="57" y="194" text-anchor="middle">Kittie</text>
+<path d="M128 200Q162 118 221 193M223 200Q268 103 310 164M337 170Q364 112 417 201" class="route"/>
+<path d="M448 198Q495 91 545 132" fill="none" stroke="currentColor" stroke-width="2"/>
+</svg>
+<p><small>Overview is schematic. Coordinates below define the proposed geometry. Dashed paths show the intended jump route, not sampled game trajectories.</small></p>
+<h2>What the player does</h2>
+<ol>
+<li><strong>Find the direction.</strong> Kittie starts at x32 on flat paving. A wedding sign points right toward the photo. The first broad planter is the only obstruction. A small A prompt teaches jumping when he approaches it.</li>
+<li><strong>Enjoy two easy hops.</strong> A 16-pixel planter leads to a 24-pixel bench. Holding A clears either from the floor. Missing a jump costs only a few steps. The furniture gives the setting a useful role without adding hazards.</li>
+<li><strong>Meet the ball and its purpose together.</strong> Kittie crosses the low lip into a contained court. The camera settles with the ball, bell, and closed gate visible together. The photo direction remains clear. A visible cord links bell and gate latch, making their relationship readable.</li>
+<li><strong>Try a shot.</strong> B sends the ball into the gate and back. Up+B lifts it to the bell. A brief prompt reads “B BAT  ↑+B LOB”. The ball's only target is the bell. Players who lob immediately can succeed immediately; no mandatory failed attempt.</li>
+<li><strong>Join the photo.</strong> A bell movement and chime accompany the latch releasing. The gate stays open. The camera resumes following Kittie into a marked photo spot with the wedding couple beyond. Finish as soon as he reaches it.</li>
+</ol>
+<h2>Geometry for the next blockout</h2>
+<p>World size 480 × 144 pixels, or 60 × 18 tiles. Ground at y128. Positions use pixels from the upper left. Player y means feet; ball coordinates mean center.</p>
+<div class="table-wrap"><table><thead><tr><th>Element</th><th>Proposed placement</th><th>Reason</th></tr></thead><tbody>
+<tr><td>Kittie</td><td>x32, feet y128</td><td>Room to move before the first jump.</td></tr>
+<tr><td>Planter</td><td>x112–136, top y112</td><td>16px rise and 24px width.</td></tr>
+<tr><td>Bench</td><td>x184–224, top y104</td><td>24px rise, broad landing. Solid rectangular blockout.</td></tr>
+<tr><td>Court lip</td><td>x248–256, top y112</td><td>Kittie hops over; low ball shots return locally.</td></tr>
+<tr><td>Wool ball</td><td>x300, y123</td><td>First encountered inside the bell court.</td></tr>
+<tr><td>Comfortable shot position</td><td>Kittie x274–285, facing right</td><td>Within the existing swat reach. No marked pixel-perfect spot required.</td></tr>
+<tr><td>Bell</td><td>Center x366, y80</td><td>Use current generous trigger: |dx| &lt; 13 and |dy| &lt; 13.</td></tr>
+<tr><td>Gate</td><td>x398–406, y48–128</td><td>Too tall to jump; visible beside the bell.</td></tr>
+<tr><td>Photo spot</td><td>x439–467, finish near x450</td><td>A short walk after success, no further challenge.</td></tr>
+</tbody></table></div>
+<h2>Camera and recovery</h2>
+<p>Follow Kittie during the approach. On arrival inside the lip, frame x248–408 for the bell court. Keep aiming position, ball, bell, and gate on screen. Release that framing when the gate opens; x450 must remain visible as Kittie reaches the photo. Verify the camera handoff on hardware-sized output before adjusting decorations.</p>
+<p>Select resets the ball to x300,y123 with zero velocity after Kittie has entered the court. The reset point is fixed and visible. Entering the court alone does not teleport the ball. Show “SELECT: RESET BALL” after a miss or when the ball escapes. No lives, timer, replay of the jump section, or new automatic rescue behavior is required for this draft. After the gate opens, Select never closes it.</p>
+<p>A low shot should rebound at ball center x393 and return toward x261 at the lip. A high miss can leave the court; Select is the recovery. Do not automatically reset at those rebound positions. Facing left, jumping while batting, and repeated button presses must remain recoverable.</p>
+<h2>Why this layout</h2>
+<p>In Nintendo's account of <em>Super Mario Bros.</em> World 1-1, the first pipe turns the mushroom back toward the player. The layout teaches through a visible consequence. Our adaptation is the court wall returning a low shot, with no damage or lost progress. <a href="https://iwataasks.nintendo.com/interviews/wii/nsmb/0/3/">Nintendo interview: the first mushroom</a>.</p>
+<p>Nintendo also describes working through layouts on paper, considering alternate outcomes, and moving easier encounters earlier after beginner tests. That supports designing the bell encounter first and preparing the player with a short, forgiving approach. This is our application of their process, not a copied level. <a href="https://iwataasks.nintendo.com/interviews/wii/nsmb/1/4/">Nintendo interview: adjusting the map</a>.</p>
+<p>The design agent proposed a separate practice ball before the court. The critic found that a likely follow-up lob could ring the bell offscreen. I chose one contained court instead. It gives the ball an immediate purpose and avoids adding camera rules merely to support another tutorial obstacle.</p>
+<p>Tuscany comes through in courtyard paving, terracotta planters, a wedding bench, the gate, and the photo spot. These are proposed scene details, not claims about the real venue. Kittie remains male, low and long, with his fixed embroidered smile and short plush legs. Decorative tailoring comes after the course plays well.</p>
+<h2>Checked now, still to test</h2>
+<p>Using the current movement constants, a held jump rises 33.25px and travels about 61.75px before returning to the same height. The proposed 16px and 24px rises fit that envelope. A lob from x300,y123 reaches x366,y77.625 after 22 frames before collisions, comfortably overlapping the proposed bell. These are source-derived calculations. They do not prove the new level is playable.</p>
+<p>The proposed scene has not been built or playtested. The existing playable prototype remains the earlier layout. Expect a brief introductory level; a 30–60 second first visit is only a hypothesis, and a familiar player may finish much faster. Do not add empty distance to meet a duration target.</p>
+<ol>
+<li>Build the final court first. Confirm both the low-shot rebound and direct lob in the real ROM.</li>
+<li>Add the approach and check all required jumps from the floor, including an early release of A.</li>
+<li>Verify local reset, left-facing shots, high misses, camera release, persistent gate opening, finish, and restart.</li>
+<li>Give the level to someone who has not read these notes. Watch whether they know where to go, understand what opened the gate, and enjoy trying again. If the ball encounter feels weak, revise that encounter before extending the level.</li>
+</ol>
+<p>The next build needs geometry, camera framing, a local reset anchor, brief control hints, and bell feedback. Remove the old ramp trigger. Keep the current simple movement and ball physics until real play reveals a specific reason to change them.</p>
+</body></html>

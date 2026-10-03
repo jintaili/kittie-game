@@ -1,0 +1,9 @@
+courtyard/build/
+courtyard/artifacts/
+courtyard/save-states/
+.DS_Store
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example

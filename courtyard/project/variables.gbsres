@@ -1,0 +1,16 @@
+{
+  "_resourceType": "variables",
+  "variables": [
+    {
+      "id": "100",
+      "name": "Highest unlocked stage",
+      "symbol": "var_stage_unlock"
+    },
+    {
+      "id": "101",
+      "name": "Stage menu choice",
+      "symbol": "var_stage_choice"
+    }
+  ],
+  "constants": []
+}
