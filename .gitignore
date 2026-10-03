@@ -7,3 +7,6 @@ __pycache__/
 .env
 .env.*
 !.env.example
+
+# Packaged ROMs are published as GitHub release assets.
+dist/

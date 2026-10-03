@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0",
+  "date": "2026-10-02",
+  "title": "Kittie Has Other Plans",
+  "asset": "kittie-has-other-plans-v1.0.0.gbc",
+  "sha256": "08d2d326f59b1c0f2f86c9c1e9c60b79329e8d19dbf77190699826d1c7f05e7d",
+  "sizeBytes": 131072,
+  "platform": "Game Boy Color / ModRetro Chromatic",
+  "screens": {
+    "courtyard": 8,
+    "oliveGrove": 11,
+    "banquet": 9
+  },
+  "physicalWoolPerStage": 3,
+  "sourceCandidate": "courtyard/build/kittie-grove-review-2.gbc",
+  "downloadUrl": "https://github.com/jintaili/kittie-game/releases/download/v1.0.0/kittie-has-other-plans-v1.0.0.gbc",
+  "hardwareFeedback": {
+    "status": "passed as reported by user",
+    "date": "2026-10-02",
+    "scope": "User reported the Chromatic test was great; specific cartridge hash and individual hardware checks were not enumerated."
+  },
+  "emulatorVerification": "Latest complete main cartridge finished all three stages and recovered unlock3 after native soft restart. See verification.json."
+}

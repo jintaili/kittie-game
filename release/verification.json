@@ -1,0 +1,5865 @@
+{
+  "romSha256": "08d2d326f59b1c0f2f86c9c1e9c60b79329e8d19dbf77190699826d1c7f05e7d",
+  "initialFrames": 180,
+  "actions": [
+    {
+      "input": {
+        "buttons": [
+          "a"
+        ],
+        "frames": 2
+      },
+      "frame": 182,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 2,
+        "startFrame": 180,
+        "frame": 182,
+        "advancedFrames": 2,
+        "appliedButtons": [
+          "a"
+        ],
+        "sampledButtons": [
+          "a"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 182,
+          "width": 160,
+          "height": 144,
+          "sha256": "0d6178090919995878cb6a636c58059816c5e135d960d24c0d7413f383002046",
+          "rgbaSha256": "df3dea4ec13770a4187212e7ee3643bedb13ee61b7d762d18bc0a2d8eccd3e7f",
+          "sampledButtons": [
+            "a"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [],
+        "frames": 25
+      },
+      "frame": 207,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 25,
+        "startFrame": 182,
+        "frame": 207,
+        "advancedFrames": 25,
+        "appliedButtons": [],
+        "sampledButtons": []
+      },
+      "samples": [
+        {
+          "frame": 207,
+          "width": 160,
+          "height": 144,
+          "sha256": "3aede34b2b96ea2190c5a3a56492d1ba6aa6d518915fe6ed55aec1fdc3795670",
+          "rgbaSha256": "7d1c3cc425ddc746f9428a11d5836b9e16efc1dcc917495bd13d32fbded80810",
+          "sampledButtons": []
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "a"
+        ],
+        "frames": 2
+      },
+      "frame": 209,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 2,
+        "startFrame": 207,
+        "frame": 209,
+        "advancedFrames": 2,
+        "appliedButtons": [
+          "a"
+        ],
+        "sampledButtons": [
+          "a"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 209,
+          "width": 160,
+          "height": 144,
+          "sha256": "3aede34b2b96ea2190c5a3a56492d1ba6aa6d518915fe6ed55aec1fdc3795670",
+          "rgbaSha256": "7d1c3cc425ddc746f9428a11d5836b9e16efc1dcc917495bd13d32fbded80810",
+          "sampledButtons": [
+            "a"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [],
+        "frames": 90
+      },
+      "frame": 299,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 90,
+        "startFrame": 209,
+        "frame": 299,
+        "advancedFrames": 90,
+        "appliedButtons": [],
+        "sampledButtons": []
+      },
+      "samples": [
+        {
+          "frame": 299,
+          "width": 160,
+          "height": 144,
+          "sha256": "670e3274f027f544a2fec25276110630b15096e6b480abe748368ab723810aba",
+          "rgbaSha256": "26552af12409cac2beb9edcc4555257c900503355f3d5cddf972530a30caa3d1",
+          "sampledButtons": []
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 38
+      },
+      "frame": 337,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 38,
+        "startFrame": 299,
+        "frame": 337,
+        "advancedFrames": 38,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 337,
+          "width": 160,
+          "height": 144,
+          "sha256": "8513596d32bb85f0852e5c93932386215b8f8af01ef4b1c5c402cf0a4cf0e5bf",
+          "rgbaSha256": "b1a166db970bcc67b6fa13053cc616d8d796604e764d841771d95238ea398230",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 35
+      },
+      "frame": 372,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 35,
+        "startFrame": 337,
+        "frame": 372,
+        "advancedFrames": 35,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 372,
+          "width": 160,
+          "height": 144,
+          "sha256": "42d35b163693520879ddcf0ba4149900cf981c58a849a484cadc211d6252a18c",
+          "rgbaSha256": "8f62dab77fa4711876f641025065b1587245621a1fd4ba818112d56f1e1a306f",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 10
+      },
+      "frame": 382,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 10,
+        "startFrame": 372,
+        "frame": 382,
+        "advancedFrames": 10,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 382,
+          "width": 160,
+          "height": 144,
+          "sha256": "100ec9f6d2fc73e220e62c6233299b95a9bddc4ac903a714157816fe52f68590",
+          "rgbaSha256": "bf199326d8c83fa5f7c7bd66c000b778f524966e8ff71a3520bdf0528d11365c",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 26
+      },
+      "frame": 408,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 26,
+        "startFrame": 382,
+        "frame": 408,
+        "advancedFrames": 26,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 408,
+          "width": 160,
+          "height": 144,
+          "sha256": "88d9b4acf03983e9cc3bc4c708f2acae6f6cac815efd06bd49cc37d0fc38bb28",
+          "rgbaSha256": "8b0119d50c372425f014830e0991527172710bdabdfb029ded8becc8027ea6a2",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [],
+        "frames": 8
+      },
+      "frame": 416,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 8,
+        "startFrame": 408,
+        "frame": 416,
+        "advancedFrames": 8,
+        "appliedButtons": [],
+        "sampledButtons": []
+      },
+      "samples": [
+        {
+          "frame": 416,
+          "width": 160,
+          "height": 144,
+          "sha256": "de9d54292c08052a55764488b5479df826840ba2c5ce04b1549d1068b141097a",
+          "rgbaSha256": "e66d70a923173566f19769471c809eaa0719ccc97be3687c222a348d5c363e13",
+          "sampledButtons": []
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 34
+      },
+      "frame": 450,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 34,
+        "startFrame": 416,
+        "frame": 450,
+        "advancedFrames": 34,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 450,
+          "width": 160,
+          "height": 144,
+          "sha256": "5bd119ccd212ca4c9f4b4ead41cd5182972eed973945c04b549379591aeae582",
+          "rgbaSha256": "402533559118145b1da4502b306e22f261566e3eb2f83d40c8ebf05906806d03",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 36
+      },
+      "frame": 486,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 36,
+        "startFrame": 450,
+        "frame": 486,
+        "advancedFrames": 36,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 486,
+          "width": 160,
+          "height": 144,
+          "sha256": "2e658b23a97026c9f7ee44a626a4c89a5f784c918522edfa8831faa1d54cc739",
+          "rgbaSha256": "d00fda44b30c037b49f053d2929677d75ad8858ec48df8d13cb00120e217c857",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [],
+        "frames": 8
+      },
+      "frame": 494,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 8,
+        "startFrame": 486,
+        "frame": 494,
+        "advancedFrames": 8,
+        "appliedButtons": [],
+        "sampledButtons": []
+      },
+      "samples": [
+        {
+          "frame": 494,
+          "width": 160,
+          "height": 144,
+          "sha256": "ec09a1183ff751f9a3755f7e02d6cd000921e1ffcdc9a7900e38843dace5f526",
+          "rgbaSha256": "760fef5982c3206c691f45e96d13dd306c696aeb3ede5375eccb0cfad2af0089",
+          "sampledButtons": []
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 36
+      },
+      "frame": 530,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 36,
+        "startFrame": 494,
+        "frame": 530,
+        "advancedFrames": 36,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 530,
+          "width": 160,
+          "height": 144,
+          "sha256": "b39dba9bbaea836adc8db9a3a9153b45e25151c11268ec0e6fa37a48f717013f",
+          "rgbaSha256": "364b37956af9027ee4b3ba786b3e3d6d5ea7b5ad355d491f4271d3bb2e5c0e9c",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 9
+      },
+      "frame": 539,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 9,
+        "startFrame": 530,
+        "frame": 539,
+        "advancedFrames": 9,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 539,
+          "width": 160,
+          "height": 144,
+          "sha256": "6c45a4a64cab14094d45d3e65a6c4b6f161335556e9e410e23dbdb14a4a15c8f",
+          "rgbaSha256": "bc42ddd6550bf80c256af28b5459f2ac1baf66186136fcc7ca684f3bbb3b5a43",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "up",
+          "b"
+        ],
+        "frames": 24
+      },
+      "frame": 563,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 24,
+        "startFrame": 539,
+        "frame": 563,
+        "advancedFrames": 24,
+        "appliedButtons": [
+          "b",
+          "up"
+        ],
+        "sampledButtons": [
+          "b",
+          "up"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 563,
+          "width": 160,
+          "height": 144,
+          "sha256": "49605ad54f3b0592062897b3fa492490f127c6259528f66801790ea87697bad1",
+          "rgbaSha256": "e14a6388a8aa6eb5bf663e540bdfb223e0910548aa5914c5aedcbdb325c24139",
+          "sampledButtons": [
+            "b",
+            "up"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [],
+        "frames": 50
+      },
+      "frame": 613,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 50,
+        "startFrame": 563,
+        "frame": 613,
+        "advancedFrames": 50,
+        "appliedButtons": [],
+        "sampledButtons": []
+      },
+      "samples": [
+        {
+          "frame": 613,
+          "width": 160,
+          "height": 144,
+          "sha256": "3b3e1282f73222110667d6fc9ba6c43c7bde9d6e3c0f071b62de37f13643f535",
+          "rgbaSha256": "d9d06a3260815ed6f79ab11403d8d744afd96b17fbbc04e802dc5bd0398ae494",
+          "sampledButtons": []
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 88
+      },
+      "frame": 701,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 88,
+        "startFrame": 613,
+        "frame": 701,
+        "advancedFrames": 88,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 701,
+          "width": 160,
+          "height": 144,
+          "sha256": "dd519abd59e144ffb113487a994c5ace6b5843b8f0502d4a78af3255cc68b78a",
+          "rgbaSha256": "a68c4c37e95134762a21abfdb528dfff35269a5417d16c2fb501f2cf7a0097ac",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "b"
+        ],
+        "frames": 22
+      },
+      "frame": 723,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 22,
+        "startFrame": 701,
+        "frame": 723,
+        "advancedFrames": 22,
+        "appliedButtons": [
+          "b"
+        ],
+        "sampledButtons": [
+          "b"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 723,
+          "width": 160,
+          "height": 144,
+          "sha256": "caa73ad3257e3476fb96b9b91196dcbf9478b36aa3828ae95fb7a12e1d92e023",
+          "rgbaSha256": "28a26e206c3f9fbbd8819bfbb053a08b3c4c7551dc3afd30ee8ed6943b38b20b",
+          "sampledButtons": [
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 54
+      },
+      "frame": 777,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 54,
+        "startFrame": 723,
+        "frame": 777,
+        "advancedFrames": 54,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 777,
+          "width": 160,
+          "height": 144,
+          "sha256": "df6a98cd5ff473ba7531288a68956f8ac62578fcdf49b97fef3e70f00a90a444",
+          "rgbaSha256": "a66e82199e593ebf1e9751bbcffebd8cc03279a11db73d7fd018f8ccd3ce403d",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 9
+      },
+      "frame": 786,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 9,
+        "startFrame": 777,
+        "frame": 786,
+        "advancedFrames": 9,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 786,
+          "width": 160,
+          "height": 144,
+          "sha256": "d5e46599e483eacd0d5b0b2f9dccb689a7cb9eeb7436a0b344e8cc8a7948167c",
+          "rgbaSha256": "b289fcde352153cd4b6e8e161f6eaee2edc3e699ecff59ebd415463b3e0a8b7d",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 30
+      },
+      "frame": 816,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 30,
+        "startFrame": 786,
+        "frame": 816,
+        "advancedFrames": 30,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 816,
+          "width": 160,
+          "height": 144,
+          "sha256": "291ae273cb43ed4469b8523152a7bb707d9d1555e8fd3950865a2bd6beebf101",
+          "rgbaSha256": "874e78b9e1c16f8bbceafe8376ba89c380cd7dc55498af270015b5e71b306afe",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 8
+      },
+      "frame": 824,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 8,
+        "startFrame": 816,
+        "frame": 824,
+        "advancedFrames": 8,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 824,
+          "width": 160,
+          "height": 144,
+          "sha256": "a34b959f05810b938382c7b643b5e10bc1401b72c5403d3df195a71be624ecaf",
+          "rgbaSha256": "a1ade5523c5180e3870558631042f82424aadcdc98ffb0ddcdfc1a08bab05940",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 28
+      },
+      "frame": 852,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 28,
+        "startFrame": 824,
+        "frame": 852,
+        "advancedFrames": 28,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 852,
+          "width": 160,
+          "height": 144,
+          "sha256": "65562cf4f0271fff86a51d0507feb5cb7bb097849d94185e71dd3c6e76a060ec",
+          "rgbaSha256": "f6c61588416ede8d0e09d10d17ffae3e36c3ae6faba5d298fe955fa08545f403",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 8
+      },
+      "frame": 860,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 8,
+        "startFrame": 852,
+        "frame": 860,
+        "advancedFrames": 8,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 860,
+          "width": 160,
+          "height": 144,
+          "sha256": "5342d74c77978fe85042448684797717ea61746baae287c97a6fc914abc01b1f",
+          "rgbaSha256": "9f380a469e55a55b79ae24818a3497ef46c07ac73644e5d18cdfd664f1a46aa8",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 32
+      },
+      "frame": 892,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 32,
+        "startFrame": 860,
+        "frame": 892,
+        "advancedFrames": 32,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 892,
+          "width": 160,
+          "height": 144,
+          "sha256": "d826496517ab89a6c164b9557109b0e241d53f39e4babb88b1d32b2b584df8fd",
+          "rgbaSha256": "008dd8e03ce74b21c507e6acb73eb62739e94bcb82cbc34ceae16b1c6fcd6383",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [],
+        "frames": 4
+      },
+      "frame": 896,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 4,
+        "startFrame": 892,
+        "frame": 896,
+        "advancedFrames": 4,
+        "appliedButtons": [],
+        "sampledButtons": []
+      },
+      "samples": [
+        {
+          "frame": 896,
+          "width": 160,
+          "height": 144,
+          "sha256": "7e404fe22638ef3bf4f1bb59da4e33854fbb3d55972139e61bd40deb3612b8d9",
+          "rgbaSha256": "299dcd4107db8985b0101537015d0cd038ca5cf8536fecdadc17411f48221987",
+          "sampledButtons": []
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "left"
+        ],
+        "frames": 3
+      },
+      "frame": 899,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 3,
+        "startFrame": 896,
+        "frame": 899,
+        "advancedFrames": 3,
+        "appliedButtons": [
+          "left"
+        ],
+        "sampledButtons": [
+          "left"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 899,
+          "width": 160,
+          "height": 144,
+          "sha256": "c3a652efae8949da135196415ec483d4caa2e0e5f6f9e55c6d31c6d91bf8c457",
+          "rgbaSha256": "bcacd9ff139e4150e5a7d0278d0568323820da5bd5f9290f3ca0bade229dd1f6",
+          "sampledButtons": [
+            "left"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 38
+      },
+      "frame": 937,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 38,
+        "startFrame": 899,
+        "frame": 937,
+        "advancedFrames": 38,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 937,
+          "width": 160,
+          "height": 144,
+          "sha256": "2d57b77ceb71606f11456e173aa3a2a47a30459d570f02837b254a48c86b2de1",
+          "rgbaSha256": "9c0576f7e338232b8b8ca7189f680ec0015bc2d22438cc09cefaa574ef9cce68",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 11
+      },
+      "frame": 948,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 11,
+        "startFrame": 937,
+        "frame": 948,
+        "advancedFrames": 11,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 948,
+          "width": 160,
+          "height": 144,
+          "sha256": "d89a4cf55a05157683aaedc4009a207bd4b258e9fca162adabb857ca6a38a91f",
+          "rgbaSha256": "36d32f7c0ee70e0d1e02173d2aecc4c83ce27e289e64617d2c9504025f6009dd",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [],
+        "frames": 20
+      },
+      "frame": 968,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 20,
+        "startFrame": 948,
+        "frame": 968,
+        "advancedFrames": 20,
+        "appliedButtons": [],
+        "sampledButtons": []
+      },
+      "samples": [
+        {
+          "frame": 968,
+          "width": 160,
+          "height": 144,
+          "sha256": "7e5ee90714ea77b71cb0721fbfc52186a6549952c0cfd2735dc0f3959d136147",
+          "rgbaSha256": "d74d298bfd4679bbdc7afd750f5d231109e7bd1d1154b036018bbcd33eb3db15",
+          "sampledButtons": []
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "b"
+        ],
+        "frames": 22
+      },
+      "frame": 990,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 22,
+        "startFrame": 968,
+        "frame": 990,
+        "advancedFrames": 22,
+        "appliedButtons": [
+          "b"
+        ],
+        "sampledButtons": [
+          "b"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 990,
+          "width": 160,
+          "height": 144,
+          "sha256": "a0470d54b41b8c11c0a620e16fde2af155929980d6a0433ddbc1aa857cd327ec",
+          "rgbaSha256": "70e17dbf1d88829830dec5c8d6e8dca666f4274b626aae300fd18236adb10e1b",
+          "sampledButtons": [
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 48
+      },
+      "frame": 1038,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 48,
+        "startFrame": 990,
+        "frame": 1038,
+        "advancedFrames": 48,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 1038,
+          "width": 160,
+          "height": 144,
+          "sha256": "172074ab37d2364443aa3d316404d7ac1bb4086d2118842dcb29149cb5887bc0",
+          "rgbaSha256": "8e33914931a73eddc6b6689512e09b300fd2bcd3fbfd4b5b9fa996a993542c93",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 34
+      },
+      "frame": 1072,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 34,
+        "startFrame": 1038,
+        "frame": 1072,
+        "advancedFrames": 34,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 1072,
+          "width": 160,
+          "height": 144,
+          "sha256": "8e457320cb5f400a688bcde061619f64ac8edd35130e615bed6c167ae559c4e1",
+          "rgbaSha256": "7ee9b8249dde93ca91e7051bfb057162daa2484f0e0be94dae6177003830dbe7",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 23
+      },
+      "frame": 1095,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 23,
+        "startFrame": 1072,
+        "frame": 1095,
+        "advancedFrames": 23,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 1095,
+          "width": 160,
+          "height": 144,
+          "sha256": "b02dda8d59874c4e2a563820890047cee4b08ad35f81361da7f56f5d1ca205ec",
+          "rgbaSha256": "a686957b05636a7bbf0759283744a17b0e7a8296ee62da73b12b85a94d392ff2",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 30
+      },
+      "frame": 1125,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 30,
+        "startFrame": 1095,
+        "frame": 1125,
+        "advancedFrames": 30,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 1125,
+          "width": 160,
+          "height": 144,
+          "sha256": "9f46f21ec1fba1a25ce8bccda1073c971f5fe68558e5bf81530a8e7dba8ec5b9",
+          "rgbaSha256": "21c034f7911ad60abd2bc19dadde012b2e8bdc37d86e53bfa80d854518f66fa1",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 5
+      },
+      "frame": 1130,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 5,
+        "startFrame": 1125,
+        "frame": 1130,
+        "advancedFrames": 5,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 1130,
+          "width": 160,
+          "height": 144,
+          "sha256": "42ba67bf8d18e06a44efa6b13af2773e23652f16dc2e95c0e8d4560371c3a74b",
+          "rgbaSha256": "b226e3e29ddf837869bd14866048328b89b4793a0fe79be8f119af9a22c69c94",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 2
+      },
+      "frame": 1132,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 2,
+        "startFrame": 1130,
+        "frame": 1132,
+        "advancedFrames": 2,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 1132,
+          "width": 160,
+          "height": 144,
+          "sha256": "a3b9c3522c9cb438ce74b5542d2b47071a79d879ad35273c9dc9612f67c56388",
+          "rgbaSha256": "43f5dc99ba7066fe2d250c0f949a96fece08b2769a5ef5eb16032fbb11c0ed4a",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 3
+      },
+      "frame": 1135,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 3,
+        "startFrame": 1132,
+        "frame": 1135,
+        "advancedFrames": 3,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 1135,
+          "width": 160,
+          "height": 144,
+          "sha256": "29bc70581be154329affbcd59e39c0dfe2e92ee44c81d8d6e57578e9239510b3",
+          "rgbaSha256": "813def3945d9ce05fe872f1e29c90366683e785b62929736954729b28f68866e",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [],
+        "frames": 15
+      },
+      "frame": 1150,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 15,
+        "startFrame": 1135,
+        "frame": 1150,
+        "advancedFrames": 15,
+        "appliedButtons": [],
+        "sampledButtons": []
+      },
+      "samples": [
+        {
+          "frame": 1150,
+          "width": 160,
+          "height": 144,
+          "sha256": "52776ec6277e3b1a567d83ec833a761754a4602520895035f5c7b57d42c38f43",
+          "rgbaSha256": "c103cf541370c1a34003068543666cc28fd0277b03b00f18478cbe9f5582cd2f",
+          "sampledButtons": []
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "b"
+        ],
+        "frames": 22
+      },
+      "frame": 1172,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 22,
+        "startFrame": 1150,
+        "frame": 1172,
+        "advancedFrames": 22,
+        "appliedButtons": [
+          "b"
+        ],
+        "sampledButtons": [
+          "b"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 1172,
+          "width": 160,
+          "height": 144,
+          "sha256": "b6595c2430abb5bed65293de7ea3c8d6d37af7f17c41bbb9adcb717aeb6ea432",
+          "rgbaSha256": "13bb309dc795c146f20ebf2a125fcbd465f11009d325378be655224166a938f6",
+          "sampledButtons": [
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 35
+      },
+      "frame": 1207,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 35,
+        "startFrame": 1172,
+        "frame": 1207,
+        "advancedFrames": 35,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 1207,
+          "width": 160,
+          "height": 144,
+          "sha256": "790ffb35f6485766a0a391653164ba2fc6b6f65555e669d30dec33f00891e3d0",
+          "rgbaSha256": "a78c0c4419eb172b35d82583bba5f34e65264aaf2f335732d51ccac15549493b",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 85
+      },
+      "frame": 1292,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 85,
+        "startFrame": 1207,
+        "frame": 1292,
+        "advancedFrames": 85,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 1292,
+          "width": 160,
+          "height": 144,
+          "sha256": "825c093e65b66f7fb644bf6cd5539999abbfbe5c8b98abb86ef4f1ee371b3b57",
+          "rgbaSha256": "252e4bc082a9113a50fb4f8ec71bb73d18ffa430d81a451c6bed3dd2e6344d3e",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [],
+        "frames": 80
+      },
+      "frame": 1372,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 80,
+        "startFrame": 1292,
+        "frame": 1372,
+        "advancedFrames": 80,
+        "appliedButtons": [],
+        "sampledButtons": []
+      },
+      "samples": [
+        {
+          "frame": 1372,
+          "width": 160,
+          "height": 144,
+          "sha256": "4f0e627f23fe0044a35c14deee93f1461a2b7c98a6ba0ffbb2483923f35bc9f1",
+          "rgbaSha256": "010479146e6eaf3da549c0a39df86764ffb8d389e313bf52652578aef5731387",
+          "sampledButtons": []
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "a"
+        ],
+        "frames": 90
+      },
+      "frame": 1462,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 90,
+        "startFrame": 1372,
+        "frame": 1462,
+        "advancedFrames": 90,
+        "appliedButtons": [
+          "a"
+        ],
+        "sampledButtons": [
+          "a"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 1462,
+          "width": 160,
+          "height": 144,
+          "sha256": "4abdf7e2c9877b879695fe87220351c998dc497b029877fee37085f132b702ad",
+          "rgbaSha256": "d899a11c21ee39c614e8032043e7e1cc287ed44be464bab3994cf2f1538f8b66",
+          "sampledButtons": [
+            "a"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [],
+        "frames": 1
+      },
+      "frame": 1463,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 1,
+        "startFrame": 1462,
+        "frame": 1463,
+        "advancedFrames": 1,
+        "appliedButtons": [],
+        "sampledButtons": []
+      },
+      "samples": [
+        {
+          "frame": 1463,
+          "width": 160,
+          "height": 144,
+          "sha256": "4abdf7e2c9877b879695fe87220351c998dc497b029877fee37085f132b702ad",
+          "rgbaSha256": "d899a11c21ee39c614e8032043e7e1cc287ed44be464bab3994cf2f1538f8b66",
+          "sampledButtons": []
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 30
+      },
+      "frame": 1493,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 30,
+        "startFrame": 1463,
+        "frame": 1493,
+        "advancedFrames": 30,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 1493,
+          "width": 160,
+          "height": 144,
+          "sha256": "f1e81e4ef2a08aba7ecee5ce1f066e9158d41dbb108660e62f18329e0876a32e",
+          "rgbaSha256": "5d64d780283898a5729f94d7505c80e26ede933bae5509d36ce1bc8965d317eb",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 30
+      },
+      "frame": 1523,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 30,
+        "startFrame": 1493,
+        "frame": 1523,
+        "advancedFrames": 30,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 1523,
+          "width": 160,
+          "height": 144,
+          "sha256": "53647fb75b4f8600917ab1d7d99f4321a32f6bb6eb260b8cd51255c2a5ed0d71",
+          "rgbaSha256": "3357809be894272fa4215de45b247a7d924c4f74743701ca604aea46792f29ef",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 12
+      },
+      "frame": 1535,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 12,
+        "startFrame": 1523,
+        "frame": 1535,
+        "advancedFrames": 12,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 1535,
+          "width": 160,
+          "height": 144,
+          "sha256": "462e8a3dd8b2b41457be9915114899218c4d0dad96ea6a07388d2e0f0b0f63e2",
+          "rgbaSha256": "865d2faa1086a8ab33b280d5b9b7b9f1bb37ac3c51bc1c4643cd611150227448",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 32
+      },
+      "frame": 1567,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 32,
+        "startFrame": 1535,
+        "frame": 1567,
+        "advancedFrames": 32,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 1567,
+          "width": 160,
+          "height": 144,
+          "sha256": "edfe4a6f2aa0970b9a04975bcbb08d4ced97bc33f9868043e99ccd3d2bc9e8dd",
+          "rgbaSha256": "274377b96f9b63b1f956b48f6e715128ce712f1d74dc6e1d9c54c898ca6e88f4",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 5
+      },
+      "frame": 1572,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 5,
+        "startFrame": 1567,
+        "frame": 1572,
+        "advancedFrames": 5,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 1572,
+          "width": 160,
+          "height": 144,
+          "sha256": "aec84caaa5cb53055f162aae8d375d174a0ced0cfc40d530d0c01b91e9821c38",
+          "rgbaSha256": "d1190e972fbc59deda3d926ab237db1e3a73430769f9c4e4ca4d4bd39bed2001",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "b"
+        ],
+        "frames": 35
+      },
+      "frame": 1607,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 35,
+        "startFrame": 1572,
+        "frame": 1607,
+        "advancedFrames": 35,
+        "appliedButtons": [
+          "b",
+          "right"
+        ],
+        "sampledButtons": [
+          "b",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 1607,
+          "width": 160,
+          "height": 144,
+          "sha256": "b9b65b171a35f94a9a15ca3960218c10265353b0886f6905c3a9cebb7d4fd785",
+          "rgbaSha256": "9ed6b18da234eeed5b233d05060e7513b714be4d6512a8c89b5762ca80ec1441",
+          "sampledButtons": [
+            "b",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 23
+      },
+      "frame": 1630,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 23,
+        "startFrame": 1607,
+        "frame": 1630,
+        "advancedFrames": 23,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 1630,
+          "width": 160,
+          "height": 144,
+          "sha256": "4bda5eed644c9e9e2d41055db5ee83662b676908da56d81a8baaaebc2de9f263",
+          "rgbaSha256": "314d32c291427ecdafd2dce364b3fda20c60315bcea8766dfc15afa522da23a4",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 35
+      },
+      "frame": 1665,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 35,
+        "startFrame": 1630,
+        "frame": 1665,
+        "advancedFrames": 35,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 1665,
+          "width": 160,
+          "height": 144,
+          "sha256": "a2d45f8d5bb63ca0d020bae97f4ab4c258cf3341290409c528fba57183bd7be4",
+          "rgbaSha256": "274e4973a12c17404c9f4095b72c52b0b4da910a14bf8100c08fa54531d8ade9",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [],
+        "frames": 10
+      },
+      "frame": 1675,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 10,
+        "startFrame": 1665,
+        "frame": 1675,
+        "advancedFrames": 10,
+        "appliedButtons": [],
+        "sampledButtons": []
+      },
+      "samples": [
+        {
+          "frame": 1675,
+          "width": 160,
+          "height": 144,
+          "sha256": "4d6b32cc5a88441e43a84dd650fed9c9982506824ceb89dbe27b235e510723fc",
+          "rgbaSha256": "d60673cde186e21ec8eb07c331c4ff604f6cb1b9ff3e09b383b86be110c1eee5",
+          "sampledButtons": []
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 9
+      },
+      "frame": 1684,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 9,
+        "startFrame": 1675,
+        "frame": 1684,
+        "advancedFrames": 9,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 1684,
+          "width": 160,
+          "height": 144,
+          "sha256": "c96ed886edc451857efb590884ede1d0bb0910a5ae50a8387d19379cb1601afc",
+          "rgbaSha256": "6c9a722f4809e6aca250201143bec28b7175eaeee0e72adac6638b33f6ed41fb",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 38
+      },
+      "frame": 1722,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 38,
+        "startFrame": 1684,
+        "frame": 1722,
+        "advancedFrames": 38,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 1722,
+          "width": 160,
+          "height": 144,
+          "sha256": "eb5421ba728ca3d815218bcc53eaf6ed2b0a00d83bda074fb03ea08e1db94b83",
+          "rgbaSha256": "7a840b6603a51a26823c48207408c0eecff2890063794aa87af4085a6bc82eed",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 49
+      },
+      "frame": 1771,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 49,
+        "startFrame": 1722,
+        "frame": 1771,
+        "advancedFrames": 49,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 1771,
+          "width": 160,
+          "height": 144,
+          "sha256": "dff31a420c3d46f19b1b1a6399e9e5d265ff72851aee24066bd9369c73cd7b2d",
+          "rgbaSha256": "2941932811786e28dac74e83f44a0d286dbc93ffd345361b7f835e25a2fe67b6",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 38
+      },
+      "frame": 1809,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 38,
+        "startFrame": 1771,
+        "frame": 1809,
+        "advancedFrames": 38,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 1809,
+          "width": 160,
+          "height": 144,
+          "sha256": "8865238e3af506c9f0efa60a0221a0000e4c338a4facef220a2ab108cd65aa89",
+          "rgbaSha256": "3334362e9460e27292f72169a88fbe9a3c9956c9a02487df5ceff8b1c2f885be",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 41
+      },
+      "frame": 1850,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 41,
+        "startFrame": 1809,
+        "frame": 1850,
+        "advancedFrames": 41,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 1850,
+          "width": 160,
+          "height": 144,
+          "sha256": "83331388f5e9e7d3f3b3c6296c09f3377a60d4aa93a064ef04d6dbae6599deea",
+          "rgbaSha256": "40fa8d76b4291b5346518dd152b6a731579dceaa73e5004c0b742eccfeee9a8f",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 38
+      },
+      "frame": 1888,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 38,
+        "startFrame": 1850,
+        "frame": 1888,
+        "advancedFrames": 38,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 1888,
+          "width": 160,
+          "height": 144,
+          "sha256": "af30afbb1c726fdcaa0ae1d6034dc696f3e0d3d4c9cbaa4afe408c8fd919034c",
+          "rgbaSha256": "542d7f2e53d5bdf4e18fe874eff049c84eda0a527efbbd3583881031f09d3df4",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 38
+      },
+      "frame": 1926,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 38,
+        "startFrame": 1888,
+        "frame": 1926,
+        "advancedFrames": 38,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 1926,
+          "width": 160,
+          "height": 144,
+          "sha256": "f4ead4954f76410df5ea7fcc9d3f7cf98b04f03f5ce817b89499fc70223e9936",
+          "rgbaSha256": "2cc70c90b270f10742329b1765bd4a79730014c839a950c3abde7af80125d7b7",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [],
+        "frames": 25
+      },
+      "frame": 1951,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 25,
+        "startFrame": 1926,
+        "frame": 1951,
+        "advancedFrames": 25,
+        "appliedButtons": [],
+        "sampledButtons": []
+      },
+      "samples": [
+        {
+          "frame": 1951,
+          "width": 160,
+          "height": 144,
+          "sha256": "5cd937edadb135b3b245f28ec09b33468ef8208f056ee4680b8f700ec265ae4a",
+          "rgbaSha256": "b95377ecb577f4a4cdf5e2effc73a1fb92416de54cb5d726575a9d722ac0df2e",
+          "sampledButtons": []
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 39
+      },
+      "frame": 1990,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 39,
+        "startFrame": 1951,
+        "frame": 1990,
+        "advancedFrames": 39,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 1990,
+          "width": 160,
+          "height": 144,
+          "sha256": "98c08687f828198ed86a8b83df65561ee69fa39c96a837bde4cf5a8d37087fa0",
+          "rgbaSha256": "8128e2583015ee6f53b7d48369a752ed3db1e784cf7c1fea7754a1f50759fcb3",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 57
+      },
+      "frame": 2047,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 57,
+        "startFrame": 1990,
+        "frame": 2047,
+        "advancedFrames": 57,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 2047,
+          "width": 160,
+          "height": 144,
+          "sha256": "93ae05f4aa65a7b026c0e885424169dc38171ff1b9cfe8c6c32f35262a7fd2d9",
+          "rgbaSha256": "49826c2ce6bcf5d5d30f0afd818425c592ee1bcc98df6725f3e51460a7ecefb3",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 38
+      },
+      "frame": 2085,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 38,
+        "startFrame": 2047,
+        "frame": 2085,
+        "advancedFrames": 38,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 2085,
+          "width": 160,
+          "height": 144,
+          "sha256": "18ec5695f828a4457b22236d5e191f6fec957f26dd3a162e51aa5a19154c7ecb",
+          "rgbaSha256": "1a93bfe2eb598e8ef39cdde7932169d09c7ee15c839d592eb30e66412818e720",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 31
+      },
+      "frame": 2116,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 31,
+        "startFrame": 2085,
+        "frame": 2116,
+        "advancedFrames": 31,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 2116,
+          "width": 160,
+          "height": 144,
+          "sha256": "85bdccfb80efdc6189a6a0d4de354e08b686a182065efad4b99c77f3e9791128",
+          "rgbaSha256": "4f014e719524456681275f50f19b8901eb9a63115dc6bfe526d244f3b03d60cc",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 38
+      },
+      "frame": 2154,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 38,
+        "startFrame": 2116,
+        "frame": 2154,
+        "advancedFrames": 38,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 2154,
+          "width": 160,
+          "height": 144,
+          "sha256": "0bda69c01c72c98696d871950b2a5c22df403c2d7828b34aa44a77792c435bcb",
+          "rgbaSha256": "9a4d08602b7b16554d391ef62ffa992e76760a7de807539390cbe866b0a19e36",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 20
+      },
+      "frame": 2174,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 20,
+        "startFrame": 2154,
+        "frame": 2174,
+        "advancedFrames": 20,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 2174,
+          "width": 160,
+          "height": 144,
+          "sha256": "0ec2d7e7a97dad145a3380b864ccb06afe58664a02cbbb14c403322e6da33eb8",
+          "rgbaSha256": "a0306eca70f219e1ee9b22c18354f2deb53e2e6e50ad384ff071b17bd0ec86a5",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 38
+      },
+      "frame": 2212,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 38,
+        "startFrame": 2174,
+        "frame": 2212,
+        "advancedFrames": 38,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 2212,
+          "width": 160,
+          "height": 144,
+          "sha256": "7c37b1718522cc8c14ee6d534371f7319803ef3e202a5f14a939530bbe095a9a",
+          "rgbaSha256": "f8d195399de0c0db7653f46b3a387274ef5c96b2c0abe4d5cca917ddc6be403f",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 49
+      },
+      "frame": 2261,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 49,
+        "startFrame": 2212,
+        "frame": 2261,
+        "advancedFrames": 49,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 2261,
+          "width": 160,
+          "height": 144,
+          "sha256": "cbc617619411a60804786d7a7c524cf1a8ac7bb50206d69b51a8ed5b870ee970",
+          "rgbaSha256": "d5d8515f75e249b16870c43fe362da4134837a82fbf56209d6d2d2b6587f23dd",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 38
+      },
+      "frame": 2299,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 38,
+        "startFrame": 2261,
+        "frame": 2299,
+        "advancedFrames": 38,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 2299,
+          "width": 160,
+          "height": 144,
+          "sha256": "8b5987330ff02c203e14797bf46c2c29a1821b6e4e7b5471ea2ae270f373e5b6",
+          "rgbaSha256": "0dca28ad2f06209e1fcd59510a1656c86b975524c94deaa487990a900fcef5a0",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [],
+        "frames": 8
+      },
+      "frame": 2307,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 8,
+        "startFrame": 2299,
+        "frame": 2307,
+        "advancedFrames": 8,
+        "appliedButtons": [],
+        "sampledButtons": []
+      },
+      "samples": [
+        {
+          "frame": 2307,
+          "width": 160,
+          "height": 144,
+          "sha256": "2f842ddb56c6d1cc13793bd1ebac9f04ef12e7f24cf22e44bd073558f91ac84d",
+          "rgbaSha256": "8611d05afb7970f85fea0e198227f1437af590ad1003825e62588881c6d28bbe",
+          "sampledButtons": []
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 8
+      },
+      "frame": 2315,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 8,
+        "startFrame": 2307,
+        "frame": 2315,
+        "advancedFrames": 8,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 2315,
+          "width": 160,
+          "height": 144,
+          "sha256": "7d68258740f31ff205aaec318222183e93b01469781e32a5d32028d54eeb0100",
+          "rgbaSha256": "18f57acb8ab6bf405a8e809382d678ca08a7d3e0195a6f5f010db72f15bfc325",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 43
+      },
+      "frame": 2358,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 43,
+        "startFrame": 2315,
+        "frame": 2358,
+        "advancedFrames": 43,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 2358,
+          "width": 160,
+          "height": 144,
+          "sha256": "a0d88e26ff93d3ec90f27c9b2178b47563dc08a57509053302d916d1c07b0fbc",
+          "rgbaSha256": "b68d3509e66d03e81fc5ced09e46d25b748e45345fc19fb1472a1d2d786b145d",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 40
+      },
+      "frame": 2398,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 40,
+        "startFrame": 2358,
+        "frame": 2398,
+        "advancedFrames": 40,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 2398,
+          "width": 160,
+          "height": 144,
+          "sha256": "053f72910de80eb0d10c7cbf296d23cb22eeac5267e0f4ba056dcee70e9753bd",
+          "rgbaSha256": "6d13c21686ae85030018f561b5bb5753f6870b53265d5dec4fde64e94627b40a",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 31
+      },
+      "frame": 2429,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 31,
+        "startFrame": 2398,
+        "frame": 2429,
+        "advancedFrames": 31,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 2429,
+          "width": 160,
+          "height": 144,
+          "sha256": "4a1e84a42fb0ecc1480fd8abb3918bbb86dc2772c65798da67bed3cc3d4a0b18",
+          "rgbaSha256": "af44416031f43fdd4ce347c46eef2f5a5c83afbb62d205725cd33c7f758c419f",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [],
+        "frames": 8
+      },
+      "frame": 2437,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 8,
+        "startFrame": 2429,
+        "frame": 2437,
+        "advancedFrames": 8,
+        "appliedButtons": [],
+        "sampledButtons": []
+      },
+      "samples": [
+        {
+          "frame": 2437,
+          "width": 160,
+          "height": 144,
+          "sha256": "897f80aa4a1ad3b0e84ae2d9bec433b91c63ff5a4f61b032c8e462d4ad991d42",
+          "rgbaSha256": "94b4a020c2d7b883cb9c75eb88655304ee4d5546372737451810bdf74f3cb574",
+          "sampledButtons": []
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "up",
+          "b"
+        ],
+        "frames": 30
+      },
+      "frame": 2467,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 30,
+        "startFrame": 2437,
+        "frame": 2467,
+        "advancedFrames": 30,
+        "appliedButtons": [
+          "b",
+          "up"
+        ],
+        "sampledButtons": [
+          "b",
+          "up"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 2467,
+          "width": 160,
+          "height": 144,
+          "sha256": "d8dcebcb1d9ed7100dd28069e02c5011f7c0cfe68bd2d39861a4adda920e100d",
+          "rgbaSha256": "7aa3b3c3a7bc37308b1a3364ea0895d9486351dd478920be31e8c5f38aac9e8c",
+          "sampledButtons": [
+            "b",
+            "up"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [],
+        "frames": 50
+      },
+      "frame": 2517,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 50,
+        "startFrame": 2467,
+        "frame": 2517,
+        "advancedFrames": 50,
+        "appliedButtons": [],
+        "sampledButtons": []
+      },
+      "samples": [
+        {
+          "frame": 2517,
+          "width": 160,
+          "height": 144,
+          "sha256": "98c82b1af2b2c09f0bea6909bc2620201f2bb9f7f45645417d9466857fc7a41b",
+          "rgbaSha256": "ea4ca8fb02caaaef92092d99d38e505588e38d34cbded986319090cc4fee16b9",
+          "sampledButtons": []
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 150
+      },
+      "frame": 2667,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 150,
+        "startFrame": 2517,
+        "frame": 2667,
+        "advancedFrames": 150,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 2667,
+          "width": 160,
+          "height": 144,
+          "sha256": "acbcc872643bf8d20a3d4f6a02be792750d6507cf476a88171a31f4ebaa68a97",
+          "rgbaSha256": "0ddc3791cc7513bad0b3787e7a51c1c38cb38bf54d43dfc9ebd25cf419025baf",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [],
+        "frames": 90
+      },
+      "frame": 2757,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 90,
+        "startFrame": 2667,
+        "frame": 2757,
+        "advancedFrames": 90,
+        "appliedButtons": [],
+        "sampledButtons": []
+      },
+      "samples": [
+        {
+          "frame": 2757,
+          "width": 160,
+          "height": 144,
+          "sha256": "6a9d21850e4fe0eacafacac5bee39fab89c82f41db5e619a90b6cc7c01bbf459",
+          "rgbaSha256": "fae1bd572151816fc4c36005d70d1726a36520a223594f4a8044f5d3cecf2840",
+          "sampledButtons": []
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "start"
+        ],
+        "frames": 1
+      },
+      "label": "Attempt 3 explicit reset",
+      "frame": 2758,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 1,
+        "startFrame": 2757,
+        "frame": 2758,
+        "advancedFrames": 1,
+        "appliedButtons": [
+          "start"
+        ],
+        "sampledButtons": [
+          "start"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 2758,
+          "width": 160,
+          "height": 144,
+          "sha256": "6a9d21850e4fe0eacafacac5bee39fab89c82f41db5e619a90b6cc7c01bbf459",
+          "rgbaSha256": "fae1bd572151816fc4c36005d70d1726a36520a223594f4a8044f5d3cecf2840",
+          "sampledButtons": [
+            "start"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [],
+        "frames": 20
+      },
+      "label": "Retry settles",
+      "frame": 2778,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 20,
+        "startFrame": 2758,
+        "frame": 2778,
+        "advancedFrames": 20,
+        "appliedButtons": [],
+        "sampledButtons": []
+      },
+      "samples": [
+        {
+          "frame": 2778,
+          "width": 160,
+          "height": 144,
+          "sha256": "4b24a0e257de317dce8a2448bf354ccb5972a44a8704e542ac69e77a731baac8",
+          "rgbaSha256": "2c2624f2dab88935e8112d36f5afd7225818e0ba9fb28be815064c4acdfcf043",
+          "sampledButtons": []
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 24
+      },
+      "label": "Attempt 3 approach",
+      "frame": 2802,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 24,
+        "startFrame": 2778,
+        "frame": 2802,
+        "advancedFrames": 24,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 2802,
+          "width": 160,
+          "height": 144,
+          "sha256": "1f6577da8899d28b4a623504584d99b8e9d48cccfa779f4e90c66f460a8093c0",
+          "rgbaSha256": "206a4e8e141a643049ca492bc80931d98a8ee24a4dde6dd429332bf83e184bc7",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 44
+      },
+      "label": "Attempt 3 first platform",
+      "frame": 2846,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 44,
+        "startFrame": 2802,
+        "frame": 2846,
+        "advancedFrames": 44,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 2846,
+          "width": 160,
+          "height": 144,
+          "sha256": "cf3b1c1bf57f1db1413d04a298fc6a215f92eab4696fea8ccf62d5fd144e457b",
+          "rgbaSha256": "453943be76063d8ff3c259ffbb8dfadfd28c6b47992c6b830835a2fd0fe4b74b",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [],
+        "frames": 1
+      },
+      "label": "Attempt 3 release",
+      "frame": 2847,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 1,
+        "startFrame": 2846,
+        "frame": 2847,
+        "advancedFrames": 1,
+        "appliedButtons": [],
+        "sampledButtons": []
+      },
+      "samples": [
+        {
+          "frame": 2847,
+          "width": 160,
+          "height": 144,
+          "sha256": "f88600a0c003ceb24ee593493a372431b159c7465a9c6ce8ef786161a20cf7f3",
+          "rgbaSha256": "91dffa2ae1795694bdb67b2361ed5620ad2978d431d333ca8bd70b7d4433596e",
+          "sampledButtons": []
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 38
+      },
+      "label": "Attempt 3 first terrace",
+      "frame": 2885,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 38,
+        "startFrame": 2847,
+        "frame": 2885,
+        "advancedFrames": 38,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 2885,
+          "width": 160,
+          "height": 144,
+          "sha256": "8219180cefda7104c13563540a20f759defa1ca5ec9c7551658269571c6d5301",
+          "rgbaSha256": "39abc7ce99da23dbccb75343e757d824a8e41bb4d650332c07a6dbbc2174f9d7",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "b"
+        ],
+        "frames": 22
+      },
+      "label": "Attempt 3 first goon",
+      "frame": 2907,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 22,
+        "startFrame": 2885,
+        "frame": 2907,
+        "advancedFrames": 22,
+        "appliedButtons": [
+          "b",
+          "right"
+        ],
+        "sampledButtons": [
+          "b",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 2907,
+          "width": 160,
+          "height": 144,
+          "sha256": "8882b682ff30e0d11960b354b505e92ad49855645806a05f0eea31cc41968176",
+          "rgbaSha256": "d5e67558fb0ba221db68f998271356a4fdfa6beb5e398a1d72d2e4db04f8da7b",
+          "sampledButtons": [
+            "b",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 24
+      },
+      "label": "Attempt 3 terrace end",
+      "frame": 2931,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 24,
+        "startFrame": 2907,
+        "frame": 2931,
+        "advancedFrames": 24,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 2931,
+          "width": 160,
+          "height": 144,
+          "sha256": "f7fe2b7090b7c903d7512aba498f210eff268c0fe32d689a387ba160a46317b1",
+          "rgbaSha256": "994d060acb33e3843e7afa659ec326253fade0aa45ac1be73d2e9a9f6130d82e",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 52
+      },
+      "label": "Attempt 3 water approach",
+      "frame": 2983,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 52,
+        "startFrame": 2931,
+        "frame": 2983,
+        "advancedFrames": 52,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 2983,
+          "width": 160,
+          "height": 144,
+          "sha256": "f0dd89cf4caddc545d7aaf68f60487c3130e93e122d527c22369bf83a0eac550",
+          "rgbaSha256": "f019ee96f1c25990acd9ed86d94d684c53146581a71ef78c2ba2bf9ecaf73e18",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 6
+      },
+      "label": "Attempt 3 first water edge",
+      "frame": 2989,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 6,
+        "startFrame": 2983,
+        "frame": 2989,
+        "advancedFrames": 6,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 2989,
+          "width": 160,
+          "height": 144,
+          "sha256": "cf98bd3d30a8fc9b522fdcb2ad5c1f57da61fd036dc141f12996bba0e997faad",
+          "rgbaSha256": "d96c93656a76fc245508744776a68853967d543e7a8e105973ef6fb34a02f267",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 38
+      },
+      "label": "Attempt 3 first water clear",
+      "frame": 3027,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 38,
+        "startFrame": 2989,
+        "frame": 3027,
+        "advancedFrames": 38,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 3027,
+          "width": 160,
+          "height": 144,
+          "sha256": "95f1de872cb116a9775585e25cca92e05a43f99740b9f93d87ffe581e137145b",
+          "rgbaSha256": "003c302459fabcf9b5eefebef1260b0606c149fc3965f0de1ca47fdfb71d12ff",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 50
+      },
+      "label": "Attempt 3 second water approach",
+      "frame": 3077,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 50,
+        "startFrame": 3027,
+        "frame": 3077,
+        "advancedFrames": 50,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 3077,
+          "width": 160,
+          "height": 144,
+          "sha256": "4f41b10170c1c274866a4365569c80ec539f7ae3ddd9e7d376ba9a3c5c5edec8",
+          "rgbaSha256": "9dac2e1070ce63d93a7652171a6436b8eecaae556afe265dd11c78a46541ab28",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 38
+      },
+      "label": "Attempt 3 second water clear",
+      "frame": 3115,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 38,
+        "startFrame": 3077,
+        "frame": 3115,
+        "advancedFrames": 38,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 3115,
+          "width": 160,
+          "height": 144,
+          "sha256": "fc2690e864d7d65ad512fd6d50d7dbb3c8d47cf7a3a9d9be28d572fee29609a0",
+          "rgbaSha256": "e08e3d2ad2555d87893b6112509daafe46d14bdc5f99071c055c3e408ca1e5ec",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 40
+      },
+      "label": "Attempt 3 canopy approach",
+      "frame": 3155,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 40,
+        "startFrame": 3115,
+        "frame": 3155,
+        "advancedFrames": 40,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 3155,
+          "width": 160,
+          "height": 144,
+          "sha256": "df84a14206f32255475434ebbdcc3dd13a604b1b7ba2af5ba719024ec1bb8cd2",
+          "rgbaSha256": "cfd4ea736e3c827b4bd1354a340b85c4e6897bf1e5d0a0231228e7989254f332",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 39
+      },
+      "label": "Attempt 3 first branch",
+      "frame": 3194,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 39,
+        "startFrame": 3155,
+        "frame": 3194,
+        "advancedFrames": 39,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 3194,
+          "width": 160,
+          "height": 144,
+          "sha256": "bd4c3f85c39ab3d14d25a3e641ee1ffeecba849518fa7eb1d91eafc9c764e4ac",
+          "rgbaSha256": "bf2967a83d19d1d6cb27abc31931ba0a16ed04345927a028ec502fd768d26338",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 17
+      },
+      "label": "Attempt 3 branch edge",
+      "frame": 3211,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 17,
+        "startFrame": 3194,
+        "frame": 3211,
+        "advancedFrames": 17,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 3211,
+          "width": 160,
+          "height": 144,
+          "sha256": "68ca88806093f391d1647c1166ed151d687f4cdd6a8ad51c7bbafa8bc3999ed4",
+          "rgbaSha256": "382454068e82a998184832d3988fb47364d33c37a3f8a63c9acbfc8618365b93",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 46
+      },
+      "label": "Attempt 3 canopy ball",
+      "frame": 3257,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 46,
+        "startFrame": 3211,
+        "frame": 3257,
+        "advancedFrames": 46,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 3257,
+          "width": 160,
+          "height": 144,
+          "sha256": "84ef9266408de96684984cdf6f4ec9217c259cc23ee2a5e01e9ca9dd55e93e34",
+          "rgbaSha256": "abd01d27a59d1ee7fd0038fca008a6ea9ddf0b033083dc3d34a98c47d4bedd34",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 10
+      },
+      "label": "Attempt 3 high branch edge",
+      "frame": 3267,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 10,
+        "startFrame": 3257,
+        "frame": 3267,
+        "advancedFrames": 10,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 3267,
+          "width": 160,
+          "height": 144,
+          "sha256": "941330822764a707f106f1e4e314e54fcedff32bf527a9da9182fc918be1a198",
+          "rgbaSha256": "87065004b8ddc336400eec72e188005edfde4ee6293e76ddd5327eaba578d9d8",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 50
+      },
+      "label": "Attempt 3 descending branch",
+      "frame": 3317,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 50,
+        "startFrame": 3267,
+        "frame": 3317,
+        "advancedFrames": 50,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 3317,
+          "width": 160,
+          "height": 144,
+          "sha256": "9e17afda6d24ad13b97d230a64bbd6ae9952d48a4d6dd1db7ff840789a7a76fe",
+          "rgbaSha256": "0f43df046afaa287cd42052c2647a7fc31d93a2289cab05ad7ac879d40515161",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 5
+      },
+      "label": "Attempt 3 canopy exit edge",
+      "frame": 3322,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 5,
+        "startFrame": 3317,
+        "frame": 3322,
+        "advancedFrames": 5,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 3322,
+          "width": 160,
+          "height": 144,
+          "sha256": "71052e162a3d44ba14eb4de880d7044b698977956ff7a9f6d33f570e588c5210",
+          "rgbaSha256": "0a787dc84eef82d77316c14cfdbc6d901b425d71eafe63815c46414fa9af972f",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 56
+      },
+      "label": "Attempt 3 canopy exit",
+      "frame": 3378,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 56,
+        "startFrame": 3322,
+        "frame": 3378,
+        "advancedFrames": 56,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 3378,
+          "width": 160,
+          "height": 144,
+          "sha256": "7811cc070e531843540698d8f4057761089e59a9a8edaf7f0b9baa7e3829baab",
+          "rgbaSha256": "26e3d643549a48d9f5ce10d5035f1efd52fd8bbe1b49d40e36b8e66208435402",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 18
+      },
+      "label": "Attempt 3 low terrace edge",
+      "frame": 3396,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 18,
+        "startFrame": 3378,
+        "frame": 3396,
+        "advancedFrames": 18,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 3396,
+          "width": 160,
+          "height": 144,
+          "sha256": "43f01c8ecdf8308e754c50082a38b0ddc1ffe92384ab8b451d1667c2532e9411",
+          "rgbaSha256": "576f1e0f13a959f5d43c82594a4d60fd6559be7a9752c6ce1f636bc11c41a2d0",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 40
+      },
+      "label": "Attempt 3 low terrace break",
+      "frame": 3436,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 40,
+        "startFrame": 3396,
+        "frame": 3436,
+        "advancedFrames": 40,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 3436,
+          "width": 160,
+          "height": 144,
+          "sha256": "0abda250ae5bfeed4d5c4637d7bd793f28b8ca96abaf80a05c5ebc51bc494d8d",
+          "rgbaSha256": "fa5ab2d19ed2e86b35b2bcb465fb17fdbdc081ed8fc7b826b3bac2830bf7fa0f",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 20
+      },
+      "label": "Later wide pool takeoff",
+      "frame": 3456,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 20,
+        "startFrame": 3436,
+        "frame": 3456,
+        "advancedFrames": 20,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 3456,
+          "width": 160,
+          "height": 144,
+          "sha256": "b65c040f8f9cc0490c53df4fbc290cd3d120f2e48d2230cd7de49d69c1c6b727",
+          "rgbaSha256": "b3947e2ff62de40db2159add851673b95fca984c63a1f0eac7486b4835ff543f",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 42
+      },
+      "label": "Wide pool retry",
+      "frame": 3498,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 42,
+        "startFrame": 3456,
+        "frame": 3498,
+        "advancedFrames": 42,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 3498,
+          "width": 160,
+          "height": 144,
+          "sha256": "5979c38a96523c134d64b7caf1ff870912c1310ba4e5e9b610d3540364ecc474",
+          "rgbaSha256": "a049853f3172a3f3f5aae0a7f858c79b00285a171ba2ba6e9c6fd50f14d4fb10",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 40
+      },
+      "label": "Past wide pool",
+      "frame": 3538,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 40,
+        "startFrame": 3498,
+        "frame": 3538,
+        "advancedFrames": 40,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 3538,
+          "width": 160,
+          "height": 144,
+          "sha256": "1be8bc49a86eb2761a56ad45fdfa6d58966b7f258de9940add70e762d8c78126",
+          "rgbaSha256": "a5c24733bccde00fc19003a2d47c1134a43fb3171a283940f0aa9a85efc88e2e",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 42
+      },
+      "label": "Short break to next block",
+      "frame": 3580,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 42,
+        "startFrame": 3538,
+        "frame": 3580,
+        "advancedFrames": 42,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 3580,
+          "width": 160,
+          "height": 144,
+          "sha256": "49c7694335a145d66761bf2f5db77c42516e41a8a90b207c22a834cbdfee2a97",
+          "rgbaSha256": "c3e7c21486c228faf1f9613f4c622e90b6ce288364f34ed3b611459e10cabc4c",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 16
+      },
+      "label": "Drop toward next goon",
+      "frame": 3596,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 16,
+        "startFrame": 3580,
+        "frame": 3596,
+        "advancedFrames": 16,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 3596,
+          "width": 160,
+          "height": 144,
+          "sha256": "01a08f81fa27a9b8e25e9d4e63faf5dca832874942edd1513e2dbad776d9b84b",
+          "rgbaSha256": "feb9095eb6bab0d92a7343dc91cf3b9c9677fb5a728d0b6fb1f617a23fc720b2",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 6
+      },
+      "label": "Land before goon",
+      "frame": 3602,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 6,
+        "startFrame": 3596,
+        "frame": 3602,
+        "advancedFrames": 6,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 3602,
+          "width": 160,
+          "height": 144,
+          "sha256": "cb581ad8870b5cf0c756b1dba26121da1791f3a657cf3df56684d52497d906a5",
+          "rgbaSha256": "9d4b36b97a0070404f3efb30aa9391c8fbd796aba52452582f6e3c528625f28a",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "b"
+        ],
+        "frames": 22
+      },
+      "label": "Next goon throw",
+      "frame": 3624,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 22,
+        "startFrame": 3602,
+        "frame": 3624,
+        "advancedFrames": 22,
+        "appliedButtons": [
+          "b",
+          "right"
+        ],
+        "sampledButtons": [
+          "b",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 3624,
+          "width": 160,
+          "height": 144,
+          "sha256": "c295cb49e4d4c95c01792d74583ca86363a1f99f215fde9aabf3923779ad7bf5",
+          "rgbaSha256": "19aee0c25de7b86ffc1b8c82f4086a30110aa85a7e3d890bfe6073cbbce6fd27",
+          "sampledButtons": [
+            "b",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 34
+      },
+      "label": "Approach grove mechanism",
+      "frame": 3658,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 34,
+        "startFrame": 3624,
+        "frame": 3658,
+        "advancedFrames": 34,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 3658,
+          "width": 160,
+          "height": 144,
+          "sha256": "65e618d0a0772e36aa241e81c8d2dc63339b07417112314f4697c5b976567267",
+          "rgbaSha256": "16a22cb6456f86c98a28ff2eedf02b339e64fcedadf0f33452b6e208c94bdc1f",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 40
+      },
+      "label": "Reach final supply block",
+      "frame": 3698,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 40,
+        "startFrame": 3658,
+        "frame": 3698,
+        "advancedFrames": 40,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 3698,
+          "width": 160,
+          "height": 144,
+          "sha256": "3ec6a6c0c977b8bf3c78be3c95abc0f0d6cdcffdc4993ba12eab05530edeea1f",
+          "rgbaSha256": "40ca23f0b5fe422ab3d8e99aa04f58a566f78e926dd0524007d9a23736bc4f8b",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 30
+      },
+      "label": "Approach hanging bell",
+      "frame": 3728,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 30,
+        "startFrame": 3698,
+        "frame": 3728,
+        "advancedFrames": 30,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 3728,
+          "width": 160,
+          "height": 144,
+          "sha256": "d2a6da4b594ead46d424ba16f602264ae9e84339914cec322a8bb292f3e341b7",
+          "rgbaSha256": "67f39d38e75aeb6740e9cc39f4b05846e4a6b11cbea5dda620e6502a9e3c50b9",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "up",
+          "b"
+        ],
+        "frames": 24
+      },
+      "label": "First final bell lob",
+      "frame": 3752,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 24,
+        "startFrame": 3728,
+        "frame": 3752,
+        "advancedFrames": 24,
+        "appliedButtons": [
+          "b",
+          "up"
+        ],
+        "sampledButtons": [
+          "b",
+          "up"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 3752,
+          "width": 160,
+          "height": 144,
+          "sha256": "68ffe144f21613f2c0b83e01527502b37066ecc2593085fec6054f98ce3d8114",
+          "rgbaSha256": "08101c1dd6fbe60c188151e0256d4c6964b9511db90c9ea530bb19474e2f0f14",
+          "sampledButtons": [
+            "b",
+            "up"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 26
+      },
+      "label": "Retrieve missed lob",
+      "frame": 3778,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 26,
+        "startFrame": 3752,
+        "frame": 3778,
+        "advancedFrames": 26,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 3778,
+          "width": 160,
+          "height": 144,
+          "sha256": "2dff839b9b3ede6ae9478a5c4b6c041cd19f891ddafdb016cbf39adefb32f765",
+          "rgbaSha256": "d3e6565120f55d522d37d993df1fadc6b42c8da46ad574fd7326cdb047aa94b5",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [],
+        "frames": 20
+      },
+      "label": "Wait under bouncing ball",
+      "frame": 3798,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 20,
+        "startFrame": 3778,
+        "frame": 3798,
+        "advancedFrames": 20,
+        "appliedButtons": [],
+        "sampledButtons": []
+      },
+      "samples": [
+        {
+          "frame": 3798,
+          "width": 160,
+          "height": 144,
+          "sha256": "1d34ed2bb8aa869a5e3093a932bf39f586ce1ccc88a3344ce1dab3b1616bf9b9",
+          "rgbaSha256": "831333d9cf18be74b3736eee31d2bdeb3e51b463493c52a49cd2c1ede6c0b64e",
+          "sampledButtons": []
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 30
+      },
+      "label": "Test final gate",
+      "frame": 3828,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 30,
+        "startFrame": 3798,
+        "frame": 3828,
+        "advancedFrames": 30,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 3828,
+          "width": 160,
+          "height": 144,
+          "sha256": "99cc7de31cb5c2cfc8a4209d305d3397d0ffce64699edb9853680c6661ba004f",
+          "rgbaSha256": "eb0931ca97f7b735a56c9ae6495d279c4d324ec67c099052ce4eda1c11f96574",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 38
+      },
+      "label": "Through bell gate",
+      "frame": 3866,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 38,
+        "startFrame": 3828,
+        "frame": 3866,
+        "advancedFrames": 38,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 3866,
+          "width": 160,
+          "height": 144,
+          "sha256": "101f4676fe2a2203b6c85c89259f820cd807f6280157f9bfa9a3acd91f130c0f",
+          "rgbaSha256": "0fadfa5a8c7f60ed8e611da66f425677c5a1a7a4f9e7d19d25f3704225465815",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 32
+      },
+      "label": "Exit grove",
+      "frame": 3898,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 32,
+        "startFrame": 3866,
+        "frame": 3898,
+        "advancedFrames": 32,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 3898,
+          "width": 160,
+          "height": 144,
+          "sha256": "9e71c4be908e1b51f32150c7a8f2bd1bb80bdcb05d78a4e2b7de1acc6cf782bb",
+          "rgbaSha256": "01bed344ebae94672ab3a6f788f34a041e6204d152cffcb2901f27063b9ecbd4",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [],
+        "frames": 90
+      },
+      "label": "Grove clear message",
+      "frame": 3988,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 90,
+        "startFrame": 3898,
+        "frame": 3988,
+        "advancedFrames": 90,
+        "appliedButtons": [],
+        "sampledButtons": []
+      },
+      "samples": [
+        {
+          "frame": 3988,
+          "width": 160,
+          "height": 144,
+          "sha256": "de1b1bf7275684de944dd50f9c39db6fbe46f08e2a8d885a8f80c14fd763aa60",
+          "rgbaSha256": "949ed2211b8b496e938855b50944749146a97d422e142a1ca5ebcaa3e101d93c",
+          "sampledButtons": []
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "a"
+        ],
+        "frames": 2
+      },
+      "label": "Accept grove clear",
+      "frame": 3990,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 2,
+        "startFrame": 3988,
+        "frame": 3990,
+        "advancedFrames": 2,
+        "appliedButtons": [
+          "a"
+        ],
+        "sampledButtons": [
+          "a"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 3990,
+          "width": 160,
+          "height": 144,
+          "sha256": "de1b1bf7275684de944dd50f9c39db6fbe46f08e2a8d885a8f80c14fd763aa60",
+          "rgbaSha256": "949ed2211b8b496e938855b50944749146a97d422e142a1ca5ebcaa3e101d93c",
+          "sampledButtons": [
+            "a"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [],
+        "frames": 45
+      },
+      "label": "Verify banquet transition",
+      "frame": 4035,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 45,
+        "startFrame": 3990,
+        "frame": 4035,
+        "advancedFrames": 45,
+        "appliedButtons": [],
+        "sampledButtons": []
+      },
+      "samples": [
+        {
+          "frame": 4035,
+          "width": 160,
+          "height": 144,
+          "sha256": "1b2b1fcb5501196952186349af2ff86f2aff3f7d1e14f9e512f49f5347edba29",
+          "rgbaSha256": "0048d1dfbfedd7ee6ac1cdc5fd9873e99de5fa071b1617e5110a9e1808d96dda",
+          "sampledButtons": []
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "start"
+        ],
+        "frames": 30
+      },
+      "frame": 4065,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 30,
+        "startFrame": 4035,
+        "frame": 4065,
+        "advancedFrames": 30,
+        "appliedButtons": [
+          "start"
+        ],
+        "sampledButtons": [
+          "start"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 4065,
+          "width": 160,
+          "height": 144,
+          "sha256": "b3f570d151a1a980e5ea73956cdd257069fe93031fb05608c76e3d7051ff4546",
+          "rgbaSha256": "188ef423153105bc57dc5559373af746bd5ee38301f1cbfd3a79adf04926b4ca",
+          "sampledButtons": [
+            "start"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 30
+      },
+      "frame": 4095,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 30,
+        "startFrame": 4065,
+        "frame": 4095,
+        "advancedFrames": 30,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 4095,
+          "width": 160,
+          "height": 144,
+          "sha256": "9d5ebb7988a2aa6e9da9d2d045f6ffa26b5709db4a3ceab1897b2d880b1c5053",
+          "rgbaSha256": "f5fdaa6b08ab317742d0cd764fa8abf89ab0a656dad2adc961f3c8f418de82dc",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 23
+      },
+      "frame": 4118,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 23,
+        "startFrame": 4095,
+        "frame": 4118,
+        "advancedFrames": 23,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 4118,
+          "width": 160,
+          "height": 144,
+          "sha256": "015a2c8d4ab103959defad2467479489b96675dbcfcfabc58461c1172eba98b8",
+          "rgbaSha256": "f0d044b153a2782e0627ec69874c927271b4ef40dcf6e3712dccef9727a7ab54",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "a"
+        ],
+        "frames": 20
+      },
+      "frame": 4138,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 20,
+        "startFrame": 4118,
+        "frame": 4138,
+        "advancedFrames": 20,
+        "appliedButtons": [
+          "a"
+        ],
+        "sampledButtons": [
+          "a"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 4138,
+          "width": 160,
+          "height": 144,
+          "sha256": "b2fe3ba5c194a72b3f2777d25fccfc15fb5b140fae681b63b1a173a2b516c04e",
+          "rgbaSha256": "cbc6b88f9dfa7cbfcfd9a6448810d50d8d921454e2e9f3736d3523591d6440dd",
+          "sampledButtons": [
+            "a"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [],
+        "frames": 1
+      },
+      "frame": 4139,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 1,
+        "startFrame": 4138,
+        "frame": 4139,
+        "advancedFrames": 1,
+        "appliedButtons": [],
+        "sampledButtons": []
+      },
+      "samples": [
+        {
+          "frame": 4139,
+          "width": 160,
+          "height": 144,
+          "sha256": "b2fe3ba5c194a72b3f2777d25fccfc15fb5b140fae681b63b1a173a2b516c04e",
+          "rgbaSha256": "cbc6b88f9dfa7cbfcfd9a6448810d50d8d921454e2e9f3736d3523591d6440dd",
+          "sampledButtons": []
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 32
+      },
+      "frame": 4171,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 32,
+        "startFrame": 4139,
+        "frame": 4171,
+        "advancedFrames": 32,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 4171,
+          "width": 160,
+          "height": 144,
+          "sha256": "12b6ee9c7bb2833b6f8c6086d46343c76734f1bd2148d4c142ffaee997801cd3",
+          "rgbaSha256": "1b7b3f00c3f640e807e483249aad62825e468e9bb9189f4a83695ab4a04069da",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 61
+      },
+      "frame": 4232,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 61,
+        "startFrame": 4171,
+        "frame": 4232,
+        "advancedFrames": 61,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 4232,
+          "width": 160,
+          "height": 144,
+          "sha256": "b3750291ce825adffac6ea6a645fe80ed40a941c197b492e5c1df39f1c4b1b30",
+          "rgbaSha256": "343d60c72ffc7fcd9b67827183f77a9b4bed535ad45a9707db996090d9166ff6",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [],
+        "frames": 15
+      },
+      "frame": 4247,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 15,
+        "startFrame": 4232,
+        "frame": 4247,
+        "advancedFrames": 15,
+        "appliedButtons": [],
+        "sampledButtons": []
+      },
+      "samples": [
+        {
+          "frame": 4247,
+          "width": 160,
+          "height": 144,
+          "sha256": "49e836edead39b772be29fef2223d65414d3cb2b0ad29af72df2de6764fe9060",
+          "rgbaSha256": "724b5feec915b40259833a31e5a2b28b433a71c81fd67729027858c3305aba84",
+          "sampledButtons": []
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "left"
+        ],
+        "frames": 3
+      },
+      "frame": 4250,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 3,
+        "startFrame": 4247,
+        "frame": 4250,
+        "advancedFrames": 3,
+        "appliedButtons": [
+          "left"
+        ],
+        "sampledButtons": [
+          "left"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 4250,
+          "width": 160,
+          "height": 144,
+          "sha256": "c5021a409f2238f03198bf90b94e7934e339a1b5b96849c58e9ff28d5c89778a",
+          "rgbaSha256": "b9a52bcee55f7aac31f4a5604bf8ba8f17e4f7135486eac57b18ca29fef3308a",
+          "sampledButtons": [
+            "left"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "b"
+        ],
+        "frames": 40
+      },
+      "frame": 4290,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 40,
+        "startFrame": 4250,
+        "frame": 4290,
+        "advancedFrames": 40,
+        "appliedButtons": [
+          "b"
+        ],
+        "sampledButtons": [
+          "b"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 4290,
+          "width": 160,
+          "height": 144,
+          "sha256": "1f6cab5d91aae1932c85356a2f859fb7b7fb2918c34e3c0f1fd9a705d3bf6fff",
+          "rgbaSha256": "117ffac4a2d60e1dc2c3a47ff938142a2993b74504c2ff4aa2a39e882d07208f",
+          "sampledButtons": [
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 58
+      },
+      "frame": 4348,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 58,
+        "startFrame": 4290,
+        "frame": 4348,
+        "advancedFrames": 58,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 4348,
+          "width": 160,
+          "height": 144,
+          "sha256": "d64f5771aa1047bb361bd86290990f0281a5912c9d6b56d4233e2887bda4f10f",
+          "rgbaSha256": "5d90de762adcd5dd9790b793b91d5a7c262f92e69c72b5ffe4e1f44f46af1bae",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 17
+      },
+      "frame": 4365,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 17,
+        "startFrame": 4348,
+        "frame": 4365,
+        "advancedFrames": 17,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 4365,
+          "width": 160,
+          "height": 144,
+          "sha256": "0d45a69b20691bf59b08c125f0a55b225bcd916c4595afaa4be5e5cabece9ed4",
+          "rgbaSha256": "14efaa90ff95941c3e55736105f8f9d1afeb60258ca20dd7088e808505421578",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "a"
+        ],
+        "frames": 24
+      },
+      "frame": 4389,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 24,
+        "startFrame": 4365,
+        "frame": 4389,
+        "advancedFrames": 24,
+        "appliedButtons": [
+          "a"
+        ],
+        "sampledButtons": [
+          "a"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 4389,
+          "width": 160,
+          "height": 144,
+          "sha256": "9b66258396aaecccd8856fdd64d3cd298779c9944fb7614cd87ed216d3f6c244",
+          "rgbaSha256": "cd52992af7f1694510602031f04d47550544c6021cf0b0fb6b4ea95921ddfbf1",
+          "sampledButtons": [
+            "a"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [],
+        "frames": 1
+      },
+      "frame": 4390,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 1,
+        "startFrame": 4389,
+        "frame": 4390,
+        "advancedFrames": 1,
+        "appliedButtons": [],
+        "sampledButtons": []
+      },
+      "samples": [
+        {
+          "frame": 4390,
+          "width": 160,
+          "height": 144,
+          "sha256": "9b66258396aaecccd8856fdd64d3cd298779c9944fb7614cd87ed216d3f6c244",
+          "rgbaSha256": "cd52992af7f1694510602031f04d47550544c6021cf0b0fb6b4ea95921ddfbf1",
+          "sampledButtons": []
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 31
+      },
+      "frame": 4421,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 31,
+        "startFrame": 4390,
+        "frame": 4421,
+        "advancedFrames": 31,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 4421,
+          "width": 160,
+          "height": 144,
+          "sha256": "2ee0dce3498b5ea78ad5978a363fbce23898b5b23aebdb8c8de5bbd380cdc939",
+          "rgbaSha256": "e250b9f868d7d28ac143c318961b37a4e5f8b8f105753fbdc047341ff9d67d00",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 43
+      },
+      "frame": 4464,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 43,
+        "startFrame": 4421,
+        "frame": 4464,
+        "advancedFrames": 43,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 4464,
+          "width": 160,
+          "height": 144,
+          "sha256": "d126cec9c0b69a57d5cc7e02ff7476981d9190ad6fc6bdbcd6b9a668f96f5b42",
+          "rgbaSha256": "57e4b5841193072554b7efb324c25605031f48c3a0e1650f8697254fd1cbd97e",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 37
+      },
+      "frame": 4501,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 37,
+        "startFrame": 4464,
+        "frame": 4501,
+        "advancedFrames": 37,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 4501,
+          "width": 160,
+          "height": 144,
+          "sha256": "3251f909848d24e60e2e5e7faf9dbdf6ae06f1d79b1ec9f560314d3f52706a91",
+          "rgbaSha256": "7a34c83890e5760abe6bb2c017fe2461512ddeca17b5f78e76be1c3c1dc837d4",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 43
+      },
+      "frame": 4544,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 43,
+        "startFrame": 4501,
+        "frame": 4544,
+        "advancedFrames": 43,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 4544,
+          "width": 160,
+          "height": 144,
+          "sha256": "40213c82a9efef12d9fa27efcbd501609e8070a6c28d16a522b58975d22d5405",
+          "rgbaSha256": "28e1f250078a0195b5c5961238657b6338f003603000035b48a012202d965eec",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 33
+      },
+      "frame": 4577,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 33,
+        "startFrame": 4544,
+        "frame": 4577,
+        "advancedFrames": 33,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 4577,
+          "width": 160,
+          "height": 144,
+          "sha256": "6e0caebf9bd34d47a2961fc6b017717f4706fc59f9dcac4053cbaa92eae93b45",
+          "rgbaSha256": "694d18522adfc64bee4f2e2596dcfbdd68b0269de41dc01a3638a4b701d8c7fd",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 22
+      },
+      "frame": 4599,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 22,
+        "startFrame": 4577,
+        "frame": 4599,
+        "advancedFrames": 22,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 4599,
+          "width": 160,
+          "height": 144,
+          "sha256": "4eac1bd819647bbd0d8c37c9a2e10107f28b3bfae6029fa5ebb18fd0dd099067",
+          "rgbaSha256": "caf02035dd815f98b6f9f59d58bb4063b7655e637ff5a4479270f2c2c7952375",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "b"
+        ],
+        "frames": 20
+      },
+      "frame": 4619,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 20,
+        "startFrame": 4599,
+        "frame": 4619,
+        "advancedFrames": 20,
+        "appliedButtons": [
+          "b"
+        ],
+        "sampledButtons": [
+          "b"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 4619,
+          "width": 160,
+          "height": 144,
+          "sha256": "7400cc6be985d3686227fa3108cad5d10ee457c764b8826c7cd16f791c28b688",
+          "rgbaSha256": "4a48ca921f95a1444e195956778dd3922d13e1e0785a551c75d5789450c622ed",
+          "sampledButtons": [
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 83
+      },
+      "frame": 4702,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 83,
+        "startFrame": 4619,
+        "frame": 4702,
+        "advancedFrames": 83,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 4702,
+          "width": 160,
+          "height": 144,
+          "sha256": "68e393f84f89591aa32d9cb0f65a4905ee203ca1b3bcf4e8c6cdcd0169368ec7",
+          "rgbaSha256": "e63e79b332698368795ab83f624e50a5a65123e62578c2f8b0b09b6ded10ea3d",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 12
+      },
+      "frame": 4714,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 12,
+        "startFrame": 4702,
+        "frame": 4714,
+        "advancedFrames": 12,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 4714,
+          "width": 160,
+          "height": 144,
+          "sha256": "f0a2cab2e6d3b4999cae3130f44f82b61c0dcd697694cf445f54a6b96be3efab",
+          "rgbaSha256": "e9e14d213841a4b25599484acd4d6ee015975eb41d64cfc27e4fe0adcada8a81",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "a"
+        ],
+        "frames": 30
+      },
+      "frame": 4744,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 30,
+        "startFrame": 4714,
+        "frame": 4744,
+        "advancedFrames": 30,
+        "appliedButtons": [
+          "a"
+        ],
+        "sampledButtons": [
+          "a"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 4744,
+          "width": 160,
+          "height": 144,
+          "sha256": "d779c3e65d40b2fc08d37f22e29e2448a1986a6b0bd576acaf977a934282936e",
+          "rgbaSha256": "6f9d0d7b13deddea4ddf200cfd771c34664ad40cf2962b9750e8e9a7d835e31b",
+          "sampledButtons": [
+            "a"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 7
+      },
+      "frame": 4751,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 7,
+        "startFrame": 4744,
+        "frame": 4751,
+        "advancedFrames": 7,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 4751,
+          "width": 160,
+          "height": 144,
+          "sha256": "2f6eb5b6f1c2d3e95701c5c280ffd4059caaf4b26dc586efa9b393bcdbcd6aa2",
+          "rgbaSha256": "1f2d3f8ea36a26fc80a81ed2ece624f9b928da58f0a76c94f7bd2cf91637ce20",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 32
+      },
+      "frame": 4783,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 32,
+        "startFrame": 4751,
+        "frame": 4783,
+        "advancedFrames": 32,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 4783,
+          "width": 160,
+          "height": 144,
+          "sha256": "7ecdce24b54de639b8c6dd725ca886245b7187abd09c00f20a0e0d164b708b8e",
+          "rgbaSha256": "d42ff8e983943840cbbf5df0761452b62ce0a0fc2a517ba37417b65b6696122a",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [],
+        "frames": 10
+      },
+      "frame": 4793,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 10,
+        "startFrame": 4783,
+        "frame": 4793,
+        "advancedFrames": 10,
+        "appliedButtons": [],
+        "sampledButtons": []
+      },
+      "samples": [
+        {
+          "frame": 4793,
+          "width": 160,
+          "height": 144,
+          "sha256": "47df4937466bdcbadb89fa5b2fb8e1178e0c23dd10e6fba07eb83bc905bb71e6",
+          "rgbaSha256": "300755e3e754bb8644dad7a5bb6f8e4447b281e080a0e648f48f01803a12e8b2",
+          "sampledButtons": []
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 40
+      },
+      "frame": 4833,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 40,
+        "startFrame": 4793,
+        "frame": 4833,
+        "advancedFrames": 40,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 4833,
+          "width": 160,
+          "height": 144,
+          "sha256": "90a92a1fedaa106d55a340514f4cd1cc4c121a16dcd72f9bf2b8b74173dc2310",
+          "rgbaSha256": "506cf62617281662bccba814625a6faf8416085521cd908b9bb76c17f19eead8",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 23
+      },
+      "frame": 4856,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 23,
+        "startFrame": 4833,
+        "frame": 4856,
+        "advancedFrames": 23,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 4856,
+          "width": 160,
+          "height": 144,
+          "sha256": "5ac0806632cf256f5b6a9624ab90501fb248c238b37a06ad1f201b9d2381e61d",
+          "rgbaSha256": "395cb9d492f18b1d442e2b914fc4e11c9c77ef612a24ba094dcb862c370ee582",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "b"
+        ],
+        "frames": 23
+      },
+      "frame": 4879,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 23,
+        "startFrame": 4856,
+        "frame": 4879,
+        "advancedFrames": 23,
+        "appliedButtons": [
+          "b"
+        ],
+        "sampledButtons": [
+          "b"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 4879,
+          "width": 160,
+          "height": 144,
+          "sha256": "4e4f6867a2f0672093e779268848fb3ca17ea7c7dc98937074b30162b23759f3",
+          "rgbaSha256": "ab4ff60e446841911f0f220b01932674f24c449018a87b593a2ce80412107c56",
+          "sampledButtons": [
+            "b"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 40
+      },
+      "frame": 4919,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 40,
+        "startFrame": 4879,
+        "frame": 4919,
+        "advancedFrames": 40,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 4919,
+          "width": 160,
+          "height": 144,
+          "sha256": "be7209f0fddad3bde4d8fdbec2e7c3f3fde847da42504670af0df73045e6e785",
+          "rgbaSha256": "56cc9285e410e76d08688a3009480f17ee0a9e82d9a28733236844f0e4fe03a2",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 27
+      },
+      "frame": 4946,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 27,
+        "startFrame": 4919,
+        "frame": 4946,
+        "advancedFrames": 27,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 4946,
+          "width": 160,
+          "height": 144,
+          "sha256": "798362e2ab22e8d6e51d372adce7a3f2c8bece4ef3feaca0b0aa94619313f57d",
+          "rgbaSha256": "f13cdef4e7ba26d996c30d2ecf76529ea0b43c99d034b6ba2af61547fcc81fc7",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 20
+      },
+      "frame": 4966,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 20,
+        "startFrame": 4946,
+        "frame": 4966,
+        "advancedFrames": 20,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 4966,
+          "width": 160,
+          "height": 144,
+          "sha256": "bea23b3147f954c5fd0d5c355cf32cefe6be6c0acb1edbc8963e9c695b6b5938",
+          "rgbaSha256": "3d0dbbc9bb7f60916e01ec3ad4ca8c878051e517e78b294baff15784c475a9f5",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 18
+      },
+      "frame": 4984,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 18,
+        "startFrame": 4966,
+        "frame": 4984,
+        "advancedFrames": 18,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 4984,
+          "width": 160,
+          "height": 144,
+          "sha256": "6abb2baafe0382e580777e43ba78af9cd226553799328dd03288b008e6c2584b",
+          "rgbaSha256": "32f36ae0ff34b5972d8267c308b95954510032f30e526f41505e29c7266bfd94",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "a"
+        ],
+        "frames": 23
+      },
+      "frame": 5007,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 23,
+        "startFrame": 4984,
+        "frame": 5007,
+        "advancedFrames": 23,
+        "appliedButtons": [
+          "a"
+        ],
+        "sampledButtons": [
+          "a"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 5007,
+          "width": 160,
+          "height": 144,
+          "sha256": "58f8dc338c042b733ec214e9b095747235b849df8057bd2f068def944e89a8c1",
+          "rgbaSha256": "5f375f026c308350d45de5d0b9bb895ea408c743cf3c0bf0df2b4e8f19de6c55",
+          "sampledButtons": [
+            "a"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [],
+        "frames": 1
+      },
+      "frame": 5008,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 1,
+        "startFrame": 5007,
+        "frame": 5008,
+        "advancedFrames": 1,
+        "appliedButtons": [],
+        "sampledButtons": []
+      },
+      "samples": [
+        {
+          "frame": 5008,
+          "width": 160,
+          "height": 144,
+          "sha256": "58f8dc338c042b733ec214e9b095747235b849df8057bd2f068def944e89a8c1",
+          "rgbaSha256": "5f375f026c308350d45de5d0b9bb895ea408c743cf3c0bf0df2b4e8f19de6c55",
+          "sampledButtons": []
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right",
+          "a"
+        ],
+        "frames": 33
+      },
+      "frame": 5041,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 33,
+        "startFrame": 5008,
+        "frame": 5041,
+        "advancedFrames": 33,
+        "appliedButtons": [
+          "a",
+          "right"
+        ],
+        "sampledButtons": [
+          "a",
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 5041,
+          "width": 160,
+          "height": 144,
+          "sha256": "6aa1120bb1e3515b9e1b614ccd1d5beb5ff99319e8cb4df720e0ba05ab762bba",
+          "rgbaSha256": "5694ff018589599a9f64d47f8d01c300f1efe9ad6dc8bf3699117f2504b887d3",
+          "sampledButtons": [
+            "a",
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [],
+        "frames": 8
+      },
+      "frame": 5049,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 8,
+        "startFrame": 5041,
+        "frame": 5049,
+        "advancedFrames": 8,
+        "appliedButtons": [],
+        "sampledButtons": []
+      },
+      "samples": [
+        {
+          "frame": 5049,
+          "width": 160,
+          "height": 144,
+          "sha256": "fba5018246722763e430f941256d88bfc17bab4de77cb3e527fad030a7f1deb1",
+          "rgbaSha256": "aaf639ea57e2a19e779688937c1ce0dd0204858c6c94ba619c9fae62775b2ae7",
+          "sampledButtons": []
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "up",
+          "b"
+        ],
+        "frames": 35
+      },
+      "frame": 5084,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 35,
+        "startFrame": 5049,
+        "frame": 5084,
+        "advancedFrames": 35,
+        "appliedButtons": [
+          "b",
+          "up"
+        ],
+        "sampledButtons": [
+          "b",
+          "up"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 5084,
+          "width": 160,
+          "height": 144,
+          "sha256": "dc3b590f817dccc8ab5f57b94d02d6da2731346f5ac6a1842c30ac6d7c243abb",
+          "rgbaSha256": "edab7cae915b3e4230428177fded43b0d822eebf1853f5e4b6472c90b8410706",
+          "sampledButtons": [
+            "b",
+            "up"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 65
+      },
+      "frame": 5149,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 65,
+        "startFrame": 5084,
+        "frame": 5149,
+        "advancedFrames": 65,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 5149,
+          "width": 160,
+          "height": 144,
+          "sha256": "1583850e4c699791881feb2d6f17633aac44dd1a84dac36ad7b6ff37ed5f8257",
+          "rgbaSha256": "6e7835d1632e3804b2d43f69b17e8b8fd0b069d7c51d56c4aac6868322752812",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "right"
+        ],
+        "frames": 55
+      },
+      "frame": 5204,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 55,
+        "startFrame": 5149,
+        "frame": 5204,
+        "advancedFrames": 55,
+        "appliedButtons": [
+          "right"
+        ],
+        "sampledButtons": [
+          "right"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 5204,
+          "width": 160,
+          "height": 144,
+          "sha256": "9ba14858cb8d26825264774d6d763906d980f4682e1f44a89893fb6d01baf9bf",
+          "rgbaSha256": "a8d15649315bec6da83dd8fc2e47ec407e97b4601cd2bb9d4616832569f9ef2c",
+          "sampledButtons": [
+            "right"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [],
+        "frames": 80
+      },
+      "frame": 5284,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 80,
+        "startFrame": 5204,
+        "frame": 5284,
+        "advancedFrames": 80,
+        "appliedButtons": [],
+        "sampledButtons": []
+      },
+      "samples": [
+        {
+          "frame": 5284,
+          "width": 160,
+          "height": 144,
+          "sha256": "fa688341ca573c25dbed2d4c67f7630012e18276d648044ca34cdda0c478577e",
+          "rgbaSha256": "849e56468e916cbdb81cd2a021a84a65e912fd2528566985d901f4b5fa5e4f0b",
+          "sampledButtons": []
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "a"
+        ],
+        "frames": 90
+      },
+      "frame": 5374,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 90,
+        "startFrame": 5284,
+        "frame": 5374,
+        "advancedFrames": 90,
+        "appliedButtons": [
+          "a"
+        ],
+        "sampledButtons": [
+          "a"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 5374,
+          "width": 160,
+          "height": 144,
+          "sha256": "0d6178090919995878cb6a636c58059816c5e135d960d24c0d7413f383002046",
+          "rgbaSha256": "df3dea4ec13770a4187212e7ee3643bedb13ee61b7d762d18bc0a2d8eccd3e7f",
+          "sampledButtons": [
+            "a"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [],
+        "frames": 1
+      },
+      "frame": 5375,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 1,
+        "startFrame": 5374,
+        "frame": 5375,
+        "advancedFrames": 1,
+        "appliedButtons": [],
+        "sampledButtons": []
+      },
+      "samples": [
+        {
+          "frame": 5375,
+          "width": 160,
+          "height": 144,
+          "sha256": "0d6178090919995878cb6a636c58059816c5e135d960d24c0d7413f383002046",
+          "rgbaSha256": "df3dea4ec13770a4187212e7ee3643bedb13ee61b7d762d18bc0a2d8eccd3e7f",
+          "sampledButtons": []
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "a",
+          "b",
+          "start",
+          "select"
+        ],
+        "frames": 2
+      },
+      "frame": 5377,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 2,
+        "startFrame": 5375,
+        "frame": 5377,
+        "advancedFrames": 2,
+        "appliedButtons": [
+          "a",
+          "b",
+          "select",
+          "start"
+        ],
+        "sampledButtons": [
+          "a",
+          "b",
+          "select",
+          "start"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 5377,
+          "width": 160,
+          "height": 144,
+          "sha256": "0d6178090919995878cb6a636c58059816c5e135d960d24c0d7413f383002046",
+          "rgbaSha256": "df3dea4ec13770a4187212e7ee3643bedb13ee61b7d762d18bc0a2d8eccd3e7f",
+          "sampledButtons": [
+            "a",
+            "b",
+            "select",
+            "start"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [],
+        "frames": 150
+      },
+      "frame": 5527,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 150,
+        "startFrame": 5377,
+        "frame": 5527,
+        "advancedFrames": 150,
+        "appliedButtons": [],
+        "sampledButtons": []
+      },
+      "samples": [
+        {
+          "frame": 5527,
+          "width": 160,
+          "height": 144,
+          "sha256": "0d6178090919995878cb6a636c58059816c5e135d960d24c0d7413f383002046",
+          "rgbaSha256": "df3dea4ec13770a4187212e7ee3643bedb13ee61b7d762d18bc0a2d8eccd3e7f",
+          "sampledButtons": []
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [
+          "a"
+        ],
+        "frames": 2
+      },
+      "frame": 5529,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 2,
+        "startFrame": 5527,
+        "frame": 5529,
+        "advancedFrames": 2,
+        "appliedButtons": [
+          "a"
+        ],
+        "sampledButtons": [
+          "a"
+        ]
+      },
+      "samples": [
+        {
+          "frame": 5529,
+          "width": 160,
+          "height": 144,
+          "sha256": "0d6178090919995878cb6a636c58059816c5e135d960d24c0d7413f383002046",
+          "rgbaSha256": "df3dea4ec13770a4187212e7ee3643bedb13ee61b7d762d18bc0a2d8eccd3e7f",
+          "sampledButtons": [
+            "a"
+          ]
+        }
+      ]
+    },
+    {
+      "input": {
+        "buttons": [],
+        "frames": 25
+      },
+      "frame": 5554,
+      "execution": {
+        "status": "completed",
+        "requestedFrames": 25,
+        "startFrame": 5529,
+        "frame": 5554,
+        "advancedFrames": 25,
+        "appliedButtons": [],
+        "sampledButtons": []
+      },
+      "samples": [
+        {
+          "frame": 5554,
+          "width": 160,
+          "height": 144,
+          "sha256": "2a9c3c250f94f32648928c4b421a76f37ce2d3df88d7be215d1aee42255eaa98",
+          "rgbaSha256": "3727005779ebc8bf92522a5a8f414281d07e5e6310ef57e59700297bec6c9584",
+          "sampledButtons": []
+        }
+      ]
+    }
+  ],
+  "unlockMemory": {
+    "view": "memory",
+    "frame": 5554,
+    "region": "wram",
+    "offset": 1165,
+    "length": 4,
+    "address": "0xc48d",
+    "hex": "03000000"
+  },
+  "notes": [
+    "Full latest main cartridge completed courtyard, grove, banquet and returned to cover.",
+    "Initial grove route failed after entry timing differed from direct-entry practice; retained all inputs. Explicit Start retry using independent critic route cleared and continued into banquet.",
+    "Native soft restart recovered unlock value3. Recording disabled; genuine sampled frames and exact input history retained.",
+    "User reported Chromatic test was great on2026-10-02. Specific tested ROM hash and individual power-cycle/audio test results were not supplied."
+  ]
+}
