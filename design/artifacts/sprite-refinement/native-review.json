@@ -1,0 +1,74 @@
+{
+  "verdict": "approved for scoped native visual review",
+  "romPath": "/Users/jintaili/Development/kittie-game/courtyard/build/pilot-review-3/kittie-courtyard-pilot-final.gbc",
+  "romSha256Verified": "1cf35ada228d5a0683c19c58f4a2d5ca2bff1655caa247e6016f2184cacdcabf",
+  "captureFrameMappingProvidedByBuilder": {
+    "final-carry-ready": 245,
+    "final-carry-left-0": 253,
+    "final-carry-left-1": 261,
+    "final-carry-left-2": 269,
+    "final-carry-right-0": 277,
+    "final-carry-right-1": 285,
+    "final-carry-right-2": 293,
+    "final-carry-rest": 373,
+    "final-cuddle-transition": 397,
+    "final-cuddle-in-paws": 417,
+    "final-cuddle-held": 462
+  },
+  "sequenceProvidedByBuilder": "Physical pickup confirmed inventory1/health3 at244; ready245; left8 x3; right8 x3; neutral80; neutral24; neutral20; neutral45. Additional close/settled stills supplied.",
+  "limits": "Read-only inspection of genuine native samples and supplied timing. No runtime ownership or independent replay in this visual pass. First empty-handed motion clip excluded from held-wool/cuddle acceptance.",
+  "frames": [
+    {
+      "file": "/Users/jintaili/Development/kittie-game/courtyard/artifacts/courtyard-pilot-review-3/frames/final-carry-left-0.png",
+      "sha256": "5d1cfde404b1c2f3766123b44bf594f534caa7a008371c4e7e0a9be4e1e96534"
+    },
+    {
+      "file": "/Users/jintaili/Development/kittie-game/courtyard/artifacts/courtyard-pilot-review-3/frames/final-carry-left-1.png",
+      "sha256": "2bb16581ef86b17dbcf05103c4dec2549bc569b9024184b739276c9e0549b265"
+    },
+    {
+      "file": "/Users/jintaili/Development/kittie-game/courtyard/artifacts/courtyard-pilot-review-3/frames/final-carry-left-2.png",
+      "sha256": "20f98a2e5da639199aefbd5d69171e24d91453089a7cc0e5428b355fa5ee8172"
+    },
+    {
+      "file": "/Users/jintaili/Development/kittie-game/courtyard/artifacts/courtyard-pilot-review-3/frames/final-carry-ready.png",
+      "sha256": "bfe05dcb4ac2b875cf0e386698c0ccfd9665f878166c0e417bdddc51bd66d7ed"
+    },
+    {
+      "file": "/Users/jintaili/Development/kittie-game/courtyard/artifacts/courtyard-pilot-review-3/frames/final-carry-rest.png",
+      "sha256": "9c5280593df3eab2968b8274a98e8f793010b02674c3a6c498c7c904fdb41dd2"
+    },
+    {
+      "file": "/Users/jintaili/Development/kittie-game/courtyard/artifacts/courtyard-pilot-review-3/frames/final-carry-right-0.png",
+      "sha256": "6050602a9e5af1d9832eb17bd12b581c2c3cf31a69a3a00c5120f3e42f2cf8b3"
+    },
+    {
+      "file": "/Users/jintaili/Development/kittie-game/courtyard/artifacts/courtyard-pilot-review-3/frames/final-carry-right-1.png",
+      "sha256": "6337265ac373807cc1ba7d269029e69f63d377304c899f8aef49aab58c8ef524"
+    },
+    {
+      "file": "/Users/jintaili/Development/kittie-game/courtyard/artifacts/courtyard-pilot-review-3/frames/final-carry-right-2.png",
+      "sha256": "5451238afae1078e62fddb87d857ad062a25b814b5a820ba1084d528bb24c284"
+    },
+    {
+      "file": "/Users/jintaili/Development/kittie-game/courtyard/artifacts/courtyard-pilot-review-3/frames/final-cuddle-close.png",
+      "sha256": "e6a1433f0a617d537445de0eb6cb1f8f1c71cef2a4c2fd2ffe8f6d570f11ece4"
+    },
+    {
+      "file": "/Users/jintaili/Development/kittie-game/courtyard/artifacts/courtyard-pilot-review-3/frames/final-cuddle-held.png",
+      "sha256": "2d1a6868049a6cae78103f40f0a5ac69cb6ac214497fb17124b6b52db4f7d2ac"
+    },
+    {
+      "file": "/Users/jintaili/Development/kittie-game/courtyard/artifacts/courtyard-pilot-review-3/frames/final-cuddle-in-paws.png",
+      "sha256": "42272ed10d1583cae6c73eae0c626d020af5ad8a973872bcc6971fb951bb8ce1"
+    },
+    {
+      "file": "/Users/jintaili/Development/kittie-game/courtyard/artifacts/courtyard-pilot-review-3/frames/final-cuddle-settled.png",
+      "sha256": "9c5280593df3eab2968b8274a98e8f793010b02674c3a6c498c7c904fdb41dd2"
+    },
+    {
+      "file": "/Users/jintaili/Development/kittie-game/courtyard/artifacts/courtyard-pilot-review-3/frames/final-cuddle-transition.png",
+      "sha256": "b814c1ab59bb9d9a6f3423d0aec58cb023b70e0547b1699382882ff8b10c90d6"
+    }
+  ]
+}

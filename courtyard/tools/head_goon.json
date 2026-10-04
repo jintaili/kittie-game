@@ -1,0 +1,68 @@
+{
+  "width": 480,
+  "initial_gate": 1,
+  "door_index": 0,
+  "solids": [
+    [
+      160,
+      0,
+      168,
+      128
+    ],
+    [
+      320,
+      0,
+      328,
+      128
+    ]
+  ],
+  "gate_indices": [
+    0,
+    1
+  ],
+  "gaps": [],
+  "goons": [
+    [
+      216,
+      280
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "goon_heights": [
+    128,
+    128,
+    128
+  ],
+  "balls": [
+    [
+      188,
+      124
+    ]
+  ],
+  "courts": [
+    {
+      "bell_x": 0,
+      "bell_y": 0
+    },
+    {
+      "bell_x": 0,
+      "bell_y": 0
+    }
+  ],
+  "camera_entries": [
+    0,
+    184
+  ],
+  "camera_centers": [
+    80,
+    240
+  ],
+  "lifts": []
+}

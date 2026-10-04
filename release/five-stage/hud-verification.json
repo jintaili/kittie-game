@@ -1,0 +1,1375 @@
+{
+  "native": "1fb5f3931af3594d8e3cf5fe21147aa1e5b3e70f55aad1bc83543d8c57c5f3b1",
+  "web": "12985a618adca48e97cebebe8be267d37744ace5e1219902d5f7737ccdbb3e34",
+  "sourceHashes": {
+    "courtyard/tools/make_compact_hud.py": "491fe901569e20ea04041c9c4a6caeee6a043e0874ad81ba1c1d11eaa4516802",
+    "courtyard/plugins/kittie/engine/src/states/kittie_hud.c": "19c9dba33150aa0a42e6cff87f424ea3ecbcb16106a0a824467c4d56b897d2b6",
+    "courtyard/plugins/kittie/engine/src/states/kittie.c": "fb1535ed10f960bf62f3ca3cea26fca0b1289b00b3037433b054136f043ca872",
+    "courtyard/plugins/kittie/engine/src/states/kittie_title.c": "4dfa742031e7ad5519539622738c76ab8b43e76822cd2faec4eaa54a6baa8060",
+    "courtyard/plugins/kittie/engine/include/states/kittie_hud.h": "6930cbb91185428394e12c76e721e319d65f5bd893d39695b78e219b426692e5",
+    "courtyard/plugins/kittie/engine/include/states/kittie_hud_tiles.h": "550a019baed2ad39f729c4d9e04968f5e7dfdcc93e5c9fcc5b61e0d5fac5d0e9"
+  },
+  "method": "Public PyBoy ordinary held-button sets only, paired symbol and VRAM/OAM reads; no cartridge, emulated memory or save-state mutations. Native checks plus web cartridge checks are separate from browser and hardware acceptance.",
+  "presentation": {
+    "hudOamObjects": 0,
+    "iconHeight": 7,
+    "scoreGlyphHeight": 7,
+    "windowY": 0,
+    "cutScanline": 7,
+    "filled": "Pink hearts and wool icons",
+    "empty": "Cream icons with dark outlines"
+  },
+  "checks": {
+    "courtyard": {
+      "evidence": "courtyard/artifacts/hud-icons/final-2/native-courtyard/evidence.json",
+      "sha256": "953beed39d77992054e0108c8868c9c97dfaf486c6dfb751f198779c8a28264d",
+      "oam": {
+        "sampledFrames": 2096,
+        "topPeak": 0,
+        "peak": 9,
+        "overLimitFrames": 0
+      },
+      "hudCounts": [
+        "stage-0-hearts-3-wool-0-window-0",
+        "stage-0-hearts-3-wool-1-window-0",
+        "stage-0-hearts-3-wool-2-window-0",
+        "stage-0-hearts-3-wool-3-window-0",
+        "stage-1-hearts-3-wool-0-window-0"
+      ],
+      "vram": {
+        "0": {
+          "backgroundConflicts": [],
+          "backgroundDimensions": [
+            160,
+            18
+          ],
+          "lcdc": 231,
+          "spriteAllocatedTiles": 76,
+          "hudTileSha256": "6c8ff2193c7593321123f2061282227eaa62aa9d7096a1151bb8ac9514bd15f4"
+        },
+        "1": {
+          "backgroundConflicts": [],
+          "backgroundDimensions": [
+            220,
+            18
+          ],
+          "lcdc": 231,
+          "spriteAllocatedTiles": 76,
+          "hudTileSha256": "6c8ff2193c7593321123f2061282227eaa62aa9d7096a1151bb8ac9514bd15f4"
+        }
+      },
+      "highJumps": {},
+      "finalState": {
+        "VAR_STAGE_UNLOCK": 1,
+        "VAR_STAGE_CHOICE": 1,
+        "VAR_COURTYARD_GOONS": 0,
+        "VAR_COURTYARD_WOOL": 0,
+        "VAR_COURTYARD_SCORE": 0,
+        "VAR_COURTYARD_BEST": 900,
+        "VAR_COURTYARD_SAVE_VERSION": 19537,
+        "VAR_COURTYARD_SAVE_CHANGED": 1,
+        "VAR_GROVE_BEST": 0,
+        "VAR_VILLA_BEST": 0,
+        "VAR_BANQUET_BEST": 0,
+        "VAR_SAVE_SCHEMA": 19539,
+        "VAR_SAVE_FAMILY_KH": 19272,
+        "VAR_SAVE_FAMILY_OP": 20304,
+        "VAR_BOSS_BEST": 0,
+        "VAR_TITLE_SELECTOR": 0,
+        "kittie_x": 512,
+        "kittie_y": 2051,
+        "kittie_vx": 0,
+        "kittie_vy": 3,
+        "lift_y": 1792,
+        "lift_old_y": 1792,
+        "boss_target_x": 0,
+        "boss_hop_vx": 0,
+        "boss_hop_vy": 0,
+        "kittie_stage": 1,
+        "kittie_inventory": 0,
+        "kittie_health": 3,
+        "kittie_dead": 0,
+        "kittie_won": 0,
+        "kittie_gate": 1,
+        "boss_phase": 0,
+        "boss_health": 3,
+        "boss_resume_open": 0,
+        "courtyard_defeated": 0,
+        "lift_phase": 0,
+        "kittie_ground": 0,
+        "boss_hops_left": 0,
+        "boss_hop_age": 0,
+        "boss_timer": 0,
+        "kittie_hurt": 0,
+        "goon_state": [
+          0,
+          0,
+          0
+        ],
+        "ball_state": [
+          0,
+          0,
+          0,
+          2,
+          2,
+          2
+        ],
+        "ball_armed": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "goon_x": [
+          3448,
+          13320,
+          21880
+        ],
+        "goon_y": [
+          1536,
+          1152,
+          2048
+        ],
+        "ball_x": [
+          896,
+          12928,
+          24064,
+          0,
+          0,
+          0
+        ],
+        "ball_y": [
+          1984,
+          1088,
+          1600,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "retryTitle": {
+      "evidence": "courtyard/artifacts/hud-icons/final-2/native-retry-title/evidence.json",
+      "sha256": "6453e912d5d052cad798104e94b1f1095ae20af4489fbfcfebba48bc1f844459",
+      "oam": {
+        "sampledFrames": 1553,
+        "topPeak": 0,
+        "peak": 8,
+        "overLimitFrames": 0
+      },
+      "hudCounts": [
+        "stage-0-hearts-3-wool-0-window-0",
+        "stage-0-hearts-3-wool-1-window-0",
+        "stage-0-hearts-3-wool-2-window-0",
+        "stage-0-hearts-2-wool-2-window-0",
+        "stage-0-hearts-1-wool-2-window-0",
+        "stage-0-hearts-0-wool-2-window-0"
+      ],
+      "vram": {
+        "0": {
+          "backgroundConflicts": [],
+          "backgroundDimensions": [
+            160,
+            18
+          ],
+          "lcdc": 231,
+          "spriteAllocatedTiles": 76,
+          "hudTileSha256": "6c8ff2193c7593321123f2061282227eaa62aa9d7096a1151bb8ac9514bd15f4"
+        }
+      },
+      "highJumps": {},
+      "finalState": {
+        "VAR_STAGE_UNLOCK": 0,
+        "VAR_STAGE_CHOICE": 0,
+        "VAR_COURTYARD_GOONS": 0,
+        "VAR_COURTYARD_WOOL": 0,
+        "VAR_COURTYARD_SCORE": 0,
+        "VAR_COURTYARD_BEST": 0,
+        "VAR_COURTYARD_SAVE_VERSION": 19537,
+        "VAR_COURTYARD_SAVE_CHANGED": 0,
+        "VAR_GROVE_BEST": 0,
+        "VAR_VILLA_BEST": 0,
+        "VAR_BANQUET_BEST": 0,
+        "VAR_SAVE_SCHEMA": 19539,
+        "VAR_SAVE_FAMILY_KH": 0,
+        "VAR_SAVE_FAMILY_OP": 0,
+        "VAR_BOSS_BEST": 0,
+        "VAR_TITLE_SELECTOR": 1,
+        "kittie_x": 512,
+        "kittie_y": 2048,
+        "kittie_vx": 0,
+        "kittie_vy": 0,
+        "lift_y": 1792,
+        "lift_old_y": 1792,
+        "boss_target_x": 0,
+        "boss_hop_vx": 0,
+        "boss_hop_vy": 0,
+        "kittie_stage": 0,
+        "kittie_inventory": 0,
+        "kittie_health": 3,
+        "kittie_dead": 0,
+        "kittie_won": 0,
+        "kittie_gate": 0,
+        "boss_phase": 0,
+        "boss_health": 3,
+        "boss_resume_open": 0,
+        "courtyard_defeated": 0,
+        "lift_phase": 0,
+        "kittie_ground": 1,
+        "boss_hops_left": 0,
+        "boss_hop_age": 0,
+        "boss_timer": 0,
+        "kittie_hurt": 0,
+        "goon_state": [
+          0,
+          0,
+          0
+        ],
+        "ball_state": [
+          0,
+          0,
+          0,
+          2,
+          2,
+          2
+        ],
+        "ball_armed": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "goon_x": [
+          8708,
+          11516,
+          17924
+        ],
+        "goon_y": [
+          2048,
+          2048,
+          1536
+        ],
+        "ball_x": [
+          1024,
+          3840,
+          12800,
+          0,
+          0,
+          0
+        ],
+        "ball_y": [
+          1984,
+          1216,
+          1216,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "villa": {
+      "evidence": "courtyard/artifacts/hud-icons/final-2/native-villa/evidence.json",
+      "sha256": "ac6daed42d446915aab01813b0d213bb31b954484612f080a262322528cca8e9",
+      "oam": {
+        "sampledFrames": 1230,
+        "topPeak": 6,
+        "peak": 10,
+        "overLimitFrames": 0
+      },
+      "hudCounts": [
+        "stage-2-hearts-3-wool-0-window-0",
+        "stage-2-hearts-3-wool-1-window-0",
+        "stage-2-hearts-3-wool-2-window-0",
+        "stage-2-hearts-3-wool-3-window-0"
+      ],
+      "vram": {
+        "2": {
+          "backgroundConflicts": [],
+          "backgroundDimensions": [
+            160,
+            18
+          ],
+          "lcdc": 231,
+          "spriteAllocatedTiles": 78,
+          "hudTileSha256": "6c8ff2193c7593321123f2061282227eaa62aa9d7096a1151bb8ac9514bd15f4"
+        }
+      },
+      "highJumps": {
+        "2": {
+          "frame": 646,
+          "state": {
+            "VAR_STAGE_UNLOCK": 5,
+            "VAR_STAGE_CHOICE": 3,
+            "VAR_COURTYARD_GOONS": 0,
+            "VAR_COURTYARD_WOOL": 0,
+            "VAR_COURTYARD_SCORE": 0,
+            "VAR_COURTYARD_BEST": 900,
+            "VAR_COURTYARD_SAVE_VERSION": 19537,
+            "VAR_COURTYARD_SAVE_CHANGED": 0,
+            "VAR_GROVE_BEST": 900,
+            "VAR_VILLA_BEST": 900,
+            "VAR_BANQUET_BEST": 900,
+            "VAR_SAVE_SCHEMA": 19539,
+            "VAR_SAVE_FAMILY_KH": 19272,
+            "VAR_SAVE_FAMILY_OP": 20304,
+            "VAR_BOSS_BEST": 500,
+            "VAR_TITLE_SELECTOR": 0,
+            "kittie_x": 4018,
+            "kittie_y": 492,
+            "kittie_vx": 0,
+            "kittie_vy": -1,
+            "lift_y": 1144,
+            "lift_old_y": 1136,
+            "boss_target_x": 0,
+            "boss_hop_vx": 0,
+            "boss_hop_vy": 0,
+            "kittie_stage": 2,
+            "kittie_inventory": 1,
+            "kittie_health": 3,
+            "kittie_dead": 0,
+            "kittie_won": 0,
+            "kittie_gate": 1,
+            "boss_phase": 0,
+            "boss_health": 3,
+            "boss_resume_open": 0,
+            "courtyard_defeated": 0,
+            "lift_phase": 158,
+            "kittie_ground": 0,
+            "boss_hops_left": 0,
+            "boss_hop_age": 0,
+            "boss_timer": 0,
+            "kittie_hurt": 0,
+            "goon_state": [
+              0,
+              0,
+              0
+            ],
+            "ball_state": [
+              1,
+              0,
+              0,
+              2,
+              2,
+              2
+            ],
+            "ball_armed": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "goon_x": [
+              5468,
+              11356,
+              17564
+            ],
+            "goon_y": [
+              1024,
+              1280,
+              1024
+            ],
+            "ball_x": [
+              896,
+              7040,
+              13696,
+              0,
+              0,
+              0
+            ],
+            "ball_y": [
+              1984,
+              1472,
+              1472,
+              0,
+              0,
+              0
+            ]
+          },
+          "capture": "high-jump-stage-2.png",
+          "oam": {
+            "rows": [
+              [
+                30,
+                84,
+                22,
+                8
+              ],
+              [
+                30,
+                76,
+                24,
+                8
+              ],
+              [
+                30,
+                68,
+                10,
+                8
+              ],
+              [
+                30,
+                60,
+                26,
+                8
+              ],
+              [
+                30,
+                52,
+                24,
+                0
+              ],
+              [
+                14,
+                84,
+                10,
+                0
+              ],
+              [
+                14,
+                76,
+                12,
+                0
+              ],
+              [
+                14,
+                68,
+                14,
+                0
+              ],
+              [
+                14,
+                60,
+                26,
+                0
+              ],
+              [
+                14,
+                52,
+                28,
+                0
+              ],
+              [
+                18,
+                64,
+                42,
+                1
+              ],
+              [
+                64,
+                162,
+                52,
+                34
+              ],
+              [
+                64,
+                154,
+                50,
+                34
+              ],
+              [
+                87,
+                29,
+                76,
+                3
+              ],
+              [
+                87,
+                19,
+                76,
+                3
+              ],
+              [
+                87,
+                7,
+                76,
+                3
+              ],
+              [
+                87,
+                253,
+                76,
+                3
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "height": 16,
+            "peak": 6,
+            "topPeak": 6,
+            "overLimitLines": []
+          }
+        }
+      },
+      "finalState": {
+        "VAR_STAGE_UNLOCK": 5,
+        "VAR_STAGE_CHOICE": 3,
+        "VAR_COURTYARD_GOONS": 0,
+        "VAR_COURTYARD_WOOL": 0,
+        "VAR_COURTYARD_SCORE": 0,
+        "VAR_COURTYARD_BEST": 900,
+        "VAR_COURTYARD_SAVE_VERSION": 19537,
+        "VAR_COURTYARD_SAVE_CHANGED": 0,
+        "VAR_GROVE_BEST": 900,
+        "VAR_VILLA_BEST": 900,
+        "VAR_BANQUET_BEST": 900,
+        "VAR_SAVE_SCHEMA": 19539,
+        "VAR_SAVE_FAMILY_KH": 19272,
+        "VAR_SAVE_FAMILY_OP": 20304,
+        "VAR_BOSS_BEST": 500,
+        "VAR_TITLE_SELECTOR": 0,
+        "kittie_x": 13690,
+        "kittie_y": 1482,
+        "kittie_vx": 26,
+        "kittie_vy": 35,
+        "lift_y": 1792,
+        "lift_old_y": 1792,
+        "boss_target_x": 0,
+        "boss_hop_vx": 0,
+        "boss_hop_vy": 0,
+        "kittie_stage": 2,
+        "kittie_inventory": 3,
+        "kittie_health": 3,
+        "kittie_dead": 0,
+        "kittie_won": 0,
+        "kittie_gate": 1,
+        "boss_phase": 0,
+        "boss_health": 3,
+        "boss_resume_open": 0,
+        "courtyard_defeated": 2,
+        "lift_phase": 20,
+        "kittie_ground": 0,
+        "boss_hops_left": 0,
+        "boss_hop_age": 0,
+        "boss_timer": 0,
+        "kittie_hurt": 0,
+        "goon_state": [
+          5,
+          5,
+          0
+        ],
+        "ball_state": [
+          1,
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        "ball_armed": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "goon_x": [
+          5780,
+          11776,
+          17380
+        ],
+        "goon_y": [
+          640,
+          896,
+          1024
+        ],
+        "ball_x": [
+          10612,
+          7040,
+          13696,
+          0,
+          0,
+          0
+        ],
+        "ball_y": [
+          1017,
+          1472,
+          1472,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "stageEntries": {
+      "evidence": "courtyard/artifacts/hud-icons/final-2/native-stage-entries/evidence.json",
+      "sha256": "df38947e995c6b25a952c3c7cbea2d14ef743a08de69d526a7dd7b6b78ff2992",
+      "oam": {
+        "sampledFrames": 1305,
+        "topPeak": 0,
+        "peak": 6,
+        "overLimitFrames": 0
+      },
+      "hudCounts": [
+        "stage-0-hearts-3-wool-0-window-0",
+        "stage-1-hearts-3-wool-0-window-0",
+        "stage-2-hearts-3-wool-0-window-0",
+        "stage-3-hearts-3-wool-0-window-0",
+        "stage-4-hearts-3-wool-0-window-0"
+      ],
+      "vram": {
+        "0": {
+          "backgroundConflicts": [],
+          "backgroundDimensions": [
+            160,
+            18
+          ],
+          "lcdc": 231,
+          "spriteAllocatedTiles": 76,
+          "hudTileSha256": "6c8ff2193c7593321123f2061282227eaa62aa9d7096a1151bb8ac9514bd15f4"
+        },
+        "1": {
+          "backgroundConflicts": [],
+          "backgroundDimensions": [
+            220,
+            18
+          ],
+          "lcdc": 231,
+          "spriteAllocatedTiles": 76,
+          "hudTileSha256": "6c8ff2193c7593321123f2061282227eaa62aa9d7096a1151bb8ac9514bd15f4"
+        },
+        "2": {
+          "backgroundConflicts": [],
+          "backgroundDimensions": [
+            160,
+            18
+          ],
+          "lcdc": 231,
+          "spriteAllocatedTiles": 78,
+          "hudTileSha256": "6c8ff2193c7593321123f2061282227eaa62aa9d7096a1151bb8ac9514bd15f4"
+        },
+        "3": {
+          "backgroundConflicts": [],
+          "backgroundDimensions": [
+            60,
+            18
+          ],
+          "lcdc": 231,
+          "spriteAllocatedTiles": 122,
+          "hudTileSha256": "6c8ff2193c7593321123f2061282227eaa62aa9d7096a1151bb8ac9514bd15f4"
+        },
+        "4": {
+          "backgroundConflicts": [],
+          "backgroundDimensions": [
+            180,
+            18
+          ],
+          "lcdc": 231,
+          "spriteAllocatedTiles": 78,
+          "hudTileSha256": "6c8ff2193c7593321123f2061282227eaa62aa9d7096a1151bb8ac9514bd15f4"
+        }
+      },
+      "highJumps": {},
+      "finalState": {
+        "VAR_STAGE_UNLOCK": 5,
+        "VAR_STAGE_CHOICE": 0,
+        "VAR_COURTYARD_GOONS": 0,
+        "VAR_COURTYARD_WOOL": 0,
+        "VAR_COURTYARD_SCORE": 0,
+        "VAR_COURTYARD_BEST": 900,
+        "VAR_COURTYARD_SAVE_VERSION": 19537,
+        "VAR_COURTYARD_SAVE_CHANGED": 0,
+        "VAR_GROVE_BEST": 900,
+        "VAR_VILLA_BEST": 900,
+        "VAR_BANQUET_BEST": 900,
+        "VAR_SAVE_SCHEMA": 19539,
+        "VAR_SAVE_FAMILY_KH": 19272,
+        "VAR_SAVE_FAMILY_OP": 20304,
+        "VAR_BOSS_BEST": 500,
+        "VAR_TITLE_SELECTOR": 1,
+        "kittie_x": 512,
+        "kittie_y": 2048,
+        "kittie_vx": 0,
+        "kittie_vy": 0,
+        "lift_y": 1448,
+        "lift_old_y": 1456,
+        "boss_target_x": 4480,
+        "boss_hop_vx": 0,
+        "boss_hop_vy": 0,
+        "kittie_stage": 4,
+        "kittie_inventory": 0,
+        "kittie_health": 3,
+        "kittie_dead": 0,
+        "kittie_won": 0,
+        "kittie_gate": 0,
+        "boss_phase": 0,
+        "boss_health": 3,
+        "boss_resume_open": 0,
+        "courtyard_defeated": 0,
+        "lift_phase": 66,
+        "kittie_ground": 1,
+        "boss_hops_left": 0,
+        "boss_hop_age": 0,
+        "boss_timer": 0,
+        "kittie_hurt": 0,
+        "goon_state": [
+          0,
+          0,
+          0
+        ],
+        "ball_state": [
+          0,
+          0,
+          0,
+          2,
+          2,
+          2
+        ],
+        "ball_armed": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "goon_x": [
+          7192,
+          11928,
+          17704
+        ],
+        "goon_y": [
+          2048,
+          1536,
+          1024
+        ],
+        "ball_x": [
+          896,
+          9216,
+          15616,
+          0,
+          0,
+          0
+        ],
+        "ball_y": [
+          1984,
+          1216,
+          1384,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "webVilla": {
+      "evidence": "courtyard/artifacts/hud-icons/final-2/web-rom-villa/evidence.json",
+      "sha256": "9db1864ba1bf15761341d057d08d4b86e31e23cb2664d7824e81904bfd64500a",
+      "oam": {
+        "sampledFrames": 1230,
+        "topPeak": 6,
+        "peak": 10,
+        "overLimitFrames": 0
+      },
+      "hudCounts": [
+        "stage-2-hearts-3-wool-0-window-0",
+        "stage-2-hearts-3-wool-1-window-0",
+        "stage-2-hearts-3-wool-2-window-0",
+        "stage-2-hearts-3-wool-3-window-0"
+      ],
+      "vram": {
+        "2": {
+          "backgroundConflicts": [],
+          "backgroundDimensions": [
+            160,
+            18
+          ],
+          "lcdc": 231,
+          "spriteAllocatedTiles": 78,
+          "hudTileSha256": "6c8ff2193c7593321123f2061282227eaa62aa9d7096a1151bb8ac9514bd15f4"
+        }
+      },
+      "highJumps": {
+        "2": {
+          "frame": 646,
+          "state": {
+            "VAR_STAGE_UNLOCK": 5,
+            "VAR_STAGE_CHOICE": 3,
+            "VAR_COURTYARD_GOONS": 0,
+            "VAR_COURTYARD_WOOL": 0,
+            "VAR_COURTYARD_SCORE": 0,
+            "VAR_COURTYARD_BEST": 900,
+            "VAR_COURTYARD_SAVE_VERSION": 19537,
+            "VAR_COURTYARD_SAVE_CHANGED": 0,
+            "VAR_GROVE_BEST": 900,
+            "VAR_VILLA_BEST": 900,
+            "VAR_BANQUET_BEST": 900,
+            "VAR_SAVE_SCHEMA": 19539,
+            "VAR_SAVE_FAMILY_KH": 19272,
+            "VAR_SAVE_FAMILY_OP": 20304,
+            "VAR_BOSS_BEST": 500,
+            "VAR_TITLE_SELECTOR": 0,
+            "kittie_x": 4018,
+            "kittie_y": 492,
+            "kittie_vx": 0,
+            "kittie_vy": -1,
+            "lift_y": 1144,
+            "lift_old_y": 1136,
+            "boss_target_x": 0,
+            "boss_hop_vx": 0,
+            "boss_hop_vy": 0,
+            "kittie_stage": 2,
+            "kittie_inventory": 1,
+            "kittie_health": 3,
+            "kittie_dead": 0,
+            "kittie_won": 0,
+            "kittie_gate": 1,
+            "boss_phase": 0,
+            "boss_health": 3,
+            "boss_resume_open": 0,
+            "courtyard_defeated": 0,
+            "lift_phase": 158,
+            "kittie_ground": 0,
+            "boss_hops_left": 0,
+            "boss_hop_age": 0,
+            "boss_timer": 0,
+            "kittie_hurt": 0,
+            "goon_state": [
+              0,
+              0,
+              0
+            ],
+            "ball_state": [
+              1,
+              0,
+              0,
+              2,
+              2,
+              2
+            ],
+            "ball_armed": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "goon_x": [
+              5468,
+              11356,
+              17564
+            ],
+            "goon_y": [
+              1024,
+              1280,
+              1024
+            ],
+            "ball_x": [
+              896,
+              7040,
+              13696,
+              0,
+              0,
+              0
+            ],
+            "ball_y": [
+              1984,
+              1472,
+              1472,
+              0,
+              0,
+              0
+            ]
+          },
+          "capture": "high-jump-stage-2.png",
+          "oam": {
+            "rows": [
+              [
+                30,
+                84,
+                22,
+                8
+              ],
+              [
+                30,
+                76,
+                24,
+                8
+              ],
+              [
+                30,
+                68,
+                10,
+                8
+              ],
+              [
+                30,
+                60,
+                26,
+                8
+              ],
+              [
+                30,
+                52,
+                24,
+                0
+              ],
+              [
+                14,
+                84,
+                10,
+                0
+              ],
+              [
+                14,
+                76,
+                12,
+                0
+              ],
+              [
+                14,
+                68,
+                14,
+                0
+              ],
+              [
+                14,
+                60,
+                26,
+                0
+              ],
+              [
+                14,
+                52,
+                28,
+                0
+              ],
+              [
+                18,
+                64,
+                42,
+                1
+              ],
+              [
+                64,
+                162,
+                52,
+                34
+              ],
+              [
+                64,
+                154,
+                50,
+                34
+              ],
+              [
+                87,
+                29,
+                76,
+                3
+              ],
+              [
+                87,
+                19,
+                76,
+                3
+              ],
+              [
+                87,
+                7,
+                76,
+                3
+              ],
+              [
+                87,
+                253,
+                76,
+                3
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                0
+              ]
+            ],
+            "height": 16,
+            "peak": 6,
+            "topPeak": 6,
+            "overLimitLines": []
+          }
+        }
+      },
+      "finalState": {
+        "VAR_STAGE_UNLOCK": 5,
+        "VAR_STAGE_CHOICE": 3,
+        "VAR_COURTYARD_GOONS": 0,
+        "VAR_COURTYARD_WOOL": 0,
+        "VAR_COURTYARD_SCORE": 0,
+        "VAR_COURTYARD_BEST": 900,
+        "VAR_COURTYARD_SAVE_VERSION": 19537,
+        "VAR_COURTYARD_SAVE_CHANGED": 0,
+        "VAR_GROVE_BEST": 900,
+        "VAR_VILLA_BEST": 900,
+        "VAR_BANQUET_BEST": 900,
+        "VAR_SAVE_SCHEMA": 19539,
+        "VAR_SAVE_FAMILY_KH": 19272,
+        "VAR_SAVE_FAMILY_OP": 20304,
+        "VAR_BOSS_BEST": 500,
+        "VAR_TITLE_SELECTOR": 0,
+        "kittie_x": 13690,
+        "kittie_y": 1482,
+        "kittie_vx": 26,
+        "kittie_vy": 35,
+        "lift_y": 1792,
+        "lift_old_y": 1792,
+        "boss_target_x": 0,
+        "boss_hop_vx": 0,
+        "boss_hop_vy": 0,
+        "kittie_stage": 2,
+        "kittie_inventory": 3,
+        "kittie_health": 3,
+        "kittie_dead": 0,
+        "kittie_won": 0,
+        "kittie_gate": 1,
+        "boss_phase": 0,
+        "boss_health": 3,
+        "boss_resume_open": 0,
+        "courtyard_defeated": 2,
+        "lift_phase": 20,
+        "kittie_ground": 0,
+        "boss_hops_left": 0,
+        "boss_hop_age": 0,
+        "boss_timer": 0,
+        "kittie_hurt": 0,
+        "goon_state": [
+          5,
+          5,
+          0
+        ],
+        "ball_state": [
+          1,
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        "ball_armed": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "goon_x": [
+          5780,
+          11776,
+          17380
+        ],
+        "goon_y": [
+          640,
+          896,
+          1024
+        ],
+        "ball_x": [
+          10612,
+          7040,
+          13696,
+          0,
+          0,
+          0
+        ],
+        "ball_y": [
+          1017,
+          1472,
+          1472,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "limitations": [
+    "Physical hardware was not tested.",
+    "The builder preserved the existing human browser session; root owns the browser handoff."
+  ],
+  "reservedVram": {
+    "enginePool": "TEXT_BUFFER_START_BANK1=0xC0",
+    "hardwareRange": "Bank1, 0x8C00..0x8D8F under signed BG addressing",
+    "glyphSha256": "6c8ff2193c7593321123f2061282227eaa62aa9d7096a1151bb8ac9514bd15f4",
+    "allFiveStagesExact": true,
+    "noBackgroundConflicts": true,
+    "spriteAllocationBelowHud": true
+  },
+  "preservedBaseline": {
+    "native": "c396c2edb50641d4db18d0a84f7866108428cc902593eea8268b8aa9d8d863c1",
+    "web": "ad542465fff22553691682792e81a80a637080b7a7c4aaa7f84f4f99cb0729b9"
+  }
+}

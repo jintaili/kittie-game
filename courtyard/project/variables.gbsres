@@ -10,6 +10,76 @@
       "id": "101",
       "name": "Stage menu choice",
       "symbol": "var_stage_choice"
+    },
+    {
+      "id": "102",
+      "name": "Attempt goon points",
+      "symbol": "var_courtyard_goons"
+    },
+    {
+      "id": "103",
+      "name": "Attempt retained wool points",
+      "symbol": "var_courtyard_wool"
+    },
+    {
+      "id": "104",
+      "name": "Completed attempt score",
+      "symbol": "var_courtyard_score"
+    },
+    {
+      "id": "105",
+      "name": "Courtyard personal best",
+      "symbol": "var_courtyard_best"
+    },
+    {
+      "id": "106",
+      "name": "Courtyard score save version",
+      "symbol": "var_courtyard_save_version"
+    },
+    {
+      "id": "107",
+      "name": "Courtyard save changed",
+      "symbol": "var_courtyard_save_changed"
+    },
+    {
+      "id": "108",
+      "name": "Grove personal best",
+      "symbol": "var_grove_best"
+    },
+    {
+      "id": "109",
+      "name": "Villa personal best",
+      "symbol": "var_villa_best"
+    },
+    {
+      "id": "110",
+      "name": "Banquet personal best",
+      "symbol": "var_banquet_best"
+    },
+    {
+      "id": "111",
+      "name": "Five-stage save schema",
+      "symbol": "var_save_schema"
+    },
+    {
+      "id": "112",
+      "name": "Save family KH",
+      "symbol": "var_save_family_kh"
+    },
+    {
+      "id": "113",
+      "name": "Save family OP",
+      "symbol": "var_save_family_op"
+    },
+    {
+      "id": "114",
+      "name": "Head Goon personal best",
+      "symbol": "var_boss_best"
+    },
+    {
+      "id": "115",
+      "name": "Title selector enabled",
+      "symbol": "var_title_selector"
     }
   ],
   "constants": []

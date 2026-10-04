@@ -1,0 +1,26 @@
+[
+  {
+    "file": "kittie-contact-4x.png",
+    "sha256": "160c75d89ca810a0fafd76c11a27544934b879127e111f8bdfc6e9004640e572"
+  },
+  {
+    "file": "kittie-contact-native.png",
+    "sha256": "1d7b329ec7adc96b3caa7ae409865000e1d5dcce0b83590bf90d0d4825c6ff29"
+  },
+  {
+    "file": "kittie-motion-1x.gif",
+    "sha256": "7ed0ad87df619b5fb5b6495d99de85e44d231b6da1eefc9011280f0191737a39"
+  },
+  {
+    "file": "kittie-motion-4x.gif",
+    "sha256": "20272c34d1e47d1931b413ebb270483db227f4b0938ed492d193e7fc1125acfa"
+  },
+  {
+    "file": "kittie-sheet.png",
+    "sha256": "f290bfaece70ab30b913b542919fa6598685aba0aa61730185e9f9d84c3f68ff"
+  },
+  {
+    "file": "kittie-animation.json",
+    "sha256": "a0193ade7675dfcd3454e538add53cb25a5bf40c1cf0ad37d0ffacef2e16c04d"
+  }
+]

@@ -12,7 +12,51 @@
   "prefabScriptOverrides": {},
   "script": [
     {
-      "id": "ef370a00-1001-4000-8000-000000000034",
+      "id": "e995b372-2fcb-5736-8de2-a0e40f8ed2ed",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "111",
+        "value": {
+          "type": "number",
+          "value": 19539
+        }
+      }
+    },
+    {
+      "id": "587b2b59-0d6b-5952-9191-be0dab52a4a7",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "112",
+        "value": {
+          "type": "number",
+          "value": 19272
+        }
+      }
+    },
+    {
+      "id": "f283cad0-5c88-52f5-afad-e04d923aba63",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "113",
+        "value": {
+          "type": "number",
+          "value": 20304
+        }
+      }
+    },
+    {
+      "id": "3f020b38-28ec-5e93-8641-787cae970f0e",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "107",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "a80514c1-0999-5d64-b1a1-fbece2bea726",
       "command": "EVENT_IF_VALUE",
       "args": {
         "variable": "100",
@@ -22,7 +66,7 @@
       "children": {
         "true": [
           {
-            "id": "ef370a00-1001-4000-8000-000000000032",
+            "id": "7177426a-0376-5707-97a0-4404c950e194",
             "command": "EVENT_SET_VALUE",
             "args": {
               "variable": "100",
@@ -33,7 +77,68 @@
             }
           },
           {
-            "id": "ef370a00-1001-4000-8000-000000000033",
+            "id": "d15f7cbf-2290-542b-9681-0252f9210aaa",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "107",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            }
+          }
+        ],
+        "false": []
+      }
+    },
+    {
+      "id": "3222e756-ac33-5162-b7f6-97c660f8e161",
+      "command": "EVENT_IF_VALUE_COMPARE",
+      "args": {
+        "vectorX": "104",
+        "operator": ">",
+        "vectorY": "108"
+      },
+      "children": {
+        "true": [
+          {
+            "id": "9ed6955d-7911-54a5-8b9c-fdc4a7faf0fd",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "108",
+              "value": {
+                "type": "variable",
+                "value": "104"
+              }
+            }
+          },
+          {
+            "id": "55e12a51-469a-5488-979b-aa3d6f148f0b",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "107",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            }
+          }
+        ],
+        "false": []
+      }
+    },
+    {
+      "id": "c1aa7457-b2bf-5d78-84cf-102ca7ce3f3f",
+      "command": "EVENT_IF_VALUE",
+      "args": {
+        "variable": "107",
+        "operator": "==",
+        "comparator": 1
+      },
+      "children": {
+        "true": [
+          {
+            "id": "84c2d61e-df7c-5c7b-a38d-fcdb1d7b195d",
             "command": "EVENT_SAVE_DATA",
             "args": {
               "saveSlot": 0
@@ -48,17 +153,21 @@
       }
     },
     {
-      "id": "abb762f0-3ec4-49d6-946f-5aab3a9b294b",
+      "id": "63873003-b700-506f-90ea-88eace21ae11",
       "command": "EVENT_TEXT",
       "args": {
-        "text": "GROVE CLEAR!\nBANQUET NEXT\nA: CONTINUE"
+        "text": "GROVE CLEAR\nGOONS $102$ WOOL $103$\nSCORE $104$ BEST $108$\nA CONTINUE",
+        "minHeight": 6,
+        "maxHeight": 6,
+        "textHeight": 4,
+        "position": "top"
       }
     },
     {
-      "id": "ef370a00-1001-4000-8000-000000000035",
+      "id": "782e3cd5-409c-5a32-b9bd-c65ad9c6ee38",
       "command": "EVENT_SWITCH_SCENE",
       "args": {
-        "sceneId": "31e3ad8e-bf8a-5441-a0d5-cf86b365492f",
+        "sceneId": "33b6c10d-9abf-5b88-a3e9-1cf9891f3095",
         "x": {
           "type": "number",
           "value": 4

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kittie sprite refinement review</title>
+<style>
+body{margin:0;background:#eee5d4;color:#382e28;font:17px/1.5 system-ui,sans-serif}main{max-width:1000px;margin:auto;padding:36px 24px 60px}h1{font-size:34px;line-height:1.15}h2{font-size:23px;margin-top:30px}p{max-width:850px}a{color:#356759}.lead{border-left:5px solid #8b6c4a;background:#e2d4bc;padding:17px 22px}.photos{display:grid;grid-template-columns:1fr 1fr;gap:20px}figure{margin:0}figure img{width:100%;height:auto}figcaption{font-size:14px;margin-top:8px}.sprite{image-rendering:pixelated;max-width:800px}.small{font-size:14px;color:#685d51}li{margin-bottom:14px}code{font-size:14px}table{border-collapse:collapse;width:100%;font-size:15px}td,th{border-bottom:1px solid #c5b69f;padding:10px;text-align:left;vertical-align:top} @media(max-width:650px){.photos{grid-template-columns:1fr}}
+</style>
+<main>
+<p class="small">Independent character critique · 3 October 2026 · Final source and native visual approval</p>
+<h1>Kittie now has straighter, attached legs</h1>
+<p class="lead">The final native captures pass. The chest notch is filled, the legs are short and straight, and walking keeps the upper body settled. Both carried-wool directions and the distinct forepaw cuddle preserve Kittie's identity. No further sprite changes are requested from this review.</p>
+<h2>Final native visual verdict</h2>
+<p>I reviewed the fresh held-wool walking captures in both directions, the forepaw cuddle, and the wool returning over the head. The legs stay attached and the chest stays filled during walking and rest. Small changes at the feet show the step without the earlier shifting upper silhouette. The fixed face remains recognizable against the original photos.</p>
+<p>The pink wool reads separately from the taupe paws on the back and in the cuddle. The open space used by the cuddle is purposeful and still fits the ball. The body and face do not need another revision.</p>
+<div class="photos">
+<figure><img class="sprite" src="../courtyard/artifacts/courtyard-pilot-review-3/frames/final-carry-right-1.png" alt="Final native Kittie walking right with pink wool on his back"><figcaption>Native rightward carry. Short feet stay beneath the low body; the upper chest is filled.</figcaption></figure>
+<figure><img class="sprite" src="../courtyard/artifacts/courtyard-pilot-review-3/frames/final-carry-left-1.png" alt="Final native Kittie walking left with wool on his back"><figcaption>Native leftward carry. Mirroring preserves the attached legs and clear wool.</figcaption></figure>
+<figure><img class="sprite" src="../courtyard/artifacts/courtyard-pilot-review-3/frames/final-cuddle-in-paws.png" alt="Final native Kittie holding pink wool in his forepaws"><figcaption>Native cuddle. The pink ball is visibly held in the approved forepaw space.</figcaption></figure>
+<figure><img class="sprite" src="../courtyard/artifacts/courtyard-pilot-review-3/frames/final-cuddle-held.png" alt="Native wool returning above Kittie toward the back"><figcaption>Return transition. The wool moves over the head while the sewn face stays fixed.</figcaption></figure>
+</div>
+<p><img class="sprite" src="../courtyard/artifacts/courtyard-pilot-review-3/final-native-carry-cuddle.gif" alt="Timed native samples of final carried-wool walking and cuddle" style="width:320px;max-width:100%"></p>
+<p class="small">Timed genuine native samples, with no invented intermediate frames. Physical pickup was confirmed by the builder at frame 244. The walking samples follow eight-frame input steps, then neutral waits show rest, cuddle, and return. This is a scoped read-only visual review, not another full gameplay or save test.</p>
+<p class="small">Final ROM verified locally: <code>courtyard/build/pilot-review-3/kittie-courtyard-pilot-final.gbc</code><br>SHA-256 <code>1cf35ada228d5a0683c19c58f4a2d5ca2bff1655caa247e6016f2184cacdcabf</code><br><a href="artifacts/sprite-refinement/native-review.json">Capture inventory, frame timing, and review provenance</a>. The earlier empty-handed clip is excluded from held-wool and cuddle acceptance. No runtime operation was taken for this review.</p>
+<h2>Revised source judgment</h2>
+<p>The taupe chest now joins the forelegs beneath the cheek. A small gap remains between their bottom tips, which is enough to read them as separate limbs. The new shapes answer the user's request without turning the legs into thin wires or adding a large pale paw. The original head, face embroidery, and low body still identify Kittie.</p>
+<p>Across the four authored walk cels, changing cells are now confined below row 25. The previous version changed 56 cells above that row, including its tail movement. The approved cuddle forepaw crops in frames 10–13 are unchanged. These comparisons support the visual judgment; they support the native visual review above.</p>
+<div class="photos">
+<figure><img class="sprite" src="artifacts/sprite-refinement/original/kittie-contact-4x.png" alt="Original source poses with slanted feet and open chest notch"><figcaption>Before. The front-leg notch and angled feet shift during walking.</figcaption></figure>
+<figure><img class="sprite" src="artifacts/sprite-refinement/revised-1/kittie-contact-4x.png" alt="Revised source poses with straight short legs and filled chest"><figcaption>Revised source. The chest stays filled and the short shafts remain attached.</figcaption></figure>
+</div>
+<p><img src="artifacts/sprite-refinement/revised-1/kittie-motion-1x.gif" alt="Revised source animation at native size" style="width:40px;height:32px;image-rendering:pixelated;margin-right:30px"><img src="artifacts/sprite-refinement/revised-1/kittie-motion-4x.gif" alt="Revised source animation enlarged" style="width:160px;height:128px;image-rendering:pixelated"></p>
+<p class="small">Revised source animation previews at native size and 4×. The native gameplay samples reviewed above provide the final visual evidence. <a href="artifacts/sprite-refinement/revised-1/manifest.json">Revised source snapshot manifest</a>.</p>
+<h2>Original photo basis and refinement brief</h2>
+<div class="photos">
+<figure><img src="../courtyard/source-art/character-reference/reference-current-front.png" alt="Original Kittie photograph showing his face resting on broad forepaws"><figcaption>Original owner front photograph, unchanged project copy. His head overlaps the paws; the chest does not look suspended between separate legs.</figcaption></figure>
+<figure><img src="../courtyard/source-art/character-reference/reference-current-side.png" alt="Original side photograph showing the low torso and attached foreleg"><figcaption>Original owner side photograph, unchanged project copy. The foreleg grows out of the body and supports the cheek. The long torso stays close to the ground.</figcaption></figure>
+</div>
+
+<h2>Original priorities, addressed by the source revision</h2>
+<ol>
+<li>Fill the notch beneath the right cheek with the torso's taupe. In the current rest cel, the background opening spans roughly x30–34 at y26–27 on the 40×32 canvas. Extend the chest into its upper portion and taper toward the feet. Keep only a small separation at the bottom so the legs remain distinct.</li>
+<li>Make the leg shafts straighter and continuously attached. The near foreleg currently runs from around x26 to a toe at x33, which reads as a bent shoe. Start with a short near-vertical shape, roughly 3–4 pixels across including the one-pixel contour, then a compact blunt end. This is a starting scale, not a rigid pixel test. Avoid a one-pixel wire, a flared boot, or a large pale paw.</li>
+<li>Keep chest and shoulder anchors still during walking. Use at most a one-pixel toe shift or alternating one-pixel lift to suggest the step. Do not move the entire leg attachment sideways. Keep the upper chest fill identical through the walk so its hole does not open and close. Reduce the tail's walk-synchronized shift too if the silhouette still looks busy.</li>
+</ol>
+<p>The user asked for more stick-like legs. For this sprite, I interpret that as short, simple, straight supports with enough taupe fill to remain plush. The older reference text cautions against narrow limbs in other poses; that does not override the user's current direction.</p>
+
+<h2>Original source frames, retained</h2>
+<figure><img class="sprite" src="artifacts/sprite-refinement/original/kittie-contact-4x.png" alt="Current Kittie contact sheet showing rest, walk, throw, air, and cuddle frames"><figcaption>Retained source contact sheet from before this revision. Frames 0–2 are rest variations; 3–6 are walking; 7–9 are throw and air; 10–13 are cuddle. The large gap and angled near foot are easiest to compare in rest and walk.</figcaption></figure>
+<p><img src="artifacts/sprite-refinement/original/kittie-motion-4x.gif" alt="Current authored source animation preview" style="width:160px;height:128px;image-rendering:pixelated"></p>
+<p class="small">Existing source animation preview. The source manifest uses 120 ms per walk cel. I inspected the authored cel sequence and motion definitions; the revised source and native evidence are reviewed above. A source GIF is not evidence that the revised ROM behaves correctly.</p>
+
+<h2>Preserve while refining</h2>
+<p>Keep the low horizontal oval head, crown marking, closed embroidered eyes, pale nose, stitched grin, and uneven thread whiskers. Keep the substantial rounded area below the smile. Do not lower or reshape the face to cover the gap; add the missing chest below it. Keep the torso long and low, paw fill taupe, highlights small, and contours one pixel wide. Preserve the approved back carry and idle cuddle, including their ball space and forepaw shapes.</p>
+<p>Walking can be quiet. The fixed face is expressive enough; it does not need a wobbling body to sell movement. Throw and cuddle may still move the paws intentionally while retaining their attachment to the body.</p>
+
+<h2>Acceptance criteria used</h2>
+<p>At native size, the legs must read as attached short limbs and the chest must look filled rather than hollow. Walking must keep the upper silhouette settled with small foot changes. I compared revised source states against the original photographs and approved face, then checked the builder's genuine native walking, carry, and cuddle captures. The final candidate meets those visual criteria. Runtime ownership remained with the build and verification roles.</p>
+
+<h2>Reference use</h2>
+<p>I read the original folder's character text as reference material and inspected its current front and side photographs, original front and side images, head-on-paws close-up, grounded-paw image, and hind-leg side image. I did not install or follow the folder as an agent skill. Its outdated pronouns and broad generation rules do not override this project's instructions: Kittie is male, and the user has specifically requested this leg refinement.</p>
+<p class="small">Character source: <code>/Users/jintaili/Downloads/Kittie Codex Skill/</code>. Untouched photo copies and hashes: <a href="../courtyard/source-art/character-reference/reference.json">reference manifest</a>. Current source: <a href="../courtyard/tools/make_kittie.py">make_kittie.py</a> and <a href="../courtyard/source-art/kittie-animation.json">animation manifest</a>. The displayed source previews are retained copies with a <a href="artifacts/sprite-refinement/original/manifest.json">snapshot manifest</a>. This pass created the review and its evidence copies. No game source edit, build, emulator, or browser action was taken.</p>
+</main>
+</html>

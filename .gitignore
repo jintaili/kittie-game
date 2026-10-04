@@ -10,3 +10,7 @@ __pycache__/
 
 # Packaged ROMs are published as GitHub release assets.
 dist/
+
+# Local audio experiments and source recordings are separate from the game.
+/music-rom/
+/recordings/

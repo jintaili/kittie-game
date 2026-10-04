@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "a812fe84-99d5-56d1-80d1-8513b7780834",
+  "name": "Head Goon passage",
+  "symbol": "bg_head_goon",
+  "tileColors": "003c0+0378+",
+  "filename": "head_goon.png",
+  "width": 60,
+  "height": 18,
+  "imageWidth": 480,
+  "imageHeight": 144,
+  "autoColor": false
+}

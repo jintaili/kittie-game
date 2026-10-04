@@ -12,7 +12,159 @@
   "prefabScriptOverrides": {},
   "script": [
     {
-      "id": "ef370a00-1001-4000-8000-000000000036",
+      "id": "2914f54b-0904-569e-bf6c-1b087c379b8e",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "111",
+        "value": {
+          "type": "number",
+          "value": 19539
+        }
+      }
+    },
+    {
+      "id": "f5686ece-dbde-5f01-b9b4-8ea91e69560d",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "112",
+        "value": {
+          "type": "number",
+          "value": 19272
+        }
+      }
+    },
+    {
+      "id": "e7ad7dd4-b607-54ad-a43a-c60cab128d33",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "113",
+        "value": {
+          "type": "number",
+          "value": 20304
+        }
+      }
+    },
+    {
+      "id": "113a4cd0-8495-5260-997e-700912c353d3",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "107",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "5d437b6e-862f-5b6a-9b35-6b9c7a048c92",
+      "command": "EVENT_IF_VALUE",
+      "args": {
+        "variable": "100",
+        "operator": "<",
+        "comparator": 5
+      },
+      "children": {
+        "true": [
+          {
+            "id": "d047ebb4-13e4-547a-b0ea-cc48c6208661",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "100",
+              "value": {
+                "type": "number",
+                "value": 5
+              }
+            }
+          },
+          {
+            "id": "7be44eb1-e072-59e7-9a89-834d62e2e785",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "107",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            }
+          }
+        ],
+        "false": []
+      }
+    },
+    {
+      "id": "b2d8bf8d-db43-5d69-8427-e4e5733ec9a5",
+      "command": "EVENT_IF_VALUE_COMPARE",
+      "args": {
+        "vectorX": "104",
+        "operator": ">",
+        "vectorY": "110"
+      },
+      "children": {
+        "true": [
+          {
+            "id": "4888cdfb-a1ed-5dfe-a294-6d4017ca78aa",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "110",
+              "value": {
+                "type": "variable",
+                "value": "104"
+              }
+            }
+          },
+          {
+            "id": "6c45734c-05ba-5d89-9eac-450ff3c36a9c",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "107",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            }
+          }
+        ],
+        "false": []
+      }
+    },
+    {
+      "id": "f9fe3dd9-49d0-5dff-85e1-0a50e13c0864",
+      "command": "EVENT_IF_VALUE",
+      "args": {
+        "variable": "107",
+        "operator": "==",
+        "comparator": 1
+      },
+      "children": {
+        "true": [
+          {
+            "id": "bd253f81-0784-5eb4-a8e0-1c46dfba3bf7",
+            "command": "EVENT_SAVE_DATA",
+            "args": {
+              "saveSlot": 0
+            },
+            "children": {
+              "true": [],
+              "load": []
+            }
+          }
+        ],
+        "false": []
+      }
+    },
+    {
+      "id": "a75483c7-0f18-507b-87b5-4880f886e22d",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": "BANQUET CLEAR\nGOONS $102$ WOOL $103$\nSCORE $104$ BEST $110$\nA CONTINUE",
+        "minHeight": 6,
+        "maxHeight": 6,
+        "textHeight": 4,
+        "position": "top"
+      }
+    },
+    {
+      "id": "ed36dbcf-1286-5581-beed-f474c320f028",
       "command": "EVENT_SWITCH_SCENE",
       "args": {
         "sceneId": "663d17cc-23c5-53cc-ac18-5347847d9068",

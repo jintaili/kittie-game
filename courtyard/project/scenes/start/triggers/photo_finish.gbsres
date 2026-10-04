@@ -12,7 +12,51 @@
   "prefabScriptOverrides": {},
   "script": [
     {
-      "id": "ef370a00-1001-4000-8000-000000000031",
+      "id": "f045581d-4b54-501d-8e65-b9cf2aa3cd68",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "111",
+        "value": {
+          "type": "number",
+          "value": 19539
+        }
+      }
+    },
+    {
+      "id": "1e1a5d43-92c4-50b0-851d-fefe777d6178",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "112",
+        "value": {
+          "type": "number",
+          "value": 19272
+        }
+      }
+    },
+    {
+      "id": "9f0bd24b-c398-5e2c-b6ad-059056b49f4d",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "113",
+        "value": {
+          "type": "number",
+          "value": 20304
+        }
+      }
+    },
+    {
+      "id": "545e0bd8-d4ab-5b70-b0e7-4089d9f563ba",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "107",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "28e85f12-6d48-5e46-b423-0982d11fd45a",
       "command": "EVENT_IF_VALUE",
       "args": {
         "variable": "100",
@@ -22,7 +66,7 @@
       "children": {
         "true": [
           {
-            "id": "ef370a00-1001-4000-8000-000000000029",
+            "id": "93f07139-71e8-5302-978d-d66a2e6070ac",
             "command": "EVENT_SET_VALUE",
             "args": {
               "variable": "100",
@@ -33,7 +77,68 @@
             }
           },
           {
-            "id": "ef370a00-1001-4000-8000-000000000030",
+            "id": "fba848f5-01a1-5bec-aecc-de9dbbc018f2",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "107",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            }
+          }
+        ],
+        "false": []
+      }
+    },
+    {
+      "id": "e9c80486-31f3-57a8-b267-7268e0ee914b",
+      "command": "EVENT_IF_VALUE_COMPARE",
+      "args": {
+        "vectorX": "104",
+        "operator": ">",
+        "vectorY": "105"
+      },
+      "children": {
+        "true": [
+          {
+            "id": "fdd3d414-0865-5a92-89d3-6cee26ede5bf",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "105",
+              "value": {
+                "type": "variable",
+                "value": "104"
+              }
+            }
+          },
+          {
+            "id": "a82e1fce-da55-5286-9dce-c1b5d33e65b0",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "107",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            }
+          }
+        ],
+        "false": []
+      }
+    },
+    {
+      "id": "1788c404-f66a-53d7-9891-b30575864478",
+      "command": "EVENT_IF_VALUE",
+      "args": {
+        "variable": "107",
+        "operator": "==",
+        "comparator": 1
+      },
+      "children": {
+        "true": [
+          {
+            "id": "3f32b15e-f855-55e6-b1cf-f423cc450308",
             "command": "EVENT_SAVE_DATA",
             "args": {
               "saveSlot": 0
@@ -48,13 +153,18 @@
       }
     },
     {
+      "id": "80e17710-dcd6-5370-a061-e2508b3aacff",
       "command": "EVENT_TEXT",
       "args": {
-        "text": "COURTYARD CLEAR\nA CONTINUE"
-      },
-      "id": "b5f8bc03-d0c3-53f7-a430-48e2874726bc"
+        "text": "COURTYARD CLEAR\nGOONS $102$ WOOL $103$\nSCORE $104$ BEST $105$\nA CONTINUE",
+        "minHeight": 6,
+        "maxHeight": 6,
+        "textHeight": 4,
+        "position": "top"
+      }
     },
     {
+      "id": "b610594a-c70a-5f9d-b8fa-fe4acb6701b7",
       "command": "EVENT_SWITCH_SCENE",
       "args": {
         "sceneId": "32b0d550-4338-5ca4-adaa-0a3fcbfd6661",
@@ -68,8 +178,7 @@
         },
         "direction": "right",
         "fadeSpeed": "1"
-      },
-      "id": "9fb08fe0-c7ad-5f12-a9bb-6d6286555499"
+      }
     }
   ],
   "leaveScript": []

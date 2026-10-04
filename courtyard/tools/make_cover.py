@@ -26,10 +26,41 @@ PALETTES = [
     ['00b5bd', '9cad39', '426b29', '213921'],
 ]
 
+def correct_whiskers(source):
+    """Native-cell correction from the owner's front and paws-front photos.
+
+    His right cheek is on the viewer's left: the loose thread ends point
+    inward/up from a low outer-cheek anchor. The other cheek has longer,
+    outward/downward threads. Keep the approved v10 source untouched.
+    """
+    draw = ImageDraw.Draw(source)
+    # Remove only the old dark chevrons, retaining surrounding fur volume.
+    for y in range(64, 76):
+        for x in range(15, 37):
+            r, g, b = source.getpixel((x, y))
+            if r < 205 and g < 165 and b < 135:
+                color = '#fff7c6' if x < 19 else '#deae73'
+                if y >= 72 and x >= 24:
+                    color = '#e6a55a'
+                draw.point((x, y), fill=color)
+    for y in range(64, 78):
+        for x in range(125, 145):
+            r, g, b = source.getpixel((x, y))
+            if r < 160 and g < 110 and b < 95:
+                draw.point((x, y), fill='#c58c52' if x < 128 and y < 72 else '#ad734a')
+    ink = '#312119'
+    # Two fine inward threads, sharing the outer anchor rather than a tip.
+    draw.line([(19, 72), (26, 70), (33, 67), (39, 63)], fill=ink, width=1)
+    draw.line([(19, 73), (27, 72), (35, 69), (41, 66)], fill=ink, width=1)
+    # The opposite side is deliberately uneven, longer and swept outward.
+    draw.line([(138, 68), (144, 70), (150, 74), (155, 79)], fill=ink, width=1)
+    draw.line([(139, 71), (145, 74), (149, 79), (152, 82)], fill=ink, width=1)
+
 def build():
     # Sample whole native cells from the deliberately coarse source. There is
     # no photographic texture enhancement or error-diffusion dithering.
     source = Image.open(SOURCE).convert('RGB').resize((160, 144), Image.Resampling.BOX)
+    correct_whiskers(source)
     # A tiny 3x5 native prompt occupies only the strip beneath the approved title.
     glyphs = {'A':['010','101','111','101','101'], 'S':['111','100','111','001','111'],
               'T':['111','010','010','010','010'], 'R':['110','101','110','101','101'],
@@ -89,6 +120,7 @@ def build():
     result = {
         'source':str(SOURCE.relative_to(ROOT)),
         'sourceSha256':hashlib.sha256(SOURCE.read_bytes()).hexdigest(),
+        'nativeCorrection':'Original-reference asymmetric whiskers: his right curls inward, his left sweeps outward.',
         'size':[160,144],
         'palettes':[[''.join(f'{v:02x}' for v in c) for c in p] for p in palettes],
         'edits':edits,

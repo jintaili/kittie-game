@@ -82,11 +82,15 @@ def caption(im, x, y, text):
         im.paste(tile, (x+i*8,y))
 
 def build(name):
+    if name == 'banquet':
+        from make_banquet import build as build_banquet
+        build_banquet()
+        return
     if name == 'grove':
         build_grove()
         return
     level = json.loads((ROOT/f'tools/{name}.json').read_text())
-    w = level['width']; grove = name == 'grove'
+    w = level['width']; grove = name == 'grove'; villa = name == 'villa'
     im = Image.new('RGB', (w,144), C[0]); d = ImageDraw.Draw(im)
     paint = [dict(x=0,y=0,width=w//8,height=18,slot=0)]
     def region(x,y,r,b,slot):
@@ -101,6 +105,17 @@ def build(name):
                 for xx,yy in [(8,8),(18,12),(12,18)]:
                     d.line((x+dx+xx,dy+yy,x+dx+xx+3,dy+yy-1),fill=C[2])
             region(x,40,x+80,128,2)
+    elif villa:
+        # Recessed service doors and long pale plaster areas leave rails readable.
+        for x in range(16,w-48,160):
+            d.rectangle((x,64,x+39,127),fill=C[1])
+            d.rectangle((x+8,72,x+31,127),fill=C[2])
+            d.line((x+20,73,x+20,126),fill=C[1])
+            d.line((x-3,59,x+42,59),fill=C[2]);d.line((x-3,60,x+42,60),fill=C[1])
+            region(x-8,56,x+48,128,1)
+        for x in range(0,w,32):
+            d.line((x,32,x+30,32),fill=C[1])
+            d.line((x+16,33,x+16,39),fill=C[1])
     else:
         # Banquet walls, tall windows, garlands and warm hanging lanterns.
         for x in range(0,w,80):
@@ -124,7 +139,7 @@ def build(name):
     region(0,128,w,144,2 if grove else 3)
     for i,(x,y,r,b) in enumerate(level['solids']):
         if i in level['gate_indices'] or i==level['door_index']: continue
-        table = not grove and b-y<=18 and r-x>48
+        table = not grove and not villa and b-y<=18 and r-x>48
         d.rectangle((x,y,r-1,b-1),fill=C[1],outline=C[2])
         d.line((x,y,r-1,y),fill=C[3]);d.line((x+1,y+2,r-2,y+2),fill=C[0])
         if table:
@@ -144,6 +159,12 @@ def build(name):
                 for xx in range(x+8+(8 if (yy//8)&1 else 0),r,16):
                     d.line((xx,yy-7,xx,yy-1),fill=C[2]);d.point((xx-4,yy-3),fill=C[0])
             region(x,y,r,b,3)
+    for x in level.get('lifts',[]):
+        d.rectangle((x+8,56,x+31,127),fill=C[0])
+        for rail in (x+10,x+29):
+            d.line((rail,56,rail,127),fill=C[2])
+            d.line((rail+1,56,rail+1,127),fill=C[1])
+        d.line((x+8,56,x+31,56),fill=C[2]);region(x+8,56,x+32,128,3)
     for x,r,_ in level['gaps']:
         d.rectangle((x,128,r-1,143),fill=C[1])
         d.line((x,128,r-1,128),fill=C[0])
@@ -167,7 +188,7 @@ def build(name):
         for x in (40,1336,1680):
             d.rectangle((x,116,x+15,127),fill=C[1],outline=C[2])
             d.line((x+1,121,x+14,121),fill=C[2])
-    else:
+    elif not villa:
         caption(im,8,40,'THE BANQUET')
         caption(im,144,40,'B UNDER A OVER')
         caption(im,808,40,'TABLE HOP')
@@ -180,7 +201,7 @@ def build(name):
             for y in range(72,124,16): d.ellipse((x-3,y,x+5,y+5),fill=C[1])
         caption(im,1352,40,'PHOTO')
         region(1344,48,1440,128,5)
-    dest='olive_grove' if grove else 'banquet'
+    dest='olive_grove' if grove else name
     im.save(ROOT/f'assets/backgrounds/{dest}.png')
     (ROOT/f'tools/{name}-palettes.json').write_text(json.dumps(paint)+'\n')
     tiles={im.crop((x,y,x+8,y+8)).tobytes() for y in range(0,144,8) for x in range(0,w,8)}
@@ -226,4 +247,5 @@ def front_end(name):
     im.save(ROOT/f'assets/backgrounds/{name}.png')
 
 if __name__ == '__main__':
-    build('grove');build('banquet');front_end('title');front_end('ending')
+    # Approved cover-v10 has its own generator. World art must never replace it.
+    build('grove');build('villa');build('banquet')

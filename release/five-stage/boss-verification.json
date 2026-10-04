@@ -1,0 +1,214 @@
+{
+  "verdict": "PASS",
+  "nativeSha256": "c396c2edb50641d4db18d0a84f7866108428cc902593eea8268b8aa9d8d863c1",
+  "webSha256": "ad542465fff22553691682792e81a80a637080b7a7c4aaa7f84f4f99cb0729b9",
+  "nativeWebDifferentOffsets": [
+    334,
+    335,
+    560,
+    561,
+    562,
+    563
+  ],
+  "nativeSignature": "0x7a2de888",
+  "webSignature": "0xc95f1d21",
+  "compiledGlobals": {
+    "VAR_STAGE_UNLOCK": 0,
+    "VAR_STAGE_CHOICE": 1,
+    "VAR_COURTYARD_GOONS": 2,
+    "VAR_COURTYARD_WOOL": 3,
+    "VAR_COURTYARD_SCORE": 4,
+    "VAR_COURTYARD_BEST": 5,
+    "VAR_COURTYARD_SAVE_VERSION": 6,
+    "VAR_COURTYARD_SAVE_CHANGED": 7,
+    "VAR_GROVE_BEST": 8,
+    "VAR_VILLA_BEST": 9,
+    "VAR_BANQUET_BEST": 10,
+    "VAR_SAVE_SCHEMA": 11,
+    "VAR_SAVE_FAMILY_KH": 12,
+    "VAR_SAVE_FAMILY_OP": 13,
+    "VAR_BOSS_BEST": 14,
+    "VAR_TITLE_SELECTOR": 15,
+    "MAX_GLOBAL_VARS": 16
+  },
+  "sourceReadHashes": {
+    "courtyard/plugins/kittie/engine/src/states/head_goon.c": "60b742802a342b975870c88bb1c5c321ca4123f1e18467cd418a9f98ddd318af",
+    "courtyard/plugins/kittie/engine/src/states/kittie.c": "1af7e8eb93f2feb5ed158382a2d7ee1641d64f8736c23371eb7106c81ee2940f",
+    "courtyard/plugins/kittie/engine/src/states/kittie_title.c": "44d527defbbd77df6e649389a2d9228ce646f0e93e3ae5e02c241a2f09fcbfb9",
+    "courtyard/plugins/kittie/engine/include/states/kittie_levels.h": "45a90bf230edf77e63e9a90b4c5234d23e5e78f503036422a02532ef8805510b",
+    "courtyard/project/variables.gbsres": "c1bdad7321320126f45ab7f5bb7f8be0847583d2fd47da27e222b18230f87012"
+  },
+  "unchangedPriorLoaderGlobalsTitleAndTriggers": {
+    "courtyard/plugins/kittie/engine/src/states/kittie_title.c": true,
+    "courtyard/project/variables.gbsres": true,
+    "courtyard/project/scenes/kittie_title/scene.gbsres": true,
+    "courtyard/project/scenes/the_olive_grove/triggers/grove_clear.gbsres": true,
+    "courtyard/project/scenes/start/triggers/photo_finish.gbsres": true,
+    "courtyard/project/scenes/villa_terraces/triggers/villa_clear.gbsres": true,
+    "courtyard/project/scenes/the_wedding_banquet/triggers/wedding_photo_finish.gbsres": true,
+    "courtyard/project/scenes/head_goon/triggers/head_goon_clear.gbsres": true
+  },
+  "freshBests": [
+    900,
+    900,
+    900,
+    500,
+    900
+  ],
+  "freshUnlock": 5,
+  "earnedSramSha256": "69ea0a3868564f040ecc7ea4b5a0cd52963b0fed32eef007fc861604fddefb58",
+  "previousFiveStageSramSha256": "c1ac0a89e6dcabc4505fe52db6ed435d1ea4b14d81baad8e1a01554b38248297",
+  "resetSramUnchanged": true,
+  "resetReceipt": {
+    "frame": 718,
+    "bossHealth": 3,
+    "bossPhase": 0,
+    "targetX": 280.0,
+    "hopCountersAndVelocity": 0,
+    "physicalWorldWool": 0
+  },
+  "coldBoots": [
+    {
+      "run": "new-native-cold",
+      "bests": [
+        900,
+        900,
+        900,
+        500,
+        900
+      ],
+      "unlock": 5,
+      "sameSave": true,
+      "sameFullCoverAfterB": true,
+      "fifthRowEntersBanquet": true
+    },
+    {
+      "run": "new-web-cold",
+      "bests": [
+        900,
+        900,
+        900,
+        500,
+        900
+      ],
+      "unlock": 5,
+      "sameSave": true,
+      "sameFullCoverAfterB": true,
+      "fifthRowEntersBanquet": true
+    }
+  ],
+  "hopReceipts": {
+    "targetLockAndLandings": "PASS",
+    "cycles": [
+      [
+        {
+          "frame": 5419,
+          "health": 3,
+          "hopsLeft": 1,
+          "target": 194.5
+        }
+      ],
+      [
+        {
+          "frame": 5553,
+          "health": 2,
+          "hopsLeft": 2,
+          "target": 241.625
+        },
+        {
+          "frame": 5633,
+          "health": 2,
+          "hopsLeft": 1,
+          "target": 194.5
+        }
+      ],
+      [
+        {
+          "frame": 5767,
+          "health": 1,
+          "hopsLeft": 2,
+          "target": 241.625
+        },
+        {
+          "frame": 5847,
+          "health": 1,
+          "hopsLeft": 1,
+          "target": 192.875
+        }
+      ]
+    ],
+    "landings": [
+      {
+        "landFrame": 5487,
+        "x": 194.5,
+        "nextPhase": 3
+      },
+      {
+        "landFrame": 5621,
+        "x": 241.625,
+        "nextPhase": 8
+      },
+      {
+        "landFrame": 5701,
+        "x": 194.5,
+        "nextPhase": 3
+      },
+      {
+        "landFrame": 5835,
+        "x": 241.625,
+        "nextPhase": 8
+      },
+      {
+        "landFrame": 5915,
+        "x": 192.875,
+        "nextPhase": 3
+      }
+    ],
+    "hitReceipts": [
+      {
+        "frame": 5493,
+        "pressFrame": 5489,
+        "previousPhase": 3,
+        "hp": 2,
+        "hits": 1
+      },
+      {
+        "frame": 5707,
+        "pressFrame": 5703,
+        "previousPhase": 3,
+        "hp": 1,
+        "hits": 2
+      },
+      {
+        "frame": 5921,
+        "pressFrame": 5917,
+        "previousPhase": 3,
+        "hp": 0,
+        "hits": 3
+      }
+    ],
+    "presses": [
+      5489,
+      5623,
+      5703,
+      5917
+    ],
+    "oam": {
+      "sampledFrames": 8420,
+      "topPeak": 10,
+      "peak": 10,
+      "overLimitFrames": 0
+    }
+  },
+  "guardedContact": [
+    {
+      "frame": 5627,
+      "phase": 8,
+      "health": 2
+    }
+  ],
+  "publishedV1Sha256": "08d2d326f59b1c0f2f86c9c1e9c60b79329e8d19dbf77190699826d1c7f05e7d",
+  "runtimeReleased": true,
+  "method": "Public PyBoy ordinary inputs, genuine SRAM, read-only paired symbols/OAM; no builds, memory mutation or state restoration",
+  "limits": "Historic release/pilot/four-stage migrations reused because loader/global/title/clear scripts are byte-identical. Corner strategy acceptance comes from independent aimed-hop critic; no added final corner gameplay review."
+}

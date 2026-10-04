@@ -1,11 +1,11 @@
 {
   "_resourceType": "scene",
   "id": "31e3ad8e-bf8a-5441-a0d5-cf86b365492f",
-  "_index": 2,
+  "_index": 4,
   "type": "banquet",
   "name": "The wedding banquet",
   "symbol": "scene_the_wedding_banquet",
-  "x": 3300,
+  "x": 4700,
   "y": 0,
   "width": 180,
   "height": 18,

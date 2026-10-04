@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-04",
+  "title": "Kittie Has Other Plans",
+  "status": "five-stage source snapshot; published v1.0.0 preserved",
+  "native": {
+    "localPath": "courtyard/build/head-goon-gentler/kittie-has-other-plans.gbc",
+    "sha256": "1c0f032df652cbd6fc8ac98125013bca915c6f7171cdff40322cec0ece540e52",
+    "sizeBytes": 262144
+  },
+  "stages": [
+    "Courtyard",
+    "Olive Grove",
+    "Villa Terraces",
+    "Head Goon",
+    "Banquet"
+  ],
+  "screens": 39,
+  "headGoon": {
+    "health": 3,
+    "trayDownFrames": 72,
+    "betweenSequenceFrames": 54,
+    "windupFrames": 28
+  },
+  "hud": {
+    "glyphHeight": 7,
+    "topMargin": 1
+  },
+  "validation": {
+    "latest": "Native and web builds passed; native HUD smoke check passed. User accepted the adjustment. No full replay or hardware verification of this exact build.",
+    "earlierEvidence": [
+      "hud-verification.json",
+      "boss-verification.json"
+    ]
+  }
+}

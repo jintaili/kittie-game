@@ -6,7 +6,7 @@
   "filename": "wool.png",
   "width": 16,
   "height": 16,
-  "checksum": "5f5957e8910e20cd2719f925bc073d09b8250838",
+  "checksum": "36a94f450512b278dcf4b366b4cd66fa71e8f2d0",
   "numTiles": 2,
   "canvasOriginX": 0,
   "canvasOriginY": 0,
@@ -33,7 +33,7 @@
                 {
                   "id": "e1067189-e777-55c1-9caa-ef9b975816ff",
                   "x": 4,
-                  "y": 0,
+                  "y": 4,
                   "sliceX": 4,
                   "sliceY": 0,
                   "flipX": false,
@@ -56,7 +56,7 @@
                 {
                   "id": "24bfa81a-a450-5344-940e-43bca6a4ff36",
                   "x": 4,
-                  "y": 0,
+                  "y": 4,
                   "sliceX": 4,
                   "sliceY": 0,
                   "flipX": false,
@@ -79,7 +79,7 @@
                 {
                   "id": "3db99690-06b8-564d-b4cc-c7c83d0c8a8d",
                   "x": 4,
-                  "y": 0,
+                  "y": 4,
                   "sliceX": 4,
                   "sliceY": 0,
                   "flipX": false,
@@ -102,7 +102,7 @@
                 {
                   "id": "a35aef74-834b-5095-9498-9807d098b587",
                   "x": 4,
-                  "y": 0,
+                  "y": 4,
                   "sliceX": 4,
                   "sliceY": 0,
                   "flipX": false,
@@ -125,7 +125,7 @@
                 {
                   "id": "0efc0b79-dd21-57a2-9257-0225fea8886c",
                   "x": 4,
-                  "y": 0,
+                  "y": 4,
                   "sliceX": 4,
                   "sliceY": 0,
                   "flipX": false,
@@ -148,7 +148,7 @@
                 {
                   "id": "47b2abc7-d542-57d8-bfc7-9333c36ac074",
                   "x": 4,
-                  "y": 0,
+                  "y": 4,
                   "sliceX": 4,
                   "sliceY": 0,
                   "flipX": false,
@@ -171,7 +171,7 @@
                 {
                   "id": "3161a8a9-924e-5113-8a79-f0e287ec7165",
                   "x": 4,
-                  "y": 0,
+                  "y": 4,
                   "sliceX": 4,
                   "sliceY": 0,
                   "flipX": false,
@@ -194,7 +194,7 @@
                 {
                   "id": "bc65f083-e6be-5cf2-8dc8-4ff46c6ee1ad",
                   "x": 4,
-                  "y": 0,
+                  "y": 4,
                   "sliceX": 4,
                   "sliceY": 0,
                   "flipX": false,

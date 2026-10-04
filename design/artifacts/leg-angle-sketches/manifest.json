@@ -1,0 +1,47 @@
+{
+  "gameSpriteSha256": "f290bfaece70ab30b913b542919fa6598685aba0aa61730185e9f9d84c3f68ff",
+  "method": "Authored native-cell sketches from the existing generator, original side photo consulted. No game resources changed.",
+  "angleNote": "Approximate near-leg centerline angles from vertical, quantized to 1 or 2 pixels. Far legs use shorter shifts to stay within the fixed canvas.",
+  "variants": [
+    {
+      "id": "A",
+      "title": "Current",
+      "footOffsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "B",
+      "title": "Gentle splay",
+      "footOffsets": [
+        1,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "C",
+      "title": "Relaxed splay",
+      "footOffsets": [
+        2,
+        -2,
+        1,
+        -1
+      ]
+    },
+    {
+      "id": "D",
+      "title": "Forward-set paws",
+      "footOffsets": [
+        2,
+        1,
+        1,
+        0
+      ]
+    }
+  ]
+}

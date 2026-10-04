@@ -26,7 +26,7 @@
   "workflow": "design/agent-workflow.html",
   "difficulty": "Slightly higher than current grove; preserve constant patrol speed and established physics.",
   "sourceBackup": "courtyard/source-art/grove-before-review-1.zip",
-  "browserPreview": "http://127.0.0.1:51237/4c3bd0c91070f46c31f07a32da88f8ac2a1524a6f1d97701c364f4005cbb3e30/",
+  "browserPreview": "[local preview URL omitted]",
   "browserPreviewNote": "Reviewed grove direct-entry browser export; ordinary controls verified. Canonical main project reselected.",
   "selectionBlocker": null,
   "initialArtReview": "complete",

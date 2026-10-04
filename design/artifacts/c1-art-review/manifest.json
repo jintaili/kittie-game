@@ -1,0 +1,94 @@
+{
+  "scope": "Independent source-art review only. No native build or emulator control.",
+  "sourceSheet": "courtyard/assets/sprites/kittie.png",
+  "sourceSha256": "9992688257d25a39382735c9df76cb615833acce9786e61c165ddd430147aca3",
+  "generatorSha256": "4e29a3c63db221895ca67f2c1897ad489f78896e05e953f09009cd100b05ce8b",
+  "selectedC1PixelDifferences": 0,
+  "fixedFaceAndEarCells": 284,
+  "allSixteenFacesUnchanged": true,
+  "approvedCuddlePawCropsUnchanged": true,
+  "walkChangedRows": {
+    "3": [
+      29,
+      30,
+      31
+    ],
+    "4": [
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "5": [
+      29,
+      30,
+      31
+    ],
+    "6": [
+      28,
+      29,
+      30,
+      31
+    ]
+  },
+  "sourcePreviewWalkMs": 120,
+  "engineWalkUpdatesPerCel": 8,
+  "copiedEvidence": {
+    "contact-native.png": {
+      "source": "courtyard/source-art/kittie-contact-native.png",
+      "sha256": "5bbea98f761646de6869e855a3b7e206651eaf53ed4769c12ee6782a8802ffa8"
+    },
+    "contact-4x.png": {
+      "source": "courtyard/source-art/kittie-contact-4x.png",
+      "sha256": "c6ae12ae8e14dca6465ca21966cd36de1ba9f26d48b7fc36f0891d475dcf42ae"
+    },
+    "motion-1x.gif": {
+      "source": "courtyard/source-art/kittie-motion-1x.gif",
+      "sha256": "f6872f8ab97758cfdf2783eda97dec4da5a09da05a448787f608f81b52eded29"
+    },
+    "motion-4x.gif": {
+      "source": "courtyard/source-art/kittie-motion-4x.gif",
+      "sha256": "e53a2d5e81019493ddd5f3f4f0cd260bbc81b040d0d4de708d9b9b83cf297bb7"
+    },
+    "animation.json": {
+      "source": "courtyard/source-art/kittie-animation.json",
+      "sha256": "a0193ade7675dfcd3454e538add53cb25a5bf40c1cf0ad37d0ffacef2e16c04d"
+    },
+    "selected-C1.png": {
+      "source": "design/artifacts/leg-angle-sketches/refined-C1.png",
+      "sha256": "7e8a443ba49433d064b5eeeae9b19ce9a04bed6dc0bbcb07467a04e67e056533"
+    }
+  },
+  "browserPlaybackVerified": false,
+  "browserLimitation": "Chrome URL policy blocked local file preview; did not attempt a workaround.",
+  "nativeCharacterVerdict": "Pass for captured Grove poses; no further character correction or capture requested.",
+  "nativeObserved": [
+    "held walking right",
+    "held walking left",
+    "upper canopy jump with live score",
+    "clear cuddle transition",
+    "ordinary forepaw cuddle",
+    "ordinary ball above ears and return to back"
+  ],
+  "nativeSampleManifest": "native/selection.json",
+  "ordinaryCuddleManifest": "native/critic-cuddle-selection.json",
+  "remainingLimits": [
+    "No complete-frame certification from sampled images",
+    "Service-lift scene object budget requires verifier",
+    "Physical hardware acceptance remains with owner"
+  ],
+  "compactHud": {
+    "verdict": "Pass at160x144; no pixel refinement requested.",
+    "observedReadings": {
+      "score": "000",
+      "hearts": 3,
+      "wool": 1
+    },
+    "nativeFrame": 458,
+    "beforeRomSha256": "dd66746ad4835b279c17132a0c6aeb8a99b1dc476350c7f5d27782db6a5a3741",
+    "afterRomSha256": "7576555f7ca45ea5ab13485b2ad88b807cee1b9bb1c49fa731a141a263fb6a26",
+    "afterImage": "courtyard/artifacts/four-stage/villa-builder-4/frames/e41f87831882a047848a901420d09e33e2622a4a0c926984c5eeb618eba0678e.png",
+    "limits": "Read-only supplied-frame judgment. Builder owns runtime/OAM verification."
+  }
+}

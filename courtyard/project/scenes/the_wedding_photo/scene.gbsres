@@ -1,7 +1,7 @@
 {
   "_resourceType": "scene",
   "id": "663d17cc-23c5-53cc-ac18-5347847d9068",
-  "_index": 4,
+  "_index": 6,
   "type": "kittie_title",
   "name": "The wedding photo",
   "symbol": "scene_the_wedding_photo",
@@ -21,42 +21,6 @@
   ],
   "autoFadeSpeed": 1,
   "script": [
-    {
-      "id": "ef370a00-1001-4000-8000-000000000026",
-      "command": "EVENT_IF_VALUE",
-      "args": {
-        "variable": "100",
-        "operator": "<",
-        "comparator": 3
-      },
-      "children": {
-        "true": [
-          {
-            "id": "ef370a00-1001-4000-8000-000000000024",
-            "command": "EVENT_SET_VALUE",
-            "args": {
-              "variable": "100",
-              "value": {
-                "type": "number",
-                "value": 3
-              }
-            }
-          },
-          {
-            "id": "ef370a00-1001-4000-8000-000000000025",
-            "command": "EVENT_SAVE_DATA",
-            "args": {
-              "saveSlot": 0
-            },
-            "children": {
-              "true": [],
-              "load": []
-            }
-          }
-        ],
-        "false": []
-      }
-    },
     {
       "id": "ef370a00-1001-4000-8000-000000000027",
       "command": "EVENT_TEXT",

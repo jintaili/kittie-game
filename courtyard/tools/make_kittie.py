@@ -17,6 +17,15 @@ SOURCE = ROOT / 'source-art'
 ASSET = ROOT / 'assets/sprites/kittie.png'
 META = ASSET.with_suffix('.png.gbsres')
 SIZE = (40, 32)
+# Preserve the approved cuddle hand shapes and an explicit pilot before image.
+BEFORE = SOURCE / 'kittie-pilot-before.png'
+if not BEFORE.exists():
+    BEFORE.write_bytes(ASSET.read_bytes())
+approved_sheet = Image.open(BEFORE).convert('RGB')
+# Each anatomy revision reads the owner's original photographs, not just sprites.
+reference = json.loads((SOURCE/'character-reference/reference.json').read_text())
+for asset in reference['assets']:
+    assert hashlib.sha256(Path(asset['source']).read_bytes()).hexdigest() == asset['sha256']
 T, L, M, D = '#65ff00', '#e0f8cf', '#86c06c', '#071821'
 PALETTE = {T:'#efe5d3', L:'#dcc6a3', M:'#aa8e6d', D:'#392b26'}
 NAMES = ['rest','breath','tail-settle','walk-a','walk-b','walk-c','walk-d','paw-reach','paw-follow','air-tuck','cuddle-reach','cuddle-open','cuddle-squeeze','cuddle-release','happy','ouch']
@@ -27,6 +36,16 @@ def layer():
 def paw(draw, box, radius=2):
     # One-pixel contour and the same taupe fill as the torso and hind paws.
     draw.rounded_rectangle(box, radius=radius, fill=M, outline=D, width=1)
+
+def leg_tilt(points, anchor, floor, dx):
+    """The selected C1 study's outward stance, on the same native grid."""
+    return [(x + round(dx * max(0, y-anchor) / (floor-anchor)), y)
+            for x, y in points]
+
+def leg_step(points, lift=0, toe=0):
+    # Keep the sewn attachments fixed; motion stays at the short foot ends.
+    return [(x + (toe if y >= 30 else 0), y - (lift if y >= 29 else 0))
+            for x, y in points]
 
 # The owner's plush has a low oval head and a broad stitched crescent grin.
 face = layer()
@@ -73,12 +92,14 @@ def draw_frame(index):
             d.line((28,27,31,29),fill=D,width=1)
             paw(d,(30+squeeze,27,33+squeeze,31),radius=1)
             paw(d,(38-squeeze,26,39,30),radius=1)
+        # Preserve every approved cuddle forepaw pixel and the ball space.
+        im.paste(approved_sheet.crop((index*40+25,24,index*40+40,32)), (25,24))
         im.paste(face,mask=face.getchannel('A'))
         return im
     im = Image.new('RGB', SIZE, T)
     d = ImageDraw.Draw(im)
     # Long thick tail, two separated dark bands, plus its dark tip.
-    ty = [0,-1,1,0,-1,0,1,0,-1,-1][index]
+    ty = [0,-1,1,0,0,0,0,0,-1,-1][index]
     tail = layer(); q = ImageDraw.Draw(tail)
     q.polygon([(1,14+ty),(4,13+ty),(8,15+ty),(13,17),(17,20),(16,24),(12,22),(8,20+ty),(4,18+ty),(1,17+ty)],fill=M,outline=D,width=1)
     q.polygon([(1,14+ty),(3,14+ty),(3,17+ty),(1,17+ty)],fill=D)
@@ -87,29 +108,52 @@ def draw_frame(index):
     q.point((4,15+ty),fill=L); q.point((8,17+ty),fill=L)
     # Cover tail root with the rear haunch; root never detaches.
     im.paste(tail,mask=tail.getchannel('A'))
-    # The far paws peek out separately; near paws extend below the belly.
+    # Short legs flow out of the body and end in low toes.
     walk = [0,0,0,-1,0,1,0,0,0,0][index]
     air = index == 9
+    front_lift = 1 if index in (4,9) else 0
+    hind_lift = 1 if index in (6,9) else 0
     d = ImageDraw.Draw(im)
-    paw(d,(17-walk,25,21-walk,29 if air else 30),radius=1)
-    # Lower the plush torso two pixels; keep the approved paws and their gait.
+    # Far toes are partly hidden by the low belly and near legs.
+    d.polygon(leg_step(leg_tilt([(18,26),(22,26),(22,29),
+               (21,30),(18,30),(17,29)],26,30,-1),hind_lift),fill=M,outline=D)
     breath = 1 if index == 1 else 0
     d.polygon([(9,24),(11,22),(16,20),(21,20),(25,22),(28,25),
                (26,28+breath),(22,29),(13,29),(9,27)],fill=M,outline=D,width=1)
     d.line([(13,24),(17,22),(20,22)],fill=L)
     d.line([(17,27),(21,27)],fill=L)
-    # Near hind leg overlaps the haunch, with a broad rounded paw on the floor.
-    hx = 11 + walk
-    hy = 25 - (1 if air else 0)
-    paw(d,(hx,hy,hx+6,29 if air else 31))
-    d.line((hx+2,hy+2,hx+4,hy+2),fill=L)
-    # Two distinct front paws beneath the cheeks, separated by clear background.
-    fx = 34 - walk
-    paw(d,(fx,24,min(39,fx+5),29 if air else 30))
-    paw_x = 25 + [0,0,0,1,0,-1,0,5,3,1][index]
-    paw_y = 25 + [0,0,0,-1,0,0,-1,-2,-1,-2][index]
-    paw(d,(paw_x,paw_y,min(39,paw_x+7),min(31,paw_y+6)))
-    d.line((paw_x+2,paw_y+2,paw_x+3,paw_y+2),fill=L)
+    # Shoulder stays fixed. Only the last two toe rows shift during a step.
+    hx=walk
+    lift=hind_lift
+    d.polygon(leg_step(leg_tilt([(12,25),(16,25),(16,29),(16,30),
+               (16,31),(12,31),(11,30),(12,28)],25,31,-2),lift,hx),
+              fill=M,outline=D,width=1)
+    d.line((12,25,16,25),fill=M)
+    d.point(leg_tilt([(13,28)],25,31,-2)[0],fill=L)
+    # Low chest joins the two forelegs; only their bottom tips separate.
+    d.polygon([(24,24),(37,24),(38,26),(38,28),(29,29),(25,27)],
+              fill=M,outline=D,width=1)
+    d.rectangle((27,25,37,27),fill=M)
+    d.polygon(leg_step(leg_tilt([(34,25),(38,25),(38,29),
+               (37,30),(34,30)],25,30,1),front_lift),
+              fill=M,outline=D,width=1)
+    # The near foreleg slopes forward into a flattened, clipped toe.
+    px=[0,0,0,1,0,-1,0,5,3,1][index]
+    py=[0,0,0,0,0,0,0,-2,-1,-2][index]
+    lift=front_lift
+    if index in (7,8):
+        d.polygon([(26+px,24+py),(29+px,25+py),(29+px,27+py),
+                   (31+px,28+py),(33+px,29+py-lift),(33+px,30+py-lift),
+                   (32+px,31+py-lift),(29+px,31+py-lift),(27+px,30+py-lift),
+                   (26+px,28+py),(25+px,26+py)],fill=M,outline=D,width=1)
+        d.line([(26+px,25+py),(27+px,26+py),(28+px,26+py)],fill=M)
+        d.line((29+px,29+py-lift,30+px,29+py-lift),fill=L)
+    else:
+        d.polygon(leg_step(leg_tilt([(27,25),(31,25),(31,29),(31,30),
+                   (31,31),(27,31),(27,29)],25,31,2),lift,px),
+                  fill=M,outline=D,width=1)
+        d.line((27,25,31,25),fill=M)
+        d.point(leg_tilt([(29,28-lift)],25,31,2)[0],fill=L)
     im.paste(face,mask=face.getchannel('A'))
     return im
 

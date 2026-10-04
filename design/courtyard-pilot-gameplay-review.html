@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Courtyard pilot gameplay review · Kittie Has Other Plans</title>
+<style>
+body{margin:0;background:#f2eddd;color:#283b33;font:17px/1.55 system-ui,sans-serif}main{max-width:1050px;margin:auto;padding:38px 24px 64px}h1{font-size:34px;line-height:1.15;max-width:760px}h2{font-size:23px;margin-top:34px}p{max-width:850px}.verdict{background:#e6dec5;border-left:5px solid #96713e;padding:18px 22px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}figure{margin:0;padding:12px;background:#e4ddc8}img{display:block;width:100%;max-width:320px;height:auto;image-rendering:pixelated}figcaption{font-size:14px;line-height:1.45;margin-top:10px}a{color:#275f5a}code{font-size:13px;overflow-wrap:anywhere}.muted{font-size:14px;color:#5c685d}table{border-collapse:collapse;width:100%;font-size:15px}td,th{text-align:left;padding:10px;border-bottom:1px solid #c5c5b5;vertical-align:top}
+</style>
+<main>
+
+<p class="muted">Independent gameplay review · Focused correction check · 3 October 2026</p>
+<h1>The courtyard pilot is ready for human play</h1>
+<p class="verdict" style="background:#dfe8d4;border-color:#51733f">The required wool recovery fix passed. My original low throw now returns the wool into physical pickup reach. I cleared the corrected final room with all three wool for GOONS 300 + WOOL 600 = SCORE 900. No further gameplay changes are required from this review.</p>
+<h2>Focused recheck</h2>
+<p>I replayed my own route and repeated the same final-room approach, including the same 26 frames of right+B from frame 1237. On the corrected ROM, Kittie recovered the returned wool by frame 1254 while standing at the near edge of the platform. Frame 1303 shows the open gate and all three wool. On the original ROM, that same frame showed only two wool and the ball trapped under the platform.</p>
+<p>The change preserves what worked about the room. I still fought the raised patrol, dropped down for the low shot, and climbed back over the platform to leave. The returned wool now reaches Kittie after the successful shot. The original difficulty judgment stands, and the scoring consequence that prompted the required fix is gone.</p>
+<div class="grid">
+<figure><img src="../courtyard/artifacts/reviews/courtyard-pilot-gameplay/frames/frame-001303.png" alt="Original low bell leaves wool beneath the solid platform"><figcaption>Original candidate, frame 1303. Two wool retained, with one trapped under the table.</figcaption></figure>
+<figure><img src="../courtyard/artifacts/reviews/courtyard-pilot-gameplay/recheck-2/frames/frame-001303.png" alt="Corrected low bell with all three wool recovered and gate open"><figcaption>Corrected candidate, frame 1303. The same approach and shot recover all three wool. The gate opens.</figcaption></figure>
+<figure><img src="../courtyard/artifacts/reviews/courtyard-pilot-gameplay/recheck-2/frames/frame-001637.png" alt="Corrected courtyard clear score of 900"><figcaption>Frame 1637. GOONS 300, WOOL 600, SCORE 900, BEST 900.</figcaption></figure>
+</div>
+<p>This was a focused check of the required finding, using the earlier route to reach it. It was not another broad design review. The complete original review and its failures remain below and in the <a href="courtyard-pilot-gameplay-review-original.html">unchanged original HTML</a>.</p>
+<p><a href="../courtyard/artifacts/reviews/courtyard-pilot-gameplay/recheck-2/inputs.json">Recheck exact inputs</a> · <a href="../courtyard/artifacts/reviews/courtyard-pilot-gameplay/recheck-2/receipts.json">Recheck native frame receipts</a> · <a href="../courtyard/artifacts/reviews/courtyard-pilot-gameplay/recheck-2/cleanup.json">Passed recording and cleanup receipt</a></p>
+<p class="muted">Corrected ROM <code>courtyard/build/pilot-review-2/kittie-courtyard-pilot.gbc</code><br>SHA-256 <code>4fd305298e0c70205702ba88fc01027f23694171125fd6846288efc2bd6ee999</code><br>74 sampled native PNGs and the recording are retained in <code>courtyard/artifacts/reviews/courtyard-pilot-gameplay/recheck-2/</code>. Source debug authentication was unavailable for this ROM, so the check ran in normal native ROM mode with the verified hash.</p>
+<p class="muted">Recheck recording stopped with outcome <code>passed</code> at frame 1637. Emulator close returned <code>closed: true</code>; the subsequent status confirmed no running session. Runtime explicitly released. No build, source, browser, save, or hardware edits were made.</p>
+<details style="margin-top:36px;border-top:1px solid #b8c3ab;padding-top:20px">
+<summary style="font-size:23px;cursor:pointer">Original full-level review, retained. Its required finding is resolved above.</summary>
+
+<p class="muted">Independent native gameplay review · 3 October 2026</p>
+<h1>The courtyard is worth playing.<br>Fix the low bell's trapped wool before review.</h1>
+<p class="verdict">I cleared the whole courtyard on my first attempt with two hearts remaining, three goon defeats, and two wool retained. The result screen awarded GOONS 300 + WOOL 400 = SCORE 700, then A continued into the grove. The level's difficulty was reasonable. One recovery problem undermined its new scoring incentive.</p>
+
+<h2>The change that matters</h2>
+<p>The low bell under the raised platform is a good idea. I defeated the goon on top, dropped back down, and threw along the floor beneath the platform to open the gate. That asks the player to change position and throwing height instead of repeating the first bell's lob.</p>
+<p>But the wool then settled under the solid platform. At frame 1303 its center was about x91, y124, while the platform spanned roughly x72 to x136. Kittie could not walk into that space. Fifteen more frames of right input left him blocked at the side. I climbed onto the platform and stood directly above the wool at frame 1374; it remained uncollected. Down input also did not give access. I left it there and finished with two wool.</p>
+<p>I would correct this before human review. The ordinary successful bell throw should leave a physical recovery route. Let the returning wool come clear of the platform, or give Kittie enough room to retrieve it underneath. Keep the low shot and physical recovery. A ball that stops inside collision geometry reads as a trap, and the result screen makes that trap worth 200 points. It does not feel like the consequence of a risky shot.</p>
+<div class="grid">
+<figure><img src="../courtyard/artifacts/reviews/courtyard-pilot-gameplay/frames/frame-001263.png" alt="Kittie to the left of the platform after throwing beneath it"><figcaption>Frame 1263. The low throw has reached the bell; the wool is coming to rest beneath the platform.</figcaption></figure>
+<figure><img src="../courtyard/artifacts/reviews/courtyard-pilot-gameplay/frames/frame-001318.png" alt="Kittie blocked beside wool under the platform"><figcaption>Frame 1318. After another 15 frames of right input, Kittie is still blocked and the wool remains inside.</figcaption></figure>
+<figure><img src="../courtyard/artifacts/reviews/courtyard-pilot-gameplay/frames/frame-001374.png" alt="Kittie directly above the unreachable wool"><figcaption>Frame 1374. Standing directly above it does not recover it. This is the same ball, with camera movement changing its screen position.</figcaption></figure>
+</div>
+
+<h2>What worked across the whole level</h2>
+<p>The opening shelf gives a reason to try a higher route before the first bell. I found its wool without a walkthrough. The Up+B sign then explains the lob at the moment it is useful. The first bell returned its wool toward the earlier planters, and I chased it back. That short recovery trip felt fair because I could see where the ball went and could get to it.</p>
+<p>The arch section made reward chasing a route choice. I went low to defeat its goon, then climbed back onto the shelf for the high wool. An early jump bumped the shelf harmlessly. A vertical jump beside it, followed by a move right, solved the climb. Taking both rewards cost care without threatening a long replay.</p>
+<p>The final raised patrol was the most demanding encounter. I jumped too close, threw before landing, and took one hit. After recovering, a throw at platform height defeated it. The first damage and its inputs are preserved at frames 1165 to 1189. I understood why that approach failed, and I would keep the encounter's difficulty.</p>
+<p>The raised patrol followed by the bell underneath made the ending distinct. It asks for two uses of the same space. The player first deals with the top, then notices something worth doing below. That is a stronger whole-level moment than another isolated gap.</p>
+<div class="grid">
+<figure><img src="../courtyard/artifacts/reviews/courtyard-pilot-gameplay/frames/frame-000363.png" alt="Kittie collecting wool on the opening shelf"><figcaption>Frame 363. The early high pickup invited a detour.</figcaption></figure>
+<figure><img src="../courtyard/artifacts/reviews/courtyard-pilot-gameplay/frames/frame-000957.png" alt="Kittie on the high arch platform with three wool"><figcaption>Frame 957. After defeating the lower goon, I returned to the upper route and collected the third wool.</figcaption></figure>
+<figure><img src="../courtyard/artifacts/reviews/courtyard-pilot-gameplay/frames/frame-001177.png" alt="Kittie knocked away from the raised patrol"><figcaption>Frame 1177. My premature airborne throw led to the run's only hit.</figcaption></figure>
+</div>
+
+<h2>Score and presentation</h2>
+<p>The clear screen explains the arithmetic well. The separate goon and wool amounts tell me what a better run would change, and BEST gives the next attempt a target. I knew the scoring premise from the review assignment, so this run cannot establish that a new player would discover wool retention before the first clear. The clear screen itself is understandable.</p>
+<p>The water, greenery, bunting, and airborne goon defeats give the courtyard more movement around Kittie. The scene still stays sparse enough to read its platforms. Kittie's short feet are visible in the movement frames, and I did not mistake them for a separate object. I found no presentation problem that should compete with the wool recovery fix.</p>
+<p>A native OAM inspection at the table, frame 1303, reported a peak of nine objects on a scanline, below the hardware limit of ten, with zero over-limit scanlines. Kittie's brief disappearance followed his damage reaction. I saw no unexplained sprite loss in the room. The inspection is evidence for that frame, not proof of every possible actor arrangement.</p>
+
+<div class="grid">
+<figure><img src="../courtyard/artifacts/reviews/courtyard-pilot-gameplay/frames/frame-001660.png" alt="Courtyard clear score showing goons 300, wool 400, score 700, best 700"><figcaption>Frame 1660. The score identifies the value of each kind of reward.</figcaption></figure>
+<figure><img src="../courtyard/artifacts/reviews/courtyard-pilot-gameplay/frames/frame-001717.png" alt="The grove after continuing from the courtyard"><figcaption>Frame 1717. A entered the grove. The review stopped here.</figcaption></figure>
+</div>
+
+<h2>Review scope and evidence</h2>
+<p>One independent full-level round, followed by a focused attempt to recover the trapped wool. I did not read builder routes, design defenses, verification walkthroughs, or game source. I used the public native emulator tools, did not rebuild or edit the game, and did not touch the browser preview or user saves. This review does not verify audio, browser behavior, hardware playback, or persistent unlocks.</p>
+<p><a href="../courtyard/artifacts/reviews/courtyard-pilot-gameplay/inputs.json">Exact input log</a> · <a href="../courtyard/artifacts/reviews/courtyard-pilot-gameplay/receipts.json">Frame receipts</a> · <a href="../courtyard/artifacts/reviews/courtyard-pilot-gameplay/table-oam.json">Table OAM summary</a> · <a href="../courtyard/artifacts/reviews/courtyard-pilot-gameplay/cleanup.json">Recording and cleanup receipt</a></p>
+<p class="muted">155 sampled PNGs are retained alongside the recording at <code>courtyard/artifacts/reviews/courtyard-pilot-gameplay/recording</code>. All displayed images are genuine native emulator frames. A sampling interval may omit the exact instant of an impact.</p>
+<p class="muted">Candidate <code>courtyard/build/pilot-final/kittie-courtyard-pilot.gbc</code><br>SHA-256 <code>1618bccf2765d0138271626924fd87a51d4d4fe85bc6b26c1f18920b6c9dcb42</code><br>PyBoy 2.7.0, native color mode. Recording ended at frame 1717 with outcome <code>needs-review</code>.</p>
+<p class="muted">Runtime explicitly released. Close returned <code>closed: true</code>; the subsequent status confirmed no running emulator session.</p>
+
+</details>
+</main>
+</html>

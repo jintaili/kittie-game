@@ -1,6 +1,7 @@
 {
   "source": "source-art/approved-cover/cover-v10.png",
   "sourceSha256": "1cfeb5e1f11aab654a9d069164cc88c8b4ff40b4d5333f67ed460049065cde74",
+  "nativeCorrection": "Original-reference asymmetric whiskers: his right curls inward, his left sweeps outward.",
   "size": [
     160,
     144
@@ -868,12 +869,12 @@
     {
       "x": 3,
       "y": 8,
-      "slot": 4
+      "slot": 3
     },
     {
       "x": 4,
       "y": 8,
-      "slot": 4
+      "slot": 3
     },
     {
       "x": 5,
@@ -938,7 +939,7 @@
     {
       "x": 17,
       "y": 8,
-      "slot": 4
+      "slot": 3
     },
     {
       "x": 18,
@@ -1048,7 +1049,7 @@
     {
       "x": 19,
       "y": 9,
-      "slot": 1
+      "slot": 4
     },
     {
       "x": 0,
@@ -1143,7 +1144,7 @@
     {
       "x": 18,
       "y": 10,
-      "slot": 1
+      "slot": 4
     },
     {
       "x": 19,

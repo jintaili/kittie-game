@@ -1,0 +1,185 @@
+{
+  "_resourceType": "trigger",
+  "id": "72e24ebf-0da1-543b-9d61-16b981fcbb1e",
+  "_index": 0,
+  "symbol": "trigger_villa_clear",
+  "prefabId": "",
+  "name": "Villa clear",
+  "x": 154,
+  "y": 12,
+  "width": 6,
+  "height": 5,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "fbf3cd7c-c2bc-5e3b-a308-30bc89c7a5f4",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "111",
+        "value": {
+          "type": "number",
+          "value": 19539
+        }
+      }
+    },
+    {
+      "id": "32e4f72b-3e20-55eb-8447-beb04a55e49e",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "112",
+        "value": {
+          "type": "number",
+          "value": 19272
+        }
+      }
+    },
+    {
+      "id": "fcc0c990-d345-539e-a1be-038e2403a9ce",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "113",
+        "value": {
+          "type": "number",
+          "value": 20304
+        }
+      }
+    },
+    {
+      "id": "199ebd7d-eb61-5637-8c46-ad7df8076433",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "107",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "06c71c49-72eb-58f0-b6e1-24ad92ebe2be",
+      "command": "EVENT_IF_VALUE",
+      "args": {
+        "variable": "100",
+        "operator": "<",
+        "comparator": 3
+      },
+      "children": {
+        "true": [
+          {
+            "id": "a5c61b43-6aff-5acf-afec-3d68c2559b74",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "100",
+              "value": {
+                "type": "number",
+                "value": 3
+              }
+            }
+          },
+          {
+            "id": "f31fb329-6529-5865-80b1-c5a4c9349f9b",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "107",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            }
+          }
+        ],
+        "false": []
+      }
+    },
+    {
+      "id": "0bb109a7-b9b2-5519-8481-3c05047be6a0",
+      "command": "EVENT_IF_VALUE_COMPARE",
+      "args": {
+        "vectorX": "104",
+        "operator": ">",
+        "vectorY": "109"
+      },
+      "children": {
+        "true": [
+          {
+            "id": "a9240828-2b66-559a-8dd1-a0cef4fe0231",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "109",
+              "value": {
+                "type": "variable",
+                "value": "104"
+              }
+            }
+          },
+          {
+            "id": "32a21a4f-e3f3-5205-ad59-8ea0956a2ca7",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "107",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            }
+          }
+        ],
+        "false": []
+      }
+    },
+    {
+      "id": "c832ebb1-cd4a-563f-9e3d-e9088f3703d3",
+      "command": "EVENT_IF_VALUE",
+      "args": {
+        "variable": "107",
+        "operator": "==",
+        "comparator": 1
+      },
+      "children": {
+        "true": [
+          {
+            "id": "cee8ecc0-d6fa-58b8-af49-78459ca1d473",
+            "command": "EVENT_SAVE_DATA",
+            "args": {
+              "saveSlot": 0
+            },
+            "children": {
+              "true": [],
+              "load": []
+            }
+          }
+        ],
+        "false": []
+      }
+    },
+    {
+      "id": "a9db9306-033e-557b-84cb-93699ad1aa11",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": "VILLA CLEAR\nGOONS $102$ WOOL $103$\nSCORE $104$ BEST $109$\nA CONTINUE",
+        "minHeight": 6,
+        "maxHeight": 6,
+        "textHeight": 4,
+        "position": "top"
+      }
+    },
+    {
+      "id": "c70d3197-fcfe-5a78-8cff-f4b1abfd430b",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "c11c27ca-7715-5412-9354-1f87bdc59aab",
+        "x": {
+          "type": "number",
+          "value": 4
+        },
+        "y": {
+          "type": "number",
+          "value": 15
+        },
+        "direction": "right",
+        "fadeSpeed": "1"
+      }
+    }
+  ],
+  "leaveScript": []
+}

@@ -1,0 +1,63 @@
+{
+  "_resourceType": "scene",
+  "id": "c11c27ca-7715-5412-9354-1f87bdc59aab",
+  "_index": 3,
+  "type": "head_goon",
+  "name": "Head Goon",
+  "symbol": "scene_head_goon",
+  "x": 4700,
+  "y": 0,
+  "width": 60,
+  "height": 18,
+  "backgroundId": "a812fe84-99d5-56d1-80d1-8513b7780834",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "default-sprite",
+    "kittie-wool-rose",
+    "kittie-goon-plum",
+    "kittie-ribbon-gold",
+    "kittie-hud-contrast",
+    "kittie-bell-lit"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "id": "956096cd-b1c5-5447-b920-bf019f902e0c",
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "select"
+        ],
+        "override": true
+      },
+      "children": {
+        "true": [
+          {
+            "id": "9dee6801-d5a8-5ad5-8a0a-e95190ef6b39",
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "7504f14c-4246-5f1b-b09b-9dcf8c2c902a",
+              "x": {
+                "type": "number",
+                "value": 4
+              },
+              "y": {
+                "type": "number",
+                "value": 15
+              },
+              "direction": "right",
+              "fadeSpeed": "1"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "",
+  "playerSpriteSheetId": "3799ecda-8f2b-59f2-a604-5678c2439fe8"
+}

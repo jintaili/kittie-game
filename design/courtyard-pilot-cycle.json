@@ -1,0 +1,56 @@
+{
+  "status": "ready for human play",
+  "approved": "2026-10-03",
+  "scope": "Complete courtyard pilot, irrigation ripple, shared Kittie leg art, independent critique and verification",
+  "baselineCommit": "91216407da22e2ec311040099fa7d8fa0f26029d",
+  "baselineRomSha256": "08d2d326f59b1c0f2f86c9c1e9c60b79329e8d19dbf77190699826d1c7f05e7d",
+  "decisionLog": "design/next-version.html",
+  "deferred": [
+    "rival or boss",
+    "shop or upgrade economy",
+    "new stages"
+  ],
+  "roles": {
+    "designer": "next_gameplay_design",
+    "artReviewer": "grove_art_review",
+    "builder": "courtyard_pilot_builder",
+    "verifier": "courtyard_pilot_verifier",
+    "critic": "grove_gameplay_critic",
+    "revisionBuilder": "grove_builder"
+  },
+  "runtimeOwner": null,
+  "reviewStatus": "Independent original-reference source/native visual pass; final HUD reset/hiding, 600-point prior-pilot save imports, v1 unlock import, 900 completion and cold restart passed. Reports saved; native runtime closed.",
+  "publication": "Not published; v1.0.0 retained",
+  "designBriefs": [
+    "design/next-gameplay-brief.html",
+    "design/next-character-brief.html"
+  ],
+  "preview": {
+    "status": "open at cover in separate tab",
+    "url": "[local preview URL omitted]",
+    "webRomSha256": "af12c8294712050d83906d4f7291d3c38b7275adf203b0989eb0e9a8b246805a"
+  },
+  "userClarification": "Environmental life is approved, including leaves, water, bunting and enemy reactions; implement a coherent subset.",
+  "legacySaveEvidence": "courtyard/artifacts/courtyard-pilot-verifier/published-v1-save/evidence.json",
+  "candidate": {
+    "rom": "courtyard/build/pilot-review-3/kittie-courtyard-pilot-final.gbc",
+    "sha256": "1cf35ada228d5a0683c19c58f4a2d5ca2bff1655caa247e6016f2184cacdcabf",
+    "webExport": "courtyard/build/pilot-review-3/web",
+    "webSha256": "af12c8294712050d83906d4f7291d3c38b7275adf203b0989eb0e9a8b246805a"
+  },
+  "geometryDecision": "Table unchanged. Low bell moved from x1148 to x1128; native ordinary rebound reaches pickup range.",
+  "reviews": [
+    "design/courtyard-pilot-gameplay-review.html",
+    "design/courtyard-pilot-verification.html",
+    "design/courtyard-pilot-art-review.html",
+    "design/sprite-refinement-review.html",
+    "design/score-sprite-verification.html"
+  ],
+  "userRefinement": "Top score visible during play; straighter short legs with less wiggle; connected taupe chest fills front-leg notch. Independent original-reference critique required.",
+  "preservedUserSession": {
+    "status": "open at cover",
+    "url": "[local preview URL omitted]",
+    "webRomSha256": "f402846c247a69245c4b8bdc3877a504d014fe71112fadca699b6b92ab329de3",
+    "sourceRevision": "dd8bc1b73f6696e3d50c3f33b856fdf9027861ace0f71ca844f87b7a694e2492"
+  }
+}

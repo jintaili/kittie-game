@@ -1,0 +1,182 @@
+{
+  "status": "complete: aimed-hop revision passed gameplay and final technical verification",
+  "scope": [
+    "Head Goon encounter between Villa and Banquet",
+    "four-row scrolling stage selector",
+    "original-reference cover whiskers"
+  ],
+  "builder": "grove_gameplay_critic",
+  "designer": "courtyard_gameplay_critic",
+  "runtimeOwner": null,
+  "cover": {
+    "status": "original-reference art review and native capture passed",
+    "before": "design/artifacts/cover-whiskers/before-native.png",
+    "after": "design/artifacts/cover-whiskers/after-native.png",
+    "review": "design/cover-whisker-review.html"
+  },
+  "preserve": [
+    "published v1",
+    "four-stage final-2 cartridge and saves",
+    "C1 gameplay sprite",
+    "banquet/photoshoot ending"
+  ],
+  "publicationAuthorized": false,
+  "designBrief": "design/head-goon-brief.html",
+  "stageScreens": [
+    8,
+    11,
+    8,
+    3,
+    9
+  ],
+  "builderClear": {
+    "score": 500,
+    "health": 3,
+    "wool": 1,
+    "continuesToBanquet": true,
+    "route": "courtyard/artifacts/head-goon/practice-5-complete-route.json"
+  },
+  "selector": "native four-row scrolling and B close passed",
+  "bossArtDirection": "Larger, somewhat cute version of regular rounded cloth goons: same ear tufts, pale eyes, round body and stubby feet. Tray and small accessories show rank; avoid human coat/hat/long-leg silhouette.",
+  "bossArtComparison": "courtyard/source-art/head-goon-family-6x.png",
+  "practiceRom": "courtyard/build/head-goon-practice-7/kittie-head-goon.gbc",
+  "practiceSha256": "d2d055a2960dac8cfd833220968f113f5ffcf1c3c160d52f5199d4326eb73778",
+  "builderChecks": {
+    "score": 500,
+    "health": 3,
+    "wool": 1,
+    "peakOam": 10,
+    "overLimitFrames": 0,
+    "liftAndLobRecovery": true,
+    "deathAndStartReset": true
+  },
+  "sourceAudit": {
+    "status": "passed, final runtime matrix prepared",
+    "report": "design/head-goon-verification-preparation.html"
+  },
+  "criticProgress": {
+    "firstAttemptScore": 500,
+    "firstAttemptHealth": 1,
+    "status": "complete: ready for owner review"
+  },
+  "gameplayReview": {
+    "status": "ready for owner review, no mandatory gameplay change",
+    "firstClearScore": 500,
+    "firstClearHealth": 1,
+    "followup": "Resolved: independent final-ROM timed boarding, sustained ride and jump passed; no collision alignment defect."
+  },
+  "finalNative": "courtyard/build/head-goon-final-2/kittie-has-other-plans.gbc",
+  "finalNativeSha256": "6c7a228c23d1af53d71eeb340ac145ca8d83373af4eee7521c4f9681e97c0aa2",
+  "finalWebSha256": "e7ac396d910089148427559e5492e104e16cee6e88578ee6522aa9d4259268f1",
+  "connectedRun": {
+    "status": "passed with ordinary input and no retries",
+    "bests": [
+      900,
+      900,
+      900,
+      500,
+      900
+    ],
+    "photoshoot": true,
+    "softRestartUnlock": 5,
+    "proof": "courtyard/artifacts/head-goon/main-connected-proof.json",
+    "route": "courtyard/artifacts/head-goon/main-connected-route.json"
+  },
+  "finalRuntimeVerification": {
+    "status": "passed",
+    "fullRouteFrames": 8065,
+    "peakObjectsPerScanline": 10,
+    "overLimitFrames": 0,
+    "liftAuditFrames": 590,
+    "liftBoardingAndRide": true,
+    "report": "design/head-goon-verification.html",
+    "oldSaveMigration": true,
+    "nativeAndWebColdBoot": true,
+    "bossHitAndReset": true,
+    "fourRowSelector": true,
+    "machineProof": "courtyard/artifacts/head-goon-verifier/final-machine-proof.json"
+  },
+  "ownerFeedback": {
+    "date": "2026-10-04",
+    "finding": "Kittie can stay in one place and hit Head Goon during endpoint rearranging or whenever his back is exposed. Encounter is too easy.",
+    "nextStep": "Research classic boss patterns and redesign the encounter around movement and earned openings.",
+    "technicalVerificationRemainsValid": true,
+    "gameplayAcceptanceSuperseded": true
+  },
+  "activeBrief": "design/head-goon-hop-brief.html",
+  "revision": {
+    "approved": "2026-10-04",
+    "arena": "flat floor without playable plinth/lift",
+    "pattern": "one aimed hop before first hit; two separately signaled hops thereafter",
+    "review": {
+      "verdict": "ready for owner review",
+      "report": "design/head-goon-hop-gameplay-review.html",
+      "blindClear": {
+        "hearts": 1,
+        "score": 500
+      },
+      "cornerCamping": "one hit then death",
+      "fixedJumpThrowSpam": "zero points then death",
+      "mandatoryChanges": []
+    },
+    "builderFirstClear": {
+      "score": 500,
+      "hearts": 3,
+      "wool": 1
+    },
+    "firstClip": "courtyard/artifacts/head-goon-hop/first-two-openings.gif",
+    "readOnlyFinding": "Boss-only visibility exception fixed and observed with actors121px apart.",
+    "practiceRom": "courtyard/build/head-goon-hop-2/kittie-head-goon.gbc",
+    "practiceSha256": "4a2026659af197db3d7b1ee28ddb4ef34fa5b7b25e794a39c95380e45184db5a",
+    "builderChecks": {
+      "normalClear": {
+        "score": 500,
+        "hearts": 3,
+        "wool": 1
+      },
+      "staticThrows": "defeat at0points",
+      "jumpThrowSpam": "defeat at0points",
+      "rightCornerThrows": "defeat after1hit",
+      "bothCornerEscapes": "passed without damage"
+    },
+    "finalNative": "courtyard/build/head-goon-hop-final-1/kittie-has-other-plans.gbc",
+    "finalNativeSha256": "c396c2edb50641d4db18d0a84f7866108428cc902593eea8268b8aa9d8d863c1",
+    "finalWebSha256": "ad542465fff22553691682792e81a80a637080b7a7c4aaa7f84f4f99cb0729b9",
+    "connectedRun": {
+      "bests": [
+        900,
+        900,
+        900,
+        500,
+        900
+      ],
+      "retries": 0,
+      "photoshoot": true,
+      "softRestartUnlock": 5,
+      "route": "courtyard/artifacts/head-goon-hop/main-connected-route.json",
+      "proof": "courtyard/artifacts/head-goon-hop/main-connected-proof.json"
+    },
+    "finalClip": "courtyard/artifacts/head-goon-hop/final-main-boss.gif",
+    "preview": {
+      "url": "[local preview URL omitted]",
+      "status": "opened in Codex IAB; cover visibly verified; no game input sent",
+      "browserId": "3",
+      "tabId": "1"
+    },
+    "technicalVerification": {
+      "status": "passed",
+      "frames": 8420,
+      "peakOam": 10,
+      "overLimitFrames": 0,
+      "targetLockAndLandings": true,
+      "oneThenTwoHops": true,
+      "recoveryOnlySeparateHits": true,
+      "report": "design/head-goon-hop-verification.html",
+      "previousFiveStageSramImport": true,
+      "airborneWoundedReset": true,
+      "nativeAndWebColdBoot": true,
+      "selectorAndCover": true,
+      "machineProof": "courtyard/artifacts/head-goon-hop-verifier/final-machine-proof.json"
+    }
+  }
+}

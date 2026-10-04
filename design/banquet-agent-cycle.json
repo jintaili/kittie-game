@@ -26,7 +26,7 @@
   "workflow": "design/agent-workflow.html",
   "humanReview": "after complete-level revision and independent review",
   "review": "design/banquet-review.html",
-  "browserPreview": "http://127.0.0.1:63746/eabba3072f373876d23c999007acbbbb4e82b812067162e20ed006208620bc26/",
+  "browserPreview": "[local preview URL omitted]",
   "previousBrowserState": "276ab0c305cf103f48f15ecd75360b58d286e6720525d987a01f1099c029743c",
   "candidateRom": "courtyard/build/kittie-banquet-review-2.gbc",
   "sourceBackup": "courtyard/source-art/banquet-before-review-1.zip",

@@ -1,0 +1,153 @@
+{
+  "status": "complete; verified native cartridge delivered for SameBoy or Chromatic",
+  "scope": [
+    "C1 sprite integration",
+    "whole olive grove upgrade",
+    "new Villa Terraces with moving service lifts",
+    "whole banquet upgrade and four-stage progression"
+  ],
+  "stageOrder": [
+    "Courtyard",
+    "Olive Grove",
+    "Villa Terraces",
+    "Banquet"
+  ],
+  "screens": [
+    8,
+    11,
+    8,
+    9
+  ],
+  "builder": "grove_gameplay_critic",
+  "designer": "four_stage_designer",
+  "runtimeOwner": null,
+  "currentBatch": null,
+  "newMechanismApproved": true,
+  "preservePublishedV1": true,
+  "publicationAuthorized": false,
+  "previousPilot": "courtyard/build/pilot-review-3/kittie-courtyard-pilot-final.gbc",
+  "grovePracticeRom": "courtyard/build/four-stage-grove-1/kittie-grove-practice.gbc",
+  "grovePracticeSha256": "f699f3f5baf8ad56e5632f4fa0ab06fa639e0a74346847c632c7308bbe0bb3c3",
+  "mainCandidateRom": "courtyard/build/four-stage-final-2/kittie-has-other-plans.gbc",
+  "mainCandidateSha256": "f04b2154f120e85a8721c502ad01db82d326dcfe88a312557d322506b1e25b04",
+  "c1Review": {
+    "status": "passed source and native presentation",
+    "report": "design/c1-art-review.html",
+    "romSha256": "f699f3f5baf8ad56e5632f4fa0ab06fa639e0a74346847c632c7308bbe0bb3c3"
+  },
+  "groveIndependentReview": {
+    "status": "passed after focused landing fix",
+    "score": 700,
+    "health": 3,
+    "change": "Move final channel far bank and gap end from1192 to1184; retain height104",
+    "next": "Complete; original failing inputs passed focused replay",
+    "review": "courtyard/artifacts/reviews/four-stage-grove-gameplay/review.html",
+    "regressionRomSha256": "8541c658cda865870743fb8c04859ce6950d0f48d598939670f7030b91a67c7a",
+    "regression": "Original failing inputs now land atx1239.125,y104,health3 atframe1402"
+  },
+  "villaFindings": [
+    {
+      "issue": "High jump plus held wool overlaps nine HUD objects; score/inventory dropout",
+      "decision": "Compact HUD to four OAM objects while preserving top score and separate health/wool counters",
+      "status": "fixed; high jump and full route passed"
+    },
+    {
+      "issue": "Through-deck boarding OAM overflow",
+      "resolution": "Four wooden slats span the same40px deck; physical behavior unchanged",
+      "status": "exact replay passed"
+    },
+    {
+      "issue": "Offscreen gate objects consumed final-shot OAM slots",
+      "resolution": "Cull using sprite center",
+      "status": "full route passed"
+    }
+  ],
+  "villaCandidate": {
+    "rom": "courtyard/build/four-stage-villa-7/kittie-villa-practice.gbc",
+    "sha256": "fdf7fe1b9934ab5d9253f57d41e240e3e1fc1654e5d19745c57a5f04f73dd64a",
+    "nativeClear": {
+      "score": 900,
+      "health": 3,
+      "wool": 3
+    },
+    "oam": {
+      "frames": 1423,
+      "peak": 10,
+      "overLimit": 0
+    }
+  },
+  "villaIndependentReview": {
+    "status": "passed; no required gameplay change",
+    "attempt": 2,
+    "score": 900,
+    "health": 3,
+    "wool": 3,
+    "finding": "Water-lift timing lesson carried to later crossing firsttry; ready for human review"
+  },
+  "banquetProgress": {
+    "nativeClear": {
+      "score": 900,
+      "health": 3,
+      "wool": 3
+    },
+    "status": "native full route passed; independent review active",
+    "woolPaddingFix": {
+      "observedBeforePeak": 11,
+      "afterPeak": 10,
+      "sampledMatchingFrames": 47,
+      "visibleArtUnchanged": true
+    },
+    "rom": "courtyard/build/four-stage-banquet-2/kittie-banquet-practice.gbc",
+    "sha256": "d164d0a058245b6a3114e1f98d30e8d4544d5685507fc9b194748be60617f765",
+    "oam": {
+      "frames": 1690,
+      "peak": 10,
+      "overLimit": 0
+    }
+  },
+  "banquetIndependentReview": {
+    "status": "passed; no required change",
+    "attempt": 2,
+    "score": 600,
+    "health": 3,
+    "wool": 2,
+    "ending": "photoshoot reached",
+    "finding": "Raised-table lift crossing learned on retry; missed final lob recoverable"
+  },
+  "sourceAudit": {
+    "status": "passed progression, scoring and top HUD; own-format save identity being finalized",
+    "reviewer": "courtyard_pilot_verifier"
+  },
+  "webCandidateRom": "courtyard/build/four-stage-final-2/web/rom/kittie-has-other-plans.gbc",
+  "webCandidateSha256": "4ab255b28fa8e4d0ab3d5d4fba22c14a4d5cf72cc528c063844f71dc6ec9305b",
+  "connectedBuilderRun": {
+    "scores": [
+      900,
+      900,
+      900,
+      900
+    ],
+    "unlock": 4,
+    "photoshoot": true,
+    "softwareRestartPreserved": true,
+    "route": "courtyard/artifacts/four-stage/main-connected-route.json"
+  },
+  "verification": {
+    "status": "passed",
+    "report": "design/four-stage-verification.html",
+    "fullRouteFrames": 7280,
+    "focusedVillaFrames": 918,
+    "peakObjectsPerScanline": 10,
+    "overLimitFrames": 0,
+    "legacyImports": true,
+    "coldBoot": true,
+    "crossPairSaveBoot": true,
+    "lowerAndIncompletePreserveBests": true
+  },
+  "browserHandoff": {
+    "status": "User closed browser and accepted SameBoy fallback; stopped preview troubleshooting",
+    "stalledPort": 63381,
+    "preservedCurrentPort": 63750,
+    "closureApproved": true
+  }
+}

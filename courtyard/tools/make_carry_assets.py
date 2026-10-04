@@ -1,18 +1,21 @@
 """Small native wool, count displays and the banquet's entry shutter."""
 from pathlib import Path
 from PIL import Image, ImageDraw
-import json, copy, uuid, hashlib
+import json, copy, uuid, hashlib, sys
 ROOT=Path(__file__).resolve().parents[1]
 T,L,M,D='#65ff00','#e0f8cf','#86c06c','#071821'
 uid=lambda s:str(uuid.uuid5(uuid.NAMESPACE_URL,'kittie-carry-'+s))
 template=json.loads((ROOT/'assets/sprites/wool.png.gbsres').read_text())
 for name,w,h,count,slot in [('wool',16,16,1,1),('hearts',24,16,4,4),('inventory',24,16,4,4),('entry_shutter',8,128,1,0)]:
+ if sys.argv[1:] and name not in sys.argv[1:]: continue
  sheet=Image.new('RGB',(w*count,h),T)
  for f in range(count):
   im=Image.new('RGB',(w,h),T);d=ImageDraw.Draw(im)
   if name=='wool':
-   d.ellipse((4,4,11,11),fill=D);d.ellipse((5,5,10,10),fill=M)
-   d.line([(5,7),(8,5),(10,7)],fill=L);d.line([(5,9),(8,7),(10,9)],fill=L);d.point((8,10),fill=D)
+   # Keep the visible ball fixed via metadata y+4. Empty OAM padding belongs
+   # above the ball, so resting wool never consumes its support deck's rows.
+   d.ellipse((4,8,11,15),fill=D);d.ellipse((5,9,10,14),fill=M)
+   d.line([(5,11),(8,9),(10,11)],fill=L);d.line([(5,13),(8,11),(10,13)],fill=L);d.point((8,14),fill=D)
   elif name=='entry_shutter':
    d.rectangle((2,0,3,127),fill=D);d.rectangle((6,0,7,127),fill=D)
    for y in range(4,128,16):d.line((2,y,7,y),fill=M,width=2)
@@ -36,7 +39,7 @@ for name,w,h,count,slot in [('wool',16,16,1,1),('hearts',24,16,4,4),('inventory'
    tiles=[]
    for y in range(0,h,16):
     for x in ([4] if name=='wool' else range(0,w,8)):
-     tiles.append(dict(id=uid(f'{name}-{a}-{f}-{x}-{y}'),x=x,y=-y,sliceX=f*w+x,sliceY=y,flipX=False,flipY=False,palette=0,paletteIndex=slot,objPalette='OBP0',priority=False))
+     tiles.append(dict(id=uid(f'{name}-{a}-{f}-{x}-{y}'),x=x,y=4 if name=='wool' else -y,sliceX=f*w+x,sliceY=y,flipX=False,flipY=False,palette=0,paletteIndex=slot,objPalette='OBP0',priority=False))
    anim['frames'].append(dict(id=uid(f'{name}-{a}-{f}'),tiles=tiles))
  m['states'][0]['id']=uid(name+'-state')
  dest.with_suffix('.png.gbsres').write_text(json.dumps(m,indent=2)+'\n')

@@ -18,6 +18,22 @@
       ]
     },
     {
+      "key": "villa",
+      "label": "Kittie Villa Terraces",
+      "files": [
+        "include/states/villa.h",
+        "src/states/villa.c"
+      ]
+    },
+    {
+      "key": "head_goon",
+      "label": "Kittie Head Goon",
+      "files": [
+        "include/states/head_goon.h",
+        "src/states/head_goon.c"
+      ]
+    },
+    {
       "key": "banquet",
       "label": "Kittie banquet",
       "files": [

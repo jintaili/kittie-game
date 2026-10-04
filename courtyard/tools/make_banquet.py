@@ -70,6 +70,13 @@ def build():
             d.rectangle((x+2,y+5,r-3,b-2), fill=C[2])
             d.line((x+4,y+6,x+4,b-3), fill=C[1])
             region(x,y,r,b,3)
+    for x in level.get('lifts',[]):
+        # Same service machinery as the villa, within the quiet approach bay.
+        d.rectangle((x+8,56,x+31,127),fill=C[0])
+        for rail in (x+10,x+29):
+            d.line((rail,56,rail,127),fill=C[2])
+            d.line((rail+1,56,rail+1,127),fill=C[1])
+        d.line((x+8,56,x+31,56),fill=C[2]);region(x+8,56,x+32,128,3)
     for x,r,_ in level['gaps']:
         d.rectangle((x,128,r-1,143), fill=C[1])
         d.line((x,128,r-1,128), fill=C[0])

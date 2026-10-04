@@ -32,6 +32,6 @@
   "gameplayReview": "passed; shutter finding fixed and rechecked",
   "integration": "opening-ball-only clear, empty court/manual retry, both exact ROMs full-game completion and soft-reset unlock persistence passed",
   "review": "design/courtyard-review.html",
-  "browserPreview": "http://127.0.0.1:60866/8b0d87746db577e182927e4342b38c1cbca103996013adfb283b6164046786d0/",
+  "browserPreview": "[local preview URL omitted]",
   "previousBrowserState": "276ab0c305cf103f48f15ecd75360b58d286e6720525d987a01f1099c029743c"
 }

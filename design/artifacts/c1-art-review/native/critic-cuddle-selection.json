@@ -1,0 +1,63 @@
+{
+  "provenance": "Genuine PNG samples returned to independent critic; source reviewer made no emulator calls.",
+  "sourceAction": {
+    "buttons": [],
+    "startFrame": 754,
+    "endFrame": 1194,
+    "frames": 440
+  },
+  "frames": [
+    {
+      "frame": 809,
+      "source": "courtyard/artifacts/reviews/four-stage-grove-gameplay/frames/029-frame-809.png",
+      "copiedFile": "critic-idle-809.png",
+      "sha256": "49964db8a4aca1b38d7ba596a00ffbe59bb8cd913f0f457a4d92fa763f3f2201"
+    },
+    {
+      "frame": 864,
+      "source": "courtyard/artifacts/reviews/four-stage-grove-gameplay/frames/029-frame-864.png",
+      "copiedFile": "critic-idle-864.png",
+      "sha256": "ce57238e6dda8aa0a8a6d5e389783230964f8a30b1a47fbc2ebd6c98a9ae8855"
+    },
+    {
+      "frame": 919,
+      "source": "courtyard/artifacts/reviews/four-stage-grove-gameplay/frames/029-frame-919.png",
+      "copiedFile": "critic-idle-919.png",
+      "sha256": "633007a4a55822bdf2c8d14bc6d90410ada10797f2402a7f4172f41623db4dc0"
+    },
+    {
+      "frame": 974,
+      "source": "courtyard/artifacts/reviews/four-stage-grove-gameplay/frames/029-frame-974.png",
+      "copiedFile": "critic-idle-974.png",
+      "sha256": "49964db8a4aca1b38d7ba596a00ffbe59bb8cd913f0f457a4d92fa763f3f2201"
+    },
+    {
+      "frame": 1029,
+      "source": "courtyard/artifacts/reviews/four-stage-grove-gameplay/frames/029-frame-1029.png",
+      "copiedFile": "critic-idle-1029.png",
+      "sha256": "ad063688ac2faf9c317d374ae8c5f0a1491857f7f1e755c721754bcfc000939f"
+    },
+    {
+      "frame": 1084,
+      "source": "courtyard/artifacts/reviews/four-stage-grove-gameplay/frames/029-frame-1084.png",
+      "copiedFile": "critic-idle-1084.png",
+      "sha256": "633007a4a55822bdf2c8d14bc6d90410ada10797f2402a7f4172f41623db4dc0"
+    },
+    {
+      "frame": 1139,
+      "source": "courtyard/artifacts/reviews/four-stage-grove-gameplay/frames/029-frame-1139.png",
+      "copiedFile": "critic-idle-1139.png",
+      "sha256": "5938b243e1e5fda83d0cf8be3653699aac6ebad52657a6b5ac06e7e58f1d5cfa"
+    },
+    {
+      "frame": 1194,
+      "source": "courtyard/artifacts/reviews/four-stage-grove-gameplay/frames/029-frame-1194.png",
+      "copiedFile": "critic-idle-1194.png",
+      "sha256": "ad063688ac2faf9c317d374ae8c5f0a1491857f7f1e755c721754bcfc000939f"
+    }
+  ],
+  "continuousRecording": false,
+  "note": "8 samples at55-frame intervals. GIF retains sample spacing; no invented intermediate frames.",
+  "romSha256": "f699f3f5baf8ad56e5632f4fa0ab06fa639e0a74346847c632c7308bbe0bb3c3",
+  "romProvenance": "Independent critic confirmed rom_inspect and emulator_run exact-ROM hash; no rebuild during capture."
+}

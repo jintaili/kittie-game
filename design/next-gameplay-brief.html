@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kittie Has Other Plans | Courtyard scoring pilot</title>
+<style>
+:root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f5edd8;color:#403b3d;font:16px/1.6 system-ui,sans-serif}main{max-width:980px;margin:auto;padding:36px 24px 60px}h1{font-size:clamp(30px,5vw,43px);line-height:1.12;margin:10px 0 18px}h2{font-size:23px;line-height:1.25;margin-top:30px}p{max-width:820px}.lead{font-size:20px}.note{padding:16px 20px;background:#e5e8d2;border-left:4px solid #66834f}.proposal{padding:16px 20px;background:#faf5e9;border-left:4px solid #b56583}.small{font-size:13px;color:#675e57}table{border-collapse:collapse;width:100%;font-size:15px}th,td{text-align:left;vertical-align:top;border-bottom:1px solid #cbb78f;padding:11px 9px}th{background:#e9dfca}a{color:#704373}code{font-size:13px;overflow-wrap:anywhere}pre{padding:16px;background:#faf5e9;line-height:1.4;overflow:auto}li{margin:7px 0}@media(max-width:600px){main{padding:25px 16px 40px}th,td{padding:9px 6px}}
+</style>
+</head>
+<body><main>
+<p class="small">Designer brief · 3 October 2026 · Based on release 1.0.0 and current source</p>
+<h1>Courtyard scoring pilot</h1>
+<p class="lead">Make the wool worth bringing through the exit. Keep the courtyard's demanding raised route, then finish with a low bell and a sentry on the table above it.</p>
+<div class="note"><p><strong>User-approved direction.</strong> Implement a courtyard pilot that rewards defeated enemies and wool retained at completion, gives the level a distinctive moment, and adds livelier reactions. Wool keeps its two uses, bells and enemies. Rival and boss work is on hold. No economy is approved.</p></div>
+<div class="proposal"><p><strong>Designer proposal below.</strong> The point values, enemy placement and reaction timing are working choices for this pilot. They need native play and independent review. This brief records source inspection, not a new playtest.</p></div>
+
+<h2>A completed run earns the score</h2>
+<table>
+<thead><tr><th>Action</th><th>Proposed points</th><th>Meaning</th></tr></thead>
+<tbody>
+<tr><td>Defeat a goon</td><td>100 once per goon per attempt</td><td>Count the transition into defeat, never repeated hits or the departure animation.</td></tr>
+<tr><td>Carry a ball through the exit</td><td>200 per held ball</td><td>Count the inventory at completion. A ball left on a ledge, lying in the court or still airborne earns nothing.</td></tr>
+<tr><td>Courtyard maximum</td><td>900</td><td>Three defeated goons and three carried balls. Bells, time, hearts and pickups add no separate points.</td></tr>
+</tbody></table>
+<p>One preserved ball is worth two goons. Avoiding every fight with three wool earns 600. Defeating all three but losing one wool earns 700. Doing both well earns 900. Since a successful throw leaves the ball recoverable, using wool is still desirable. The choice concerns the throw and recovery risk, not spending ammunition.</p>
+<p>Save a courtyard personal best, not a running bank of points. Death, Start, Select and a new stage discard the unfinished attempt. Freeze the defeated count and held count when the exit accepts the clear. A replay replaces the best only when its completed score is higher. Equal and lower runs keep the saved best. A failure after defeating two goons cannot bank their 200 points.</p>
+<p>Keep hearts and wool as the main play HUD. Use one compact completion overlay for the score breakdown, best and continuation. Do not add a scoring tutorial page. A possible four-line layout, subject to the native text window, is:</p>
+<pre>COURTYARD CLEAR
+GOONS 300 WOOL600
+SCORE 900 BEST900
+A CONTINUE</pre>
+<p>A best of zero is valid. Clearing still unlocks the grove, even if the final shot is left behind and the player avoids every goon. There are no score gates, ranks, shops or permanent upgrades in this pilot.</p>
+
+<h2>The final table has two heights to read</h2>
+<table>
+<thead><tr><th>Area</th><th>Working change</th><th>Intended choice</th></tr></thead>
+<tbody>
+<tr><td>Opening through raised route</td><td>Keep all three wool positions, both early patrols, platforms, water gaps and jump physics.</td><td>The optional high balls now improve the completion score as well as providing insurance. The upper route remains worth learning.</td></tr>
+<tr><td>Last garden patrol</td><td>Move the third goon from floor patrol <code>x888..928</code> to table patrol <code>x1120..1152</code>, feet at <code>y96</code>.</td><td>The last channel becomes a short breath before the final room. No new enemy is added.</td></tr>
+<tr><td>Final court</td><td>Keep the table <code>[1104,96,1168,114]</code>, low bell at <code>[1148,120]</code>, closing shutter and exit gate.</td><td>A grounded throw passes below the table to ring the bell. A jumping throw can defeat the sentry for 100. The player can also time a jump past him and protect the wool.</td></tr>
+</tbody></table>
+<p>The guard must remain optional. Do not attach the gate to his defeat. A ground lob from close to the table can strike its underside, so the design does not promise that shot will work. Native play must establish a readable jumping shot, a feasible bypass and recoverable wool on both sides of the table. Keep enough space to solve the room with the opening ball alone.</p>
+<p>Use the existing per-goon height data with courtyard values <code>[128,128,96]</code>. Keep the current patrol speed. If the room is cramped in actual play, adjust the approach before adding powers or making Kittie's jump easier.</p>
+
+<h2>Reactions that belong to the action</h2>
+<p>On a goon defeat, let Kittie use his approved joy pose when grounded and still. Movement and throwing take priority, so celebration never locks the controls. On the final bell, the living table sentry can briefly flinch in his existing frame 2 for about 12 updates, then resume his walk animation. His patrol and contact rules keep running. Preserve the bell swing, gate lift, back carry and idle cuddle.</p>
+<p>These responses tie the room together without adding actors or rebuilding the character. Any later Kittie sprite edit must refer to the original photographs in <code>/Users/jintaili/Downloads/Kittie Codex Skill/assets/</code>. His embroidered face stays fixed.</p>
+
+<h2>Saving and review requirements</h2>
+<p>Preserve variables 100 and 101 and existing stage unlocks. The current courtyard trigger saves only on a new unlock, and the cover loads only the unlock variable. Add best-score loading and a save when either the best improves or an unlock changes. Subsequent grove and banquet saves must retain the courtyard best. An absent score field in a version 1 save means zero, never a reset of its unlocks. Use a score-format marker and validate the best range before trusting new fields; prove compatibility with an actual old save.</p>
+<ul>
+<li>Complete a run with all three goons defeated and all three wool held. Confirm 900 and persist it through a restart.</li>
+<li>Replay for a lower score, then retry or die after defeats. Confirm no accumulation and no reduction of the best.</li>
+<li>Clear with the opening ball alone, bypass the sentry, recover a missed court shot, and confirm an uncollected reserve earns no points.</li>
+<li>Load a release 1.0.0 save with later stages unlocked. Confirm those unlocks remain and its new best begins at zero. Then clear a later stage and confirm the courtyard best survives.</li>
+<li>Inspect the table encounter and result at 160×144. No actor may obscure the low bell, wool passage or HUD. Check a full courtyard run with a fresh independent critic.</li>
+</ul>
+<p>The main risk is that the tabletop sentry makes the final court crowded or compulsory. Scoring can also tempt repetitive safe fights; unique per-attempt credit and a saved best cap that reward. Review the actual decisions, not just the possibility of reaching 900. Grove and banquet scoring, wider progression and new wool abilities wait for the courtyard review.</p>
+<p class="small">Sources: <a href="version-1.html">released rules</a>, <a href="../courtyard/tools/level.json">current courtyard geometry</a>, <a href="../courtyard/plugins/kittie/engine/src/states/kittie.c">movement and object rules</a>, <a href="../courtyard/artifacts/reviews/courtyard-review-1-gameplay/review.html">independent courtyard review</a>, <a href="agent-workflow.html">approved whole-level workflow</a>.</p>
+</main></body></html>

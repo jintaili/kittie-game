@@ -1,0 +1,185 @@
+{
+  "_resourceType": "trigger",
+  "id": "6e03cbf3-d6a4-58cf-91f4-75e0f9d541b2",
+  "_index": 0,
+  "symbol": "trigger_head_goon_clear",
+  "prefabId": "",
+  "name": "Head Goon clear",
+  "x": 54,
+  "y": 12,
+  "width": 6,
+  "height": 5,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "83f29a44-90a4-5812-b0ff-7c97e17301fa",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "111",
+        "value": {
+          "type": "number",
+          "value": 19539
+        }
+      }
+    },
+    {
+      "id": "02d4683c-17aa-5823-8b8a-4ab56c79e9a6",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "112",
+        "value": {
+          "type": "number",
+          "value": 19272
+        }
+      }
+    },
+    {
+      "id": "844297d3-7b30-5381-8f0d-243d8af41bea",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "113",
+        "value": {
+          "type": "number",
+          "value": 20304
+        }
+      }
+    },
+    {
+      "id": "419e71bf-2889-5667-84da-0ddf47159011",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "107",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "0a6b15ce-6dc3-5ca7-bc8b-9b3467cfd5f7",
+      "command": "EVENT_IF_VALUE",
+      "args": {
+        "variable": "100",
+        "operator": "<",
+        "comparator": 4
+      },
+      "children": {
+        "true": [
+          {
+            "id": "0d7c41b4-3d48-5ebb-bbc4-37be4e3da150",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "100",
+              "value": {
+                "type": "number",
+                "value": 4
+              }
+            }
+          },
+          {
+            "id": "3a5ac1cd-1cb3-5335-b82f-f174317b2a12",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "107",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            }
+          }
+        ],
+        "false": []
+      }
+    },
+    {
+      "id": "71a36c2c-c367-595a-affe-698810d6f55e",
+      "command": "EVENT_IF_VALUE_COMPARE",
+      "args": {
+        "vectorX": "104",
+        "operator": ">",
+        "vectorY": "114"
+      },
+      "children": {
+        "true": [
+          {
+            "id": "644e21eb-c768-5a32-88ab-cc8ef49f77ec",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "114",
+              "value": {
+                "type": "variable",
+                "value": "104"
+              }
+            }
+          },
+          {
+            "id": "cf6d6184-4086-562b-9f96-e8568df2cbbe",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "107",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            }
+          }
+        ],
+        "false": []
+      }
+    },
+    {
+      "id": "82c8a6e5-0852-5f4b-b8e1-6a3ca8fe6098",
+      "command": "EVENT_IF_VALUE",
+      "args": {
+        "variable": "107",
+        "operator": "==",
+        "comparator": 1
+      },
+      "children": {
+        "true": [
+          {
+            "id": "df8109e4-2fbe-5938-9d9d-2d00021a2cf2",
+            "command": "EVENT_SAVE_DATA",
+            "args": {
+              "saveSlot": 0
+            },
+            "children": {
+              "true": [],
+              "load": []
+            }
+          }
+        ],
+        "false": []
+      }
+    },
+    {
+      "id": "70c47164-3f70-50c1-a38c-3f60d2d67c69",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": "HEAD GOON CLEAR\nHITS $102$ WOOL $103$\nSCORE $104$ BEST $114$\nA CONTINUE",
+        "minHeight": 6,
+        "maxHeight": 6,
+        "textHeight": 4,
+        "position": "top"
+      }
+    },
+    {
+      "id": "22ad0e6b-d239-5b0d-80e8-99449c2919c2",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "31e3ad8e-bf8a-5441-a0d5-cf86b365492f",
+        "x": {
+          "type": "number",
+          "value": 4
+        },
+        "y": {
+          "type": "number",
+          "value": 15
+        },
+        "direction": "right",
+        "fadeSpeed": "1"
+      }
+    }
+  ],
+  "leaveScript": []
+}

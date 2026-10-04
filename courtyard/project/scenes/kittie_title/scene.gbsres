@@ -1,7 +1,7 @@
 {
   "_resourceType": "scene",
   "id": "7504f14c-4246-5f1b-b09b-9dcf8c2c902a",
-  "_index": 3,
+  "_index": 5,
   "type": "kittie_title",
   "name": "Kittie title",
   "symbol": "scene_kittie_title",
@@ -30,104 +30,51 @@
   "autoFadeSpeed": 1,
   "script": [
     {
-      "id": "ef370a00-1001-4000-8000-000000000016",
-      "command": "EVENT_PEEK_DATA",
+      "id": "2f340e53-cd72-5255-92c3-e93d6c66624e",
+      "command": "EVENT_SET_VALUE",
       "args": {
-        "saveSlot": 0,
-        "variableSource": "100",
-        "variableDest": "100"
+        "variable": "106",
+        "value": {
+          "type": "number",
+          "value": 19537
+        }
       }
     },
     {
-      "id": "ef370a00-1001-4000-8000-000000000017",
+      "id": "9e497cf1-d68f-523a-b7d6-9e80113c2b29",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "111",
+        "value": {
+          "type": "number",
+          "value": 19539
+        }
+      }
+    },
+    {
+      "id": "d2f6d74a-c0ae-5393-8436-22a0b55eedc5",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "115",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      }
+    },
+    {
+      "id": "cedb4298-dc9f-451c-921b-4cb4b2e3de8c",
+      "command": "EVENT_SCRIPT_UNLOCK",
+      "args": {}
+    },
+    {
+      "id": "c87dfdcf-bfb3-5235-8fb8-dfd03bbc0618",
       "command": "EVENT_LOOP",
       "args": {},
       "children": {
         "true": [
           {
-            "id": "ef370a00-1001-4000-8000-000000000018",
-            "command": "EVENT_AWAIT_INPUT",
-            "args": {
-              "input": [
-                "a",
-                "start"
-              ]
-            }
-          },
-          {
-            "id": "ef370a00-1001-4000-8000-000000000005",
-            "command": "EVENT_IF_VALUE",
-            "args": {
-              "variable": "100",
-              "operator": ">=",
-              "comparator": 2
-            },
-            "children": {
-              "true": [
-                {
-                  "id": "ef370a00-1001-4000-8000-000000000001",
-                  "command": "EVENT_MENU",
-                  "args": {
-                    "variable": "101",
-                    "items": 3,
-                    "option1": "COURTYARD",
-                    "option2": "OLIVE GROVE",
-                    "option3": "BANQUET",
-                    "layout": "dialogue",
-                    "cancelOnB": true,
-                    "cancelOnLastOption": false
-                  }
-                }
-              ],
-              "false": [
-                {
-                  "id": "ef370a00-1001-4000-8000-000000000004",
-                  "command": "EVENT_IF_VALUE",
-                  "args": {
-                    "variable": "100",
-                    "operator": ">=",
-                    "comparator": 1
-                  },
-                  "children": {
-                    "true": [
-                      {
-                        "id": "ef370a00-1001-4000-8000-000000000002",
-                        "command": "EVENT_MENU",
-                        "args": {
-                          "variable": "101",
-                          "items": 3,
-                          "option1": "COURTYARD",
-                          "option2": "OLIVE GROVE",
-                          "option3": "BANQUET LOCKED",
-                          "layout": "dialogue",
-                          "cancelOnB": true,
-                          "cancelOnLastOption": false
-                        }
-                      }
-                    ],
-                    "false": [
-                      {
-                        "id": "ef370a00-1001-4000-8000-000000000003",
-                        "command": "EVENT_MENU",
-                        "args": {
-                          "variable": "101",
-                          "items": 3,
-                          "option1": "COURTYARD",
-                          "option2": "GROVE LOCKED",
-                          "option3": "BANQUET LOCKED",
-                          "layout": "dialogue",
-                          "cancelOnB": true,
-                          "cancelOnLastOption": false
-                        }
-                      }
-                    ]
-                  }
-                }
-              ]
-            }
-          },
-          {
-            "id": "ef370a00-1001-4000-8000-000000000007",
+            "id": "ad7e855f-7259-5a32-8e83-3d92d0c9c120",
             "command": "EVENT_IF_VALUE",
             "args": {
               "variable": "101",
@@ -137,7 +84,7 @@
             "children": {
               "true": [
                 {
-                  "id": "ef370a00-1001-4000-8000-000000000006",
+                  "id": "5eb748a9-1a73-5faa-a99d-3a592345740c",
                   "command": "EVENT_SWITCH_SCENE",
                   "args": {
                     "sceneId": "12f07015-0a42-504a-8d39-3f689e13ad3a",
@@ -158,7 +105,7 @@
             }
           },
           {
-            "id": "ef370a00-1001-4000-8000-000000000011",
+            "id": "16b4a1c2-d58b-51de-b3c9-54663799e135",
             "command": "EVENT_IF_VALUE",
             "args": {
               "variable": "101",
@@ -168,42 +115,20 @@
             "children": {
               "true": [
                 {
-                  "id": "ef370a00-1001-4000-8000-000000000010",
-                  "command": "EVENT_IF_VALUE",
+                  "id": "68f5ea57-4431-57a2-ab9b-a4796e4ef9b7",
+                  "command": "EVENT_SWITCH_SCENE",
                   "args": {
-                    "variable": "100",
-                    "operator": ">=",
-                    "comparator": 1
-                  },
-                  "children": {
-                    "true": [
-                      {
-                        "id": "ef370a00-1001-4000-8000-000000000008",
-                        "command": "EVENT_SWITCH_SCENE",
-                        "args": {
-                          "sceneId": "32b0d550-4338-5ca4-adaa-0a3fcbfd6661",
-                          "x": {
-                            "type": "number",
-                            "value": 4
-                          },
-                          "y": {
-                            "type": "number",
-                            "value": 15
-                          },
-                          "direction": "right",
-                          "fadeSpeed": "1"
-                        }
-                      }
-                    ],
-                    "false": [
-                      {
-                        "id": "ef370a00-1001-4000-8000-000000000009",
-                        "command": "EVENT_TEXT",
-                        "args": {
-                          "text": "CLEAR COURTYARD\nTO OPEN THE GROVE"
-                        }
-                      }
-                    ]
+                    "sceneId": "32b0d550-4338-5ca4-adaa-0a3fcbfd6661",
+                    "x": {
+                      "type": "number",
+                      "value": 4
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 15
+                    },
+                    "direction": "right",
+                    "fadeSpeed": "1"
                   }
                 }
               ],
@@ -211,7 +136,7 @@
             }
           },
           {
-            "id": "ef370a00-1001-4000-8000-000000000015",
+            "id": "7e028449-f6ab-503b-867a-654592cdc405",
             "command": "EVENT_IF_VALUE",
             "args": {
               "variable": "101",
@@ -221,46 +146,97 @@
             "children": {
               "true": [
                 {
-                  "id": "ef370a00-1001-4000-8000-000000000014",
-                  "command": "EVENT_IF_VALUE",
+                  "id": "ff043601-6587-5a4c-88ca-b39c56dbaa22",
+                  "command": "EVENT_SWITCH_SCENE",
                   "args": {
-                    "variable": "100",
-                    "operator": ">=",
-                    "comparator": 2
-                  },
-                  "children": {
-                    "true": [
-                      {
-                        "id": "ef370a00-1001-4000-8000-000000000012",
-                        "command": "EVENT_SWITCH_SCENE",
-                        "args": {
-                          "sceneId": "31e3ad8e-bf8a-5441-a0d5-cf86b365492f",
-                          "x": {
-                            "type": "number",
-                            "value": 4
-                          },
-                          "y": {
-                            "type": "number",
-                            "value": 15
-                          },
-                          "direction": "right",
-                          "fadeSpeed": "1"
-                        }
-                      }
-                    ],
-                    "false": [
-                      {
-                        "id": "ef370a00-1001-4000-8000-000000000013",
-                        "command": "EVENT_TEXT",
-                        "args": {
-                          "text": "CLEAR THE GROVE\nTO OPEN BANQUET"
-                        }
-                      }
-                    ]
+                    "sceneId": "33b6c10d-9abf-5b88-a3e9-1cf9891f3095",
+                    "x": {
+                      "type": "number",
+                      "value": 4
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 15
+                    },
+                    "direction": "right",
+                    "fadeSpeed": "1"
                   }
                 }
               ],
               "false": []
+            }
+          },
+          {
+            "id": "ad3095b9-3166-5e43-b1d6-dc276c5b973d",
+            "command": "EVENT_IF_VALUE",
+            "args": {
+              "variable": "101",
+              "operator": "==",
+              "comparator": 4
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "a1218d78-f322-5d34-830b-536d1b4c8ba4",
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "c11c27ca-7715-5412-9354-1f87bdc59aab",
+                    "x": {
+                      "type": "number",
+                      "value": 4
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 15
+                    },
+                    "direction": "right",
+                    "fadeSpeed": "1"
+                  }
+                }
+              ],
+              "false": []
+            }
+          },
+          {
+            "id": "eaa2ce2a-7632-556f-b4cc-2fe1200ba875",
+            "command": "EVENT_IF_VALUE",
+            "args": {
+              "variable": "101",
+              "operator": "==",
+              "comparator": 5
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "f317bd13-defc-5cdd-93be-965952af72a4",
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "31e3ad8e-bf8a-5441-a0d5-cf86b365492f",
+                    "x": {
+                      "type": "number",
+                      "value": 4
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 15
+                    },
+                    "direction": "right",
+                    "fadeSpeed": "1"
+                  }
+                }
+              ],
+              "false": []
+            }
+          },
+          {
+            "id": "e91a9b21-eac0-5255-98d3-57ca1425b79e",
+            "command": "EVENT_WAIT",
+            "args": {
+              "units": "frames",
+              "frames": {
+                "type": "number",
+                "value": 1
+              }
             }
           }
         ]
