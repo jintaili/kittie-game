@@ -43,15 +43,28 @@ void head_goon_reset_attack(void) BANKED {
     boss_target_x=F(280);boss_hop_vx=boss_hop_vy=0;
     boss_hops_left=boss_hop_age=boss_hop_remainder=boss_hop_error=0;
 }
+static void hurt_on_contact(void) {
+    INT16 distance;
+    distance=kittie_x-goon_x[0];
+    /* Living goons hurt on contact, even during recovery and flinching.
+       No floor-level invisible shield during flight. Running underneath is
+       safe once the visible feet clear Kittie's existing16px body bounds. */
+    if(boss_phase!=5 && !kittie_hurt &&
+       magnitude(distance)<F(18) && kittie_y>goon_y[0]-F(28) && kittie_y-F(16)<goon_y[0]) {
+        --kittie_health;
+        if(!kittie_health) return;
+        kittie_hurt=60;kittie_vy=-32;kittie_knock=distance<0?-1:1;kittie_ground=0;sound(2);
+    }
+}
 void head_goon_update_boss(void) BANKED {
     UBYTE n;
-    INT16 distance;
     if(boss_phase==0) {
         if(kittie_door) {boss_phase=1;boss_timer=30;}
         return;
     }
     if(boss_phase==5) return;
     if(boss_phase==1 || boss_phase==4) {
+        if(boss_phase==4) hurt_on_contact();
         if(!--boss_timer) {boss_phase=2;boss_timer=54;}
         return;
     }
@@ -95,15 +108,7 @@ void head_goon_update_boss(void) BANKED {
         }
         break;
     }
-    distance=kittie_x-goon_x[0];
-    /* No floor-level invisible shield during flight. Running underneath is
-       safe once the visible feet clear Kittie's existing16px body bounds. */
-    if(boss_phase!=3 && boss_phase!=4 && boss_phase!=5 && !kittie_hurt &&
-       magnitude(distance)<F(18) && kittie_y>goon_y[0]-F(28) && kittie_y-F(16)<goon_y[0]) {
-        --kittie_health;
-        if(!kittie_health) return;
-        kittie_hurt=60;kittie_vy=-32;kittie_knock=distance<0?-1:1;kittie_ground=0;sound(2);
-    }
+    hurt_on_contact();
 }
 void head_goon_sync_target(void) BANKED {
     actors[5].flags|=ACTOR_FLAG_HIDDEN;
