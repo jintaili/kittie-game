@@ -1,4 +1,4 @@
-"""A four-object, 40px slatted deck. Small gaps are narrower than physical wool."""
+"""A four-object, 40px slatted deck. Small gaps are narrower than a physical wool ball."""
 from pathlib import Path
 import json,uuid,hashlib
 from PIL import Image,ImageDraw
@@ -11,7 +11,7 @@ for x in slats:
     d.line((x+1,1,x+6,1),fill='#e0f8cf');d.line((x+2,5,x+5,5),fill='#071821')
     d.point((x+4,3),fill='#e0f8cf')
 p=ROOT/'assets/sprites/service_lift.png';im.save(p)
-m=json.loads((ROOT/'assets/sprites/wool.png.gbsres').read_text())
+m=json.loads((ROOT/'assets/sprites/ball.png.gbsres').read_text())
 m.update(id=uid('sprite'),name='Service lift',symbol='sprite_service_lift',filename=p.name,width=40,height=16,canvasWidth=40,canvasHeight=16,numTiles=4,checksum=hashlib.sha1(p.read_bytes()).hexdigest(),animSpeed=255)
 state=m['states'][0];state.update(id=uid('state'),animationType='fixed',flipLeft=False)
 for i,a in enumerate(state['animations']):

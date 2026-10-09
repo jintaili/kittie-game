@@ -437,7 +437,7 @@ static void reset_level(void) {
     kittie_idle=kittie_cuddle=kittie_settle=0;
     courtyard_defeated=courtyard_clear_timer=0;
     kittie_hud_reset();
-    VM_GLOBAL(VAR_COURTYARD_GOONS)=VM_GLOBAL(VAR_COURTYARD_WOOL)=VM_GLOBAL(VAR_COURTYARD_SCORE)=0;
+    VM_GLOBAL(VAR_COURTYARD_GOONS)=VM_GLOBAL(VAR_COURTYARD_BALL_POINTS)=VM_GLOBAL(VAR_COURTYARD_SCORE)=0;
     bell_ring[0]=bell_ring[1]=0;
     player_solid_start=0;
     lift_phase=0; lift_y=lift_old_y=kittie_stage==3?F(80):F(112);
@@ -521,7 +521,7 @@ void kittie_update(void) BANKED {
     }
     if (kittie_won) {
         /* Let the clear reaction play before the existing result script starts.
-           Afterward the held-wool cuddle stays alive behind the top overlay. */
+           Afterward the held-ball cuddle stays alive behind the top overlay. */
         {
             ++kittie_tick;
             if (kittie_inventory && !kittie_joy && (kittie_tick&1)) {
@@ -613,8 +613,8 @@ void kittie_update(void) BANKED {
             /* A jumping exit settles into the authored finish trigger first. */
             if (!kittie_ground) return;
             VM_GLOBAL(VAR_COURTYARD_GOONS)=courtyard_defeated*100;
-            VM_GLOBAL(VAR_COURTYARD_WOOL)=kittie_inventory*200;
-            VM_GLOBAL(VAR_COURTYARD_SCORE)=VM_GLOBAL(VAR_COURTYARD_GOONS)+VM_GLOBAL(VAR_COURTYARD_WOOL);
+            VM_GLOBAL(VAR_COURTYARD_BALL_POINTS)=kittie_inventory*200;
+            VM_GLOBAL(VAR_COURTYARD_SCORE)=VM_GLOBAL(VAR_COURTYARD_GOONS)+VM_GLOBAL(VAR_COURTYARD_BALL_POINTS);
             kittie_won=1; courtyard_clear_timer=48;
             kittie_vx=kittie_vy=0;
             if (kittie_inventory) { kittie_joy=24; sound(1); }

@@ -1,7 +1,7 @@
 # Kittie Has Other Plans
 
 A native Game Boy Color game for ModRetro Chromatic. Kittie crosses a Tuscan
-wedding venue to reach the photoshoot, collecting and throwing wool along the way.
+wedding venue to reach the photoshoot, collecting and throwing wool balls along the way.
 
 ## Play
 
@@ -12,7 +12,7 @@ The [play guide](design/version-1.html) covers controls and maps;
 [release metadata](release/manifest.json) records its checksum and validation.
 Open HTML guides locally after cloning or downloading the repository.
 
-Collect, carry, throw and retrieve wool to ring bells and defeat goons.
+Collect, carry, throw and retrieve balls to ring bells and defeat goons.
 Water and zero hearts reset the stage. Cleared stages stay unlocked.
 
 ## Current source

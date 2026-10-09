@@ -17,7 +17,7 @@ names=['start','the_olive_grove','villa_terraces','head_goon','the_wedding_banqu
 scene=load('project/scenes/villa_terraces/scene.gbsres');scene.update(id=uid('scene'),name='Head Goon',symbol='scene_head_goon',type='head_goon',width=60,backgroundId=uid('background'),x=4700,_index=3)
 save('project/scenes/head_goon/scene.gbsres',scene)
 for p in (R/'project/scenes/villa_terraces/actors').glob('*.gbsres'):
- a=json.loads(p.read_text());a.update(id=uid('actor/'+p.stem),symbol='actor_head_goon_'+p.stem,x=min(a['x'],55),y=min(a['y'],15))
+ a=json.loads(p.read_text());a.update(id=uid('actor/'+p.stem),symbol='actor_head_goon_'+p.stem.replace('_wool','_ball'),x=min(a['x'],55),y=min(a['y'],15))
  if a['_index']==19:continue
  if a['_index']==4:a.update(name='Hop landing cue',spriteSheetId=uid('target-sprite'))
  if a['_index']==3:a.update(name='Head Goon',spriteSheetId=uid('sprite'),x=34,y=15)
@@ -51,7 +51,7 @@ for i,n in enumerate(names):
  paths=list((R/f'project/scenes/{n}/triggers').glob('*.gbsres'));t=load(str(paths[0].relative_to(R))) if paths else copy.deepcopy(base)
  if not paths:t.update(id=uid('finish'),name='Head Goon clear',symbol='trigger_head_goon_clear')
  t['x']=[154,214,154,54,174][i];k=n+'/result';changed=lambda s:val(k+s,'107',1)
- t['script']=[val(k+'/schema','111',19539),val(k+'/family1','112',0x4b48),val(k+'/family2','113',0x4f50),val(k+'/reset','107',0),cond(k+'/unlock','100','<',i+1,[val(k+'/set','100',i+1),changed('/unlockchange')]),ev(k+'/best','EVENT_IF_VALUE_COMPARE',dict(vectorX='104',operator='>',vectorY=best[i]),dict(true=[val(k+'/setbest',best[i],'104','variable'),changed('/bestchange')],false=[])),cond(k+'/save','107','==',1,[ev(k+'/write','EVENT_SAVE_DATA',dict(saveSlot=0),dict(true=[],load=[]))]),ev(k+'/text','EVENT_TEXT',dict(text=f'{labels[i]} CLEAR\n'+('HITS' if i==3 else 'GOONS')+f' $102$ WOOL $103$\nSCORE $104$ BEST ${best[i]}$\nA CONTINUE',minHeight=6,maxHeight=6,textHeight=4,position='top')),switch(k+'/next',ids[i+1] if i<4 else photoid)]
+ t['script']=[val(k+'/schema','111',19539),val(k+'/family1','112',0x4b48),val(k+'/family2','113',0x4f50),val(k+'/reset','107',0),cond(k+'/unlock','100','<',i+1,[val(k+'/set','100',i+1),changed('/unlockchange')]),ev(k+'/best','EVENT_IF_VALUE_COMPARE',dict(vectorX='104',operator='>',vectorY=best[i]),dict(true=[val(k+'/setbest',best[i],'104','variable'),changed('/bestchange')],false=[])),cond(k+'/save','107','==',1,[ev(k+'/write','EVENT_SAVE_DATA',dict(saveSlot=0),dict(true=[],load=[]))]),ev(k+'/text','EVENT_TEXT',dict(text=f'{labels[i]} CLEAR\n'+('HITS' if i==3 else 'GOONS')+f' $102$ BALL $103$\nSCORE $104$ BEST ${best[i]}$\nA CONTINUE',minHeight=6,maxHeight=6,textHeight=4,position='top')),switch(k+'/next',ids[i+1] if i<4 else photoid)]
  save(str(paths[0].relative_to(R)) if paths else 'project/scenes/head_goon/triggers/head_goon_clear.gbsres',t)
 title=load('project/scenes/kittie_title/scene.gbsres')
 loop=[cond('title/choice'+str(i),'101','==',i+1,[switch('title/go'+str(i),s)]) for i,s in enumerate(ids)]

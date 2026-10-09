@@ -1,7 +1,7 @@
 """Generate seven-pixel HUD glyphs for a clipped, one-row window.
 
-The window uses no OAM slots, keeping Kittie's head and carried wool visible at
-high jumps. Hearts and wool use filled icons and pale empty capacity slots.
+The window uses no OAM slots, keeping Kittie's head and carried ball visible at
+high jumps. Heart and ball slots use filled icons and pale empty capacity slots.
 """
 from pathlib import Path
 from PIL import Image
@@ -9,7 +9,7 @@ ROOT=Path(__file__).resolve().parents[1]
 COLORS=['#f5edd8','#ef7da7','#fff1ce','#32263b']
 DIGITS=['1111/1001/1001/1001/1001/1001/1111','0010/0110/0010/0010/0010/0010/0111','1111/0001/0001/1111/1000/1000/1111','1111/0001/0001/0111/0001/0001/1111','1001/1001/1001/1111/0001/0001/0001','1111/1000/1000/1111/0001/0001/1111','1111/1000/1000/1111/1001/1001/1111','1111/0001/0010/0010/0100/0100/0100','1111/1001/1001/1111/1001/1001/1111','1111/1001/1001/1111/0001/0001/1111']
 HEART=['0330330','3113113','3111113','3111113','0311130','0031300','0003000']
-WOOL=['0033300','0311130','3113113','3131313','3113113','0311130','0033300']
+BALL=['0033300','0311130','3113113','3131313','3113113','0311130','0033300']
 def icon(rows,empty=False):
     # Empty slots retain a dark outline and cream center; filled icons are pink.
     return [[0]*8]+[[(3 if c=='3' else 0) if empty else int(c) for c in row]+[0] for row in rows]
@@ -18,7 +18,7 @@ def tile(pixels):
     for row in pixels:
         result += [sum((c&1)<<(7-x) for x,c in enumerate(row)),sum(((c>>1)&1)<<(7-x) for x,c in enumerate(row))]
     return result
-frames=[[[0]*8 for _ in range(8)],icon(HEART,True),icon(HEART),icon(WOOL,True),icon(WOOL)]
+frames=[[[0]*8 for _ in range(8)],icon(HEART,True),icon(HEART),icon(BALL,True),icon(BALL)]
 for n in range(10):
     pixels=[[0]*16 for _ in range(8)]
     for x,num in [(0,n),(5,0),(10,0)]:
@@ -35,4 +35,4 @@ for x,frame in [(8,2),(16,2),(24,2),(72,5),(80,6),(128,3),(136,3),(144,3)]:
         for dx,c in enumerate(row):preview.putpixel((x+dx,y),tuple(bytes.fromhex(COLORS[c][1:])))
 preview.save(ROOT/'source-art/hud-icons-native.png')
 preview.resize((640,32),Image.Resampling.NEAREST).save(ROOT/'source-art/hud-icons-4x.png')
-print('HUD: three heart slots + numeric score + three wool slots; zero OAM objects.')
+print('HUD: three heart slots + numeric score + three ball slots; zero OAM objects.')

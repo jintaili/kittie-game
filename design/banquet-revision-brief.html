@@ -14,20 +14,20 @@
   <h1>Across the feast, into the photograph.</h1>
   <p class="lead">The finale should ask Kittie to use the furniture. Enter beneath a table, climb across the feast, handle a patrol on the tabletop, then make the last shot from the cake table. The wedding arch earns a quiet final screen after the work is done.</p>
 
-  <div class="decision"><p>Keep the nine-screen length and existing jumps. Put the second patrol on the long feast table, raise the final bell, and reduce the supply to three physical balls. Leave the final court open behind Kittie. The challenge comes from crossing the hall with wool still available.</p></div>
+  <div class="decision"><p>Keep the nine-screen length and existing jumps. Put the second patrol on the long feast table, raise the final bell, and reduce the supply to three physical balls. Leave the final court open behind Kittie. The challenge comes from crossing the hall with a ball still available.</p></div>
 
   <h2>The complete route</h2>
   <table>
     <thead><tr><th>Screen / world x</th><th>Play and composition</th></tr></thead>
     <tbody>
       <tr><td>1 · 0 to 159</td><td>A quiet vestibule supplies one ball at x56. The chair and low table lead into the familiar opening shot. Use a broad doorway and plain plaster around Kittie; no control lesson.</td></tr>
-      <tr><td>2 · 160 to 319</td><td>Throw under the table and cross it to enter the hall. The low bell stays at its present height. Treat the opening wool as committed to this shot, since it can settle beneath the table where Kittie cannot reach.</td></tr>
+      <tr><td>2 · 160 to 319</td><td>Throw under the table and cross it to enter the hall. The low bell stays at its present height. Treat the opening ball as committed to this shot, since it can settle beneath the table where Kittie cannot reach.</td></tr>
       <tr><td>3 · 320 to 479</td><td>The chair begins the table climb. Keep the first patrol below the table so a fall has a cost and the upper route offers a clear advantage. A pair of tall windows announces the larger dining room.</td></tr>
-      <tr><td>4 · 480 to 639</td><td>The raised table and first channel form the first serious crossing. Wool at x576 is deliberate progression supply after the opening shot. It sits on an established landing, with space to stop and collect it.</td></tr>
-      <tr><td>5 · 640 to 799</td><td>Land on the long feast table and confront its patrol. The first 40 pixels of tabletop stay outside the patrol range. The player can land, judge the approach, and throw or jump. A miss may send wool off the table, so recovery interrupts forward progress.</td></tr>
+      <tr><td>4 · 480 to 639</td><td>The raised table and first channel form the first serious crossing. The ball at x576 is deliberate progression supply after the opening shot. It sits on an established landing, with space to stop and collect it.</td></tr>
+      <tr><td>5 · 640 to 799</td><td>Land on the long feast table and confront its patrol. The first 40 pixels of tabletop stay outside the patrol range. The player can land, judge the approach, and throw or jump. A miss may send a ball off the table, so recovery interrupts forward progress.</td></tr>
       <tr><td>6 · 800 to 959</td><td>Leave the crowded feast for chairs and a solid sideboard. There is no ground refill at x808. The climb sets up the final channel. Space the background bays farther apart and reduce place settings here.</td></tr>
       <tr><td>7 · 960 to 1119</td><td>The upper sideboard holds the late reserve at x984. Taking it also earns a raised launch across the final channel. Keep the existing patrol on the far landing. This is the level's most demanding movement and recovery sequence.</td></tr>
-      <tr><td>8 · 1120 to 1279</td><td>Enter an open cake court. Use its existing chair to reach the table, then send wool up to the final bell at y56. There is no local refill. Keep the bell against plain plaster and let its cord lead toward the gate.</td></tr>
+      <tr><td>8 · 1120 to 1279</td><td>Enter an open cake court. Use its existing chair to reach the table, then send a ball up to the final bell at y56. There is no local refill. Keep the bell against plain plaster and let its cord lead toward the gate.</td></tr>
       <tr><td>9 · 1280 to 1439</td><td>The raised gate releases Kittie into the floral arch and wedding ending. Give the destination the widest opening and a short floor runner. No window sits behind the arch. The last stretch contains no new threat.</td></tr>
     </tbody>
   </table>
@@ -36,24 +36,24 @@
   <table>
     <thead><tr><th>Item</th><th>Implementation</th></tr></thead>
     <tbody>
-      <tr><td>Wool</td><td>Use <code>[56,124], [576,76], [984,76]</code>. Remove x136, x808 and x1188. Use the existing per-stage active ball count. Capacity stays three.</td></tr>
+      <tr><td>Ball</td><td>Use <code>[56,124], [576,76], [984,76]</code>. Remove x136, x808 and x1188. Use the existing per-stage active ball count. Capacity stays three.</td></tr>
       <tr><td>Second patrol</td><td>Change its range to <code>[704,760]</code> and ground height to <code>96</code>. Its table remains <code>[664,96,784,112]</code>. Keep the first patrol <code>[424,472]</code> at y128 and last patrol <code>[1068,1104]</code> at y128. All retain the current constant speed.</td></tr>
       <tr><td>Final bell</td><td>Move only the second bell to <code>[1256,56]</code>. Keep the cake table <code>[1208,96,1280,114]</code>, approach chair <code>[1152,112,1176,128]</code>, and gate <code>[1312,48,1320,128]</code>. A lob from the table's left end is the intended shot; an effective jump throw is also valid.</td></tr>
       <tr><td>Open final court</td><td>Remove the banquet shutter solid <code>[1120,0,1128,128]</code>. Represent an absent entry door explicitly in stage data, for example with a sentinel index, and guard its runtime accesses. Do not draw or activate a banquet shutter. Keep other stages' doors unchanged.</td></tr>
       <tr><td>Indices and camera</td><td>After removing that solid, gate indices become <code>[2,12]</code>. Keep camera entries <code>[136,1178]</code> and centers <code>[216,1240]</code>. The final view already fits the table, raised bell and gate; entry no longer commits the player before the view settles.</td></tr>
     </tbody>
   </table>
-  <p>Keep the three channels at their current positions and widths. Preserve jump height, movement speed, hearts, damage, manual retry and physical wool. No new enemy behavior or throw mode is needed.</p>
+  <p>Keep the three channels at their current positions and widths. Preserve jump height, movement speed, hearts, damage, manual retry and physical wool balls. No new enemy behavior or throw mode is needed.</p>
 
   <h2>Make the supply honest</h2>
-  <p>The opening table has a 14-pixel passage for wool. A prior verified run left the first ball beneath it at x203.875, beyond Kittie's pickup reach. Completion must therefore work without recovering that ball. The x576 pickup restores the ability to throw after the climb; the x984 pickup provides a late reserve. Neither is replaced automatically.</p>
-  <p>Keep the last court open so the player can collect a spare left behind or retrieve wool that lands outside it. Losing every usable ball can still end the attempt and require Start. Do not add an emergency ball. This arrangement makes supply matter without making an unseen shutter decide the run.</p>
+  <p>The opening table has a 14-pixel passage for a ball. A prior verified run left the first ball beneath it at x203.875, beyond Kittie's pickup reach. Completion must therefore work without recovering that ball. The x576 pickup restores the ability to throw after the climb; the x984 pickup provides a late reserve. Neither is replaced automatically.</p>
+  <p>Keep the last court open so the player can collect a spare left behind or retrieve balls that land outside it. Losing every usable ball can still end the attempt and require Start. Do not add an emergency ball. This arrangement makes supply matter without making an unseen shutter decide the run.</p>
 
   <h2>A wedding hall with a destination</h2>
-  <p>Remove all five world captions. Replace the window repeated every 80 pixels with a few paired windows and generous plaster gaps. Concentrate candles, plates and cloth detail around the central feast, then simplify the room toward the arch. Use a thin dark edge for actual tabletops and softer colors for rear architecture. Shallow cloth hems can describe the raised tables; decorative legs must not pretend to block playable passages. Solid sideboards should look solid. Keep the familiar blue channel cue and reserve pink for wool.</p>
+  <p>Remove all five world captions. Replace the window repeated every 80 pixels with a few paired windows and generous plaster gaps. Concentrate candles, plates and cloth detail around the central feast, then simplify the room toward the arch. Use a thin dark edge for actual tabletops and softer colors for rear architecture. Shallow cloth hems can describe the raised tables; decorative legs must not pretend to block playable passages. Solid sideboards should look solid. Keep the familiar blue channel cue and reserve pink for balls.</p>
   <p>The ending can retain one <code>KITTIE MADE IT</code> heading and a compact <code>THANKS FOR PLAYING</code> message. Preserve its return-to-title behavior, saved completion, and exact approved Kittie artwork. Do not revise the cover or character sprite. See the independent <a href="banquet-art-review.html">art review</a> for native presentation evidence.</p>
 
   <h2>What the built level must prove</h2>
-  <p>A complete run must succeed after leaving the opening ball under its table. The raised patrol must allow a readable landing before contact, while requiring a decision to cross its table. The late reserve must be reachable and the final landing must remain fair at different patrol phases. Verify the elevated bell from the actual cake table, including a recoverable miss. An empty final court must allow retreat, and losing all usable wool must remain a deliberate retry. Recheck the wedding ending and saved completion after the full run.</p>
+  <p>A complete run must succeed after leaving the opening ball under its table. The raised patrol must allow a readable landing before contact, while requiring a decision to cross its table. The late reserve must be reachable and the final landing must remain fair at different patrol phases. Verify the elevated bell from the actual cake table, including a recoverable miss. An empty final court must allow retreat, and losing all usable balls must remain a deliberate retry. Recheck the wedding ending and saved completion after the full run.</p>
   <p class="small">Scope is the banquet and its closing presentation. Preserve the revised courtyard, grove, cover v10 and approved character assets. Based on native source inspection and existing evidence; the new shot and patrol timing still need the builder's actual-ROM playtest.</p>
 </main></body></html>

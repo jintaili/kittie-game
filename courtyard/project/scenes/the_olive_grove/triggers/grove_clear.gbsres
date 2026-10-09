@@ -156,7 +156,7 @@
       "id": "63873003-b700-506f-90ea-88eace21ae11",
       "command": "EVENT_TEXT",
       "args": {
-        "text": "GROVE CLEAR\nGOONS $102$ WOOL $103$\nSCORE $104$ BEST $108$\nA CONTINUE",
+        "text": "GROVE CLEAR\nGOONS $102$ BALL $103$\nSCORE $104$ BEST $108$\nA CONTINUE",
         "minHeight": 6,
         "maxHeight": 6,
         "textHeight": 4,

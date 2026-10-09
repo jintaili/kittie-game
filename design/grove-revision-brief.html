@@ -12,10 +12,10 @@
 <p class="meta">Designer brief · 2 October 2026 · 11 screens · 1760 × 144 pixels</p>
 <h1>The olive grove</h1>
 <p>Kittie climbs the irrigation terraces, chooses between high branches and a patrolled orchard floor, then makes one careful crossing before the bell garden. Three physical wool balls serve the whole journey. Early fights reward retrieving a throw; the high route offers a spare. Keep the current jump and throw physics.</p>
-<p class="note">The difficulty increase comes from shorter island tops, a longer branch sequence and one 64-pixel channel. Keep landing areas visible and give each patrol safe ground for recovering wool. The final garden stays open behind Kittie.</p>
+<p class="note">The difficulty increase comes from shorter island tops, a longer branch sequence and one 64-pixel channel. Keep landing areas visible and give each patrol safe ground for recovering balls. The final garden stays open behind Kittie.</p>
 
 <h2>Whole route</h2>
-<p class="meta">Scroll the profile. Pink circles are wool; ochre lines are patrol ranges; blue marks water. This is a geometry plan, not game artwork.</p>
+<p class="meta">Scroll the profile. Pink circles are balls; ochre lines are patrol ranges; blue marks water. This is a geometry plan, not game artwork.</p>
 <div class="map"><svg xmlns="http://www.w3.org/2000/svg" width="1760" height="170" viewBox="0 0 1760 170" role="img" aria-label="Eleven-screen profile of the revised grove, showing five water channels, a three-ledge high path, three patrols and three wool balls">
 <rect width="1760" height="144" fill="#faf5e9"/>
 <path d="M160 0V144M320 0V144M480 0V144M640 0V144M800 0V144M960 0V144M1120 0V144M1280 0V144M1440 0V144M1600 0V144" stroke="#e5ddcb"/>
@@ -29,21 +29,21 @@
 </svg></div>
 <table>
 <thead><tr><th>Screens</th><th>Play</th></tr></thead><tbody>
-<tr><td>1, 2</td><td>Collect wool at the entrance, climb the two stone steps and confront a longer patrol on the broad terrace. Throw and retrieve, or time a jump past it. Keep the ground beyond this fight safe.</td></tr>
+<tr><td>1, 2</td><td>Collect balls at the entrance, climb the two stone steps and confront a longer patrol on the broad terrace. Throw and retrieve, or time a jump past it. Keep the ground beyond this fight safe.</td></tr>
 <tr><td>3, 4</td><td>Cross the first 56-pixel channel to an 88-pixel island. The next channel grows to 48 pixels and lands 16 pixels higher. An 80-pixel top gives room to stop before choosing the next route.</td></tr>
-<tr><td>5, 6</td><td>Jump onto three short high ledges at heights 64, 48 and 64. The middle ledge carries the optional wool. The lower route stays on safe floor beneath a 112-pixel patrol range. Missing an inner branch jump drops Kittie into that route. Both routes meet at the channel before screen 7.</td></tr>
+<tr><td>5, 6</td><td>Jump onto three short high ledges at heights 64, 48 and 64. The middle ledge carries the optional ball. The lower route stays on safe floor beneath a 112-pixel patrol range. Missing an inner branch jump drops Kittie into that route. Both routes meet at the channel before screen 7.</td></tr>
 <tr><td>7, 8</td><td>Land on the 72-pixel terrace, cross the small dry break and set up on the next 64-pixel top. The final water channel is 64 pixels wide with an 8-pixel rise onto an 80-pixel landing. This is the precise jump; no patrol shares it.</td></tr>
-<tr><td>9</td><td>A low block precedes the final patrol. Fight and recover wool on continuous ground, or jump past when its position permits. The channel is now behind the player.</td></tr>
+<tr><td>9</td><td>A low block precedes the final patrol. Fight and recover the ball on continuous ground, or jump past when its position permits. The channel is now behind the player.</td></tr>
 <tr><td>10, 11</td><td>Climb the 24-pixel stone perch for its local ball and lob at the higher bell. A jumping lob also works. Missed balls remain physical and recoverable on the garden floor. The gate opens onto a short, quiet walk out.</td></tr>
 </tbody></table>
 
-<h2>Wool and the bell garden</h2>
+<h2>Ball and the bell garden</h2>
 <p>Use exactly three active balls at <code>56,124</code>, <code>808,44</code> and <code>1504,100</code>. Remove the other three pickups. Each ball stays where the current physics puts it, and water loss remains permanent until retry. Retain three hearts, constant-speed goons, whole-stage resets and manual Start retry.</p>
 <p>Move the last bell to <code>1584,56</code>. Keep its gate at <code>1640</code> and the court camera at <code>1576</code>, starting at <code>1508</code>. The perch ends at <code>1544</code>, leaving a dry recovery lane beneath the bell. Set <code>door_index</code> to <code>255</code> and remove the shutter rectangle at <code>1440</code>. Keep the first gate already open.</p>
 <p class="meta">The bell's 12-pixel hit radius matters. At y64, a standing high lob from the floor can still ring it. At y56, Kittie earns the perch or jumps. Do not tighten hitboxes or alter the shared throw.</p>
 
 <h2>Native presentation</h2>
-<p>Remove all three grove world captions. Use two or three reusable, asymmetric olive canopy groups. Place trunks beside the route and leave platform ends, wool and the bell clear. The branch route should read as olive wood, while the raised islands read as masonry. Keep dark walkable top edges consistent. Use a few joined leaf clusters and restrained stone joints; replace the current repeated flecks and identical tree spacing. Keep the bell cable legible against open sky. Coordinate the final palette work with the <a href="grove-art-review.html">independent art review</a>.</p>
+<p>Remove all three grove world captions. Use two or three reusable, asymmetric olive canopy groups. Place trunks beside the route and leave platform ends, ball and the bell clear. The branch route should read as olive wood, while the raised islands read as masonry. Keep dark walkable top edges consistent. Use a few joined leaf clusters and restrained stone joints; replace the current repeated flecks and identical tree spacing. Keep the bell cable legible against open sky. Coordinate the final palette work with the <a href="grove-art-review.html">independent art review</a>.</p>
 
 <h2>Builder handoff</h2>
 <p>Edit only grove geometry, its native background and palette data, then regenerate the shared level data. Keep the approved courtyard, banquet, Kittie, cover, title controls and saved unlocks intact. The current art generator also contains older banquet output, so invoke or isolate the grove path. Do not run its full entry point over approved assets.</p>

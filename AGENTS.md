@@ -29,7 +29,7 @@ approved back carry, idle cuddle and C1 legs: relaxed outward angles, one pixel
 fuller, original ears, connected chest and restrained walking motion.
 Avoid rectangular feet, skeletal limbs or a large gap between the forelegs.
 Paws share the torso's taupe fill with small highlights and consistent one-pixel
-contours. The beige shape below his face is a paw; wool is pink.
+contours. The beige shape below his face is a paw; the wool balls are pink.
 
 The cover uses native 160x144 portrait v10. Keep
 `courtyard/source-art/approved-cover/cover-v10.png` untouched;
@@ -50,14 +50,17 @@ native-cell correction without changing the full-size v10 source.
 
 # Game rules and progression
 
+Call the objects wool balls when introducing them or describing their material.
+Use ball or balls as shorthand in gameplay text, controls, documentation and code names.
+
 Stage order is Courtyard (8 screens), Olive Grove (11), Villa Terraces (8),
 Head Goon (3), Banquet (9), then the photoshoot. Keep the banquet ending.
-Traversal stages have three physical wool balls; Head Goon has one. Wool only
-rings bells and hits enemies. Preserve physical retrieval, with no automatic
+Traversal stages have three physical wool balls; Head Goon has one. Balls only
+ring bells and hit enemies. Preserve physical retrieval, with no automatic
 returns or jump boosts. Water and zero hearts reset the stage.
 
 Keep the numeric score visible at the top. Award points for unique goon defeats
-or boss hits during play, then add retained-wool points at completion.
+or boss hits during play, then add retained-ball points at completion.
 Preserve per-stage bests and saved unlocks. A/Start opens the title selector;
 B restores the full cover. Show four rows and scroll additional stages.
 
@@ -98,7 +101,7 @@ remain future ideas. Currency, shops and upgrades are not approved.
 # HUD
 
 Use three filled/outline heart slots, a numeric score and three filled/outline
-wool slots. Glyphs are seven pixels tall, with one blank pixel above them.
+ball slots. Glyphs are seven pixels tall, with one blank pixel above them.
 `courtyard/tools/make_compact_hud.py` generates native window tiles for
 `kittie_hud.c`. The one-row window uses no OAM objects; keep legacy HUD actors
 hidden. Restore the normal UI window and palette before completion dialogs or

@@ -1,9 +1,9 @@
 {
   "_resourceType": "sprite",
   "id": "f8e097a7-0739-5488-a9be-df745202f6c6",
-  "name": "wool",
-  "symbol": "sprite_wool",
-  "filename": "wool.png",
+  "name": "Wool ball",
+  "symbol": "sprite_ball",
+  "filename": "ball.png",
   "width": 16,
   "height": 16,
   "checksum": "36a94f450512b278dcf4b366b4cd66fa71e8f2d0",

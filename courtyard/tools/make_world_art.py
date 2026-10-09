@@ -182,7 +182,7 @@ def build(name):
         region(x-8,y-8,x+8,y+8,5)
     if grove:
         caption(im,8,24,'OLIVE GROVE')
-        caption(im,696,24,'WOOL ABOVE')
+        caption(im,696,24,'BALL ABOVE')
         caption(im,1512,24,'ONE LAST LOB')
         # Orchard baskets beneath the trees.
         for x in (40,1336,1680):

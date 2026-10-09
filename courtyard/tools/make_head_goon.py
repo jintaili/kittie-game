@@ -106,7 +106,7 @@ for f in range(2):
  q.line((x+8,6,x+15,6),fill=L if f else M)
  if f:q.line((x+10,3,x+13,3),fill=D)
 p=R/'assets/sprites/head_goon_target.png';marker.save(p)
-m=json.loads((R/'assets/sprites/wool.png.gbsres').read_text());m.update(id=uid('target-sprite'),name='Hop landing cue',symbol='sprite_head_goon_target',filename=p.name,width=48,height=16,canvasWidth=24,canvasHeight=16,numTiles=12,checksum=hashlib.sha1(p.read_bytes()).hexdigest(),animSpeed=255)
+m=json.loads((R/'assets/sprites/ball.png.gbsres').read_text());m.update(id=uid('target-sprite'),name='Hop landing cue',symbol='sprite_head_goon_target',filename=p.name,width=48,height=16,canvasWidth=24,canvasHeight=16,numTiles=12,checksum=hashlib.sha1(p.read_bytes()).hexdigest(),animSpeed=255)
 state=m['states'][0];state.update(id=uid('target-state'),animationType='fixed',flipLeft=False)
 for a,anim in enumerate(state['animations']):
  anim['id']=uid(f'target-anim{a}');anim['frames']=[]

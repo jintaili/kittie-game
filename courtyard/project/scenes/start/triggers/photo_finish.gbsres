@@ -156,7 +156,7 @@
       "id": "80e17710-dcd6-5370-a061-e2508b3aacff",
       "command": "EVENT_TEXT",
       "args": {
-        "text": "COURTYARD CLEAR\nGOONS $102$ WOOL $103$\nSCORE $104$ BEST $105$\nA CONTINUE",
+        "text": "COURTYARD CLEAR\nGOONS $102$ BALL $103$\nSCORE $104$ BEST $105$\nA CONTINUE",
         "minHeight": 6,
         "maxHeight": 6,
         "textHeight": 4,

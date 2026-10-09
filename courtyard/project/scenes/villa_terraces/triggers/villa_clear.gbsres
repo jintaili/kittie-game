@@ -156,7 +156,7 @@
       "id": "a9db9306-033e-557b-84cb-93699ad1aa11",
       "command": "EVENT_TEXT",
       "args": {
-        "text": "VILLA CLEAR\nGOONS $102$ WOOL $103$\nSCORE $104$ BEST $109$\nA CONTINUE",
+        "text": "VILLA CLEAR\nGOONS $102$ BALL $103$\nSCORE $104$ BEST $109$\nA CONTINUE",
         "minHeight": 6,
         "maxHeight": 6,
         "textHeight": 4,

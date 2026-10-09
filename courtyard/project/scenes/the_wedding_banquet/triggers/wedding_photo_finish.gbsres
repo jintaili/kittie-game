@@ -156,7 +156,7 @@
       "id": "a75483c7-0f18-507b-87b5-4880f886e22d",
       "command": "EVENT_TEXT",
       "args": {
-        "text": "BANQUET CLEAR\nGOONS $102$ WOOL $103$\nSCORE $104$ BEST $110$\nA CONTINUE",
+        "text": "BANQUET CLEAR\nGOONS $102$ BALL $103$\nSCORE $104$ BEST $110$\nA CONTINUE",
         "minHeight": 6,
         "maxHeight": 6,
         "textHeight": 4,

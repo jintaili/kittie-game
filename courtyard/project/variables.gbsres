@@ -18,8 +18,8 @@
     },
     {
       "id": "103",
-      "name": "Attempt retained wool points",
-      "symbol": "var_courtyard_wool"
+      "name": "Attempt retained ball points",
+      "symbol": "var_courtyard_ball_points"
     },
     {
       "id": "104",

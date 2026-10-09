@@ -2,7 +2,7 @@
 #include "states/kittie_music.h"
 
 /* Original four-bar themes in C major, A minor and C major. Pulse 2 plays the melody, wave plays a soft bass.
-   Pulse 1 remains available for wool, bell and hurt sound effects. */
+   Pulse 1 remains available for ball, bell and hurt sound effects. */
 static const UINT16 pitch[] = {1547,1602,1650,1673,1714,1750,1783,1798,1825,1849,1860,1881,1899,1915,1923};
 static const UBYTE tunes[4][32] = {
  {7,9,11,9,7,4,2,4,6,7,8,6,4,2,1,2,7,9,11,14,11,9,7,4,6,4,2,1,2,4,7,255},

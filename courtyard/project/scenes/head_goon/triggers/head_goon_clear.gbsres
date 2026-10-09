@@ -156,7 +156,7 @@
       "id": "70c47164-3f70-50c1-a38c-3f60d2d67c69",
       "command": "EVENT_TEXT",
       "args": {
-        "text": "HEAD GOON CLEAR\nHITS $102$ WOOL $103$\nSCORE $104$ BEST $114$\nA CONTINUE",
+        "text": "HEAD GOON CLEAR\nHITS $102$ BALL $103$\nSCORE $104$ BEST $114$\nA CONTINUE",
         "minHeight": 6,
         "maxHeight": 6,
         "textHeight": 4,

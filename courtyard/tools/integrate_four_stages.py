@@ -23,7 +23,7 @@ v=load('project/variables.gbsres')
 new=[('108','Grove personal best','var_grove_best'),('109','Villa personal best','var_villa_best'),('110','Banquet personal best','var_banquet_best'),('111','Four-stage save schema','var_save_schema'),('112','Save family KH','var_save_family_kh'),('113','Save family OP','var_save_family_op')]
 for i,n,s in new:
     if not any(x['id']==i for x in v['variables']):v['variables'].append(dict(id=i,name=n,symbol=s))
-v['variables'][2]['name']='Attempt goon points';v['variables'][3]['name']='Attempt retained wool points';v['variables'][4]['name']='Completed attempt score'
+v['variables'][2]['name']='Attempt goon points';v['variables'][3]['name']='Attempt retained ball points';v['variables'][3]['symbol']='var_courtyard_ball_points';v['variables'][4]['name']='Completed attempt score'
 save('project/variables.gbsres',v)
 
 # Clone only the new Villa's native resources; existing scenes retain identities.
@@ -34,7 +34,7 @@ if not (ROOT/vp/'scene.gbsres').exists():
     scene['script']=[ev('villa-select','EVENT_SET_INPUT_SCRIPT',dict(input=['select'],override=True),dict(true=[switch('villa-cover',titleid)]))]
     save(vp+'/scene.gbsres',scene)
     for p in (ROOT/'project/scenes/the_olive_grove/actors').glob('*.gbsres'):
-        a=json.loads(p.read_text());a['id']=uid('villa-actor-'+p.stem);a['symbol']='actor_villa_'+p.stem
+        a=json.loads(p.read_text());a['id']=uid('villa-actor-'+p.stem);a['symbol']='actor_villa_'+p.stem.replace('_wool','_ball')
         save(vp+'/actors/'+p.name,a)
     bg=load('assets/backgrounds/olive_grove.png.gbsres');bg.update(id=uid('villa-background'),name='Villa Terraces',symbol='bg_villa',filename='villa.png',width=160,imageWidth=1280,tileColors='')
     save('assets/backgrounds/villa.png.gbsres',bg)
@@ -68,7 +68,7 @@ for i,n in enumerate(names):
     trigger['script']=[value(k+'/family-kh','112',0x4b48),value(k+'/family-op','113',0x4f50),value(k+'/reset','107',0),cond(k+'/unlock','100','<',i+1,[value(k+'/unlock-set','100',i+1),changed('/unlocked')]),
         ev(k+'/best','EVENT_IF_VALUE_COMPARE',dict(vectorX='104',operator='>',vectorY=best[i]),dict(true=[value(k+'/best-set',best[i],'104','variable'),changed('/improved')],false=[])),
         cond(k+'/save','107','==',1,[ev(k+'/save-write','EVENT_SAVE_DATA',dict(saveSlot=0),dict(true=[],load=[]))]),
-        ev(k+'/text','EVENT_TEXT',dict(text=f'{labels[i]} CLEAR\nGOONS $102$ WOOL $103$\nSCORE $104$ BEST ${best[i]}$\nA CONTINUE',minHeight=6,maxHeight=6,textHeight=4,position='top')),
+        ev(k+'/text','EVENT_TEXT',dict(text=f'{labels[i]} CLEAR\nGOONS $102$ BALL $103$\nSCORE $104$ BEST ${best[i]}$\nA CONTINUE',minHeight=6,maxHeight=6,textHeight=4,position='top')),
         switch(k+'/next',ids[i+1] if i<3 else photoid)]
     save(str(old[0].relative_to(ROOT)) if old else f'project/scenes/{n}/triggers/villa_clear.gbsres',trigger)
 photo=load('project/scenes/the_wedding_photo/scene.gbsres')

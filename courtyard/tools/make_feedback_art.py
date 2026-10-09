@@ -1,4 +1,4 @@
-"""Native bell motion, raised gates and wool-only table clearance."""
+"""Native bell motion, raised gates and ball-only table clearance."""
 from pathlib import Path
 from PIL import Image, ImageDraw
 import copy

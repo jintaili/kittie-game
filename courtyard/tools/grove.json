@@ -190,7 +190,7 @@
     {
       "screens": "1, 2",
       "name": "Orchard climb",
-      "action": "Climb the terraces and pass a patrol; recover thrown wool on safe ground."
+      "action": "Climb the terraces and pass a patrol; recover thrown balls on safe ground."
     },
     {
       "screens": "3, 4",
@@ -200,7 +200,7 @@
     {
       "screens": "5, 6",
       "name": "Olive branches",
-      "action": "Take three high ledges for spare wool, or pass the patrol below."
+      "action": "Take three high ledges for spare balls, or pass the patrol below."
     },
     {
       "screens": "7, 8",
@@ -210,7 +210,7 @@
     {
       "screens": "9, 10, 11",
       "name": "Bell garden",
-      "action": "Pass the last patrol, recover the perch's wool and ring the high bell."
+      "action": "Pass the last patrol, recover the perch's ball and ring the high bell."
     }
   ]
 }

@@ -48,7 +48,7 @@ for signed 12.4 coordinates. Moving decks use a separate collision path.
 | `tools/make_service_lift.py` | Four-slat lift, matching its 40-pixel collision width |
 | `tools/make_kittie.py` | 40×32 character, 16 frames with fixed face pixels |
 | `tools/make_cover.py` | Native v10 cover and asymmetric whisker correction |
-| `tools/make_carry_assets.py` | Wool, shutter and legacy sprite HUD assets |
+| `tools/make_carry_assets.py` | Wool ball, shutter and legacy sprite HUD assets |
 | `tools/make_feedback_art.py` | Four-frame bell and gate reactions |
 | `tools/make_compact_hud.py` | Current window HUD glyphs and preview |
 
@@ -69,11 +69,11 @@ own its palette assignments. The full-size v10 source stays untouched. The endin
 uses the gameplay sprite. Original character references and hashes are in
 `source-art/character-reference/`.
 
-Wool has blank top padding and a compensating tile offset to avoid deck overlap.
+The ball sprite has blank top padding and a compensating tile offset to avoid deck overlap.
 Bell hits animate for 48 updates and leave a green bell and open gate marker;
 the courtyard camera holds during the reaction. Skip offscreen bell/gate pose
 updates, which previously caused missed native frames. Low tables have a 14-pixel
-wool passage. Removed world captions must not return through regeneration.
+ball passage. Removed world captions must not return through regeneration.
 
 ## Actor and palette allocation
 
@@ -90,12 +90,12 @@ wool passage. Removed world captions must not return through regeneration.
 
 The boss bypasses ordinary 110-pixel culling so he stays visible across the fixed
 arena. Lift shafts are farther apart than the viewport; all decks move offscreen.
-Sprite palettes are Kittie/gates 0, wool 1, goons 2, resting bells 3, HUD source 4,
+Sprite palettes are Kittie/gates 0, balls 1, goons 2, resting bells 3, HUD source 4,
 and rung bells/open gates 5. Goons' ground heights come from stage JSON.
 Door index 255 means no entry shutter; collision, rendering and closure code must
 handle it. Grove and Banquet use this to permit backtracking.
 
-The HUD has three heart slots, centered score and three wool slots. Seven-pixel
+The HUD has three heart slots, centered score and three ball slots. Seven-pixel
 glyphs have one empty row above them. `kittie_hud.c` manages the clipped window,
 cached updates and palette restoration before dialogs or title transitions.
 It uses no OAM objects. Bank-one tiles C0–D8 must remain outside scene background
@@ -110,13 +110,13 @@ IDs 100–115 map to compiled global indices 0–15:
 | --- | --- |
 | 100 | Highest unlock: 0 fresh, 1 Grove, 2 Villa, 3 Head Goon, 4 Banquet, 5 complete |
 | 101 | Menu choice |
-| 102–107 | Goon points, wool points, attempt score, Courtyard best, legacy save version, save-needed flag |
+| 102–107 | Goon points, ball points, attempt score, Courtyard best, legacy save version, save-needed flag |
 | 108–111 | Grove best, Villa best, Banquet best, save schema |
 | 112–113 | Stable family words 0x4b48 / 0x4f50 |
 | 114–115 | Head Goon best, selector state |
 
 Traversal stages award 100 per unique defeated goon and 200 per held ball at
-completion, up to 900. Head Goon awards 100 per hit and 200 for retained wool,
+completion, up to 900. Head Goon awards 100 per hit and 200 for the retained ball,
 up to 500. Each throw can damage him once; guarded hits give no points.
 Retries clear attempt scores. A completion updates only higher bests and unlocks,
 then saves slot 0 if either changed. Saves record progress, not mid-stage position.
@@ -129,6 +129,11 @@ Legacy three-stage unlocks 2/3 map to 4/5. Reviewed pilot native/web signatures
 allow score and unlock migration; published v1.0.0 allows unlock-only migration.
 Keep these legacy checks separate from current schemas, whose compatibility
 must not depend on compiler-generated save IDs.
+
+Legacy actor filenames, the palette ID `kittie-wool-rose`, and sprite UUID seeds
+retain their original keys so regeneration preserves resource identities. Display
+names and code symbols use ball terminology. Published release files, source-art
+snapshots and evidence keep their original names and literal labels.
 
 Compile-time guards preserve global indices. Block validation uses the full
 `sizeof(script_memory)`, including VM context stacks. Browser storage remains

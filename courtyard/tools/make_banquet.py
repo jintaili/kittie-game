@@ -54,7 +54,7 @@ def build():
             d.rectangle((x+1,y+4,r-2,b-2), fill=C[0])
             for xx in range(x+3,r-3,8):
                 d.line((xx,b-4,xx+3,b-4), fill=C[1])
-            # Settings belong to the feast; landing and wool areas stay empty.
+            # Settings belong to the feast; landing and ball areas stay empty.
             if 320 < x < 800:
                 for xx in range(x+16,r-12,32):
                     if abs(xx-576) < 20 or 664 <= xx < 704:

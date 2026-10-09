@@ -5,7 +5,7 @@ import json, uuid, hashlib, copy
 ROOT=Path(__file__).resolve().parents[1]
 T,L,M,D='#65ff00','#e0f8cf','#86c06c','#071821'
 uid=lambda s:str(uuid.uuid5(uuid.NAMESPACE_URL,'kittie-'+s))
-template=json.loads((ROOT/'assets/sprites/wool.png.gbsres').read_text())
+template=json.loads((ROOT/'assets/sprites/ball.png.gbsres').read_text())
 for name,count in [('goon',4),('ribbon',1)]:
     sheet=Image.new('RGB',(16*count,16),T)
     for f in range(count):
