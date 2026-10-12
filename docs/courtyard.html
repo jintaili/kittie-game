@@ -1,0 +1,90 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="50 attempts each: Jev completed 23, OpenAI Decisions completed 12. Results, cost, movement and replays."><meta name="theme-color" content="#ffffff"><meta property="og:title" content="Courtyard"><meta property="og:description" content="50 attempts each: Jev completed 23, OpenAI Decisions completed 12. Results, cost, movement and replays."><meta property="og:type" content="article"><title>Courtyard · Kittie Has Other Plans</title><link rel="stylesheet" href="styles.css"></head><body><main><header><a href="index.html">Kittie Has Other Plans</a><nav class="site-nav" aria-label="Main navigation"><a href="index.html">Overview</a><a href="courtyard.html" aria-current="page">Courtyard</a><a href="head-goon.html">Head Goon</a><a href="methods.html">Methods</a></nav></header><h1>Courtyard</h1>
+  <p class="intro">Jev and OpenAI Decisions each played 50 attempts from the same starting checkpoint. Both received structured game state without screenshots.</p>
+
+  <section aria-labelledby="results-title">
+    <h2 id="results-title">Completion rate</h2>
+    <div class="comparison">
+      <div class="jev">
+        <div class="provider">Jev</div>
+        <div class="model">jev-1.13.0</div>
+        <div class="rate"><strong>46%</strong><span class="count">23 of 50 completed</span></div>
+        <div class="track" aria-hidden="true"><span class="fill" style="width:46%"></span></div>
+      </div>
+      <div class="openai">
+        <div class="provider">OpenAI Decisions</div>
+        <div class="model">gpt-6-luna</div>
+        <div class="rate"><strong>24%</strong><span class="count">12 of 50 completed</span></div>
+        <div class="track" aria-hidden="true"><span class="fill" style="width:24%"></span></div>
+      </div>
+    </div>
+    <p>Jev finished more attempts, with an average API cost per attempt about 78% lower. OpenAI responded faster at the median, and its successful runs earned a higher average score.</p>
+    <div class="table-wrap">
+      <table aria-label="Comparison of all 50 starts per model">
+        <thead><tr><th scope="col">Metric</th><th scope="col">Jev</th><th scope="col">OpenAI Decisions</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Mean API cost / attempt</th><td>$0.0093</td><td>$0.0414</td></tr>
+          <tr><th scope="row">Mean API cost / call</th><td>$0.000169</td><td>$0.000378</td></tr>
+          <tr><th scope="row">API latency · median / p95</th><td>226 / 317 ms</td><td>190 / 375 ms</td></tr>
+          <tr><th scope="row">Deaths / time-limit failures</th><td>25 / 2</td><td>29 / 9</td></tr>
+          <tr><th scope="row">Mean completion time · wins only</th><td>21.6 s</td><td>28.9 s</td></tr>
+          <tr><th scope="row">Mean score · wins only</th><td>417</td><td>533</td></tr>
+          <tr><th scope="row">Mean hearts · wins only, max. 3</th><td>2.65</td><td>2.75</td></tr>
+          <tr><th scope="row">Gap falls / fatal goon contact</th><td>25 / 0</td><td>28 / 1</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="fine reading">Latency measures the full HTTP response. Each call asks three choice questions. Cost includes all attempts; time, score and hearts describe each model's successful subset. API costs exclude emulator and host compute.</p>
+  </section>
+
+  <section aria-labelledby="replay-title">
+    <h2 id="replay-title">Two successful runs</h2>
+    <div class="replays">
+      <figure>
+        <video controls playsinline preload="none" poster="assets/jev-poster.png" aria-label="Replay of Jev run 50, a successful 19.1-second attempt">
+          <source src="assets/jev-50.mp4" type="video/mp4">
+          Your browser does not support this video. <a href="assets/jev-50.mp4">Download the Jev replay.</a>
+        </video>
+        <figcaption><strong>Jev · run 50</strong><br>19.1 seconds · 600 points · 3 hearts</figcaption>
+      </figure>
+      <figure>
+        <video controls playsinline preload="none" poster="assets/openai-poster.png" aria-label="Replay of OpenAI run 16, a successful 27.6-second attempt">
+          <source src="assets/openai-16.mp4" type="video/mp4">
+          Your browser does not support this video. <a href="assets/openai-16.mp4">Download the OpenAI replay.</a>
+        </video>
+        <figcaption><strong>OpenAI Decisions · run 16</strong><br>27.6 seconds · 700 points · 2 hearts</figcaption>
+      </figure>
+    </div>
+    <p class="fine reading">Illustrative examples, selected nearest each model's median completion time among winners. Both videos match their recorded native frames and game states. They do not show the failures in the full sample.</p>
+  </section>
+
+  <section aria-labelledby="interpretation-title">
+    <h2 id="interpretation-title">Different styles of play</h2>
+    <p>OpenAI's play looked more cautious: it repeatedly selected no horizontal movement, while Jev usually kept moving. Averaged across the 50 attempts each, the share of gameplay with no left/right input was 48% for OpenAI and 11% for Jev.</p>
+    <p>The controller keeps the last chosen controls during API calls, so this pause pattern reflects the models' control choices. The pause durations also include time waiting for the next response. This doesn't establish why they chose to pause or whether the pauses caused the difference in completion rates.</p>
+    <p class="fine">This is an exploratory comparison on one level and starting checkpoint. I extended the sample from 20 to 30, 40 and then 50 attempts per model after reviewing earlier results. These numbers describe this controller and workload; they are not a general ranking of the providers.</p>
+  </section>
+
+  <details>
+    <summary>Courtyard methods and limitations</summary>
+    <div class="methods">
+      <ul>
+        <li>Both adapters use the same canonical JSON text format, prompts, choice descriptions, geometry and approximate forecasts. Their observed states diverge as their choices change the game.</li><li>Observations include selected emulator state within 250 world pixels on either side of Kittie, overlapping terrain, internal motion timers, three-action history and shot feedback. Some information is offscreen; forecasts are estimates, not observed future states.</li>
+        <li>The models choose movement, A and B controls. The game continues at native speed while API calls run, holding the previous controls until a response arrives.</li>
+        <li>The movement comparison averages each attempt's fraction of recorded frames with neither Left nor Right held, excluding the initial wait before the first applied choice. It includes all 50 attempts per model. No horizontal input can occur during jumps or other actions; it does not necessarily mean Kittie is physically stationary.</li>
+        <li>The frame-age controller estimates response delay from earlier applied observation ages. Both providers use the same initial estimate and update rule.</li>
+        <li>All starts use the same ROM and checkpoint. Provider order is seeded and interleaved. The time limit is 7,200 native frames, about 120.5 seconds, with a six-frame minimum action interval.</li>
+        <li>No retries, fallback controls or replacement failures. This 100-start sample has no service-error or refusal aborts. Older runs with a different delay-estimation rule are excluded.</li>
+        <li>Costs use the recorded input-token rates: $0.042 per million for Jev and $0.10 per million for Decisions. Longer attempts and more calls affect cost per attempt.</li>
+      </ul>
+      <p>Completion-rate 95% Wilson intervals are 33.0% to 59.6% for Jev and 14.3% to 37.4% for OpenAI. They are unadjusted for the repeated sample reviews.</p>
+      <p>Traversal was the main failure mode: 53 of the 54 deaths were gap falls, and both models died at the first gap 21 times.</p>
+      <p>Kittie is my wife's plushie, with his own Instagram account: <a href="https://www.instagram.com/kittiecutiepie/">@kittiecutiepie</a>. The game was an anniversary gift; the Chromatic came home with me from OpenAI DevDay.</p>
+    </div>
+  </details>
+
+  <nav class="downloads" aria-label="Report downloads">
+    <a href="trials.csv" download>All 100 attempts · CSV</a>
+    <a href="results.json">Metrics and method · JSON</a><a href="recordings.html#courtyard">All 100 recordings</a><a href="methods.html">Shared methods</a>
+    <a href="https://github.com/jintaili/kittie-game">Game source on GitHub</a>
+  </nav>
+  <p class="date-line">Results recorded October 9, 2026.</p><footer><span>Jintai Li</span><a href="https://github.com/jintaili/kittie-game">Game source</a></footer></main></body></html>

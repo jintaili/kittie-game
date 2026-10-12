@@ -1,0 +1,53 @@
+{
+  "selection": "Closest to each setup's median successful duration; label breaks ties. Illustrative successes only.",
+  "examples": [
+    {
+      "id": "jev-jev-02",
+      "label": "jev-02",
+      "setup": "jev",
+      "outcome": "win",
+      "duration_s": 14.214557647705078,
+      "frames": 849,
+      "score": 500,
+      "hearts": 2,
+      "wool": 1,
+      "boss_hits": 3,
+      "decisions": 40,
+      "cost_usd": 0.008609496000000001,
+      "video": "assets/head-goon/jev-jev-02/review.mp4",
+      "poster": "assets/head-goon/jev-jev-02/start.png"
+    },
+    {
+      "id": "openai_text-openai-text-24",
+      "label": "openai-text-24",
+      "setup": "openai_text",
+      "outcome": "win",
+      "duration_s": 14.063873291015625,
+      "frames": 840,
+      "score": 500,
+      "hearts": 2,
+      "wool": 1,
+      "boss_hits": 3,
+      "decisions": 34,
+      "cost_usd": 0.0138662,
+      "video": "assets/head-goon/openai_text-openai-text-24/review.mp4",
+      "poster": "assets/head-goon/openai_text-openai-text-24/start.png"
+    },
+    {
+      "id": "openai_image-openai-image-12",
+      "label": "openai-image-12",
+      "setup": "openai_image",
+      "outcome": "win",
+      "duration_s": 19.974048614501953,
+      "frames": 1193,
+      "score": 500,
+      "hearts": 1,
+      "wool": 1,
+      "boss_hits": 3,
+      "decisions": 56,
+      "cost_usd": 0.0267263,
+      "video": "assets/head-goon/openai_image-openai-image-12/review.mp4",
+      "poster": "assets/head-goon/openai_image-openai-image-12/start.png"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "models": {
+    "openai": "gpt-6-luna",
+    "jev": "jev-1.13.0"
+  },
+  "image_policy": {
+    "native_dimensions": [
+      160,
+      144
+    ],
+    "input_dimensions": [
+      640,
+      576
+    ],
+    "resampling": "nearest-neighbor",
+    "format": "PNG",
+    "images_per_request": 1,
+    "screenshot_frame": "Exactly the structured observation frame",
+    "wire": "Inline base64 image_url in user input parts",
+    "request_byte_cap": 32768
+  },
+  "timing_policy": "Real continuous gameplay during HTTP; controls held until next answer. Initial expected age 10 frames, EMA old weight .65, new .35 of actual apply minus request frame. Six-frame minimum after applying each answer.",
+  "frame_age_policy": {
+    "scope": "Fresh independent EMA inside every run; no sharing across setups or starts.",
+    "initial_frames": 10,
+    "old_weight": 0.65,
+    "new_weight": 0.35,
+    "measurement": "Applied frame minus observation frame",
+    "minimum_action_frames": 6
+  },
+  "selection_policy": "Ten more Jev starts and ten more OpenAI text-only starts in randomized pairs. OpenAI text-plus-image already has thirty selected starts, so none are added here.",
+  "error_policy": "No retries, fallback or replacement starts. Service errors and refusals during live play count failed starts. Settle and charge post-terminal in-flight calls without applying them.",
+  "native_sources": {
+    "courtyard/plugins/kittie/engine/src/states/head_goon.c": "eee41de9a65d9361247ca01a0f0a89fcd9f551466579535da9098076f1fd7a25",
+    "courtyard/plugins/kittie/engine/src/states/kittie.c": "fb1535ed10f960bf62f3ca3cea26fca0b1289b00b3037433b054136f043ca872",
+    "courtyard/tools/head_goon.json": "af13bed4789ab9472775a841dfb654c4affd22d4ad47d0a37ae52c36320486eb"
+  }
+}

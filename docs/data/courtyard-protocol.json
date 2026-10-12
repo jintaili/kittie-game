@@ -1,0 +1,28 @@
+{
+  "config": {
+    "id": "structured-motion-v8-isolated-feedback",
+    "manual": "Complete Courtyard alive: wool rings both bells to open gates, then reach the right exit. World x points right, y down; player y is feet. Solid sides block walking; tops support landing. New A jumps on ground or in coyote time; hold A for the full arc, release to shorten or rearm. New B throws forward; Up+B lobs higher. Wool can hit bells and walking goons, rebound and be recovered. Goon contact hurts; water kills. Prior controls continue during API delay. Derived forecasts approximate mechanics, not observed future events.",
+    "question": "Separate simultaneous choices for horizontal direction, A jump control and B throw control. No deterministic route.",
+    "throw_prompt": "Keep the wool unless a forecast supports hitting an unrung bell or living goon. After launching, let that ball\u2019s predicted contact resolve before spending another ball on the same target.",
+    "minimum_action_frames": 6,
+    "max_frames": 7200,
+    "state_radius": 250
+  },
+  "config_sha256": "0fcacf7a5951cd6836f3d58d277cea68658a6acb76cd53aae9f1d56f8af6efbc",
+  "controller_sha256": "52829f1c7a21f63c0103a9079837004554dab7a472a1f656e1aa96591cba96d4",
+  "forecast_sha256": "87960cc25674643b616739e09d805d43bf345881ab8f2bc6985cc1f560d8b79c",
+  "forecast_v6_sha256": "b71dc8975b9a46184e0c18441669a7a6c104cdd486117195790d4cd5ccf5e9cf",
+  "shot_feedback_sha256": "5c545ef5cafc0eb076c268f2d5d0cfa2356575465ff119800a7fb82e53ead926",
+  "source_fingerprints": {
+    "core.py": "3188426b9cab490ce6bbc73c8ff1bb67b5c0b6e18ed5772ecfec21f40747dac1",
+    "policies.py": "fdcfd4b751ab52e44089b31273ab905f70c9b2f786c4bb169952734b878f0f2b",
+    "courtyard.py": "facbc75fa739beacb6ce86afd1edc05e71aeeb1e870db32af97420f7f2b40097"
+  },
+  "start_checkpoint_sha256": "3a73fe38ca6189ea259b42f7b1980592d2d018619c39ee14abc7edf3aef2d1b8",
+  "rom_sha256": "1c0f032df652cbd6fc8ac98125013bca915c6f7171cdff40322cec0ece540e52",
+  "runtime": {
+    "pyboy": "2.7.0",
+    "pillow": "12.3.0"
+  },
+  "continuous_real_time": true
+}

@@ -1,0 +1,9 @@
+{
+  "id": "head-goon-contact-delay-aware-v2",
+  "manual": "Defeat Head Goon with three wool hits, then reach the right exit alive. One physical wool ball can rebound and be recovered. His raised tray guards every side; only tray_down allows damage. Full health uses one committed hop; after the first hit, two separately telegraphed hops precede the tray-down opening. A windup locks its landing marker; the hop never retargets in flight. Contact with the living boss hurts during tray_down and flinch too. Defeat is harmless. Kittie's existing damage protection still applies. You can run beneath him when his feet clear your body. Flat arena; shutters at x160 and x320. Defeat opens the right shutter. World x points right, y down; player y is feet. Fresh A jumps on ground or in coyote time; hold for the full arc, release to shorten or rearm. Fresh B throws forward; Up+B lobs higher. Held A or B creates no new press. Prior controls continue during API delay. Structured RAM-assisted observations include current source phase and timing. Derived forecasts approximate source mechanics, not observed future events.",
+  "throw_prompt": "Keep the wool unless a forecast supports damaging the living Head Goon during his tray-down opening. After launching, let that ball's predicted contact resolve before trying another attack. Recover the physical wool for the next opening.",
+  "minimum_action_frames": 6,
+  "max_frames": 7200,
+  "state_radius": 250,
+  "start": "arena-entry"
+}

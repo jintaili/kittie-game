@@ -1,0 +1,269 @@
+{
+  "title": "Text-only gameplay: Jev and OpenAI Decisions",
+  "report_date": "2026-10-09",
+  "providers": {
+    "openai": {
+      "starts": 50,
+      "wins": 12,
+      "success_rate": 0.24,
+      "success_95pct_wilson_interval": [
+        0.1429739139699173,
+        0.3741268375794292
+      ],
+      "outcomes": {
+        "frame_limit": 9,
+        "death": 29,
+        "win": 12
+      },
+      "cost_usd_per_run": {
+        "n": 50,
+        "mean": 0.041381795999999985,
+        "median": 0.01941075,
+        "p90": 0.13318439999999962,
+        "p95": 0.14781176000000007,
+        "p99": 0.15430070799999926,
+        "min": 0.0070102,
+        "max": 0.1589658999999991
+      },
+      "cost_usd_per_call": {
+        "n": 5470,
+        "mean": 0.00037826138939670934,
+        "median": 0.0003978,
+        "p90": 0.00041791000000000007,
+        "p95": 0.0004236,
+        "p99": 0.00044236200000000007,
+        "min": 0.00023560000000000003,
+        "max": 0.00047470000000000005
+      },
+      "total_trial_cost_per_completion_usd": 0.17242414999999547,
+      "latency_ms_all_transports": {
+        "n": 5470,
+        "mean": 221.23920096397754,
+        "median": 190.33941626548767,
+        "p90": 279.16805800050497,
+        "p95": 375.48310006968694,
+        "p99": 852.2630696510995,
+        "min": 118.41520899906754,
+        "max": 3554.5954168774188
+      },
+      "applied_observation_age_frames": {
+        "n": 5434,
+        "mean": 14.555023923444976,
+        "median": 13.0,
+        "p90": 18.0,
+        "p95": 24.0,
+        "p99": 49.67000000000007,
+        "min": 8,
+        "max": 194
+      },
+      "native_completion_score_wins": {
+        "n": 12,
+        "mean": 533.3333333333334,
+        "median": 550.0,
+        "p90": 700.0,
+        "p95": 744.9999999999999,
+        "p99": 789.0,
+        "min": 300,
+        "max": 800
+      },
+      "hearts_wins": {
+        "n": 12,
+        "mean": 2.75,
+        "median": 3.0,
+        "p90": 3.0,
+        "p95": 3.0,
+        "p99": 3.0,
+        "min": 2,
+        "max": 3
+      },
+      "game_seconds_wins": {
+        "n": 12,
+        "mean": 28.88395881652832,
+        "median": 27.71755027770996,
+        "p90": 31.933363723754884,
+        "p95": 39.239880752563465,
+        "p99": 46.2088648223877,
+        "min": 22.117115020751953,
+        "max": 47.95111083984375
+      },
+      "model": "gpt-6-luna",
+      "death_causes": {
+        "gap_1": 21,
+        "gap_2": 5,
+        "gap_3": 2,
+        "goon_contact": 1
+      },
+      "movement": {
+        "starts": 50,
+        "mean_per_attempt_no_direction_fraction": 0.4820043745981141,
+        "pooled_no_direction_fraction": 0.6938880005749088
+      }
+    },
+    "jev": {
+      "starts": 50,
+      "wins": 23,
+      "success_rate": 0.46,
+      "success_95pct_wilson_interval": [
+        0.3296965219222435,
+        0.5960112860084253
+      ],
+      "outcomes": {
+        "win": 23,
+        "death": 25,
+        "frame_limit": 2
+      },
+      "cost_usd_per_run": {
+        "n": 50,
+        "mean": 0.009284002560000002,
+        "median": 0.007725962999999999,
+        "p90": 0.0117687696,
+        "p95": 0.026857088999999945,
+        "p99": 0.045915063180000014,
+        "min": 0.002691696,
+        "max": 0.051550464000000046
+      },
+      "cost_usd_per_call": {
+        "n": 2751,
+        "mean": 0.00016873868702290076,
+        "median": 0.00016623600000000003,
+        "p90": 0.000206724,
+        "p95": 0.00021037800000000002,
+        "p99": 0.000219282,
+        "min": 0.00011130000000000001,
+        "max": 0.00023020200000000002
+      },
+      "total_trial_cost_per_completion_usd": 0.020182614260869477,
+      "latency_ms_all_transports": {
+        "n": 2751,
+        "mean": 248.13101616590234,
+        "median": 226.4098753221333,
+        "p90": 289.74783373996615,
+        "p95": 317.3909375909716,
+        "p99": 1197.253500111401,
+        "min": 161.75749991089106,
+        "max": 1418.5710833407938
+      },
+      "applied_observation_age_frames": {
+        "n": 2724,
+        "mean": 16.06864904552129,
+        "median": 15.0,
+        "p90": 18.0,
+        "p95": 20.0,
+        "p99": 73.0,
+        "min": 11,
+        "max": 126
+      },
+      "native_completion_score_wins": {
+        "n": 23,
+        "mean": 417.39130434782606,
+        "median": 500.0,
+        "p90": 580.0000000000001,
+        "p95": 600.0,
+        "p99": 756.0000000000002,
+        "min": 200,
+        "max": 800
+      },
+      "hearts_wins": {
+        "n": 23,
+        "mean": 2.652173913043478,
+        "median": 3.0,
+        "p90": 3.0,
+        "p95": 3.0,
+        "p99": 3.0,
+        "min": 1,
+        "max": 3
+      },
+      "game_seconds_wins": {
+        "n": 23,
+        "mean": 21.595907294231914,
+        "median": 19.086685180664062,
+        "p90": 22.98438720703125,
+        "p95": 30.783139801025378,
+        "p99": 59.016030578613325,
+        "min": 14.398727416992188,
+        "max": 66.7364273071289
+      },
+      "model": "jev-1.13.0",
+      "death_causes": {
+        "gap_1": 21,
+        "gap_3": 3,
+        "gap_2": 1
+      },
+      "movement": {
+        "starts": 50,
+        "mean_per_attempt_no_direction_fraction": 0.10806928526714436,
+        "pooled_no_direction_fraction": 0.13250260302959058
+      }
+    }
+  },
+  "examples": [
+    {
+      "label": "jev-50",
+      "provider": "jev",
+      "duration_s": 19.086685180664062,
+      "score": 600,
+      "hearts": 3,
+      "wool": 2,
+      "selection": "Closest to provider median completion time among wins",
+      "frames_verified": 1140,
+      "video_sha256": "980fdf47fb2a986fba5cfa1bc88e52613d7d797e440d58aa2d19a68f55b790c1",
+      "every_native_frame_and_state_matches": true
+    },
+    {
+      "label": "openai-16",
+      "provider": "openai",
+      "duration_s": 27.608722686767578,
+      "score": 700,
+      "hearts": 2,
+      "wool": 2,
+      "selection": "Closest to provider median completion time among wins",
+      "frames_verified": 1649,
+      "video_sha256": "f693b859315e9d37a2184b30e8b1647fa91af3daf3235c773a3c9410896c820b",
+      "every_native_frame_and_state_matches": true
+    }
+  ],
+  "method": {
+    "game": "Kittie Has Other Plans",
+    "stage": "Courtyard",
+    "starts_per_provider": 50,
+    "frame_limit": 7200,
+    "fps": 59.72750056960583,
+    "minimum_action_interval_frames": 6,
+    "input": "Canonical JSON text describing game state, approximate forecasts and choice questions; no screenshot inputs",
+    "same_checkpoint_each_start": true,
+    "seeded_interleaved_provider_order": true,
+    "realtime_during_requests": true,
+    "previous_controls_held_until_response_applied": true,
+    "retries": false,
+    "fallback_controls": false,
+    "replacement_failures": false,
+    "latency_definition": "Full HTTP response latency, separate from observation-to-action age",
+    "questions_per_transport": 3,
+    "movement_definition": "Fraction of frames with neither left nor right held after first applied choice; primary statistic is the arithmetic mean of the 50 per-attempt fractions. Includes jumps/other actions and does not imply physical stationarity. Initial request wait excluded.",
+    "input_prices_usd_per_million_tokens": {
+      "openai": 0.1,
+      "jev": 0.042
+    },
+    "cost_scope": "API costs for these 100 starts; excludes earlier experiments and emulator/host compute",
+    "winner_only_metrics": [
+      "completion time",
+      "completion score",
+      "hearts"
+    ],
+    "sample_looks_per_provider": [
+      20,
+      30,
+      40,
+      50
+    ],
+    "interpretation": "Exploratory; sample extended after earlier results. Intervals and nominal tests are unadjusted for repeated looks.",
+    "nominal_fisher_two_sided_p": 0.03529978060060682
+  },
+  "provenance": {
+    "rom_sha256": "1c0f032df652cbd6fc8ac98125013bca915c6f7171cdff40322cec0ece540e52",
+    "start_checkpoint_sha256": "3a73fe38ca6189ea259b42f7b1980592d2d018619c39ee14abc7edf3aef2d1b8",
+    "comparison_json_sha256": "42aea8f99df95542e9a16a2a3aec41f8c7df93542124ee4d945ec959f935eeab",
+    "death_attribution_json_sha256": "d1785978d7768a8cc94fbc7734561863075cd2fe35cd9d10ebb9c901506c416c",
+    "trials_csv_sha256": "b67707a07bbff05a350772d781da21380f4cb8700085bd8aedbc7731ebb01f4b"
+  }
+}
