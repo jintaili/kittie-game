@@ -85,3 +85,5 @@ pre{padding:16px;background:#f5f6f2;overflow-x:auto;font-size:13px;line-height:1
 .article li{margin:8px 0}.article-nav{display:flex;gap:10px 24px;flex-wrap:wrap;font-size:14px;margin:24px 0 36px}
 @media(max-width:560px){.arrow{display:none}.flow{flex-direction:column}.article table{min-width:540px}.game img{margin:auto}}
 @media print{header,video{display:none}main{max-width:none}.scroll{overflow:visible}h2{break-after:avoid}}
+
+@media(max-width:560px){#scenario-parameters table{min-width:0;table-layout:fixed;width:100%}#scenario-parameters th,#scenario-parameters td{min-width:0;padding:8px 6px;vertical-align:top;overflow-wrap:anywhere}}
