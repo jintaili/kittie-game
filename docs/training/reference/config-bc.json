@@ -1,0 +1,28 @@
+{
+  "model": "Qwen/Qwen3.5-0.8B",
+  "revision": "2fc06364715b967f1860aea9cf38778875588b17",
+  "lora_rank": 8,
+  "effective_batch": 32,
+  "weight_decay": 0.0,
+  "max_grad_norm": 1.0,
+  "stages": [
+    {
+      "name": "courtyard",
+      "epochs": 5,
+      "learning_rate": 5e-05,
+      "examples": 779,
+      "weighting": "equal trajectory",
+      "loss_denominator": "actual_batch",
+      "optimizer": "fresh"
+    },
+    {
+      "name": "multilevel",
+      "epochs": 4,
+      "learning_rate": 1e-05,
+      "examples": 4423,
+      "weighting": "sqrt trajectory count by level, equal trajectory within level",
+      "loss_denominator": "effective_batch",
+      "optimizer": "fresh at stage start, retained between epochs"
+    }
+  ]
+}

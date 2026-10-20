@@ -1,0 +1,7 @@
+{
+  "source": "videos/ppo15-greedy/common-win/gameplay.mp4",
+  "sha256": "b4fd30cf73abc9d6fcdc01ffc3bc3363f244b65ad997120812a3562f9edb1e4e",
+  "site_path": "assets/training-ppo15.mp4",
+  "description": "Selected PPO15 winning replay reconstructed from recorded native actions; selected after evaluation. Hosted only in the game site.",
+  "license": "Game artwork and gameplay media are excluded from the article/code grants; existing terms retained."
+}

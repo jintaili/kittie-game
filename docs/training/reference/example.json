@@ -1,0 +1,9 @@
+{
+  "source": "data/jev-head-goon-variation-001/prompt-example.json",
+  "source_sha256": "2a600e7297ed3bd8b4e3f675c26501702edb919eae9901e63da2560e0f5920c5",
+  "selection": "One previously retained randomized-encounter teacher request; only state and questions copied. The Qwen messages are derived with the unchanged input builder. No actions or outcome labels are supplied.",
+  "files": {
+    "paper/examples/observation.json": "3fc8d9662226bb3b4329e42fd0ea09825189c3411dbd633ba4a09a0af1a611ea",
+    "paper/examples/qwen-messages.json": "43a6d9991a906e4576f0d49a2d4cccff836d5672aa196e9c7d727e085c37bbfb"
+  }
+}

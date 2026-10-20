@@ -1,0 +1,30 @@
+{
+  "courtyard_bc": {
+    "unique_training_decisions": 779,
+    "epochs": 5,
+    "example_presentations": 3895,
+    "optimizer_updates": 125,
+    "learning_rate": 5e-05,
+    "validation_ce_before": 4.005213156846559,
+    "validation_ce_after": 0.5190771089313514
+  },
+  "multilevel_bc": {
+    "unique_training_decisions": 4423,
+    "epochs": 4,
+    "example_presentations": 17692,
+    "optimizer_updates": 556,
+    "learning_rate": 1e-05
+  },
+  "interpretation": "Training volume does not identify downstream causal contribution. No ablation omits Courtyard BC. Updates use different data and learning rates.",
+  "input_sha256": {
+    "configs/bc-main.json": "ff518da00eb23f2ea1e82318171cc917f66854af9bd939936b1f160939626c36",
+    "configs/bc-multi-v2.json": "0e809e3c386997c3c377ab23071a401abc3e33300fd1b70819b471c1d04b4c4f",
+    "configs/head-goon-ppo.json": "e2bff39028fc47305d40e1de52ccc0b56412ee706eb168b9032243d7c4f09e47",
+    "rl/config.py": "9faf2c96c8d925672eba925e8f332e47f796c92d6e940c1333dd0068af232335",
+    "head_goon_ppo/rewards.py": "899f215c056872d296e4e186bd7229afce1ad1d0fbca9aaa88633d758758d7c6",
+    "bc_multi/contract.py": "fd12f0b78a0b15fa32530a6eefe02bb5c9cb01b9028c646b93db13f04c544cfc",
+    "training_runs/courtyard-bc-main-001-execution/training-steps.jsonl": "03da9c976342b2b1382d77d0d87713810827df53ed35dd2e98d13915b83a185b",
+    "training_runs/courtyard-bc-main-001-execution/base-validation.json": "16408d68f54569fa81edcdcd5842777bfaf2f176b7918a7a665efddbdf9a8fed",
+    "training_runs/courtyard-bc-main-001-execution/epochs.json": "6684c2c34c4c88bdde929e665fae438040d94e023ddb01886081f0507057510a"
+  }
+}

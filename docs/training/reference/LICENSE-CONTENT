@@ -1,0 +1,18 @@
+Copyright 2026 Jintai Li
+
+The article text, supplementary text, methods guide, original statistical figures,
+and released numerical evaluation data in paper/data are licensed under Creative
+Commons Attribution 4.0 International, to the extent Jintai Li holds rights in them.
+License: https://creativecommons.org/licenses/by/4.0/
+Legal terms: https://creativecommons.org/licenses/by/4.0/legalcode
+Attribution: Jintai Li, Teaching a small language model to play, 2026.
+Retain attribution and the license link, and indicate changes.
+
+This grant excludes game artwork, game screenshots and gameplay video containing
+that artwork, personal photographs, third-party text or assets, and model weights.
+Those materials retain their existing terms; their appearance here does not grant
+additional rights. This file does not change the game repository's license.
+
+Research source code, scripts and configurations are covered by Apache-2.0 in
+LICENSE. No model weights, adapters, training trajectories or optimizer states
+are distributed in this companion.

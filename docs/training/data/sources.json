@@ -1,0 +1,14 @@
+{
+  "training_runs/head-goon-qwen-base-001-execution/results/games.json": "0e0262c368493067f314c2f23a3cc5c8fe99da7e9360cdfe0fa7fbf095c100d4",
+  "data/jev-head-goon-baseline-001/results.json": "eb42980a583c64b28fe5ad7174db99139dd81f4b6c2213694294cb5284cd9b6c",
+  "training_runs/head-goon-bc04-greedy-001-execution/results/games.json": "97a4179ea8818ea0631b935f641d93702d442ada1f06967ed94ea25bddd3a619",
+  "training_runs/head-goon-greedy-004010-001-execution/results/games.json": "5f803f332f49c0db58f98c023e59c90a9840538c13a8b7e3bdec0b9f7b7c3c75",
+  "training_runs/head-goon-greedy-010015-001-execution/results/games.json": "2dca8b87dfd536cb6418824a0f7d01a6481fd32bbf18b38b94dde27a2aa6eb43",
+  "training_runs/head-goon-ppo15-modes-001-execution/results/games.json": "5357f46595d5c520a7d2b39fa0874b125f529d975e30a29130f8a515ed3d30b6",
+  "training_runs/head-goon-bc04-variation-001-execution/results/games.json": "f9c91d4df8d5fde71f1d8a0c8a5d7441401c6f25e14e82d3d99f0edaf8d63318",
+  "training_runs/head-goon-variation-010015-001-execution/results/games.json": "59743562ac5d46aa86fec5ebc8de35e65cebdd3491060d14c9aea963ba4fa8fb",
+  "data/jev-head-goon-variation-001/results.json": "581f040682c5d2f544111e917acb587da3da5c53e529e6969dea16d7e57c8d84",
+  "data/jev-head-goon-latency-001/results.json": "3db9c7e2b117a4e095674514dcb5a44d81361923b3217c1c296d12acfb533ba1",
+  "training_runs/head-goon-ppo15-oneframe-001-execution/results/games.json": "869a3ba1540119fb4b2421e2cfc39c9e526ab84abdeef7964d70334fa3ef08c6",
+  "training_runs/head-goon-ppo15-oneframe-002-retry-01-execution/results/games.json": "8de8e6a244d9cc9e830156fccdc90595b58e3a571dc3b5c810978f48645e84bf"
+}

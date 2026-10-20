@@ -1,0 +1,455 @@
+{
+  "state": {
+    "mechanics": "Defeat Head Goon with three ball hits, then reach the right exit alive. One physical ball can rebound and be recovered. His raised tray guards every side; only tray_down allows damage. Each patrol lasts 27 to 81 updates and commits one, two or three separately telegraphed hops before the tray-down opening, independently of health. The current countdown and hops_left report that commitment. The tray-down opening lasts 72 updates. Forecasts crossing a future unobserved patrol assume 54 patrol updates and two hops; those future draws are unknown. A windup locks its landing marker; the hop never retargets in flight. Contact with the living boss hurts during tray_down and flinch too. Defeat is harmless. Kittie's existing damage protection still applies. You can run beneath him when his feet clear your body. Flat arena; shutters at x160 and x320. Defeat opens the right shutter. World x points right, y down; player y is feet. Fresh A jumps on ground or in coyote time; hold for the full arc, release to shorten or rearm. Fresh B throws forward; Up+B lobs higher. Held A or B creates no new press. Prior controls continue during API delay. Structured RAM-assisted observations include current source phase and timing. Derived forecasts approximate source mechanics, not observed future events. Holding A starts a jump only when A was previously released and jumping is available. Continuing to hold A does not trigger another jump.",
+    "observed": {
+      "frame": 0,
+      "player": {
+        "x": 32.0,
+        "feet_y": 128.0,
+        "vx": 0.0,
+        "vy": 0.0,
+        "facing": "right",
+        "grounded": true,
+        "coyote_updates": 6,
+        "jump_buffer_updates": 0,
+        "hearts": 3,
+        "balls_held": 0,
+        "hurt_updates": 0,
+        "throw_pose_updates": 0,
+        "knock_direction": 0
+      },
+      "boss": {
+        "x": 276.0,
+        "feet_y": 128.0,
+        "health": 3,
+        "phase_id": 0,
+        "phase": "waiting_for_entry",
+        "remaining_updates": 0,
+        "facing": "left",
+        "locked_landing_x": 276.0,
+        "hops_left": 0,
+        "hop_age": 0,
+        "hop_vx": 0.0,
+        "hop_vy": 0.0,
+        "hop_remainder": 0,
+        "hop_error": 0,
+        "hop_sign": -1
+      },
+      "balls": {
+        "id": 0,
+        "state": 0,
+        "x": 188.0,
+        "y": 124.0,
+        "vx": 0.0,
+        "vy": 0.0,
+        "pickup_cooldown_updates": 0,
+        "armed": false
+      },
+      "held_buttons": [],
+      "gates_open": [
+        true,
+        false
+      ]
+    },
+    "source_geometry": {
+      "level_width": 480,
+      "floor_y": 128,
+      "solids": [
+        {
+          "id": 0,
+          "rect": [
+            160,
+            0,
+            168,
+            128
+          ],
+          "open": true
+        },
+        {
+          "id": 1,
+          "rect": [
+            320,
+            0,
+            328,
+            128
+          ],
+          "open": false
+        }
+      ],
+      "water_gaps": [],
+      "exit": {
+        "x_greater_than": 440,
+        "requires_grounded": true,
+        "requires_boss_defeated": true
+      }
+    },
+    "derived": {
+      "expected_observation_age_frames_at_apply": 10.0,
+      "expected_action_minimum_frames": 6,
+      "latency_prediction": "EMA of observed request-to-apply emulated frames, uncertain. Current RAM may catch a partial update.",
+      "anticipated_player_after_api_wait": {
+        "x": 32.0,
+        "feet_y": 128,
+        "vx": 0,
+        "vy": 0,
+        "facing": "right",
+        "grounded": true,
+        "coyote_updates": 6,
+        "jump_buffer_updates": 0,
+        "hearts": 3,
+        "balls_held": 0,
+        "hurt_updates": 0,
+        "throw_pose_updates": 0,
+        "knock_direction": 0
+      },
+      "anticipated_boss_after_api_wait": {
+        "x": 276.0,
+        "feet_y": 128.0,
+        "health": 3,
+        "phase_id": 0,
+        "phase": "waiting_for_entry",
+        "remaining_updates": 0,
+        "facing": "left",
+        "locked_landing_x": 276.0,
+        "hops_left": 0,
+        "hop_age": 0,
+        "hop_vx": 0.0,
+        "hop_vy": 0.0,
+        "hop_remainder": 0,
+        "hop_error": 0,
+        "hop_sign": -1
+      },
+      "motion_forecasts": {
+        "neutral_ground": {
+          "x": 32.0,
+          "feet_y": 128,
+          "grounded": true,
+          "predicted_enemy_contacts_without_throw": [],
+          "possible_ball_pickups": [],
+          "sample_path": [
+            {
+              "after_updates": 10,
+              "player_x": 32.0,
+              "player_feet_y": 128,
+              "boss_x": 276.0,
+              "boss_feet_y": 128.0,
+              "boss_phase": "waiting_for_entry"
+            },
+            {
+              "after_updates": 20,
+              "player_x": 32.0,
+              "player_feet_y": 128,
+              "boss_x": 276.0,
+              "boss_feet_y": 128.0,
+              "boss_phase": "waiting_for_entry"
+            },
+            {
+              "after_updates": 30,
+              "player_x": 32.0,
+              "player_feet_y": 128,
+              "boss_x": 276.0,
+              "boss_feet_y": 128.0,
+              "boss_phase": "waiting_for_entry"
+            },
+            {
+              "after_updates": 40,
+              "player_x": 32.0,
+              "player_feet_y": 128,
+              "boss_x": 276.0,
+              "boss_feet_y": 128.0,
+              "boss_phase": "waiting_for_entry"
+            }
+          ],
+          "caveat": "Approximate source simulation; ignores future hits, damage knockback and ball guard rebounds. New windup targets use the simulated player position."
+        },
+        "neutral_jump": {
+          "x": 32.0,
+          "feet_y": 128,
+          "grounded": true,
+          "predicted_enemy_contacts_without_throw": [],
+          "possible_ball_pickups": [],
+          "sample_path": [
+            {
+              "after_updates": 10,
+              "player_x": 32.0,
+              "player_feet_y": 102.0625,
+              "boss_x": 276.0,
+              "boss_feet_y": 128.0,
+              "boss_phase": "waiting_for_entry"
+            },
+            {
+              "after_updates": 20,
+              "player_x": 32.0,
+              "player_feet_y": 94.875,
+              "boss_x": 276.0,
+              "boss_feet_y": 128.0,
+              "boss_phase": "waiting_for_entry"
+            },
+            {
+              "after_updates": 30,
+              "player_x": 32.0,
+              "player_feet_y": 106.4375,
+              "boss_x": 276.0,
+              "boss_feet_y": 128.0,
+              "boss_phase": "waiting_for_entry"
+            },
+            {
+              "after_updates": 40,
+              "player_x": 32.0,
+              "player_feet_y": 128,
+              "boss_x": 276.0,
+              "boss_feet_y": 128.0,
+              "boss_phase": "waiting_for_entry"
+            }
+          ],
+          "caveat": "Approximate source simulation; ignores future hits, damage knockback and ball guard rebounds. New windup targets use the simulated player position."
+        },
+        "left_ground": {
+          "x": 20,
+          "feet_y": 128,
+          "grounded": true,
+          "predicted_enemy_contacts_without_throw": [],
+          "possible_ball_pickups": [],
+          "sample_path": [
+            {
+              "after_updates": 10,
+              "player_x": 20,
+              "player_feet_y": 128,
+              "boss_x": 276.0,
+              "boss_feet_y": 128.0,
+              "boss_phase": "waiting_for_entry"
+            },
+            {
+              "after_updates": 20,
+              "player_x": 20,
+              "player_feet_y": 128,
+              "boss_x": 276.0,
+              "boss_feet_y": 128.0,
+              "boss_phase": "waiting_for_entry"
+            },
+            {
+              "after_updates": 30,
+              "player_x": 20,
+              "player_feet_y": 128,
+              "boss_x": 276.0,
+              "boss_feet_y": 128.0,
+              "boss_phase": "waiting_for_entry"
+            },
+            {
+              "after_updates": 40,
+              "player_x": 20,
+              "player_feet_y": 128,
+              "boss_x": 276.0,
+              "boss_feet_y": 128.0,
+              "boss_phase": "waiting_for_entry"
+            }
+          ],
+          "caveat": "Approximate source simulation; ignores future hits, damage knockback and ball guard rebounds. New windup targets use the simulated player position."
+        },
+        "left_jump": {
+          "x": 20,
+          "feet_y": 128,
+          "grounded": true,
+          "predicted_enemy_contacts_without_throw": [],
+          "possible_ball_pickups": [],
+          "sample_path": [
+            {
+              "after_updates": 10,
+              "player_x": 20,
+              "player_feet_y": 102.0625,
+              "boss_x": 276.0,
+              "boss_feet_y": 128.0,
+              "boss_phase": "waiting_for_entry"
+            },
+            {
+              "after_updates": 20,
+              "player_x": 20,
+              "player_feet_y": 94.875,
+              "boss_x": 276.0,
+              "boss_feet_y": 128.0,
+              "boss_phase": "waiting_for_entry"
+            },
+            {
+              "after_updates": 30,
+              "player_x": 20,
+              "player_feet_y": 106.4375,
+              "boss_x": 276.0,
+              "boss_feet_y": 128.0,
+              "boss_phase": "waiting_for_entry"
+            },
+            {
+              "after_updates": 40,
+              "player_x": 20,
+              "player_feet_y": 128,
+              "boss_x": 276.0,
+              "boss_feet_y": 128.0,
+              "boss_phase": "waiting_for_entry"
+            }
+          ],
+          "caveat": "Approximate source simulation; ignores future hits, damage knockback and ball guard rebounds. New windup targets use the simulated player position."
+        },
+        "right_ground": {
+          "x": 97.0,
+          "feet_y": 128,
+          "grounded": true,
+          "predicted_enemy_contacts_without_throw": [],
+          "possible_ball_pickups": [],
+          "sample_path": [
+            {
+              "after_updates": 10,
+              "player_x": 48.25,
+              "player_feet_y": 128,
+              "boss_x": 276.0,
+              "boss_feet_y": 128.0,
+              "boss_phase": "waiting_for_entry"
+            },
+            {
+              "after_updates": 20,
+              "player_x": 64.5,
+              "player_feet_y": 128,
+              "boss_x": 276.0,
+              "boss_feet_y": 128.0,
+              "boss_phase": "waiting_for_entry"
+            },
+            {
+              "after_updates": 30,
+              "player_x": 80.75,
+              "player_feet_y": 128,
+              "boss_x": 276.0,
+              "boss_feet_y": 128.0,
+              "boss_phase": "waiting_for_entry"
+            },
+            {
+              "after_updates": 40,
+              "player_x": 97.0,
+              "player_feet_y": 128,
+              "boss_x": 276.0,
+              "boss_feet_y": 128.0,
+              "boss_phase": "waiting_for_entry"
+            }
+          ],
+          "caveat": "Approximate source simulation; ignores future hits, damage knockback and ball guard rebounds. New windup targets use the simulated player position."
+        },
+        "right_jump": {
+          "x": 97.0,
+          "feet_y": 128,
+          "grounded": true,
+          "predicted_enemy_contacts_without_throw": [],
+          "possible_ball_pickups": [],
+          "sample_path": [
+            {
+              "after_updates": 10,
+              "player_x": 48.25,
+              "player_feet_y": 102.0625,
+              "boss_x": 276.0,
+              "boss_feet_y": 128.0,
+              "boss_phase": "waiting_for_entry"
+            },
+            {
+              "after_updates": 20,
+              "player_x": 64.5,
+              "player_feet_y": 94.875,
+              "boss_x": 276.0,
+              "boss_feet_y": 128.0,
+              "boss_phase": "waiting_for_entry"
+            },
+            {
+              "after_updates": 30,
+              "player_x": 80.75,
+              "player_feet_y": 106.4375,
+              "boss_x": 276.0,
+              "boss_feet_y": 128.0,
+              "boss_phase": "waiting_for_entry"
+            },
+            {
+              "after_updates": 40,
+              "player_x": 97.0,
+              "player_feet_y": 128,
+              "boss_x": 276.0,
+              "boss_feet_y": 128.0,
+              "boss_phase": "waiting_for_entry"
+            }
+          ],
+          "caveat": "Approximate source simulation; ignores future hits, damage knockback and ball guard rebounds. New windup targets use the simulated player position."
+        }
+      },
+      "throw_forecasts": {
+        "left": {
+          "flat": {
+            "can_launch": false,
+            "reason": "No carried ball, B already held, or throw pose active.",
+            "predicted_first_useful_contacts": []
+          },
+          "lob": {
+            "can_launch": false,
+            "reason": "No carried ball, B already held, or throw pose active.",
+            "predicted_first_useful_contacts": []
+          }
+        },
+        "right": {
+          "flat": {
+            "can_launch": false,
+            "reason": "No carried ball, B already held, or throw pose active.",
+            "predicted_first_useful_contacts": []
+          },
+          "lob": {
+            "can_launch": false,
+            "reason": "No carried ball, B already held, or throw pose active.",
+            "predicted_first_useful_contacts": []
+          }
+        }
+      }
+    },
+    "history": [],
+    "stage": "head_goon",
+    "contract_version": "jev-original-edge-aware-v1"
+  },
+  "questions": {
+    "motion": {
+      "type": "choice",
+      "instructions": "Which combined movement and A control best advances Head Goon completion alive? Compare the approximate motion forecasts, committed landing marker, boss phase and world ball. Avoid harmful contact, recover ball, find a useful attack position and reach the exit after defeat. Account for held-button edges and API delay. Choose your own movement; waiting for a ball must not prevent necessary evasion.",
+      "criteria": {
+        "neutral_ground": "Move neither direction; release A to shorten ascent or rearm. See its forecast.",
+        "neutral_jump": "Move neither direction; press A freshly to jump if ready. See its forecast.",
+        "left_ground": "Move left; release A to shorten ascent or rearm. See its forecast.",
+        "left_jump": "Move left; press A freshly to jump if ready. See its forecast.",
+        "right_ground": "Move right; release A to shorten ascent or rearm. See its forecast.",
+        "right_jump": "Move right; press A freshly to jump if ready. See its forecast."
+      }
+    },
+    "throw_left": {
+      "type": "choice",
+      "instructions": {
+        "question": "Assume the selected movement action makes Kittie face left. Which B control best uses ball for completion alive? Compare the assumed facing approximate throw forecasts with inventory, B press state and shot feedback. Keep the ball unless a forecast supports damaging the living Head Goon during his tray-down opening. After launching, let that ball's predicted contact resolve before trying another attack. Recover the physical ball for the next opening.",
+        "shot_feedback": {
+          "current_frame": 0,
+          "shots": [],
+          "pending_target_keys": [],
+          "interpretation": "Boss-health decrease confirms a hit. Ball disarming confirms raised-tray contact. Recovery, loss or rest ends flight. Timing and intended contact are forecasts, not observed future events."
+        }
+      },
+      "criteria": {
+        "none": "Release B; retain ball or rearm a later throw.",
+        "flat": "Hold B alone; a fresh press tries a flat throw.",
+        "lob": "Hold B and Up; a fresh press tries a high lob."
+      }
+    },
+    "throw_right": {
+      "type": "choice",
+      "instructions": {
+        "question": "Assume the selected movement action makes Kittie face right. Which B control best uses ball for completion alive? Compare the assumed facing approximate throw forecasts with inventory, B press state and shot feedback. Keep the ball unless a forecast supports damaging the living Head Goon during his tray-down opening. After launching, let that ball's predicted contact resolve before trying another attack. Recover the physical ball for the next opening.",
+        "shot_feedback": {
+          "current_frame": 0,
+          "shots": [],
+          "pending_target_keys": [],
+          "interpretation": "Boss-health decrease confirms a hit. Ball disarming confirms raised-tray contact. Recovery, loss or rest ends flight. Timing and intended contact are forecasts, not observed future events."
+        }
+      },
+      "criteria": {
+        "none": "Release B; retain ball or rearm a later throw.",
+        "flat": "Hold B alone; a fresh press tries a flat throw.",
+        "lob": "Hold B and Up; a fresh press tries a high lob."
+      }
+    }
+  }
+}

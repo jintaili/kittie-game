@@ -1,0 +1,12 @@
+This directory contains the article and analysis companion by Jintai Li, 2026.
+
+Article text, original statistical figures and released numerical evaluation data:
+CC BY 4.0, subject to the rights and exclusions in reference/LICENSE-CONTENT.
+
+Research code under code/ and reference/, including configurations: Apache-2.0.
+See reference/LICENSE and reference/NOTICE. Stylesheet attribution and its MIT
+license are retained in reference/THIRD_PARTY_NOTICES.
+
+Game artwork, screenshots, gameplay video and third-party material are excluded
+from these blanket grants. Their existing terms and the game's license remain
+unchanged. No model weights, adapters or training trajectories are distributed.

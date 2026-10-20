@@ -1,0 +1,68 @@
+{
+  "status": "Reference implementation and analysis companion; includes extracted training components and recorded evaluation data.",
+  "model": "Qwen/Qwen3.5-0.8B",
+  "revision": "2fc06364715b967f1860aea9cf38778875588b17",
+  "headline_checkpoint": "PPO15",
+  "secondary_checkpoint": "PPO10",
+  "initial_adapter": "frozen/courtyard-bc-main-001-epoch-05",
+  "bc_dataset": "data/bc-multi-001",
+  "bc_epochs": 4,
+  "ppo_iterations": 16,
+  "critic_initialization_input": "head_goon_ppo_assets/critic-warmup.pt",
+  "scenarios": "data/scenarios.json",
+  "delay_input": "data/timing-input.json",
+  "checkpoint_inputs": {
+    "BC04": {
+      "name": "epoch-04",
+      "path": "bc_compare_assets/epoch-04",
+      "source": "training_runs/all-levels-bc-005-execution/results/epoch-04",
+      "sha256": "040d3ea197508ea9a8e9f42fd7d87e228e6e8de02a0f58a32efdd762babe37f5",
+      "training_state_sha256": "19ac5eac4d40a5df5ea88e5aef3b922469433702d4a925472e64eb56537afdfa",
+      "optimizer_step": 556
+    },
+    "PPO10": {
+      "name": "iteration-10",
+      "path": "head_goon_greedy_assets/iteration-10",
+      "source": "training_runs/head-goon-ppo-004-execution/results/iteration-10",
+      "sha256": "150cc49275d8371a7a8b20be70dd411dd4d4b59b8d2915ec7649ea1d664bcb89",
+      "training_state_sha256": "1c2636e7e8ad90296553da1c4ba66e1d763685f65ca7fc4eef83d84693bb203c",
+      "optimizer_step": 180
+    },
+    "PPO15": {
+      "name": "iteration-15",
+      "path": "head_goon_modes_assets/iteration-15",
+      "source": "training_runs/head-goon-ppo-005-execution/results/iteration-15",
+      "sha256": "f428dc68c70b7b93154a331471211dc821d30a869669681cef08a8e287ceca9d",
+      "training_state_sha256": "952238967c512f8f9c9d57353bfb7156de5864b6cd359f7f16242df69ac4b628",
+      "optimizer_step": 270
+    },
+    "Pretrained Qwen": {
+      "model": "Qwen/Qwen3.5-0.8B",
+      "revision": "2fc06364715b967f1860aea9cf38778875588b17",
+      "sha256": "04b1c301231dd422b8860db31311ab2721511346a32cb1e079c4c4e5f1fe4696",
+      "weight_file": "model.safetensors-00001-of-00001.safetensors",
+      "adapter": null,
+      "optimizer_step": 0,
+      "evaluation": "50 original-encounter games; same observation and joint greedy readout; no prompt search"
+    }
+  },
+  "checkpoint_selection": "Primary reported checkpoint chosen by the researcher using subsequent 50-game evaluations; exploratory comparisons, not an independently selected final test.",
+  "bc_stages": [
+    {
+      "stage": "Courtyard BC",
+      "epochs": 5,
+      "dataset": "data/bc-main-001",
+      "initialization": "official pretrained model, fresh LoRA",
+      "optimizer_updates": 125
+    },
+    {
+      "stage": "Multi-level BC",
+      "epochs": 4,
+      "dataset": "data/bc-multi-001",
+      "initialization": "Courtyard epoch-05 adapter; fresh BC optimizer",
+      "optimizer_updates": 556
+    }
+  ],
+  "latency_evidence": "data/latencies.json",
+  "repository": "https://github.com/jintaili/kittie-rl-study"
+}

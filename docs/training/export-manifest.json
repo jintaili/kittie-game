@@ -1,0 +1,213 @@
+{
+  "files": {
+    "LICENSE.txt": {
+      "source_sha256": "f2cbd502b03e574a8a53f04b08c2ad1f0c46c3aa9e10748126f5933ff182a063",
+      "export_sha256": "f2cbd502b03e574a8a53f04b08c2ad1f0c46c3aa9e10748126f5933ff182a063"
+    },
+    "assets/site.css": {
+      "source_sha256": "199d4ceab2b451be899d0715e42bfdf54fc531a6162c728db9f10737a82fcaae",
+      "export_sha256": "199d4ceab2b451be899d0715e42bfdf54fc531a6162c728db9f10737a82fcaae"
+    },
+    "code/analysis.py": {
+      "source_sha256": "602a62680f5fd952121b7c6d5803b9d6c771e0c9d1e7b7c0ae46a5caadb6c859",
+      "export_sha256": "602a62680f5fd952121b7c6d5803b9d6c771e0c9d1e7b7c0ae46a5caadb6c859"
+    },
+    "code/figures.py": {
+      "source_sha256": "6b86cc1ce71636ce9a7970eb5a824218490cfe91617115c9266226345cf989c2",
+      "export_sha256": "6b86cc1ce71636ce9a7970eb5a824218490cfe91617115c9266226345cf989c2"
+    },
+    "code/test_study.py": {
+      "source_sha256": "a631aa9e4a6e77ae5c5b4621746a405174ef9278ef3143c9a9e860b40e959790",
+      "export_sha256": "a631aa9e4a6e77ae5c5b4621746a405174ef9278ef3143c9a9e860b40e959790"
+    },
+    "code/timing.py": {
+      "source_sha256": "f638a355b4737512bab722274e94dcdd411ac9daf198bf940b911379a2e43bc8",
+      "export_sha256": "f638a355b4737512bab722274e94dcdd411ac9daf198bf940b911379a2e43bc8"
+    },
+    "code/timing_figure.py": {
+      "source_sha256": "8c1dbf43d9587b02148802c6a283d9976b802d6dfcb637be9b3fe6f30f2dc998",
+      "export_sha256": "8c1dbf43d9587b02148802c6a283d9976b802d6dfcb637be9b3fe6f30f2dc998"
+    },
+    "data/analysis.json": {
+      "source_sha256": "fb1e11ddce371cd30cee549476645c9967fb951516e068b662c98d629a040e6c",
+      "export_sha256": "fb1e11ddce371cd30cee549476645c9967fb951516e068b662c98d629a040e6c"
+    },
+    "data/games.json": {
+      "source_sha256": "3e9f79320d7fae6d650e213154db4b9df04f911755f3024d45d199dabebd2b83",
+      "export_sha256": "3e9f79320d7fae6d650e213154db4b9df04f911755f3024d45d199dabebd2b83"
+    },
+    "data/latencies.json": {
+      "source_sha256": "8bc33a7fe5befb81a621937ab0728f7bc776e00db10032d892b0e191797cdd6f",
+      "export_sha256": "8bc33a7fe5befb81a621937ab0728f7bc776e00db10032d892b0e191797cdd6f"
+    },
+    "data/latency-summary.json": {
+      "source_sha256": "a9ae08bfe4ba61ae0358e1ca048014e490f54312efa6227b2cf37661434a87d6",
+      "export_sha256": "a9ae08bfe4ba61ae0358e1ca048014e490f54312efa6227b2cf37661434a87d6"
+    },
+    "data/scenarios.json": {
+      "source_sha256": "be39685248be6556c4dd85d8f856e28dda81cfdc4a9ee8b9e8414776a9472a49",
+      "export_sha256": "be39685248be6556c4dd85d8f856e28dda81cfdc4a9ee8b9e8414776a9472a49"
+    },
+    "data/sources.json": {
+      "source_sha256": "b774917683c84bb86f56f6e7e380b3a7679854962a4545d3730d692d78c19bc4",
+      "export_sha256": "b774917683c84bb86f56f6e7e380b3a7679854962a4545d3730d692d78c19bc4"
+    },
+    "data/timing-input.json": {
+      "source_sha256": "ce48866195f66ba7d3c13bd549fb84f2eaa754773cd21e837fce7ef5e7c68d09",
+      "export_sha256": "ce48866195f66ba7d3c13bd549fb84f2eaa754773cd21e837fce7ef5e7c68d09"
+    },
+    "data/training-lineage.json": {
+      "source_sha256": "db9a6f0a8725d59ebb5e445d4195c9f6840bdab6b679ccc2d95e2665ab5139ab",
+      "export_sha256": "db9a6f0a8725d59ebb5e445d4195c9f6840bdab6b679ccc2d95e2665ab5139ab"
+    },
+    "examples/observation.json": {
+      "source_sha256": "3fc8d9662226bb3b4329e42fd0ea09825189c3411dbd633ba4a09a0af1a611ea",
+      "export_sha256": "3fc8d9662226bb3b4329e42fd0ea09825189c3411dbd633ba4a09a0af1a611ea"
+    },
+    "examples/qwen-messages.json": {
+      "source_sha256": "43a6d9991a906e4576f0d49a2d4cccff836d5672aa196e9c7d727e085c37bbfb",
+      "export_sha256": "43a6d9991a906e4576f0d49a2d4cccff836d5672aa196e9c7d727e085c37bbfb"
+    },
+    "images/game-frame.png": {
+      "source_sha256": "76a68ea13e2ecf88a56f13c4745d42469aaa72c8f1f72042240c112c794dec03",
+      "export_sha256": "76a68ea13e2ecf88a56f13c4745d42469aaa72c8f1f72042240c112c794dec03"
+    },
+    "index.html": {
+      "source_sha256": "8e9aa178eeb032f9f05c5e1368463fab12f3286ec04e99a550ac736379d82b44",
+      "export_sha256": "f48d28c69763c06f36c5487fd2e368e150d5830ae573727c1d374cafe3d918b5"
+    },
+    "latency-distributions.png": {
+      "source_sha256": "f5648dfdf8f3976470ece8c6c00e41750c7e504bf7f04404142d9f3e5db28d6b",
+      "export_sha256": "f5648dfdf8f3976470ece8c6c00e41750c7e504bf7f04404142d9f3e5db28d6b"
+    },
+    "latency-distributions.svg": {
+      "source_sha256": "bc18b9cd9b2bb3e748413575de79140bbe7aafa283762e8d7179f2c808077282",
+      "export_sha256": "bc18b9cd9b2bb3e748413575de79140bbe7aafa283762e8d7179f2c808077282"
+    },
+    "methods.html": {
+      "source_sha256": "8fc6c765b979616fa6088fb70a7fa8462045792d8153057b6aa7a8e5c29a4c15",
+      "export_sha256": "8f9502ccd18f1e702e50f34cf8b5fd891145e0826f486fac00618782d189e329"
+    },
+    "performance.png": {
+      "source_sha256": "2ac13a10d1e73803ad3abfad9c144806afb80d440c1f81fa361e76588edb9468",
+      "export_sha256": "2ac13a10d1e73803ad3abfad9c144806afb80d440c1f81fa361e76588edb9468"
+    },
+    "performance.svg": {
+      "source_sha256": "82b9833e8a376615b651f1a31b32e16ce665bb90f8a6a863c01be7844cebfb0a",
+      "export_sha256": "82b9833e8a376615b651f1a31b32e16ce665bb90f8a6a863c01be7844cebfb0a"
+    },
+    "reference/LICENSE": {
+      "source_sha256": "50cbab8a892c5f2993b8c7351a99182507472def3b1374558308605d99b86b32",
+      "export_sha256": "50cbab8a892c5f2993b8c7351a99182507472def3b1374558308605d99b86b32"
+    },
+    "reference/LICENSE-CONTENT": {
+      "source_sha256": "a009bb810c2983e8e1bc14ab58e00256005fa0701e7cc01abe290f89b1f757d1",
+      "export_sha256": "a009bb810c2983e8e1bc14ab58e00256005fa0701e7cc01abe290f89b1f757d1"
+    },
+    "reference/NOTICE": {
+      "source_sha256": "ccad6506312416b7f417fe5befb7c0abe5d9ae16f8a6b8478d34622451af5efd",
+      "export_sha256": "ccad6506312416b7f417fe5befb7c0abe5d9ae16f8a6b8478d34622451af5efd"
+    },
+    "reference/THIRD_PARTY_NOTICES": {
+      "source_sha256": "fe0ea898068cb3e755c6cfe004cc6f6690c8ca192a64a6bdd503019b1354b26c",
+      "export_sha256": "fe0ea898068cb3e755c6cfe004cc6f6690c8ca192a64a6bdd503019b1354b26c"
+    },
+    "reference/__init__.py": {
+      "source_sha256": "7f292c4b6e7d7ad5fef4a684b1e5fd5b63706ba9fc42cd815435dc17bd11af25",
+      "export_sha256": "7f292c4b6e7d7ad5fef4a684b1e5fd5b63706ba9fc42cd815435dc17bd11af25"
+    },
+    "reference/actions.py": {
+      "source_sha256": "dcac731bf3d5d772b9fc960a6431497143f0d49c3d790278d03a1b409b40ce8c",
+      "export_sha256": "dcac731bf3d5d772b9fc960a6431497143f0d49c3d790278d03a1b409b40ce8c"
+    },
+    "reference/advantages.py": {
+      "source_sha256": "93d909230e1ae12905e72981aecf5a8e44497154f91fadece794b04b757b03b4",
+      "export_sha256": "93d909230e1ae12905e72981aecf5a8e44497154f91fadece794b04b757b03b4"
+    },
+    "reference/ball_physics.py": {
+      "source_sha256": "a14222c9fb1a624d8e7bed9c08a3f958f37e00c97ab1669cd58dd5674c478d8d",
+      "export_sha256": "a14222c9fb1a624d8e7bed9c08a3f958f37e00c97ab1669cd58dd5674c478d8d"
+    },
+    "reference/bc.py": {
+      "source_sha256": "07690c385643642a865a319c5cbd5b3e276b486d7f665cae7382bf057f4f4a07",
+      "export_sha256": "07690c385643642a865a319c5cbd5b3e276b486d7f665cae7382bf057f4f4a07"
+    },
+    "reference/bc_data.py": {
+      "source_sha256": "d0450c47a73541d2b3003f1f58fbcd5c91c42c914d0cc487eec4bdc2f36e1146",
+      "export_sha256": "d0450c47a73541d2b3003f1f58fbcd5c91c42c914d0cc487eec4bdc2f36e1146"
+    },
+    "reference/config-bc.json": {
+      "source_sha256": "1285fe12f93b6297ae42bef815bc94d74d5fca725cc1f9627efb60f1d083015b",
+      "export_sha256": "1285fe12f93b6297ae42bef815bc94d74d5fca725cc1f9627efb60f1d083015b"
+    },
+    "reference/config-ppo.json": {
+      "source_sha256": "01dae5bdbea8c33a1e69197a359e28c90b694fbcaee87984af2279a2371cc71e",
+      "export_sha256": "01dae5bdbea8c33a1e69197a359e28c90b694fbcaee87984af2279a2371cc71e"
+    },
+    "reference/critic.py": {
+      "source_sha256": "dba4be59356485c88c2f8575aceba418466d11b7d0b3b63d87db0e4a10a71468",
+      "export_sha256": "dba4be59356485c88c2f8575aceba418466d11b7d0b3b63d87db0e4a10a71468"
+    },
+    "reference/event_rewards.py": {
+      "source_sha256": "8333257d500d609b955f193d12591b890e8e197b6b2cb3f423e9ff0080551280",
+      "export_sha256": "8333257d500d609b955f193d12591b890e8e197b6b2cb3f423e9ff0080551280"
+    },
+    "reference/example.json": {
+      "source_sha256": "e40a559c77b1cb436baa14abfb36c88462073c3a4cd65b1d0d6f08b937b2b2fa",
+      "export_sha256": "e40a559c77b1cb436baa14abfb36c88462073c3a4cd65b1d0d6f08b937b2b2fa"
+    },
+    "reference/media.json": {
+      "source_sha256": "abcb346c85110b61a478f4aa3a6b6ff55774555450c5aef88c873b71e66d166e",
+      "export_sha256": "abcb346c85110b61a478f4aa3a6b6ff55774555450c5aef88c873b71e66d166e"
+    },
+    "reference/metrics.py": {
+      "source_sha256": "0d9c7d0b77cfdff2e19928fb9012afc7eea20097cbd2882dfd6bb33609aea3f2",
+      "export_sha256": "0d9c7d0b77cfdff2e19928fb9012afc7eea20097cbd2882dfd6bb33609aea3f2"
+    },
+    "reference/observations.py": {
+      "source_sha256": "3901826ebef503ce6b83106f8d7dce05e1c99b4c1aff9d5b41a1a06947a37e03",
+      "export_sha256": "3901826ebef503ce6b83106f8d7dce05e1c99b4c1aff9d5b41a1a06947a37e03"
+    },
+    "reference/ppo.py": {
+      "source_sha256": "8da39e51533c6d2a38651ce0e7d2fa9de3a1882ab8b37f0ca7529eadf3428389",
+      "export_sha256": "8da39e51533c6d2a38651ce0e7d2fa9de3a1882ab8b37f0ca7529eadf3428389"
+    },
+    "reference/reward_config.py": {
+      "source_sha256": "a028cb089ec829bcb6944771f584e1741718207d28cb92c07be0c9e7959f37a6",
+      "export_sha256": "a028cb089ec829bcb6944771f584e1741718207d28cb92c07be0c9e7959f37a6"
+    },
+    "reference/rewards.py": {
+      "source_sha256": "caa3b51fb7f16a8b8211f822ddb99781ea5a2de4493af4532b7c8bd493611c89",
+      "export_sha256": "caa3b51fb7f16a8b8211f822ddb99781ea5a2de4493af4532b7c8bd493611c89"
+    },
+    "reference/scoring.py": {
+      "source_sha256": "fcbb75961d9ec38aa4866731deb034fa572047c7295b2f9c3a4a69f32a6ce37d",
+      "export_sha256": "fcbb75961d9ec38aa4866731deb034fa572047c7295b2f9c3a4a69f32a6ce37d"
+    },
+    "reference/source-map.json": {
+      "source_sha256": "4eeaff1f3f3b280845a91d3f7f52aa1599923fe1eb179128b282e92c6c8fc1e0",
+      "export_sha256": "4eeaff1f3f3b280845a91d3f7f52aa1599923fe1eb179128b282e92c6c8fc1e0"
+    },
+    "reproduction.html": {
+      "source_sha256": "3996a90c5de957c56e13a7b2ad2821869d3110212a1deb5195ab361215f54edc",
+      "export_sha256": "9d0c252d6f289713271c9d79ddb3cba16824e2dbe5c895b5cd6d7baf08da8df3"
+    },
+    "study.json": {
+      "source_sha256": "0d1d8fac1503c682239d74dc4811e64e4c04b352fe40dfba8c2de7b8716ae092",
+      "export_sha256": "0d1d8fac1503c682239d74dc4811e64e4c04b352fe40dfba8c2de7b8716ae092"
+    },
+    "supplement.html": {
+      "source_sha256": "78d4a9bd795c51af561603fb421c59bd0040451e6724fef2b840d48d71cbcfa4",
+      "export_sha256": "3debd434a18e08c2c02eb3282acfd6eb415b139cb2ca56b08ded6d1ca0450402"
+    }
+  },
+  "media": {
+    "source": "videos/ppo15-greedy/common-win/gameplay.mp4",
+    "sha256": "b4fd30cf73abc9d6fcdc01ffc3bc3363f244b65ad997120812a3562f9edb1e4e",
+    "site_path": "assets/training-ppo15.mp4",
+    "description": "Selected PPO15 winning replay reconstructed from recorded native actions; selected after evaluation. Hosted only in the game site.",
+    "license": "Game artwork and gameplay media are excluded from the article/code grants; existing terms retained."
+  },
+  "destination": "docs/training/",
+  "note": "Generated from the research repository. Edit its source, then re-export."
+}

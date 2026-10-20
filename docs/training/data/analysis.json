@@ -1,0 +1,302 @@
+{
+  "cohorts": {
+    "main|Pretrained Qwen|6": {
+      "wins": 0,
+      "n": 50,
+      "rate": 0.0,
+      "wilson95": [
+        6.938893903907228e-18,
+        0.07134759913335872
+      ],
+      "mean_episode_median_latency_ms": 148.48827770998696,
+      "outcomes": {
+        "death": 2,
+        "wall_time_limit": 48
+      }
+    },
+    "main|JEV|6": {
+      "wins": 26,
+      "n": 50,
+      "rate": 0.52,
+      "wilson95": [
+        0.38511744890044614,
+        0.6520286471342196
+      ],
+      "mean_episode_median_latency_ms": 233.52785125374794,
+      "outcomes": {
+        "death": 24,
+        "win": 26
+      }
+    },
+    "main|BC04|6": {
+      "wins": 39,
+      "n": 50,
+      "rate": 0.78,
+      "wilson95": [
+        0.6475845041874634,
+        0.8724608402978559
+      ],
+      "mean_episode_median_latency_ms": 287.62525111999935,
+      "outcomes": {
+        "death": 11,
+        "win": 39
+      }
+    },
+    "main|PPO10|6": {
+      "wins": 50,
+      "n": 50,
+      "rate": 1.0,
+      "wilson95": [
+        0.9286524008666414,
+        1.0
+      ],
+      "mean_episode_median_latency_ms": 286.18621536000046,
+      "outcomes": {
+        "win": 50
+      }
+    },
+    "main|PPO15|6": {
+      "wins": 47,
+      "n": 50,
+      "rate": 0.94,
+      "wilson95": [
+        0.8378290831116182,
+        0.979385029651026
+      ],
+      "mean_episode_median_latency_ms": 285.3091241299981,
+      "outcomes": {
+        "death": 3,
+        "win": 47
+      }
+    },
+    "randomized|BC04|6": {
+      "wins": 16,
+      "n": 50,
+      "rate": 0.32,
+      "wilson95": [
+        0.20758216260656845,
+        0.45810297308144077
+      ],
+      "mean_episode_median_latency_ms": 314.2463835699966,
+      "outcomes": {
+        "death": 34,
+        "win": 16
+      }
+    },
+    "randomized|PPO10|6": {
+      "wins": 18,
+      "n": 50,
+      "rate": 0.36,
+      "wilson95": [
+        0.24138749651846741,
+        0.49858983123887307
+      ],
+      "mean_episode_median_latency_ms": 311.51928929000576,
+      "outcomes": {
+        "death": 32,
+        "win": 18
+      }
+    },
+    "randomized|PPO15|6": {
+      "wins": 25,
+      "n": 50,
+      "rate": 0.5,
+      "wilson95": [
+        0.3664451431682858,
+        0.6335548568317142
+      ],
+      "mean_episode_median_latency_ms": 310.321464139995,
+      "outcomes": {
+        "death": 25,
+        "win": 25
+      }
+    },
+    "randomized|JEV|6": {
+      "wins": 30,
+      "n": 50,
+      "rate": 0.6,
+      "wilson95": [
+        0.4618143774758936,
+        0.7239161026974346
+      ],
+      "mean_episode_median_latency_ms": 187.56607826799154,
+      "outcomes": {
+        "death": 20,
+        "win": 30
+      }
+    },
+    "randomized|JEV delayed|6": {
+      "wins": 14,
+      "n": 50,
+      "rate": 0.28,
+      "wilson95": [
+        0.17474170665911232,
+        0.4166512369595657
+      ],
+      "mean_episode_median_latency_ms": 314.5068561658263,
+      "outcomes": {
+        "death": 36,
+        "win": 14
+      }
+    },
+    "main|PPO15|1": {
+      "wins": 15,
+      "n": 30,
+      "rate": 0.5,
+      "wilson95": [
+        0.33154125640533766,
+        0.6684587435946623
+      ],
+      "mean_episode_median_latency_ms": 282.79417123332377,
+      "outcomes": {
+        "death": 15,
+        "win": 15
+      }
+    },
+    "randomized|PPO15|1": {
+      "wins": 19,
+      "n": 30,
+      "rate": 0.6333333333333333,
+      "wilson95": [
+        0.4551356365479487,
+        0.7812607919389929
+      ],
+      "mean_episode_median_latency_ms": 297.91735114999557,
+      "outcomes": {
+        "death": 11,
+        "win": 19
+      }
+    }
+  },
+  "comparisons": {
+    "main:PPO15-BC04": {
+      "difference": 0.15999999999999992,
+      "newcombe95": [
+        0.022203399002739405,
+        0.2981486304379891
+      ],
+      "fisher_two_sided_p": 0.04071468493453525,
+      "paired": false
+    },
+    "main:PPO15-JEV": {
+      "difference": 0.41999999999999993,
+      "newcombe95": [
+        0.25305551844428964,
+        0.5605150637893885
+      ],
+      "fisher_two_sided_p": 2.6530241843992434e-06,
+      "paired": false
+    },
+    "main:PPO10-BC04": {
+      "difference": 0.21999999999999997,
+      "newcombe95": [
+        0.10321178616538376,
+        0.3524154958125366
+      ],
+      "fisher_two_sided_p": 0.0005274841534096255,
+      "paired": false
+    },
+    "main:PPO10-PPO15": {
+      "difference": 0.06000000000000005,
+      "newcombe95": [
+        -0.02149638312653289,
+        0.1621709168883818
+      ],
+      "fisher_two_sided_p": 0.24242424242424243,
+      "paired": false
+    },
+    "main:BC04-Pretrained Qwen": {
+      "difference": 0.78,
+      "newcombe95": [
+        0.6295860929522328,
+        0.8724608402978559
+      ],
+      "fisher_two_sided_p": 8.28800834698326e-18,
+      "paired": false
+    },
+    "main:PPO15-Pretrained Qwen": {
+      "difference": 0.94,
+      "newcombe95": [
+        0.8153830823687768,
+        0.979385029651026
+      ],
+      "fisher_two_sided_p": 4.64380767359492e-25,
+      "paired": false
+    },
+    "main:JEV-Pretrained Qwen": {
+      "difference": 0.52,
+      "newcombe95": [
+        0.3674097562318671,
+        0.6520286471342196
+      ],
+      "fisher_two_sided_p": 3.474929547757128e-10,
+      "paired": false
+    },
+    "randomized:PPO15-BC04": {
+      "n": 50,
+      "difference": 0.18,
+      "first_only": 15,
+      "second_only": 6,
+      "exact_mcnemar_p": 0.0783538818359375,
+      "paired_bootstrap95": [
+        0.0,
+        0.36
+      ],
+      "bootstrap_resamples": 20000,
+      "bootstrap_seed": 19102026
+    },
+    "randomized:PPO15-PPO10": {
+      "n": 50,
+      "difference": 0.14,
+      "first_only": 15,
+      "second_only": 8,
+      "exact_mcnemar_p": 0.21003961563110352,
+      "paired_bootstrap95": [
+        -0.04,
+        0.32
+      ],
+      "bootstrap_resamples": 20000,
+      "bootstrap_seed": 19102026
+    },
+    "randomized:JEV-PPO15": {
+      "n": 50,
+      "difference": 0.1,
+      "first_only": 12,
+      "second_only": 7,
+      "exact_mcnemar_p": 0.359283447265625,
+      "paired_bootstrap95": [
+        -0.06,
+        0.26
+      ],
+      "bootstrap_resamples": 20000,
+      "bootstrap_seed": 19102026
+    },
+    "randomized:JEV-JEV delayed": {
+      "n": 50,
+      "difference": 0.32,
+      "first_only": 21,
+      "second_only": 5,
+      "exact_mcnemar_p": 0.002493917942047119,
+      "paired_bootstrap95": [
+        0.14,
+        0.5
+      ],
+      "bootstrap_resamples": 20000,
+      "bootstrap_seed": 19102026
+    },
+    "randomized:PPO15-one-six": {
+      "n": 30,
+      "difference": 0.06666666666666667,
+      "first_only": 8,
+      "second_only": 6,
+      "exact_mcnemar_p": 0.79052734375,
+      "paired_bootstrap95": [
+        -0.16666666666666666,
+        0.3
+      ],
+      "bootstrap_resamples": 20000,
+      "bootstrap_seed": 19102026
+    }
+  },
+  "interpretation": "Exploratory analyses. Nominal intervals/tests do not account for training-run uncertainty, repeated fixed-entry trajectories, or adaptive experiment selection."
+}

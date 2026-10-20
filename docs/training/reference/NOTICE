@@ -1,0 +1,16 @@
+Head Goon research reference implementation and analysis companion
+Copyright 2026 Jintai Li
+
+User-authored research code and configurations: Apache License 2.0, see LICENSE.
+Article and released numerical data: see LICENSE-CONTENT for CC BY 4.0 scope.
+
+Qwen3.5-0.8B is an upstream model by the Qwen team, licensed under Apache-2.0:
+https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/main/LICENSE
+The study pins revision 2fc06364715b967f1860aea9cf38778875588b17.
+Model weights and adapters are not included.
+
+The page stylesheet is adapted from jintaili/kittie-game, copyright 2026 jintaili,
+under MIT. Its original notice is retained in THIRD_PARTY_NOTICES.
+Dependencies including PyTorch, NumPy and Matplotlib retain their own licenses;
+their implementations are not vendored here. JEV is an external model service;
+no JEV implementation or model weights are included.

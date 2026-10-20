@@ -1,0 +1,114 @@
+[
+  {
+    "source": "bc_main/distribution.py",
+    "source_sha256": "b40793f8da08d766e8fb925890ed8a15ad6382a48fddf8dc064453a6b9d349ff",
+    "destination": "src/head_goon_study/actions.py",
+    "symbols": [
+      "log_probabilities"
+    ],
+    "change": "Selected definitions retain original bodies; imports narrowed to package dependencies.",
+    "destination_sha256": "dcac731bf3d5d772b9fc960a6431497143f0d49c3d790278d03a1b409b40ce8c"
+  },
+  {
+    "source": "ppo_multi/core.py",
+    "source_sha256": "47e6efc7c23dd3faaea258264280cdaa2bbc8e8c6514c9bc108239b480ab6280",
+    "destination": "src/head_goon_study/advantages.py",
+    "symbols": [
+      "gae",
+      "weights",
+      "normalize_advantages"
+    ],
+    "change": "Selected definitions retain original bodies; imports narrowed to package dependencies.",
+    "destination_sha256": "93d909230e1ae12905e72981aecf5a8e44497154f91fadece794b04b757b03b4"
+  },
+  {
+    "source": "head_goon_ppo/critic.py",
+    "source_sha256": "ef0da42a09ee83cd40c38c8c359e462cb43f0f56dc37861f13d08b79a05d4179",
+    "destination": "src/head_goon_study/critic.py",
+    "symbols": [
+      "Standardize",
+      "make_critic"
+    ],
+    "change": "Selected definitions retain original bodies; imports narrowed to package dependencies.",
+    "destination_sha256": "dba4be59356485c88c2f8575aceba418466d11b7d0b3b63d87db0e4a10a71468"
+  },
+  {
+    "source": "ppo_multi/batching.py",
+    "source_sha256": "ea656fbcfaf7197a37bddb599a675ed209be15087eb6021d6ceb21b4856907ab",
+    "destination": "src/head_goon_study/scoring.py",
+    "symbols": [
+      "score_actor"
+    ],
+    "change": "Selected definitions retain original bodies; imports narrowed to package dependencies.",
+    "destination_sha256": "fcbb75961d9ec38aa4866731deb034fa572047c7295b2f9c3a4a69f32a6ce37d"
+  },
+  {
+    "source": "head_goon_ppo/optimize.py",
+    "source_sha256": "059b3082198cb3045206cce4020447d1afcc2bde109700c72db7e338d4540666",
+    "destination": "src/head_goon_study/ppo.py",
+    "change": "Only import path changed; update, loss, audit and critic-fitting definitions retained.",
+    "destination_sha256": "8da39e51533c6d2a38651ce0e7d2fa9de3a1882ab8b37f0ca7529eadf3428389"
+  },
+  {
+    "source": "bc_multi/data.py",
+    "source_sha256": "c4ea44d90abb2a98dc54ea00e5f8ce7f9688ca74cc499f013c6c581405908827",
+    "destination": "src/head_goon_study/bc_data.py",
+    "symbols": [
+      "weighted_rows",
+      "batch_order"
+    ],
+    "change": "Selected definitions retain original bodies; imports narrowed to package dependencies.",
+    "destination_sha256": "d0450c47a73541d2b3003f1f58fbcd5c91c42c914d0cc487eec4bdc2f36e1146"
+  },
+  {
+    "destination": "src/head_goon_study/bc.py",
+    "sources": {
+      "bc_main/train.py": "8d770b60e77627cf5ba0b3041b45c1847e1d79fdeaf76be1bd6e4d12cc8a870c",
+      "bc_multi/train_v2.py": "1b85e1e937001832aec5168af40a5f098b9fe963452b2beea26a7b392d044f77"
+    },
+    "change": "Common weighted epoch extracted into a model-independent function. Device inferred from parameters; explicit stage-specific denominator; split check added. Logging/checkpoint/gameplay orchestration excluded.",
+    "destination_sha256": "07690c385643642a865a319c5cbd5b3e276b486d7f665cae7382bf057f4f4a07"
+  },
+  {
+    "source": "bc_multi/contract.py",
+    "source_sha256": "fd12f0b78a0b15fa32530a6eefe02bb5c9cb01b9028c646b93db13f04c544cfc",
+    "destination": "src/head_goon_study/observations.py",
+    "destination_sha256": "3901826ebef503ce6b83106f8d7dce05e1c99b4c1aff9d5b41a1a06947a37e03",
+    "change": "Original input normalization, compact encoding, chat messages and button map retained. Native emulator request wrapper omitted; build_input accepts an already causal wire observation."
+  },
+  {
+    "source": "rl/config.py",
+    "source_sha256": "9faf2c96c8d925672eba925e8f332e47f796c92d6e940c1333dd0068af232335",
+    "destination": "src/head_goon_study/reward_config.py",
+    "destination_sha256": "a028cb089ec829bcb6944771f584e1741718207d28cb92c07be0c9e7959f37a6",
+    "change": "RewardConfig definition retained verbatim."
+  },
+  {
+    "source": "rl/rewards.py",
+    "source_sha256": "dea299599d1930673d1db1d783bd3fbc911830ef0a2597d2f4919898cf39f659",
+    "destination": "src/head_goon_study/event_rewards.py",
+    "destination_sha256": "8333257d500d609b955f193d12591b890e8e197b6b2cb3f423e9ff0080551280",
+    "change": "Only config import changed."
+  },
+  {
+    "source": "bc_compare/metrics.py",
+    "source_sha256": "fb5838574554efe06006f099e1a167fa45c98c170ef30b0242f35825f0746e3e",
+    "destination": "src/head_goon_study/metrics.py",
+    "destination_sha256": "0d9c7d0b77cfdff2e19928fb9012afc7eea20097cbd2882dfd6bb33609aea3f2",
+    "change": "Per-episode state and metrics definitions retained; imports localized and unrelated cohort aggregation omitted."
+  },
+  {
+    "source": "head_goon_ppo/rewards.py",
+    "source_sha256": "899f215c056872d296e4e186bd7229afce1ad1d0fbca9aaa88633d758758d7c6",
+    "destination": "src/head_goon_study/rewards.py",
+    "destination_sha256": "caa3b51fb7f16a8b8211f822ddb99781ea5a2de4493af4532b7c8bd493611c89",
+    "change": "Only parent metrics import changed. Native hook supplies rebound-attributed hit events."
+  },
+  {
+    "source": "head_goon_ppo/native.py",
+    "source_sha256": "76a51fd6782b8bdcb5bec10f2a9d83731137db48040e027968e8058993d116db",
+    "destination": "src/head_goon_study/ball_physics.py",
+    "destination_sha256": "a14222c9fb1a624d8e7bed9c08a3f958f37e00c97ab1669cd58dd5674c478d8d",
+    "change": "Physics body retained verbatim. Hit reward expression extracted from native tick; native hook orchestration not included."
+  }
+]
