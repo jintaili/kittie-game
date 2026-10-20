@@ -73,8 +73,8 @@
       "export_sha256": "76a68ea13e2ecf88a56f13c4745d42469aaa72c8f1f72042240c112c794dec03"
     },
     "index.html": {
-      "source_sha256": "cfca2ca88875698902a1fb60f3b171fc672b78957e62ef4099d9014c700981c6",
-      "export_sha256": "a78f1baee5b6877c83fe324ee103c51fa5b56466f224767b41ead8c221c56474"
+      "source_sha256": "5137b8c3c1cb7a48d8e89484fa743c26a1031f80baba87c26876fbae46ffee7e",
+      "export_sha256": "6ac5eee0bd1b32875fd59aee685452e37b05d6520adb7d7aaa1b31dbca93ea5e"
     },
     "latency-distributions.png": {
       "source_sha256": "f5648dfdf8f3976470ece8c6c00e41750c7e504bf7f04404142d9f3e5db28d6b",
